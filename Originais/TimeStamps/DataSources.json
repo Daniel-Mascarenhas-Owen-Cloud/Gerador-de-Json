@@ -1,0 +1,34 @@
+{
+   "dataSources":[
+      {
+         "xid":"TUP_Dados Calculados",
+         "type":"META",
+         "alarmLevels":{
+            "SCRIPT_ERROR":"NONE",
+            "CONTEXT_POINT_DISABLED":"NONE",
+            "RESULT_TYPE_ERROR":"NONE"
+         },
+         "enabled":true,
+         "name":"TUP_Dados Calculados"
+      },
+      {
+         "xid":"TUP_Dados Virtuais",
+         "type":"VIRTUAL",
+         "updatePeriodType":"SECONDS",
+         "enabled":true,
+         "name":"TUP_Dados Virtuais",
+         "updatePeriods":5
+      },
+      {
+         "xid":"TUP_Time Stamps",
+         "type":"META",
+         "alarmLevels":{
+            "SCRIPT_ERROR":"NONE",
+            "CONTEXT_POINT_DISABLED":"NONE",
+            "RESULT_TYPE_ERROR":"NONE"
+         },
+         "enabled":true,
+         "name":"TUP_Time Stamps"
+      }
+   ]
+}

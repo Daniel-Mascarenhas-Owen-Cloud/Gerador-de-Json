@@ -1,0 +1,11 @@
+    {
+         "xid":"USN_Alarmes_Sungrow",
+         "type":"META",
+         "alarmLevels":{
+            "SCRIPT_ERROR":"NONE",
+            "CONTEXT_POINT_DISABLED":"NONE",
+            "RESULT_TYPE_ERROR":"NONE"
+         },
+         "enabled":true,
+         "name":"USN_Alarmes_Sungrow"
+      },

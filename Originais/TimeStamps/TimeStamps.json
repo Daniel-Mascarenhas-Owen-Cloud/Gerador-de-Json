@@ -1,0 +1,1252 @@
+{
+   "dataPoints":[
+      {
+         "xid":"TUP_Inv_1.1_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_1.1_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_1.1_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_1.2_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_1.2_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_1.2_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_1.3_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_1.3_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_1.3_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_1.4_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_1.4_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_1.4_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_1.5_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_1.5_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_1.5_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_1.6_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_1.6_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_1.6_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_1.7_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_1.7_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_1.7_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_1.8_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_1.8_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":Infinity,
+         "discardLowLimit":-Infinity,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_1.8_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_1.9_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_1.9_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":Infinity,
+         "discardLowLimit":-Infinity,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_1.9_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_1.10_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_1.10_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.1097693134862316E308,
+         "discardLowLimit":-1.1097693134862316E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_1.10_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_2.1_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_2.1_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_2.1_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_2.2_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_2.2_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_2.2_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_2.3_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_2.3_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_2.3_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_2.4_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_2.4_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_2.4_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_2.5_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_2.5_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_2.5_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_2.6_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_2.6_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_2.6_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_2.7_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_2.7_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_2.7_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_2.8_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_2.8_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":Infinity,
+         "discardLowLimit":-Infinity,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_2.8_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_2.9_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_2.9_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":Infinity,
+         "discardLowLimit":-Infinity,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_2.9_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Inv_2.10_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Inv_2.10_MED_Potência Ativa (W)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.1097693134862316E308,
+         "discardLowLimit":-1.1097693134862316E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Inv_2.10_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Smart1_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Smart1_STA_Data e Hora"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Smart1_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_Smart2_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_Smart2_STA_Data e Hora"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_Smart2_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_NCU1_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_NCU1_MED_Velocidade Vento (m\/s)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_NCU1_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_NCU2_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_NCU2_MED_Velocidade Vento (m\/s)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_NCU2_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_NCU3_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_NCU3_MED_Velocidade Vento (m\/s)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_NCU3_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_ETM_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"TUP_MED_Temperatura do Ar (°C)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"TUP_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"TUP_ETM_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      }
+   ]
+}

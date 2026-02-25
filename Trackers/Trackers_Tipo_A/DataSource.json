@@ -1,0 +1,27 @@
+
+{
+         "xid":"USN_NCU1_A_1a20",
+         "type":"MODBUS_IP",
+         "alarmLevels":{
+            "POINT_WRITE_EXCEPTION":"NONE",
+            "DATA_SOURCE_EXCEPTION":"NONE",
+            "POINT_READ_EXCEPTION":"NONE"
+         },
+         "updatePeriodType":"SECONDS",
+         "transportType":"TCP",
+         "contiguousBatches":false,
+         "createSlaveMonitorPoints":false,
+         "createSocketMonitorPoint":false,
+         "enabled":true,
+         "encapsulated":false,
+         "host":"000.000.000.000",
+         "maxReadBitCount":2000,
+         "maxReadRegisterCount":125,
+         "maxWriteRegisterCount":120,
+         "name":"USN_NCU1_A_1a20",
+         "port":502,
+         "quantize":false,
+         "retries":2,
+         "timeout":1000,
+         "updatePeriods":30
+      }

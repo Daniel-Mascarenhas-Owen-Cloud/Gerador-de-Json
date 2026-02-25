@@ -1,0 +1,27 @@
+
+      {
+         "xid":"USN_SMART1_INV_B_1a5",
+         "type":"MODBUS_IP",
+         "alarmLevels":{
+            "POINT_WRITE_EXCEPTION":"NONE",
+            "DATA_SOURCE_EXCEPTION":"NONE",
+            "POINT_READ_EXCEPTION":"NONE"
+         },
+         "updatePeriodType":"SECONDS",
+         "transportType":"TCP",
+         "contiguousBatches":false,
+         "createSlaveMonitorPoints":true,
+         "createSocketMonitorPoint":false,
+         "enabled":true,
+         "encapsulated":false,
+         "host":"000.000.000.000",
+         "maxReadBitCount":2000,
+         "maxReadRegisterCount":125,
+         "maxWriteRegisterCount":120,
+         "name":"USN_SMART1_INV_B_1a5",
+         "port":502,
+         "quantize":false,
+         "retries":2,
+         "timeout":5000,
+         "updatePeriods":5
+      }
