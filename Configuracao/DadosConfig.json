@@ -1,0 +1,162 @@
+{
+   "dataSources":[
+      {
+         "xid":"USN_Dados Calculados",
+         "type":"META",
+         "alarmLevels":{
+            "SCRIPT_ERROR":"NONE",
+            "CONTEXT_POINT_DISABLED":"NONE",
+            "RESULT_TYPE_ERROR":"NONE"
+         },
+         "enabled":true,
+         "name":"USN_Dados Calculados"
+      },
+      {
+         "xid":"USN_Dados Virtuais",
+         "type":"VIRTUAL",
+         "updatePeriodType":"SECONDS",
+         "enabled":true,
+         "name":"USN_Dados Virtuais",
+         "updatePeriods":5
+      },
+      {
+         "xid":"USN_Time Stamps",
+         "type":"META",
+         "alarmLevels":{
+            "SCRIPT_ERROR":"NONE",
+            "CONTEXT_POINT_DISABLED":"NONE",
+            "RESULT_TYPE_ERROR":"NONE"
+         },
+         "enabled":true,
+         "name":"USN_Time Stamps"
+      }
+   ],
+   "dataPoints":[
+      {
+         "xid":"USN_VIR_Latitude da Usina (graus)",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "changeType":{
+               "type":"NO_CHANGE",
+               "startValue":"0.0"
+            },
+            "settable":true
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Virtuais",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"USN_Dados Virtuais",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"USN_VIR_Latitude da Usina (graus)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_VIR_Longitude da Usina (graus)",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "changeType":{
+               "type":"NO_CHANGE",
+               "startValue":"0.0"
+            },
+            "settable":true
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Virtuais",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"USN_Dados Virtuais",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"USN_VIR_Longitude da Usina (graus)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_VIR_Capacidade Instalada Total (KWp)",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "changeType":{
+               "type":"NO_CHANGE",
+               "startValue":"0"
+            },
+            "settable":true
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Virtuais",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"USN_Dados Virtuais",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"USN_VIR_Capacidade Instalada Total (KWp)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      }
+   ]
+}

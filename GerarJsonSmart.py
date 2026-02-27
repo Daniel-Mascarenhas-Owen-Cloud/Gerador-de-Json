@@ -45,6 +45,10 @@ conteudo = (
         .replace("Skid x", "Skid " + skid)
         .replace("_SMART1","_SMART" + skid)
         .replace("Smart1","Smart" + skid)
+        .replace("VIR_Capacidade Instalada 1","VIR_Capacidade Instalada " + skid)
+        .replace("Capacidade Diário 1","Capacidade Diário " + skid)
+        .replace("Capacidade Mensal 1","Capacidade Mensal " + skid)
+        .replace("Capacidade Anual 1","Capacidade Anual " + skid)
     )
 
 # Sobrescrever o arquivo original

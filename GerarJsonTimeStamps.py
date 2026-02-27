@@ -8,19 +8,19 @@ prefix_usina = input("Qual o prefixo da usina?\n")
 
 
 # Criar arquivo Json com inicio padrão
-shutil.copy("TimeStamps/DataSourcesTimeStamp.json", "saida/" )
+shutil.copy("Configuracao/DadosConfig.json", "saida/" )
 
 
 # Ler arquivo original
-with open("saida/DataSourcesTimeStamp.json", "r", encoding="utf-8") as f:
+with open("saida/DadosConfig.json", "r", encoding="utf-8") as f:
     conteudo = f.read()
 
 # Replace
     conteudo = conteudo.replace("USN", prefix_usina)
 
 # Sobrescrever o arquivo original
-with open("saida/DataSourcesTimeStamp.json", "w", encoding="utf-8") as f:
+with open("saida/DadosConfig.json", "w", encoding="utf-8") as f:
     f.write(conteudo)
 
 
-print("Arquivo Json gerado em saida/DataSourcesTimeStamp.json!")
+print("Arquivo Json gerado em saida/DadosConfig.json!")
