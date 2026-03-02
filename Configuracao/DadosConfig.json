@@ -157,6 +157,189 @@
             "suffix":""
          },
          "tolerance":0.0
+      },
+      {
+         "xid":"USN_CAL_Fator de Capacidade Diário Total",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "updateEvent":"MINUTES",
+            "context":[
+               {
+                  "varName":"energy",
+                  "dataPointXid":"USN_CAL_Energia Diária Total (KWh)"
+               },
+               {
+                  "varName":"KWp",
+                  "dataPointXid":"USN_VIR_Capacidade Instalada Total (KWp)"
+               },
+               {
+                  "varName":"latitude",
+                  "dataPointXid":"USN_VIR_Latitude da Usina (graus)"
+               },
+               {
+                  "varName":"longitude",
+                  "dataPointXid":"USN_VIR_Longitude da Usina (graus)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"\/\/ DADOS DA USINA\n\nvar lat = latitude.value;      \/\/ graus\nvar lon = longitude.value;     \/\/ graus\nvar capacity = KWp.value;      \/\/ kWp\nvar energia = energy.value;    \/\/ kWh do dia\n\n\/\/ VALIDAÇÕES INICIAIS\n\nif (!capacity || capacity <= 0) return 0;\nif (!energia || energia < 0) energia = 0;\n\n\/\/ DATA ATUAL\n\nvar agora = new Date();\nvar ano = agora.getFullYear();\n\n\/\/ Dia do ano\nvar inicioAno = new Date(ano, 0, 0);\nvar diff = agora - inicioAno;\nvar umDia = 1000 * 60 * 60 * 24;\nvar N = Math.floor(diff \/ umDia);\n\n\/\/ Hora atual decimal\nvar horaAtual = agora.getHours() +\n                agora.getMinutes()\/60 +\n                agora.getSeconds()\/3600;\n\n\n\/\/ FUNÇÕES AUXILIARES\n\nfunction rad(g) { return g * Math.PI \/ 180; }\nfunction deg(r) { return r * 180 \/ Math.PI; }\n\n\n\/\/ DECLINAÇÃO SOLAR\n\nvar decl = 23.45 * Math.sin(rad((360\/365) * (284 + N)));\n\n\/\/ ÂNGULO HORÁRIO\nvar cosW = -Math.tan(rad(lat)) * Math.tan(rad(decl));\n\n\/\/ Correção matemática\nif (cosW > 1) cosW = 1;\nif (cosW < -1) cosW = -1;\n\nvar W = deg(Math.acos(cosW));\n\n\/\/ Duração real do dia\nvar duracaoDia = (2 * W) \/ 15;\n\n\n\/\/ AJUSTE POR LONGITUDE (Brasil UTC-3)\n\nvar fuso = -3;\nvar meridianoCentral = fuso * 15;\nvar correcaoLongitude = (lon - meridianoCentral) \/ 15;\n\nvar meioDiaSolar = 12 - correcaoLongitude;\n\nvar nascerSol = meioDiaSolar - duracaoDia\/2;\nvar porSol = meioDiaSolar + duracaoDia\/2;\n\n\n\/\/ HORAS SOLARES DECORRIDAS\n\nvar horasSolares;\n\nif (horaAtual <= nascerSol) {\n    horasSolares = 0;\n} \nelse if (horaAtual >= porSol) {\n    horasSolares = duracaoDia;\n} \nelse {\n    horasSolares = horaAtual - nascerSol;\n}\n\n\/\/ Proteção\nif (horasSolares <= 0) return 0;\n\n\n\/\/ CÁLCULO DO FC\n\nvar FC = (energia \/ (capacity * horasSolares)) * 100;\n\n\n\/\/ CLAMP DE SEGURANÇA (0% a 100%)\n\nif (isNaN(FC) || !isFinite(FC)) {\n    return 0;\n}\n\nif (FC > 100) FC = 100;\nif (FC < 0) FC = 0;\n\nreturn FC;",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Calculados",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"USN_Dados Calculados",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_CAL_Fator de Capacidade Diário Total",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.0",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_CAL_Fator de Capacidade Mensal Total",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "updateEvent":"CRON",
+            "context":[
+               {
+                  "varName":"energy",
+                  "dataPointXid":"USN_CAL_Energia Mensal Total (KWh)"
+               },
+               {
+                  "varName":"KWp",
+                  "dataPointXid":"USN_VIR_Capacidade Instalada Total (KWp)"
+               },
+               {
+                  "varName":"latitude",
+                  "dataPointXid":"USN_VIR_Latitude da Usina (graus)"
+               },
+               {
+                  "varName":"longitude",
+                  "dataPointXid":"USN_VIR_Longitude da Usina (graus)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"\n\/\/ DADOS DA USINA \n\nvar lat = latitude.value;\nvar lon = longitude.value;\nvar capacity = (KWp.value \/ 1000); \/\/ MWp\nvar energia = energy.value; \/\/ kWh mês acumulado\n\n\n\/\/ VALIDAÇÕES INICIAIS\n\nif (!capacity || capacity <= 0) return 0;\nif (!energia || energia < 0) energia = 0;\n\n\n\/\/ DATA ATUAL\n\nvar agora = new Date();\nvar ano = agora.getFullYear();\nvar mes = agora.getMonth();\nvar diaAtual = agora.getDate();\n\n\n\/\/ FUNÇÕES\n\nfunction rad(g) { return g * Math.PI \/ 180; }\nfunction deg(r) { return r * 180 \/ Math.PI; }\n\nfunction diaDoAno(data) {\n    var inicio = new Date(data.getFullYear(), 0, 0);\n    var diff = data - inicio;\n    return Math.floor(diff \/ (1000 * 60 * 60 * 24));\n}\n\nfunction duracaoSolarDia(data) {\n    var N = diaDoAno(data);\n    var decl = 23.45 * Math.sin(rad((360\/365) * (284 + N)));\n    var cosW = -Math.tan(rad(lat)) * Math.tan(rad(decl));\n    \n    if (cosW > 1) cosW = 1;\n    if (cosW < -1) cosW = -1;\n    \n    var W = deg(Math.acos(cosW));\n    return (2 * W) \/ 15;\n}\n\n\n\/\/ SOMA DAS HORAS SOLARES DOS DIAS COMPLETOS\n\nvar horasTotal = 0;\n\nfor (var d = 1; d < diaAtual; d++) {\n    var dataLoop = new Date(ano, mes, d);\n    horasTotal += duracaoSolarDia(dataLoop);\n}\n\n\n\/\/ HORAS SOLARES DO DIA ATUAL\n\nvar duracaoHoje = duracaoSolarDia(agora);\n\n\/\/ ajuste longitude\nvar fuso = -3;\nvar meridianoCentral = fuso * 15;\nvar correcaoLongitude = (lon - meridianoCentral) \/ 15;\nvar meioDiaSolar = 12 - correcaoLongitude;\n\nvar nascerSol = meioDiaSolar - duracaoHoje \/ 2;\nvar porSol = meioDiaSolar + duracaoHoje \/ 2;\n\nvar horaAtual = agora.getHours() + \n                agora.getMinutes()\/60 + \n                agora.getSeconds()\/3600;\n\nvar horasHoje;\n\nif (horaAtual <= nascerSol) {\n    horasHoje = 0;\n} \nelse if (horaAtual >= porSol) {\n    horasHoje = duracaoHoje;\n} \nelse {\n    horasHoje = horaAtual - nascerSol;\n}\n\nhorasTotal += horasHoje;\n\n\n\/\/ PROTEÇÃO CONTRA DIVISÃO INVÁLIDA\n\nif (horasTotal <= 0) return 0;\n\n\/\/ CÁLCULO DO FC MENSAL\n\nvar FC = (energia \/ (capacity * horasTotal)) * 100;\n\n\/\/ CLAMP DE SEGURANÇA (0% a 100%)\n\nif (isNaN(FC) || !isFinite(FC)) {\n    return 0;\n}\n\nif (FC > 100) FC = 100;\nif (FC < 0) FC = 0;\n\nreturn FC;",
+            "settable":false,
+            "updateCronPattern":"0 0 18 * * ?"
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Calculados",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"USN_Dados Calculados",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_CAL_Fator de Capacidade Mensal Total",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.0",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_CAL_Fator de Capacidade Anual Total",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "updateEvent":"WEEKS",
+            "context":[
+               {
+                  "varName":"energy",
+                  "dataPointXid":"USN_CAL_Energia Anual Total (GWh)"
+               },
+               {
+                  "varName":"KWp",
+                  "dataPointXid":"USN_VIR_Capacidade Instalada Total (KWp)"
+               },
+               {
+                  "varName":"latitude",
+                  "dataPointXid":"USN_VIR_Latitude da Usina (graus)"
+               },
+               {
+                  "varName":"longitude",
+                  "dataPointXid":"USN_VIR_Longitude da Usina (graus)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"\n\/\/ DADOS \n\nvar lat = latitude.value;\nvar lon = longitude.value;\nvar capacity = (KWp.value \/ 1000000); \/\/ GWp\nvar energia = energy.value; \/\/ GWh ano acumulado\n\n\/\/ VALIDAÇÕES INICIAIS\n\nif (!capacity || capacity <= 0) return 0;\nif (!energia || energia < 0) energia = 0;\n\n\/\/ DATA\n\nvar agora = new Date();\nvar ano = agora.getFullYear();\nvar mesAtual = agora.getMonth();\nvar diaAtual = agora.getDate();\n\n\n\/\/ FUNÇÕES \n\nfunction rad(g) { return g * Math.PI \/ 180; }\nfunction deg(r) { return r * 180 \/ Math.PI; }\n\nfunction diaDoAno(data) {\n    var inicio = new Date(data.getFullYear(), 0, 0);\n    var diff = data - inicio;\n    return Math.floor(diff \/ (1000 * 60 * 60 * 24));\n}\n\nfunction duracaoSolarDia(data) {\n    var N = diaDoAno(data);\n    var decl = 23.45 * Math.sin(rad((360\/365) * (284 + N)));\n    var cosW = -Math.tan(rad(lat)) * Math.tan(rad(decl));\n    \n    if (cosW > 1) cosW = 1;\n    if (cosW < -1) cosW = -1;\n    \n    var W = deg(Math.acos(cosW));\n    return (2 * W) \/ 15;\n}\n\n\/\/  SOMA DAS HORAS SOLARES DESDE JANEIRO \n\nvar horasTotal = 0;\n\n\/\/ Meses completos\nfor (var m = 0; m < mesAtual; m++) {\n    var diasNoMes = new Date(ano, m + 1, 0).getDate();\n    for (var d = 1; d <= diasNoMes; d++) {\n        horasTotal += duracaoSolarDia(new Date(ano, m, d));\n    }\n}\n\n\/\/ Dias completos do mês atual\nfor (var d = 1; d < diaAtual; d++) {\n    horasTotal += duracaoSolarDia(new Date(ano, mesAtual, d));\n}\n\n\n\/\/ HORAS DO DIA ATUAL \n\nvar duracaoHoje = duracaoSolarDia(agora);\n\nvar fuso = -3;\nvar meridianoCentral = fuso * 15;\nvar correcaoLongitude = (lon - meridianoCentral) \/ 15;\nvar meioDiaSolar = 12 - correcaoLongitude;\n\nvar nascerSol = meioDiaSolar - duracaoHoje \/ 2;\nvar porSol = meioDiaSolar + duracaoHoje \/ 2;\n\nvar horaAtual = agora.getHours() + \n                agora.getMinutes()\/60 + \n                agora.getSeconds()\/3600;\n\nvar horasHoje;\n\nif (horaAtual <= nascerSol) {\n    horasHoje = 0;\n} \nelse if (horaAtual >= porSol) {\n    horasHoje = duracaoHoje;\n} \nelse {\n    horasHoje = horaAtual - nascerSol;\n}\n\nhorasTotal += horasHoje;\n\n\n\/\/ PROTEÇÃO FINAL \n\nif (horasTotal <= 0) return 0;\n\n\n\/\/ FC ANUAL\n\nvar FC = (energia \/ (capacity * horasTotal)) * 100;\n\n\n\/\/ CLAMP 0\u2013100% \n\nif (isNaN(FC) || !isFinite(FC)) {\n    return 0;\n}\n\nif (FC > 100) FC = 100;\nif (FC < 0) FC = 0;\n\nreturn FC;",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Calculados",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"USN_Dados Calculados",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_CAL_Fator de Capacidade Anual Total",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.0",
+            "suffix":""
+         },
+         "tolerance":0.0
       }
    ]
 }

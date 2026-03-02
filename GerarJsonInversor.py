@@ -109,6 +109,9 @@ for i in range(inv_quantidade):
     with open("temp/DataPoints.json", "r", encoding="utf-8") as f:
         conteudo = f.read()
 
+    with open("Inversores/Genericos.json", "r", encoding="utf-8") as f:
+        conteudo  += f.read()
+
     conteudo = ( 
         conteudo
             .replace("_SMART1","_SMART" + skid)
