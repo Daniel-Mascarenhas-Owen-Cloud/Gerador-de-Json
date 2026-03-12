@@ -1,19 +1,15 @@
 import shutil
 import os
+import sys
 
 os.makedirs("temp/saida", exist_ok=True)
 os.makedirs("saida", exist_ok=True)
 
-tipo_NCU = input("Qual o tipo do NCU? (Ex: A)\n")
-tipo_NCU = tipo_NCU.upper()
-
-usina = input("Qual o nome da usina?\n")
-
-prefix_usina = input("Qual o prefixo da usina?\n")
-
-NCU = input("Qual o número da NCU?\n")
-
-IP = input("Qual o IP do DataSource?\n")
+tipo_NCU = sys.argv[1].upper()
+usina = sys.argv[2]
+prefix_usina = sys.argv[3]
+NCU = sys.argv[4]
+IP = sys.argv[5]
 
 
 while(tipo_NCU != 'A'):
@@ -48,7 +44,7 @@ conteudo = (
     )
 
 # Sobrescrever o arquivo original
-with open("saida/NCU.json", "w", encoding="utf-8") as f:
+with open(f"saida/NCU{NCU}.json", "w", encoding="utf-8") as f:
     f.write(conteudo)
 
 # Apagar temp

@@ -6,20 +6,22 @@ os.makedirs("temp/saida", exist_ok=True)
 
 os.makedirs("saida", exist_ok=True)
 
-tipo_inversor = input("Qual o tipo do inversor? B ou C?\n")
-tipo_inversor = tipo_inversor.upper()
+import shutil
+import os
+import math
+import sys
 
-usina = input("Qual o nome da usina?\n")
+os.makedirs("temp/saida", exist_ok=True)
+os.makedirs("saida", exist_ok=True)
 
-prefix_usina = input("Qual o prefixo da usina?\n")
-
-skid = input("Qual o número do Skid?\n")
-
-IP = input("Qual o IP do DataSource?\n")
-
-inv_quantidade = int(input("Qual é a quantidade de inversores?\n"))
-
-numero_slaveid = int(input("Qual é o número do primeiro slaveId?\n"))
+# argumentos vindos do app.py
+tipo_inversor = sys.argv[1].upper()
+usina = sys.argv[2]
+prefix_usina = sys.argv[3]
+skid = sys.argv[4]
+IP = sys.argv[5]
+inv_quantidade = int(sys.argv[6])
+numero_slaveid = int(sys.argv[7])
 
 
 
@@ -147,7 +149,7 @@ conteudo = (
 )
 
 # Sobrescrever o arquivo original
-with open("saida/inversor.json", "w", encoding="utf-8") as f:
+with open(f"saida/inversor{skid}.json", "w", encoding="utf-8") as f:
     f.write(conteudo)
 
 

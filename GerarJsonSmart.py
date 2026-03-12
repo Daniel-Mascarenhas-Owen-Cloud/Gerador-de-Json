@@ -1,19 +1,16 @@
 import shutil
 import os
 import json
+import sys
 
 os.makedirs("saida", exist_ok=True)
 
-tipo_smartlogger = input("Qual o tipo do smartlogger?\n")
-tipo_smartlogger = tipo_smartlogger.upper()
 
-usina = input("Qual o nome da usina?\n")
-
-prefix_usina = input("Qual o prefixo da usina?\n")
-
-skid = input("Qual o número do Skid?\n")
-
-IP = input("Qual o IP do DataSource?\n")
+tipo_smartlogger = sys.argv[1].upper()
+usina = sys.argv[2]
+prefix_usina = sys.argv[3]
+skid = sys.argv[4]
+IP = sys.argv[5]
 
 
 while(tipo_smartlogger != 'A'):
@@ -62,7 +59,7 @@ conteudo = (
     )
 
 # Sobrescrever o arquivo original
-with open("saida/smartlogger.json", "w", encoding="utf-8") as f:
+with open(f"saida/smartlogger{skid}.json", "w", encoding="utf-8") as f:
     f.write(conteudo)
 
 print("Arquivo Json gerado em saida/smartlogger.json!")

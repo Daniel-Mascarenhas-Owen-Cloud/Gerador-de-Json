@@ -1,21 +1,16 @@
 import shutil
 import os
 import json
+import sys
 
 os.makedirs("saida", exist_ok=True)
 
-tipo_Multimedidor = input("Qual o tipo do Multimedidor?\n")
-tipo_Multimedidor = tipo_Multimedidor.upper()
-
-usina = input("Qual o nome da usina?\n")
-
-prefix_usina = input("Qual o prefixo da usina?\n")
-
-cabine = input("Qual o número da Cabine?\n")
-
-IP = input("Qual o IP do DataSource?\n")
-
-slave_id = input("Qual o Slave Address?\n")
+tipo_Multimedidor = sys.argv[1].upper()
+usina = sys.argv[2]
+prefix_usina = sys.argv[3]
+cabine = sys.argv[4]
+IP = sys.argv[5]
+slave_id = sys.argv[6]
 
 
 while(tipo_Multimedidor != 'A'):
@@ -51,7 +46,7 @@ conteudo = (
     )
 
 # Sobrescrever o arquivo original
-with open("saida/Multimedidor.json", "w", encoding="utf-8") as f:
+with open(f"saida/Multimedidor{cabine}.json", "w", encoding="utf-8") as f:
     f.write(conteudo)
 
 print("Arquivo Json gerado em saida/Multimedidor.json!")

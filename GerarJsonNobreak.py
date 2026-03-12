@@ -1,16 +1,13 @@
 import shutil
 import os
+import sys
 
 os.makedirs("saida", exist_ok=True)
 
-tipo_equipamento = input("Qual o tipo do Nobreak?\n")
-tipo_equipamento = tipo_equipamento.upper()
-
-usina = input("Qual o nome da usina?\n")
-
-prefix_usina = input("Qual o prefixo da usina?\n")
-
-IP = input("Qual o IP do DataSource?\n")
+tipo_equipamento = sys.argv[1].upper()
+usina = sys.argv[2]
+prefix_usina = sys.argv[3]
+IP = sys.argv[4]
 
 
 while(tipo_equipamento != 'A'):

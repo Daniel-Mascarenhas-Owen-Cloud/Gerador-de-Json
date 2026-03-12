@@ -3,16 +3,14 @@ import copy
 import math
 import os
 import shutil
+import sys
 
-# ====== INPUTS DO USUÁRIO ======
-tipo_tracker = input("Qual o tipo do Tracker? ").strip()
-tipo_tracker = tipo_tracker.upper()
-# tipo_tracker = "A"
-nome_usina = input("Qual o nome da usina? ").strip()
-prefixo = input("Qual o prefixo? (ex: USN) ").strip()
-ncu_num = input("Qual o número da NCU? ").strip()
-IP = input("Qual o IP? ").strip()
-qtd_trackers = int(input("Qual a quantidade de Trackers? "))
+tipo_tracker = sys.argv[1].strip().upper()
+nome_usina = sys.argv[2].strip()
+prefixo = sys.argv[3].strip()
+ncu_num = sys.argv[4].strip()
+IP = sys.argv[5].strip()
+qtd_trackers = int(sys.argv[6])
 
 
 destino = "saida/tracker.json"
@@ -134,7 +132,7 @@ with open("saida/tracker.json", "r", encoding="utf-8") as f:
 dados["dataPoints"] = []
 dados["dataPoints"] = novo_json["dataPoints"]
 
-with open("saida/tracker.json", "w", encoding="utf-8") as f:
+with open(f"saida/tracker{ncu_num}.json", "w", encoding="utf-8") as f:
      json.dump(dados, f, indent=3, ensure_ascii=False)
 
 

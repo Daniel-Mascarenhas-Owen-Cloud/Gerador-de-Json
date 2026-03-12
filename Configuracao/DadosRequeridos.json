@@ -1,7 +1,7 @@
 {
    "dataPoints": [
       {
-         "xid": "IPX_CAL_Energia Diária Total (KWh)",
+         "xid": "USN_CAL_Energia Diária Total (KWh)",
          "loggingType": "INTERVAL",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -12,155 +12,167 @@
             "context": [
                {
                   "varName": "a",
-                  "dataPointXid": "IPX_Smart2_MED_Energia Diaria Total (KWh)"
-               }
-            ],
-            "executionDelayPeriodType": "SECONDS",
-            "executionDelaySeconds": 0,
-            "script": "energy = a.value;\nreturn energy;",
-            "settable": false,
-            "updateCronPattern": ""
-         },
-         "eventDetectors": [],
-         "engineeringUnits": "",
-         "purgeStrategy": "PERIOD",
-         "chartColour": null,
-         "chartRenderer": null,
-         "dataSourceXid": "IPX_Dados Calculados",
-         "defaultCacheSize": 1,
-         "description": "",
-         "deviceName": "IPX_Dados Calculados",
-         "discardExtremeValues": false,
-         "discardHighLimit": 1.7976931348623157E308,
-         "discardLowLimit": -1.7976931348623157E308,
-         "enabled": true,
-         "eventTextRenderer": {
-            "type": "EVENT_NONE"
-         },
-         "intervalLoggingPeriod": 5,
-         "name": "IPX_CAL_Energia Diária Total (KWh)",
-         "purgePeriod": 1,
-         "purgeValuesLimit": 100,
-         "textRenderer": {
-            "type": "ANALOG",
-            "format": "0.0",
-            "suffix": ""
-         },
-         "tolerance": 0.0
-      },
-      {
-         "xid": "IPX_CAL_Energia Mensal Total (KWh)",
-         "loggingType": "INTERVAL",
-         "intervalLoggingPeriodType": "MINUTES",
-         "intervalLoggingType": "INSTANT",
-         "purgeType": "YEARS",
-         "pointLocator": {
-            "dataType": "NUMERIC",
-            "updateEvent": "CONTEXT_UPDATE",
-            "context": [
-               {
-                  "varName": "a",
-                  "dataPointXid": "IPX_CAL_Energia Mensal 2 (KWh)"
-               }
-            ],
-            "executionDelayPeriodType": "SECONDS",
-            "executionDelaySeconds": 0,
-            "script": "return a.value;",
-            "settable": false,
-            "updateCronPattern": ""
-         },
-         "eventDetectors": [],
-         "engineeringUnits": "",
-         "purgeStrategy": "PERIOD",
-         "chartColour": null,
-         "chartRenderer": null,
-         "dataSourceXid": "IPX_Dados Calculados",
-         "defaultCacheSize": 1,
-         "description": "",
-         "deviceName": "IPX_Dados Calculados",
-         "discardExtremeValues": false,
-         "discardHighLimit": 1.7976931348623157E308,
-         "discardLowLimit": -1.7976931348623157E308,
-         "enabled": true,
-         "eventTextRenderer": {
-            "type": "EVENT_NONE"
-         },
-         "intervalLoggingPeriod": 5,
-         "name": "IPX_CAL_Energia Mensal Total (KWh)",
-         "purgePeriod": 1,
-         "purgeValuesLimit": 100,
-         "textRenderer": {
-            "type": "ANALOG",
-            "format": "0.0",
-            "suffix": ""
-         },
-         "tolerance": 0.0
-      },
-      {
-         "xid": "IPX_CAL_Energia Anual Total (GWh)",
-         "loggingType": "INTERVAL",
-         "intervalLoggingPeriodType": "MINUTES",
-         "intervalLoggingType": "INSTANT",
-         "purgeType": "YEARS",
-         "pointLocator": {
-            "dataType": "NUMERIC",
-            "updateEvent": "CONTEXT_UPDATE",
-            "context": [
-               {
-                  "varName": "a",
-                  "dataPointXid": "IPX_CAL_Energia Anual 1 (GWh)"
-               }
-            ],
-            "executionDelayPeriodType": "SECONDS",
-            "executionDelaySeconds": 0,
-            "script": "return a.value;",
-            "settable": false,
-            "updateCronPattern": ""
-         },
-         "eventDetectors": [],
-         "engineeringUnits": "",
-         "purgeStrategy": "PERIOD",
-         "chartColour": null,
-         "chartRenderer": null,
-         "dataSourceXid": "IPX_Dados Calculados",
-         "defaultCacheSize": 1,
-         "description": "",
-         "deviceName": "IPX_Dados Calculados",
-         "discardExtremeValues": false,
-         "discardHighLimit": 1.7976931348623157E308,
-         "discardLowLimit": -1.7976931348623157E308,
-         "enabled": true,
-         "eventTextRenderer": {
-            "type": "EVENT_NONE"
-         },
-         "intervalLoggingPeriod": 5,
-         "name": "IPX_CAL_Energia Anual Total (GWh)",
-         "purgePeriod": 1,
-         "purgeValuesLimit": 100,
-         "textRenderer": {
-            "type": "ANALOG",
-            "format": "0.0",
-            "suffix": ""
-         },
-         "tolerance": 0.0
-      },
-      {
-         "xid": "IPX_CAL_Energia Mensal 2 (KWh)",
-         "loggingType": "INTERVAL",
-         "intervalLoggingPeriodType": "MINUTES",
-         "intervalLoggingType": "INSTANT",
-         "purgeType": "YEARS",
-         "pointLocator": {
-            "dataType": "NUMERIC",
-            "updateEvent": "CONTEXT_UPDATE",
-            "context": [
-               {
-                  "varName": "a",
-                  "dataPointXid": "IPX_Inv_2.1_MED_Energia Mensal (KWh)"
+                  "dataPointXid": "USN_Smart1_MED_Energia Diaria Total (KWh)"
                },
                {
                   "varName": "b",
-                  "dataPointXid": "IPX_Inv_2.2_MED_Energia Mensal (KWh)"
+                  "dataPointXid": "USN_Smart2_MED_Energia Diaria Total (KWh)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "energy = a.value + b.value;\nreturn energy;",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": "",
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_CAL_Energia Diária Total (KWh)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.0",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_CAL_Energia Mensal Total (KWh)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_CAL_Energia Mensal 1 (KWh)"
+               },
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_CAL_Energia Mensal 2 (KWh)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return a.value + b.value;",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": "",
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_CAL_Energia Mensal Total (KWh)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.0",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_CAL_Energia Anual Total (GWh)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_CAL_Energia Anual 1 (GWh)"
+               },
+               {
+                  "varName": "b",
+                  "dataPointXid": "USN_CAL_Energia Anual 2 (GWh)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return a.value + b.value;",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": "",
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_CAL_Energia Anual Total (GWh)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.0",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_CAL_Energia Mensal 1 (KWh)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_Inv_2.1_MED_Energia Mensal (KWh)"
+               },
+               {
+                  "varName": "b",
+                  "dataPointXid": "USN_Inv_2.2_MED_Energia Mensal (KWh)"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -174,10 +186,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_Dados Calculados",
+         "dataSourceXid": "USN_Dados Calculados",
          "defaultCacheSize": 1,
          "description": "",
-         "deviceName": "IPX_Dados Calculados",
+         "deviceName": "USN_Dados Calculados",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -186,7 +198,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_CAL_Energia Mensal 2 (KWh)",
+         "name": "USN_CAL_Energia Mensal 2 (KWh)",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -197,7 +209,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_CAL_Energia Anual 2 (GWh)",
+         "xid": "USN_CAL_Energia Anual 1 (GWh)",
          "loggingType": "INTERVAL",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -208,11 +220,11 @@
             "context": [
                {
                   "varName": "a",
-                  "dataPointXid": "IPX_Inv_2.1_MED_Energia Anual (KWh)"
+                  "dataPointXid": "USN_Inv_2.1_MED_Energia Anual (KWh)"
                },
                {
                   "varName": "b",
-                  "dataPointXid": "IPX_Inv_2.2_MED_Energia Anual (KWh)"
+                  "dataPointXid": "USN_Inv_2.2_MED_Energia Anual (KWh)"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -226,10 +238,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_Dados Calculados",
+         "dataSourceXid": "USN_Dados Calculados",
          "defaultCacheSize": 1,
          "description": "",
-         "deviceName": "IPX_Dados Calculados",
+         "deviceName": "USN_Dados Calculados",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -238,7 +250,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_CAL_Energia Anual 2 (GWh)",
+         "name": "USN_CAL_Energia Anual 2 (GWh)",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -247,6 +259,59 @@
             "suffix": ""
          },
          "tolerance": 0.0
+      },
+      {
+         "xid":"USN_CAL_Potência Ativa Total Loggers (KW)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"a",
+                  "dataPointXid":"USN_Smart1_MED_Potência Ativa Total (KW)"
+               },
+               {
+                  "varName":"b",
+                  "dataPointXid":"USN_Smart2_MED_Potência Ativa Total (KW)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"return a.value + b.value;",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Calculados",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"USN_Dados Calculados",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_CAL_Potência Ativa Total Loggers (KW)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
       }
    ]
 }

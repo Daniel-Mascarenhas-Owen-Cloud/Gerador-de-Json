@@ -1,16 +1,13 @@
 import shutil
 import os
+import sys
 
 os.makedirs("saida", exist_ok=True)
 
-tipo_ETM = input("Qual o tipo da estação meteorológica?\n")
-tipo_ETM = tipo_ETM.upper()
 
-usina = input("Qual o nome da usina?\n")
-
-prefix_usina = input("Qual o prefixo da usina?\n")
-
-IP = input("Qual o IP do DataSource?\n")
+tipo_ETM = sys.argv[1].upper()
+prefix_usina = sys.argv[2]
+IP = sys.argv[3]
 
 
 while(tipo_ETM != 'A'):
