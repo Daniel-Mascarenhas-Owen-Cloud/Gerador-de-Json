@@ -27,7 +27,7 @@ numero_slaveid = int(sys.argv[7])
 
 # Criar arquivo Json com inicio padrão
 shutil.copy("base/inicio.json", "saida/" )
-destino = "saida/inversor.json"
+destino = f"saida/inversor{skid}.json"
 if os.path.exists(destino):
     os.remove(destino)
 
@@ -43,7 +43,7 @@ endereco_DataSource = "Inversores/" + tipo + "/DataSource.json"
 endereco_DataPoint = "Inversores/" + tipo + "/DataPoints.json"
 
 if tipo_inversor == "C":
-    with open("saida/inversor.json", "a", encoding="utf-8") as destino:
+    with open(f"saida/inversor{skid}.json", "a", encoding="utf-8") as destino:
         with open("INV_C/Sungrow.json", "r", encoding="utf-8") as origem:
             destino.write(origem.read())
 
@@ -54,7 +54,7 @@ quantos_DataSources = math.ceil(inv_quantidade / 5 )
 for i in range(quantos_DataSources): 
 
     if i>0:
-        with open("saida/inversor.json", "a", encoding="utf-8") as destino:
+        with open(f"saida/inversor{skid}.json", "a", encoding="utf-8") as destino:
             destino.write(",")
     
     shutil.copy(endereco_DataSource, "temp/" )
@@ -72,22 +72,22 @@ for i in range(quantos_DataSources):
         )
 
 
-    with open("saida/inversor.json", "a", encoding="utf-8") as destino:
+    with open(f"saida/inversor{skid}.json", "a", encoding="utf-8") as destino:
             destino.write(conteudo)
 
 
 
-with open("saida/inversor.json", "a", encoding="utf-8") as destino:
+with open(f"saida/inversor{skid}.json", "a", encoding="utf-8") as destino:
     with open("base/tag_dataPoint.json", "r", encoding="utf-8") as origem:
         destino.write(origem.read())
 
 
-    with open("saida/inversor.json", "r", encoding="utf-8") as f:
+    with open(f"saida/inversor{skid}.json", "r", encoding="utf-8") as f:
         conteudo = f.read()
 
     conteudo = conteudo[:-1] 
 
-    with open("saida/inversor.json", "w", encoding="utf-8") as f:
+    with open(f"saida/inversor{skid}.json", "w", encoding="utf-8") as f:
         f.write(conteudo)
 
 
@@ -102,7 +102,7 @@ for i in range(inv_quantidade):
 
 
     if i>0:
-        with open("saida/inversor.json", "a", encoding="utf-8") as destino:
+        with open(f"saida/inversor{skid}.json", "a", encoding="utf-8") as destino:
             destino.write(",")
     
     shutil.copy(endereco_DataPoint, "temp/" )
@@ -125,18 +125,18 @@ for i in range(inv_quantidade):
     )
 
 
-    with open("saida/inversor.json", "a", encoding="utf-8") as destino:
+    with open(f"saida/inversor{skid}.json", "a", encoding="utf-8") as destino:
             destino.write(conteudo)
 
 
-with open("saida/inversor.json", "a", encoding="utf-8") as destino:
+with open(f"saida/inversor{skid}.json", "a", encoding="utf-8") as destino:
     with open("base/fim.json", "r", encoding="utf-8") as origem:
         destino.write(origem.read())
 
 
 
 # Ler arquivo original
-with open("saida/inversor.json", "r", encoding="utf-8") as f:
+with open(f"saida/inversor{skid}.json", "r", encoding="utf-8") as f:
     conteudo = f.read()
 
 # Replace
@@ -158,6 +158,6 @@ with open(f"saida/inversor{skid}.json", "w", encoding="utf-8") as f:
 # Apagar temp
 shutil.rmtree("temp")
 
-print("Arquivo Json gerado em saida/inversor.json!")
+print(f"Arquivo Json gerado em saida/inversor{skid}.json!")
 
 # conteudo = conteudo.replace("Skid x","Skid " + skid)

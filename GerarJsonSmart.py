@@ -21,13 +21,13 @@ tipo = "Smart_TIPO_" + tipo_smartlogger
 
 # Criar arquivo Json com inicio padrão
 shutil.copy("Smarts/" + tipo + "/" + tipo + ".json", "saida/" )
-destino = "saida/smartlogger.json"
+destino = f"saida/smartlogger{skid}.json"
 if os.path.exists(destino):
     os.remove(destino)
 
 os.rename("saida/" + tipo + ".json", destino)
 
-with open("saida/smartlogger.json", "r", encoding="utf-8") as f:
+with open(f"saida/smartlogger{skid}.json", "r", encoding="utf-8") as f:
     smartJson = json.load(f)
 
 with open("Smarts/Genericos.json", "r", encoding="utf-8") as f:
@@ -35,12 +35,12 @@ with open("Smarts/Genericos.json", "r", encoding="utf-8") as f:
 
     smartJson["dataPoints"].extend(smartJson_generico["dataPoints"])
 
-with open("saida/smartlogger.json", "w", encoding="utf-8") as f:
+with open(f"saida/smartlogger{skid}.json", "w", encoding="utf-8") as f:
     json.dump(smartJson, f, indent=3, ensure_ascii=False)
 
 
 # Ler arquivo original
-with open("saida/smartlogger.json", "r", encoding="utf-8") as f:
+with open(f"saida/smartlogger{skid}.json", "r", encoding="utf-8") as f:
     conteudo = f.read()
 
 # Replace
@@ -62,4 +62,4 @@ conteudo = (
 with open(f"saida/smartlogger{skid}.json", "w", encoding="utf-8") as f:
     f.write(conteudo)
 
-print("Arquivo Json gerado em saida/smartlogger.json!")
+print(f"Arquivo Json gerado em saida/smartlogger{skid}.json!")

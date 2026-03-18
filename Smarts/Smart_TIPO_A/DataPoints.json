@@ -15,7 +15,7 @@
             "offset":40000,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -63,7 +63,7 @@
             "offset":40200,
             "registerCount":1,
             "settableOverride":true,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -111,7 +111,7 @@
             "offset":40201,
             "registerCount":1,
             "settableOverride":true,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -159,7 +159,7 @@
             "offset":40202,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -207,7 +207,7 @@
             "offset":40203,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -255,7 +255,7 @@
             "offset":40204,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -303,7 +303,7 @@
             "offset":40205,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -351,7 +351,7 @@
             "offset":40428,
             "registerCount":1,
             "settableOverride":true,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -399,7 +399,7 @@
             "offset":40422,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -447,7 +447,7 @@
             "offset":40429,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -495,7 +495,7 @@
             "offset":40500,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -543,7 +543,7 @@
             "offset":40523,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -591,7 +591,7 @@
             "offset":40532,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -639,7 +639,7 @@
             "offset":40544,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -687,7 +687,7 @@
             "offset":40560,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -735,7 +735,7 @@
             "offset":40572,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -783,7 +783,7 @@
             "offset":40573,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -831,7 +831,7 @@
             "offset":40574,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -879,7 +879,7 @@
             "offset":40685,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -927,7 +927,7 @@
             "offset":40723,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -975,7 +975,7 @@
             "offset":40521,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1023,7 +1023,7 @@
             "offset":50001,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1071,7 +1071,7 @@
             "offset":40562,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1119,7 +1119,7 @@
             "offset":40525,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1167,7 +1167,7 @@
             "offset":50000,
             "registerCount":1,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1215,7 +1215,7 @@
             "offset":50000,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1271,7 +1271,7 @@
             "offset":50000,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1327,7 +1327,7 @@
             "offset":50000,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1383,7 +1383,7 @@
             "offset":50000,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1439,7 +1439,7 @@
             "offset":50000,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1495,7 +1495,7 @@
             "offset":50000,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1551,7 +1551,7 @@
             "offset":50000,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1607,7 +1607,7 @@
             "offset":50000,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1663,7 +1663,7 @@
             "offset":50001,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1719,7 +1719,7 @@
             "offset":50001,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1775,7 +1775,7 @@
             "offset":50001,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1831,7 +1831,7 @@
             "offset":50001,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1887,7 +1887,7 @@
             "offset":50001,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1943,7 +1943,7 @@
             "offset":50001,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -1999,7 +1999,7 @@
             "offset":50001,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -2055,7 +2055,7 @@
             "offset":50001,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -2111,7 +2111,7 @@
             "offset":50001,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -2167,7 +2167,7 @@
             "offset":50001,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -2223,7 +2223,7 @@
             "offset":50001,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -2279,7 +2279,7 @@
             "offset":50001,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -2335,7 +2335,7 @@
             "offset":50001,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -2391,7 +2391,7 @@
             "offset":50001,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -2447,7 +2447,7 @@
             "offset":40700,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -2494,7 +2494,7 @@
             "offset":40700,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -2541,7 +2541,7 @@
             "offset":40700,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -2588,7 +2588,7 @@
             "offset":40700,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },
@@ -2635,7 +2635,7 @@
             "offset":0,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":true,
             "socketMonitor":false
          },
@@ -2682,7 +2682,7 @@
             "offset":40566,
             "registerCount":0,
             "settableOverride":false,
-            "slaveId":101,
+            "slaveId": 30,
             "slaveMonitor":false,
             "socketMonitor":false
          },

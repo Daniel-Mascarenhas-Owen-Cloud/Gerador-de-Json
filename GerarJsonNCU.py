@@ -20,7 +20,7 @@ tipo = "NCU_TIPO_" + tipo_NCU
 
 # Criar arquivo Json com inicio padrão
 shutil.copy("NCU/" + tipo + f"/{tipo}.json", "saida/" )
-destino = "saida/NCU.json"
+destino = f"saida/NCU{NCU}.json"
 if os.path.exists(destino):
     os.remove(destino)
 
@@ -30,7 +30,7 @@ os.rename("saida/" + tipo + ".json", destino)
 
 
 # Ler arquivo original
-with open("saida/NCU.json", "r", encoding="utf-8") as f:
+with open(f"saida/NCU{NCU}.json", "r", encoding="utf-8") as f:
     conteudo = f.read()
 
 # Replace
@@ -50,4 +50,4 @@ with open(f"saida/NCU{NCU}.json", "w", encoding="utf-8") as f:
 # Apagar temp
 shutil.rmtree("temp")
 
-print("Arquivo Json gerado em saida/NCU.json!")
+print(f"Arquivo Json gerado em saida/NCU{NCU}.json!")

@@ -13,7 +13,7 @@ IP = sys.argv[5].strip()
 qtd_trackers = int(sys.argv[6])
 
 
-destino = "saida/tracker.json"
+destino = f"saida/tracker{ncu_num}.json"
 if os.path.exists(destino):
     os.remove(destino)
 # Criar arquivo Json com inicio padrão
@@ -32,7 +32,7 @@ quantos_DataSources = math.ceil(qtd_trackers / 20 )
 for i in range(quantos_DataSources): 
 
     if i>0:
-        with open("saida/tracker.json", "a", encoding="utf-8") as destino:
+        with open(f"saida/tracker{ncu_num}.json", "a", encoding="utf-8") as destino:
             destino.write(",")
     
     shutil.copy(endereco_DataSource, "temp/" )
@@ -52,11 +52,11 @@ for i in range(quantos_DataSources):
         )
 
 
-    with open("saida/tracker.json", "a", encoding="utf-8") as destino:
+    with open(f"saida/tracker{ncu_num}.json", "a", encoding="utf-8") as destino:
             destino.write(conteudo)
 
             
-with open("saida/tracker.json", "a", encoding="utf-8") as destino:
+with open(f"saida/tracker{ncu_num}.json", "a", encoding="utf-8") as destino:
     with open("Base/fim.json", "r", encoding="utf-8") as origem:
         destino.write(origem.read())
 
@@ -126,7 +126,7 @@ for tracker in range(1, qtd_trackers + 1):
 
 
 
-with open("saida/tracker.json", "r", encoding="utf-8") as f:
+with open(f"saida/tracker{ncu_num}.json", "r", encoding="utf-8") as f:
         dados = json.load(f)
 
 dados["dataPoints"] = []

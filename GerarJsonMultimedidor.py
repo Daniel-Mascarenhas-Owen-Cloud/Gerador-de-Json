@@ -21,18 +21,18 @@ tipo = "Multimedidor_TIPO_" + tipo_Multimedidor
 
 # Criar arquivo Json com inicio padrão
 shutil.copy("Multimedidor/" + tipo + "/" + tipo + ".json", "saida/" )
-destino = "saida/Multimedidor.json"
+destino = "saida/Multimedidor{cabine}.json"
 if os.path.exists(destino):
     os.remove(destino)
 
 os.rename("saida/" + tipo + ".json", destino)
 
-with open("saida/Multimedidor.json", "r", encoding="utf-8") as f:
+with open(f"saida/Multimedidor{cabine}.json", "r", encoding="utf-8") as f:
     smartJson = json.load(f)
 
 
 # Ler arquivo original
-with open("saida/Multimedidor.json", "r", encoding="utf-8") as f:
+with open(f"saida/Multimedidor{cabine}.json", "r", encoding="utf-8") as f:
     conteudo = f.read()
 
 # Replace
@@ -49,4 +49,4 @@ conteudo = (
 with open(f"saida/Multimedidor{cabine}.json", "w", encoding="utf-8") as f:
     f.write(conteudo)
 
-print("Arquivo Json gerado em saida/Multimedidor.json!")
+print(f"Arquivo Json gerado em saida/Multimedidor{cabine}.json!")

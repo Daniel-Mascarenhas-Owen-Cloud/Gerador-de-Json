@@ -340,6 +340,128 @@
             "suffix":""
          },
          "tolerance":0.0
+      },
+      {
+         "xid":"USN_CAL_PR Total (%)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"energia",
+                  "dataPointXid":"USN_CAL_Energia Diária Total (KWh)"
+               },
+               {
+                  "varName":"POA",
+                  "dataPointXid":"USN_MED_Acumulado Diário - POA (Wh\/m²)"
+               },
+               {
+                  "varName":"Module1",
+                  "dataPointXid":"USN_MED_Temperatura do Módulo 1 (°C)"
+               },
+               {
+                  "varName":"capacity",
+                  "dataPointXid":"USN_VIR_Capacidade Instalada Total (KWp)"
+               },
+               {
+                  "varName":"expected",
+                  "dataPointXid":"USN_CAL_Energia Esperada Total (KWh)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"\/\/ Entradas\nvar energy = energia.value; \/\/ Produção do dia em kWh\nvar irrad = POA.value;     \/\/ Irradiação do dia em Wh\/m²\nvar temp = Module1.value;  \/\/ Temperatura instantânea do módulo em °C\nvar kwp = capacity.value;  \/\/ Potência pico do sistema em kW\nvar coef_temp = -0.0030;   \/\/ Coeficiente de temperatura (%\/°C)\nexpectedEnergy = expected.value; \/\/ Energia esperada \n\n\/\/ Corrigir energia para Wh\nvar energyWh = energy * 1000; \/\/ Convertendo de kWh para Wh\n\n\/\/ Performance Ratio com validação\nvar PR = 0;\nif (expectedEnergy > 0) {\n    PR = energyWh \/ (expectedEnergy * 1000); \/\/ Energia Esperada em Wh\n    if (PR > 1) {\n        PR = 0; \/\/ Força o valor para 0% se passar de 100%\n    }\n}\n\n\/\/ Resultado final em porcentagem\nreturn PR * 100;\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Calculados",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"USN_Dados Calculados",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":false,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_CAL_PR Total (%)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.0",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_CAL_Energia Esperada Total (KWh)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"POA",
+                  "dataPointXid":"USN_MED_Acumulado Diário - POA (Wh\/m²)"
+               },
+               {
+                  "varName":"Module1",
+                  "dataPointXid":"USN_MED_Temperatura do Módulo 1 (°C)"
+               },
+               {
+                  "varName":"Capacity",
+                  "dataPointXid":"USN_VIR_Capacidade Instalada Total (KWp)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"\/\/ Entradas\nvar irrad = POA.value;       \/\/ Irradiação do dia em Wh\/m²\nvar temp = Module1.value;     \/\/ Temperatura instantânea do módulo em °C\nvar KWp = Capacity.value;            \/\/ Potência pico do sistema em kW\nvar coef_temp = -0.0030;     \/\/ Coeficiente de temperatura (%\/°C)\n\n\/\/ Energia esperada ajustada pela temperatura\nvar tempFactor = 1 + ((temp - 25) * coef_temp); \/\/ Fator de correção térmica\nvar expectedEnergy = irrad * KWp * tempFactor;  \/\/ em Wh\n\nreturn expectedEnergy\/1000;  \/\/ Resultado em KWh\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Calculados",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_Dados Calculados",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":false,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_CAL_Energia Esperada Total (KWh)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
       }
    ]
 }
