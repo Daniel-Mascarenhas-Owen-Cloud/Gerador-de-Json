@@ -1169,7 +1169,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Célula Limpa (W/m²)",
+         "name":"USN_MED_Célula Suja (W/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1217,7 +1217,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Célula Limpa (W/m²)",
+         "name":"USN_MED_Tensão da Bateria (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
