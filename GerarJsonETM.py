@@ -17,7 +17,7 @@ while(tipo_ETM != 'A'):
 tipo = "ETM_TIPO_" + tipo_ETM
 
 # Criar arquivo Json com inicio padrão
-shutil.copy("ETM/" + tipo + "/ETM_TIPO_A.json", "saida/" )
+shutil.copy("ETM/" + tipo + "/" + tipo + ".json", "saida/" )
 destino = "saida/ETM.json"
 if os.path.exists(destino):
     os.remove(destino)

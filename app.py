@@ -18,6 +18,7 @@ while True:
         "7. Multimedidor\n"
         "8. GERAR TUDO\n"
         "9. CALCULOS\n"
+        "10. Relé\n"
     ).upper()
 
 # ---------------- CONFIG ----------------
@@ -231,6 +232,40 @@ while True:
             ",".join(inversores),
             str(qtd_skids)
         ])
+
+        sys.exit()
+
+
+# ---------------- RELÉ ----------------
+
+    elif action in ["RELÉ", "10"]:
+
+        qtd_rele = int(input("Quantos relés existem? "))
+        tipo_rele = input("Qual o tipo dos relés? ")
+
+        for i in range(qtd_rele):
+
+            print(f"\n--- Relé {i+1} ---")
+
+            ip = input("IP do Relé: ")
+            slave_id = input("Qual o SlaveId do relé? ")
+            numero_rele= input("Qual o número do relé? ")
+            Cabine = input("Qual a cabine do relé? ")
+
+            numeroDoGerador = int(i+1)
+
+            subprocess.run([
+                "python",
+                "GerarJsonRele.py",
+                tipo_rele,
+                usina,
+                prefixo,
+                ip,
+                slave_id,
+                numero_rele,
+                Cabine,
+                numeroDoGerador
+            ])
 
         sys.exit()
 

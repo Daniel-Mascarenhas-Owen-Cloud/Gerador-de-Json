@@ -372,7 +372,8 @@ for i in range(1, num_skids + 1):
 
 
     texto = texto.replace("USN", prefixo)
-    texto = texto.replace("PR 1", f"PR {i}")
+    texto = texto.replace("PR Ajustado 1 ", f"PR Ajustado {i} ")
+    texto = texto.replace("PR Simples 1 ", f"PR Simples {i} ")
     texto = texto.replace("Smart1", f"Smart{i}")
     texto = texto.replace("Instalada 1 (KWp)", f"Instalada {i} (KWp)")
     texto = texto.replace("Esperada 1 (KWh)", f"Esperada {i} (KWh)")

@@ -1,0 +1,5569 @@
+{
+   "dataSources":[
+      {
+         "xid":"USN_RELE1_A",
+         "type":"MODBUS_IP",
+         "alarmLevels":{
+            "POINT_WRITE_EXCEPTION":"NONE",
+            "DATA_SOURCE_EXCEPTION":"NONE",
+            "POINT_READ_EXCEPTION":"NONE"
+         },
+         "updatePeriodType":"SECONDS",
+         "transportType":"TCP_KEEP_ALIVE",
+         "contiguousBatches":true,
+         "createSlaveMonitorPoints":true,
+         "createSocketMonitorPoint":false,
+         "enabled":true,
+         "encapsulated":false,
+         "host":"000.000.000.000",
+         "maxReadBitCount":2000,
+         "maxReadRegisterCount":125,
+         "maxWriteRegisterCount":120,
+         "name":"USN_RELE1_A",
+         "port":502,
+         "quantize":false,
+         "retries":0,
+         "timeout":1000,
+         "updatePeriods":5
+      }
+   ],
+   "dataPoints":[
+      {
+         "xid":"USN_RELE1_MED_Corrente - Fase A (A)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_UNSIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":0.001,
+            "offset":63,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Corrente - Fase A (A)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Corrente - Fase B (A)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_UNSIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":0.001,
+            "offset":65,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Corrente - Fase B (A)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Corrente - Fase C (A)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_UNSIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":0.001,
+            "offset":67,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Corrente - Fase C (A)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Frequência (Hz)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_UNSIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":0.001,
+            "offset":59,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Frequência (Hz)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Potência Ativa (KW)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":117,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Potência Ativa (KW)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Potência Reativa (KVAr)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":125,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Potência Reativa (KVAr)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Potência Aparente (KVA)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":133,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Potência Aparente (KVA)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Fator de Potência Médio",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":0.001,
+            "offset":141,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Fator de Potência Médio",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Tensão - Va (V)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":0.001,
+            "offset":15,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Tensão - Va (V)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Tensão - Vb (V)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":0.001,
+            "offset":17,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Tensão - Vb (V)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Tensão - Vc (V)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":0.001,
+            "offset":19,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Tensão - Vc (V)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Tensão - Vab (V)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":0.001,
+            "offset":9,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Tensão - Vab (V)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Tensão - Vbc (V)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":0.001,
+            "offset":11,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Tensão - Vbc (V)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Tensão - Vca (V)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":0.001,
+            "offset":13,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Tensão - Vca (V)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Energia Ativa Exportada (KWh)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":0.01,
+            "offset":145,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Energia Ativa Exportada (KWh)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Energia Ativa Importada (KWh)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":0.01,
+            "offset":149,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Energia Ativa Importada (KWh)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Energia Reativa Importada (KVArh)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":0.01,
+            "offset":143,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Energia Reativa Importada (KVArh)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_MED_Energia Reativa Exportada (KVArh)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_REGISTER",
+            "modbusDataType":"FOUR_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":0.01,
+            "offset":147,
+            "registerCount":1,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_MED_Energia Reativa Exportada (KVArh)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_CMD_Saida Binária 1",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"COIL_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":0,
+            "registerCount":0,
+            "settableOverride":true,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_CMD_Saida Binária 1",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_CMD_Saida Binária 2",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"COIL_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":1,
+            "registerCount":0,
+            "settableOverride":true,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_CMD_Saida Binária 2",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_CMD_Saida Binária 3",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"COIL_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":2,
+            "registerCount":0,
+            "settableOverride":true,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_CMD_Saida Binária 3",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_CMD_Saida Binária 4",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"COIL_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":3,
+            "registerCount":0,
+            "settableOverride":true,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_CMD_Saida Binária 4",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_CMD_Saida Binária 5",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"COIL_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":4,
+            "registerCount":0,
+            "settableOverride":true,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_CMD_Saida Binária 5",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_CMD_Saida Binária 6",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"COIL_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":5,
+            "registerCount":0,
+            "settableOverride":true,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_CMD_Saida Binária 6",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_CMD_Saida Binária 7",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"COIL_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":6,
+            "registerCount":0,
+            "settableOverride":true,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_CMD_Saida Binária 7",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_CMD_Saida Binária 8",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"COIL_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":7,
+            "registerCount":0,
+            "settableOverride":true,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_CMD_Saida Binária 8",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_STA_Entrada Binária 1",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":0,
+            "registerCount":0,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_STA_Entrada Binária 1",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_STA_Entrada Binária 2",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":1,
+            "registerCount":0,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_STA_Entrada Binária 2",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_STA_Entrada Binária 3",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":2,
+            "registerCount":0,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_STA_Entrada Binária 3",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_STA_Entrada Binária 4",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":3,
+            "registerCount":0,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_STA_Entrada Binária 4",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_STA_Entrada Binária 5",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":4,
+            "registerCount":0,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_STA_Entrada Binária 5",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_STA_Entrada Binária 6",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":5,
+            "registerCount":0,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_RELE1_STA_Entrada Binária 6",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 51-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 121,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 51-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 51-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 122,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 51N-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 123,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 51N-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51N-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 51N-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50N-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 124,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50N-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50N-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50N-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 51G-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 125,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 51G-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51G-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 51G-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50G-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 126,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50G-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50G-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50G-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 51-2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 127,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 51-2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51-2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 51-2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50-2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 128,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50-2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50-2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50-2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 51N-2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 129,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 51N-2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51N-2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 51N-2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50N-2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 130,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50N-2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50N-2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50N-2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 51G-2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 131,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 51G-2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51G-2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 51G-2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50G-2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 132,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50G-2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50G-2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50G-2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 51-3",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 133,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 51-3",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51-3 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 51-3",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50-3",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 134,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50-3",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50-3 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50-3",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 51N-3",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 135,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 51N-3",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51N-3 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 51N-3",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50N-3",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 136,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50N-3",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50N-3 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50N-3",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 51G-3",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 137,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 51G-3",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51G-3 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 51G-3",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50G-3",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 138,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50G-3",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50G-3 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50G-3",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 51-4",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 139,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 51-4",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51-4 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 51-4",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50-4",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 140,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50-4",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50-4 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50-4",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 51N-4",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 141,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 51N-4",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51N-4 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 51N-4",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50N-4",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 142,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50N-4",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50N-4 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50N-4",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 51G-4",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 143,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 51G-4",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51G-4 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 51G-4",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50G-4",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 144,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50G-4",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50G-4 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50G-4",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50BF",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 145,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50BF",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50BF Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50BF",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 49",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 146,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 49",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 49 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 49",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 49",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 147,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 49",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 49 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 49",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 60",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 148,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 60",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 60 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 60",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 46IT",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 149,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 46IT",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 46IT Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 46IT",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 46DT",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 150,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 46DT",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 46DT Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 46DT",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 47-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 151,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 47-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 47-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 47-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 47-2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 152,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 47-2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 47-2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 47-2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 46BC",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 153,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 46BC",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 46BC Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 46BC",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 27/59-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 154,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 27/59-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 27/59-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 27/59-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 27/59-2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 155,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 27/59-2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 27/59-2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 27/59-2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 27/59-3",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 156,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 27/59-3",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 27/59-3 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 27/59-3",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 27/59-4",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 157,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 27/59-4",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 27/59-4 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 27/59-4",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 59NIT",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 158,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 59NIT",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 59NIT Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 59NIT",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 59NDT",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 159,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 59NDT",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 59NDT Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 59NDT",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 81-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 160,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 81-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 81-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 81-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 81-2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 161,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 81-2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 81-2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 81-2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 81-3",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 162,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 81-3",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 81-3 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 81-3",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 81-4",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 163,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 81-4",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 81-4 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 81-4",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 64H",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 166,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 64H",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 64H Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 64H",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 37-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 167,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 37-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 37-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 37-2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 168,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 37-2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37-2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 37-2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 60 CTS-I",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 333,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 60 CTS-I",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 60 CTS-I Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 60 CTS-I",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 81HBL2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 334,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 81HBL2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 81HBL2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 81HBL2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 37G-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 335,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 37G-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37G-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 37G-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 37G-2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 336,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 37G-2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37G-2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 37G-2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 37SEF-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 337,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 37SEF-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37SEF-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 37SEF-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 37SEF-2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 338,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 37SEF-2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37SEF-2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 37SEF-2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50BF-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 366,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50BF-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50BF-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50BF-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 37-PhA",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 368,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 37-PhA",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37-PhA Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 37-PhA",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 37-PhB",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 369,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 37-PhB",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37-PhB Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 37-PhB",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 37-PhC",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 370,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 37-PhC",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37-PhC Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 37-PhC",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50 LC-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 371,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50 LC-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50 LC-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50 LC-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50 LC-2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 372,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50 LC-2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50 LC-2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50 LC-2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50G LC-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 373,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50G LC-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50G LC-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50G LC-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50G LC-2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 374,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50G LC-2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50G LC-2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50G LC-2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50SEF LC-1",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 375,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50SEF LC-1",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50SEF LC-1 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50SEF LC-1",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50SEF LC-2",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 376,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50SEF LC-2",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50SEF LC-2 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50SEF LC-2",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50BF-PhA",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 377,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50BF-PhA",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50BF-PhA Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50BF-PhA",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50BF-PhB",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 378,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50BF-PhB",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50BF-PhB Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50BF-PhB",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50BF-PhC",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 379,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50BF-PhC",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50BF-PhC Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50BF-PhC",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 50BF-EF",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 380,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 50BF-EF",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50BF-EF Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 50BF-EF",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 79",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 381,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 79",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 79 Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 79",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 60 CTS-I-PhA",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 382,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 60 CTS-I-PhA",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 60 CTS-I-PhA Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 60 CTS-I-PhA",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 60 CTS-I-PhB",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 383,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 60 CTS-I-PhB",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 60 CTS-I-PhB Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 60 CTS-I-PhB",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_RELE1_ALM_Função 60 CTS-I-PhC",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 384,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId":1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_RELE1_ALM_1_Função 60 CTS-I-PhC",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 60 CTS-I-PhC Atuada"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_RELE1_A",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_RELE1_A",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": false,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_RELE1_ALM_Função 60 CTS-I-PhC",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid":"USN_RELE1_STA_Monitor de Conexão",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"COIL_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":0,
+            "registerCount":0,
+            "settableOverride":true,
+            "slaveId":1,
+            "slaveMonitor":true,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"USN_RELE1_STA_Monitor de Conexão",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_RELE1_VIR_Última Atualização (Data\/Hora)",
+         "loggingType":"NONE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"ALPHANUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"ts",
+                  "dataPointXid":"USN_RELE1_MED_Corrente - Fase A (A)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Time Stamps",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"USN_Time Stamps",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"USN_RELE1_VIR_Última Atualização (Data\/Hora)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      }
+   ]
+}
