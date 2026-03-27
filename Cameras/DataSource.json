@@ -1,0 +1,33 @@
+{
+   "dataSources":[
+      {
+         "xid":"Cameras",
+         "type":"MODBUS_IP",
+         "alarmLevels":{
+            "POINT_WRITE_EXCEPTION":"NONE",
+            "DATA_SOURCE_EXCEPTION":"NONE",
+            "POINT_READ_EXCEPTION":"NONE"
+         },
+         "updatePeriodType":"SECONDS",
+         "transportType":"TCP",
+         "contiguousBatches":false,
+         "createSlaveMonitorPoints":false,
+         "createSocketMonitorPoint":false,
+         "enabled":true,
+         "encapsulated":false,
+         "host":"000.000.000.000",
+         "maxReadBitCount":2000,
+         "maxReadRegisterCount":125,
+         "maxWriteRegisterCount":120,
+         "name":"Cameras",
+         "port":5020,
+         "quantize":false,
+         "retries":2,
+         "timeout":10000,
+         "updatePeriods":5
+      }
+   ],
+   "dataPoints": [
+
+   ]
+}

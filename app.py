@@ -19,6 +19,7 @@ while True:
         "8. GERAR TUDO\n"
         "9. CALCULOS\n"
         "10. Relé\n"
+        "11. Câmeras\n"
     ).upper()
 
 # ---------------- CONFIG ----------------
@@ -265,6 +266,27 @@ while True:
                 numero_rele,
                 Cabine,
                 numeroDoGerador
+            ])
+
+        sys.exit()
+
+# ---------------- CAMERAS ----------------
+
+    elif action in ["CAMERAS", "11"]:
+
+        qtd_cameras = input("Quantas câmeras existem? ")
+        ip = input("IP das Câmeras: ")
+        offset = input("Qual o offset de início das Câmeras? ")
+
+
+        subprocess.run([
+            "python",
+            "GerarJsonCameras.py",
+            usina,
+            prefixo,
+            ip,
+            offset,
+            qtd_cameras
             ])
 
         sys.exit()

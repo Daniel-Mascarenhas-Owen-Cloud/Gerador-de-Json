@@ -1,0 +1,60 @@
+{
+    "dataPoints": [
+        {
+            "xid": "USN_STA_Monitor de Conexão Câmera 1",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 0,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "USN_STA_0_Monitor de Conexão Câmera 1",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Usina I - CFTV - Câmera 1 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "USN_STA_Monitor de Conexão Câmera 1",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        }
+    ]
+}

@@ -1,0 +1,1348 @@
+{
+    "dataPoints": [
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 1",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 0,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 1",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 1 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 1",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 2",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 1,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 2",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 2 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 2",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 3",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 2,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 3",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 3 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 3",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 4",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 3,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 4",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 4 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 4",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 5",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 4,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 5",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 5 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 5",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 6",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 5,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 6",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 6 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 6",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 7",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 6,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 7",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 7 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 7",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 8",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 7,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 8",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 8 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 8",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 9",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 8,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 9",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 9 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 9",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 10",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 9,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 10",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 10 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 10",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 11",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 10,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 11",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 11 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 11",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 12",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 11,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 12",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 12 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 12",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 13",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 12,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 13",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 13 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 13,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 13",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 14",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 13,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 14",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 14 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 14",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 15",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 14,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 15",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 15 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 15",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 16",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 15,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 16",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 16 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 16",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 17",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 16,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 17",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 17 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 17",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 18",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 17,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 18",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 18 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 18",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 19",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 18,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 19",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 19 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 19",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 20",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 19,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 20",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 20 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 20",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 21",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 20,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 21",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 21 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 21",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 22",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 21,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 22",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 22 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 22",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 23",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 22,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 23",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 23 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 23",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        },
+        {
+            "xid": "IRA_STA_Monitor de Conexão Câmera 24",
+            "loggingType": "ON_CHANGE",
+            "intervalLoggingPeriodType": "MINUTES",
+            "intervalLoggingType": "INSTANT",
+            "purgeType": "YEARS",
+            "pointLocator": {
+                "range": "INPUT_STATUS",
+                "modbusDataType": "BINARY",
+                "additive": 0.0,
+                "bit": 0,
+                "charset": "ASCII",
+                "multiplier": 1.0,
+                "offset": 23,
+                "registerCount": 0,
+                "settableOverride": false,
+                "slaveId": 1,
+                "slaveMonitor": false,
+                "socketMonitor": false
+            },
+            "eventDetectors": [
+                {
+                    "xid": "IRA_STA_0_Monitor de Conexão Câmera 24",
+                    "type": "BINARY_STATE",
+                    "alarmLevel": "URGENT",
+                    "state": false,
+                    "durationType": "SECONDS",
+                    "duration": 60,
+                    "alias": "UFV Iramaia I - CFTV - Câmera 24 - Falha de Comunicação"
+                }
+            ],
+            "engineeringUnits": "",
+            "purgeStrategy": "PERIOD",
+            "chartColour": null,
+            "chartRenderer": null,
+            "dataSourceXid": "Cameras",
+            "defaultCacheSize": 1,
+            "description": "",
+            "deviceName": "Cameras",
+            "discardExtremeValues": false,
+            "discardHighLimit": 1.7976931348623157E308,
+            "discardLowLimit": -1.7976931348623157E308,
+            "enabled": true,
+            "eventTextRenderer": {
+                "type": "EVENT_NONE"
+            },
+            "intervalLoggingPeriod": 15,
+            "name": "IRA_STA_Monitor de Conexão Câmera 24",
+            "purgePeriod": 1,
+            "purgeValuesLimit": 100,
+            "textRenderer": {
+                "type": "PLAIN",
+                "suffix": ""
+            },
+            "tolerance": 0.0
+        }
+    ]
+}
