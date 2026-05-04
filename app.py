@@ -20,6 +20,7 @@ while True:
         "9. CALCULOS\n"
         "10. Relé\n"
         "11. Câmeras\n"
+        "12. Medidor\n"
     ).upper()
 
 # ---------------- CONFIG ----------------
@@ -291,6 +292,33 @@ while True:
 
         sys.exit()
 
+
+
+# ---------------- MEDIDOR ----------------
+
+    elif action in ["MEDIDOR", "12"]:
+
+        quantidade = int(input("Quantos Multimedidores existem? "))
+        tipo_multimedidor = input("Tipo do Multimedidor: ")
+
+        for i in range(quantidade):
+
+            print(f"\n--- Multimedidor {i+1} ---")
+
+            ip = input("IP do DataSource: ")
+
+            subprocess.run([
+                "python",
+                "GerarJsonMedidor.py",
+                tipo_multimedidor,
+                usina,
+                prefixo,
+                ip,
+                str(i+1)
+            ])
+
+        sys.exit()
+
 # ---------------- GERAR TUDO ----------------
 
     elif action in ["GERAR TUDO", "8"]:
@@ -349,6 +377,176 @@ while True:
             ",".join(inversores_lista),
         ])
 
+# ---------------- ETM ----------------
+
+        quantidade = int(input("Quantos ETM existem? "))
+        tipo = input("Tipo do ETM: ").upper()
+
+        for i in range(quantidade):
+
+            print(f"\n--- ETM {i+1} ---")
+
+            ip = input("IP do ETM: ")
+
+            subprocess.run([
+                "python",
+                "GerarJsonETM.py",
+                tipo,
+                prefixo,
+                ip
+            ])
+
+        sys.exit()
+
+# ---------------- NCU ----------------
+
+        quantidade = int(input("Quantas NCUs existem? "))
+        tipo = input("Tipo da NCU: ")
+
+        for i in range(quantidade):
+
+            print(f"\n--- NCU {i+1} ---")
+
+            ip = input("IP do DataSource: ")
+
+            subprocess.run([
+                "python",
+                "GerarJsonNCU.py",
+                tipo,
+                usina,
+                prefixo,
+                str(i+1),
+                ip
+            ])
+
+        sys.exit()
+
+# ---------------- TRACKER ----------------
+
+
+        quantidade = int(input("Quantas NCUs com Trackers existem? "))
+        tipo_tracker = input("Tipo do Tracker: ")
+
+        for i in range(quantidade):
+
+            print(f"\n--- Tracker grupo {i+1} ---")
+
+            ip = input("IP do Tracker: ")
+            qtd_trackers = input("Quantidade de Trackers: ")
+
+            subprocess.run([
+                "python",
+                "GerarJsonTracker.py",
+                tipo_tracker,
+                usina,
+                prefixo,
+                str(i+1),
+                ip,
+                qtd_trackers
+            ])
+
+        sys.exit()
+
+
+
+        # ---------------- NOBREAK ----------------
+
+        print("\n--- Nobreak ---")
+
+        tipo_equipamento = input("Tipo do Nobreak: ")
+        ip = input("IP do Nobreak: ")
+
+        subprocess.run([
+            "python",
+            "GerarJsonNobreak.py",
+            tipo_equipamento,
+            usina,
+            prefixo,
+            ip
+        ])
+
+        sys.exit()
+
+
+# ---------------- RELÉ ----------------
+
+
+
+        qtd_rele = int(input("Quantos relés existem? "))
+        tipo_rele = input("Qual o tipo dos relés? ")
+
+        for i in range(qtd_rele):
+
+            print(f"\n--- Relé {i+1} ---")
+
+            ip = input("IP do Relé: ")
+            slave_id = input("Qual o SlaveId do relé? ")
+            numero_rele= input("Qual o número do relé? ")
+            Cabine = input("Qual a cabine do relé? ")
+
+            numeroDoGerador = int(i+1)
+
+            subprocess.run([
+                "python",
+                "GerarJsonRele.py",
+                tipo_rele,
+                usina,
+                prefixo,
+                ip,
+                slave_id,
+                numero_rele,
+                Cabine,
+                numeroDoGerador
+            ])
+
+        sys.exit()
+
+# ---------------- CAMERAS ----------------
+
+        qtd_cameras = input("Quantas câmeras existem? ")
+        ip = input("IP das Câmeras: ")
+        offset = input("Qual o offset de início das Câmeras? ")
+
+
+        subprocess.run([
+            "python",
+            "GerarJsonCameras.py",
+            usina,
+            prefixo,
+            ip,
+            offset,
+            qtd_cameras
+            ])
+
+        sys.exit()
+
+
+
+# ---------------- MULTIMEDIDOR ----------------
+
+
+        quantidade = int(input("Quantos Multimedidores existem? "))
+        tipo_multimedidor = input("Tipo do Multimedidor: ")
+
+        for i in range(quantidade):
+
+            print(f"\n--- Multimedidor {i+1} ---")
+
+            ip = input("IP do DataSource: ")
+
+            subprocess.run([
+                "python",
+                "GerarJsonMedidor.py",
+                tipo_multimedidor,
+                usina,
+                prefixo,
+                ip,
+                str(i+1)
+            ])
+
+        sys.exit()
+
+
         print("\nTodos os JSON foram gerados!")
 
         unir = input("\nDeseja unir os arquivos em um unico arquivo? (S/N): ").upper()
@@ -358,5 +556,6 @@ while True:
 
         sys.exit()
 
+    
     else:
         print("Json Inválido\n")

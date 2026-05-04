@@ -5,24 +5,23 @@ import sys
 os.makedirs("saida", exist_ok=True)
 
 
-tipo_rele = sys.argv[1].upper()
+tipo_medidor = sys.argv[1].upper()
 usina = sys.argv[2].upper()
 prefix_usina = sys.argv[3]
 IP = sys.argv[4]
-slave_id = sys.argv[5]
-numero_rele = sys.argv[6]
-cabine = sys.argv[7]
-numeroDoGerador = int(sys.argv[8])
+numero_medidor = sys.argv[5]
 
-while(tipo_rele != 'A' and tipo_rele != 'C'):
+numero_medidor = int(numero_medidor)
+
+while(tipo_medidor != 'A'):
     print("Tipo inválido!")
-    tipo_rele = input("Qual o tipo dos relés? ").upper()
+    tipo_medidor = input("Qual o tipo do Medidor? ").upper()
 
-tipo = "Rele_TIPO_" + tipo_rele
+tipo = "Medidor_TIPO_" + tipo_medidor
 
 # Criar arquivo Json com inicio padrão
-shutil.copy("Rele/" + tipo + ".json", "saida/" )
-destino = f"saida/Rele{numeroDoGerador}.json"
+shutil.copy("Medidor/" + tipo + ".json", "saida/" )
+destino = f"saida/Medidor{numero_medidor}.json"
 if os.path.exists(destino):
     os.remove(destino)
 
@@ -39,9 +38,8 @@ conteudo = (
         .replace("USN", prefix_usina)
         .replace("000.000.000.000", IP)
         .replace("Usina", usina)
-        .replace('"slaveId":1,', f'"slaveId":{slave_id},')
-        .replace("RELE1", f"RELE{numero_rele}")
-        .replace("Cabine 1", f"Cabine {cabine}")
+        .replace("MEDIDOR1", f"MEDIDOR{numero_medidor}")
+        .replace("Cabine 1", f"Cabine {numero_medidor}")
     )
 
 # Sobrescrever o arquivo original
@@ -49,4 +47,4 @@ with open(destino, "w", encoding="utf-8") as f:
     f.write(conteudo)
 
 
-print(f"Arquivo Json gerado em saida/Rele{numeroDoGerador}.json!")
+print(f"Arquivo Json gerado em saida/Medidor{numero_medidor}.json!")
