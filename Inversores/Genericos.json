@@ -224,4 +224,280 @@
             "suffix": ""
          },
          "tolerance": 0.0
+      },
+      {
+         "xid":"USN_Inv_1.1_CAL_Energia Total Acumulada (KWh)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"x",
+                  "dataPointXid":"USN_Inv_1.1_MED_Energia Total Acumulada (Wh)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"return x.value/1000;",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Calculados",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"USN_Dados Calculados",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_Inv_1.1_CAL_Energia Total Acumulada (KWh)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.0",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_Inv_1.1_CAL_PR Simples (%)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"energia",
+                  "dataPointXid":"USN_Inv_1.1_MED_Energia Diária (KWh)"
+               },
+               {
+                  "varName":"POA",
+                  "dataPointXid":"USN_MED_Acumulado Diário - POA (Wh/m²)"
+               },
+               {
+                  "varName":"capacity",
+                  "dataPointXid":"USN_Smart1_VIR_Capacidade dos Inversores (KWp)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"// Entradas\nvar energy = energia.value; // Produção do dia em kWh\nvar irrad = POA.value;     // Irradiação do dia em Wh/m²\nvar kwp = capacity.value;  // Potência pico do sistema em kW\n\n// Energia esperada simples\nvar expectedEnergy = irrad * kwp;  // em Wh\n\n// Corrigir energia para Wh\nvar energyWh = energy * 1000; // Convertendo de kWh para Wh\n\n// Performance Ratio com validação\nvar PR = 0;\nif (expectedEnergy > 0) {\n    PR = energyWh / expectedEnergy; // Energia Esperada em Wh\n    if (PR > 1) {\n        PR = 1; // Força o valor para 100% se passar de 100%\n    }\n}\n\n// Resultado final em porcentagem\nreturn PR * 100;\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Calculados",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"USN_Dados Calculados",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_Inv_1.1_CAL_PR Simples (%)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.0",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_Inv_1.1_CAL_PR Ajustado (%)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"energia",
+                  "dataPointXid":"USN_Inv_1.1_MED_Energia Diária (KWh)"
+               },
+               {
+                  "varName":"POA",
+                  "dataPointXid":"USN_MED_Acumulado Diário - POA (Wh/m²)"
+               },
+               {
+                  "varName":"Module1",
+                  "dataPointXid":"USN_MED_Temperatura do Módulo 1 (°C)"
+               },
+               {
+                  "varName":"capacity",
+                  "dataPointXid":"USN_Smart1_VIR_Capacidade dos Inversores (KWp)"
+               },
+               {
+                  "varName":"expected",
+                  "dataPointXid":"USN_Inv_1.1_CAL_Energia Esperada (KWh)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"// Entradas\nvar energy = energia.value; // Produção do dia em kWh\nvar irrad = POA.value;     // Irradiação do dia em Wh/m²\nvar temp = Module1.value;  // Temperatura instantânea do módulo em °C\nvar kwp = capacity.value;  // Potência pico do sistema em kW\nvar coef_temp = -0.0030;   // Coeficiente de temperatura (%/°C)\nexpectedEnergy = expected.value; // Energia esperada \n\n// Corrigir energia para Wh\nvar energyWh = energy * 1000; // Convertendo de kWh para Wh\n\n// Performance Ratio com validação\nvar PR = 0;\nif (expectedEnergy > 0) {\n    PR = energyWh / (expectedEnergy * 1000); // Energia Esperada em Wh\n    if (PR > 1) {\n        PR = 1; // Força o valor para 100% se passar de 100%\n    }\n}\n\n// Resultado final em porcentagem\nreturn PR * 100;\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Calculados",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"USN_Dados Calculados",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_Inv_1.1_CAL_PR Ajustado (%)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.0",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_Inv_1.1_CAL_Energia Esperada (KWh)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"POA",
+                  "dataPointXid":"USN_MED_Acumulado Diário - POA (Wh/m²)"
+               },
+               {
+                  "varName":"Module1",
+                  "dataPointXid":"USN_MED_Temperatura do Módulo 1 (°C)"
+               },
+               {
+                  "varName":"Capacity",
+                  "dataPointXid":"USN_Smart1_VIR_Capacidade dos Inversores (KWp)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"// Entradas\nvar irrad = POA.value;       // Irradiação do dia em Wh/m²\nvar temp = Module1.value;     // Temperatura instantânea do módulo em °C\nvar KWp = Capacity.value;            // Potência pico do sistema em kW\nvar coef_temp = -0.0030;     // Coeficiente de temperatura (%/°C)\n\n// Energia esperada ajustada pela temperatura\nvar tempFactor = 1 + ((temp - 25) * coef_temp); // Fator de correção térmica\nvar expectedEnergy = irrad * KWp * tempFactor;  // em Wh\n\nreturn expectedEnergy/1000;  // Resultado em KWh\n",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Calculados",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_Dados Calculados",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_Inv_1.1_CAL_Energia Esperada (KWh)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_Inv_1.1_CAL_Rendimento (%)",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "updateEvent":"CONTEXT_UPDATE",
+            "context":[
+               {
+                  "varName":"potencia",
+                  "dataPointXid":"USN_Inv_1.1_MED_Potência Ativa (KW)"
+               },
+               {
+                  "varName":"capacity",
+                  "dataPointXid":"USN_Smart1_VIR_Capacidade dos Inversores (KWp)"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"return (potencia.value / capacity.value) * 100;",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Calculados",
+         "defaultCacheSize":1,
+         "description":"",
+         "deviceName":"USN_Dados Calculados",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"USN_Inv_1.1_CAL_Rendimento (%)",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.0",
+            "suffix":""
+         },
+         "tolerance":0.0
       }
