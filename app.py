@@ -21,6 +21,7 @@ while True:
         "10. Relé\n"
         "11. Câmeras\n"
         "12. Medidor\n"
+        "13. Trafo\n"
     ).upper()
 
 # ---------------- CONFIG ----------------
@@ -314,6 +315,41 @@ while True:
                 usina,
                 prefixo,
                 ip,
+                str(i+1)
+            ])
+
+        sys.exit()
+
+
+# ---------------- MEDIDOR ----------------
+
+    elif action in ["Trafo", "13"]:
+
+        quantidade = int(input("Quantos Trafos existem? "))
+        tipo_trafo = input("Tipo do Trafo: ")
+
+        for i in range(quantidade):
+
+            print(f"\n--- Trafo {i+1} ---")
+
+            ip = input("IP do DataSource: ")
+
+            slave_id = input("Slave Address: ")
+
+            skid = input("Número do Skid: ")
+
+            numero_trafo = input("Número do Trafo: ")
+
+            subprocess.run([
+                "python",
+                "GerarJsonTrafo.py",
+                tipo_trafo,
+                usina,
+                prefixo,
+                ip,
+                slave_id,
+                skid,
+                numero_trafo,
                 str(i+1)
             ])
 
