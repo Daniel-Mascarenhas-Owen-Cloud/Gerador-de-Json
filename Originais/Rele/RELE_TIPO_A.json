@@ -1,7 +1,7 @@
 {
    "dataSources":[
       {
-         "xid":"IPX_RELE1_A",
+         "xid":"ARA_RELE1_A",
          "type":"MODBUS_IP",
          "alarmLevels":{
             "POINT_WRITE_EXCEPTION":"NONE",
@@ -15,11 +15,11 @@
          "createSocketMonitorPoint":false,
          "enabled":true,
          "encapsulated":false,
-         "host":"192.164.60.24",
+         "host":"192.164.40.11",
          "maxReadBitCount":2000,
          "maxReadRegisterCount":125,
          "maxWriteRegisterCount":120,
-         "name":"IPX_RELE1_A",
+         "name":"ARA_RELE1_A",
          "port":502,
          "quantize":false,
          "retries":0,
@@ -29,7 +29,7 @@
    ],
    "dataPoints":[
       {
-         "xid":"IPX_RELE1_MED_Corrente - Fase A (A)",
+         "xid":"ARA_RELE1_MED_Corrente - Fase A (A)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -54,10 +54,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -66,7 +66,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Corrente - Fase A (A)",
+         "name":"ARA_RELE1_MED_Corrente - Fase A (A)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -77,7 +77,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Corrente - Fase B (A)",
+         "xid":"ARA_RELE1_MED_Corrente - Fase B (A)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -102,10 +102,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -114,7 +114,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Corrente - Fase B (A)",
+         "name":"ARA_RELE1_MED_Corrente - Fase B (A)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -125,7 +125,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Corrente - Fase C (A)",
+         "xid":"ARA_RELE1_MED_Corrente - Fase C (A)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -150,10 +150,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -162,7 +162,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Corrente - Fase C (A)",
+         "name":"ARA_RELE1_MED_Corrente - Fase C (A)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -173,7 +173,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Frequência (Hz)",
+         "xid":"ARA_RELE1_MED_Frequência (Hz)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -198,10 +198,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -210,7 +210,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Frequência (Hz)",
+         "name":"ARA_RELE1_MED_Frequência (Hz)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -221,7 +221,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Potência Ativa (KW)",
+         "xid":"ARA_RELE1_MED_Potência Ativa (KW)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -246,10 +246,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -258,7 +258,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Potência Ativa (KW)",
+         "name":"ARA_RELE1_MED_Potência Ativa (KW)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -269,7 +269,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Potência Reativa (KVAr)",
+         "xid":"ARA_RELE1_MED_Potência Reativa (KVAr)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -294,10 +294,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -306,7 +306,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Potência Reativa (KVAr)",
+         "name":"ARA_RELE1_MED_Potência Reativa (KVAr)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -317,7 +317,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Potência Aparente (KVA)",
+         "xid":"ARA_RELE1_MED_Potência Aparente (KVA)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -342,10 +342,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -354,7 +354,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Potência Aparente (KVA)",
+         "name":"ARA_RELE1_MED_Potência Aparente (KVA)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -365,7 +365,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Fator de Potência Médio",
+         "xid":"ARA_RELE1_MED_Fator de Potência Médio",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -390,10 +390,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -402,7 +402,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Fator de Potência Médio",
+         "name":"ARA_RELE1_MED_Fator de Potência Médio",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -413,7 +413,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Tensão - Va (V)",
+         "xid":"ARA_RELE1_MED_Tensão - Va (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -438,10 +438,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -450,7 +450,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Tensão - Va (V)",
+         "name":"ARA_RELE1_MED_Tensão - Va (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -461,7 +461,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Tensão - Vb (V)",
+         "xid":"ARA_RELE1_MED_Tensão - Vb (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -486,10 +486,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -498,7 +498,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Tensão - Vb (V)",
+         "name":"ARA_RELE1_MED_Tensão - Vb (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -509,7 +509,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Tensão - Vc (V)",
+         "xid":"ARA_RELE1_MED_Tensão - Vc (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -534,10 +534,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -546,7 +546,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Tensão - Vc (V)",
+         "name":"ARA_RELE1_MED_Tensão - Vc (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -557,7 +557,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Tensão - Vab (V)",
+         "xid":"ARA_RELE1_MED_Tensão - Vab (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -582,10 +582,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -594,7 +594,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Tensão - Vab (V)",
+         "name":"ARA_RELE1_MED_Tensão - Vab (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -605,7 +605,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Tensão - Vbc (V)",
+         "xid":"ARA_RELE1_MED_Tensão - Vbc (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -630,10 +630,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -642,7 +642,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Tensão - Vbc (V)",
+         "name":"ARA_RELE1_MED_Tensão - Vbc (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -653,7 +653,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Tensão - Vca (V)",
+         "xid":"ARA_RELE1_MED_Tensão - Vca (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -678,10 +678,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -690,7 +690,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Tensão - Vca (V)",
+         "name":"ARA_RELE1_MED_Tensão - Vca (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -701,7 +701,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Energia Ativa Exportada (KWh)",
+         "xid":"ARA_RELE1_MED_Energia Ativa Exportada (KWh)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -726,10 +726,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -738,7 +738,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Energia Ativa Exportada (KWh)",
+         "name":"ARA_RELE1_MED_Energia Ativa Exportada (KWh)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -749,7 +749,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Energia Ativa Importada (KWh)",
+         "xid":"ARA_RELE1_MED_Energia Ativa Importada (KWh)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -774,10 +774,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -786,7 +786,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Energia Ativa Importada (KWh)",
+         "name":"ARA_RELE1_MED_Energia Ativa Importada (KWh)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -797,7 +797,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Energia Reativa Importada (KVArh)",
+         "xid":"ARA_RELE1_MED_Energia Reativa Importada (KVArh)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -822,10 +822,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -834,7 +834,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Energia Reativa Importada (KVArh)",
+         "name":"ARA_RELE1_MED_Energia Reativa Importada (KVArh)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -845,7 +845,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_MED_Energia Reativa Exportada (KVArh)",
+         "xid":"ARA_RELE1_MED_Energia Reativa Exportada (KVArh)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -870,10 +870,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -882,7 +882,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_MED_Energia Reativa Exportada (KVArh)",
+         "name":"ARA_RELE1_MED_Energia Reativa Exportada (KVArh)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -893,7 +893,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_CMD_Saida Binária 1",
+         "xid":"ARA_RELE1_CMD_Saida Binária 1",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -918,10 +918,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -930,7 +930,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_CMD_Saida Binária 1",
+         "name":"ARA_RELE1_CMD_Saida Binária 1",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -940,7 +940,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_CMD_Saida Binária 2",
+         "xid":"ARA_RELE1_CMD_Saida Binária 2",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -965,10 +965,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -977,7 +977,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_CMD_Saida Binária 2",
+         "name":"ARA_RELE1_CMD_Saida Binária 2",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -987,7 +987,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_CMD_Saida Binária 3",
+         "xid":"ARA_RELE1_CMD_Saida Binária 3",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1012,10 +1012,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1024,7 +1024,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_CMD_Saida Binária 3",
+         "name":"ARA_RELE1_CMD_Saida Binária 3",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1034,7 +1034,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_CMD_Saida Binária 4",
+         "xid":"ARA_RELE1_CMD_Saida Binária 4",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1059,10 +1059,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1071,7 +1071,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_CMD_Saida Binária 4",
+         "name":"ARA_RELE1_CMD_Saida Binária 4",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1081,7 +1081,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_CMD_Saida Binária 5",
+         "xid":"ARA_RELE1_CMD_Saida Binária 5",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1106,10 +1106,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1118,7 +1118,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_CMD_Saida Binária 5",
+         "name":"ARA_RELE1_CMD_Saida Binária 5",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1128,7 +1128,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_CMD_Saida Binária 6",
+         "xid":"ARA_RELE1_CMD_Saida Binária 6",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1153,10 +1153,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1165,7 +1165,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_CMD_Saida Binária 6",
+         "name":"ARA_RELE1_CMD_Saida Binária 6",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1175,7 +1175,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_CMD_Saida Binária 7",
+         "xid":"ARA_RELE1_CMD_Saida Binária 7",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1200,10 +1200,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1212,7 +1212,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_CMD_Saida Binária 7",
+         "name":"ARA_RELE1_CMD_Saida Binária 7",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1222,7 +1222,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_CMD_Saida Binária 8",
+         "xid":"ARA_RELE1_CMD_Saida Binária 8",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1247,10 +1247,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1259,7 +1259,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_CMD_Saida Binária 8",
+         "name":"ARA_RELE1_CMD_Saida Binária 8",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1269,7 +1269,119 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_STA_Entrada Binária 1",
+         "xid":"ARA_RELE1_CMD_Abrir Disjuntor",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"COIL_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":0,
+            "registerCount":0,
+            "settableOverride":true,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+            {
+               "xid":"ARA_RELE1_CMD_1_Abrir Disjuntor",
+               "type":"BINARY_STATE",
+               "alarmLevel":"INFORMATION",
+               "state":true,
+               "durationType":"SECONDS",
+               "duration":0,
+               "alias":"UFV Araputanga I - Cabine 1 - Relé de Proteção - Comando para Abrir o Disjuntor Enviado"
+            }
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"ARA_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"ARA_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"ARA_RELE1_CMD_Abrir Disjuntor",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"ARA_RELE1_CMD_Fechar Disjuntor",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"COIL_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":1,
+            "registerCount":0,
+            "settableOverride":true,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+            {
+               "xid":"ARA_RELE1_CMD_1_Fechar Disjuntor",
+               "type":"BINARY_STATE",
+               "alarmLevel":"INFORMATION",
+               "state":true,
+               "durationType":"SECONDS",
+               "duration":0,
+               "alias":"UFV Araputanga I - Cabine 1 - Relé de Proteção - Comando para Fechar o Disjuntor Enviado"
+            }
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"ARA_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"ARA_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"ARA_RELE1_CMD_Fechar Disjuntor",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"ARA_RELE1_STA_Entrada Binária 1",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1294,10 +1406,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1306,7 +1418,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_STA_Entrada Binária 1",
+         "name":"ARA_RELE1_STA_Entrada Binária 1",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1316,7 +1428,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_STA_Entrada Binária 2",
+         "xid":"ARA_RELE1_STA_Entrada Binária 2",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1341,10 +1453,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1353,7 +1465,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_STA_Entrada Binária 2",
+         "name":"ARA_RELE1_STA_Entrada Binária 2",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1363,7 +1475,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_STA_Entrada Binária 3",
+         "xid":"ARA_RELE1_STA_Entrada Binária 3",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1388,10 +1500,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1400,7 +1512,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_STA_Entrada Binária 3",
+         "name":"ARA_RELE1_STA_Entrada Binária 3",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1410,7 +1522,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_STA_Entrada Binária 4",
+         "xid":"ARA_RELE1_STA_Entrada Binária 4",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1435,10 +1547,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1447,7 +1559,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_STA_Entrada Binária 4",
+         "name":"ARA_RELE1_STA_Entrada Binária 4",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1457,7 +1569,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_STA_Entrada Binária 5",
+         "xid":"ARA_RELE1_STA_Entrada Binária 5",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1482,10 +1594,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1494,7 +1606,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_STA_Entrada Binária 5",
+         "name":"ARA_RELE1_STA_Entrada Binária 5",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1504,7 +1616,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_STA_Entrada Binária 6",
+         "xid":"ARA_RELE1_STA_Entrada Binária 6",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1529,10 +1641,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1541,7 +1653,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"IPX_RELE1_STA_Entrada Binária 6",
+         "name":"ARA_RELE1_STA_Entrada Binária 6",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1551,7 +1663,72 @@
          "tolerance":0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 51-1",
+         "xid":"ARA_RELE1_STA_Estado do Disjuntor",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"INPUT_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":0,
+            "registerCount":0,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+            {
+               "xid":"ARA_RELE1_STA_1_Estado do Disjuntor",
+               "type":"BINARY_STATE",
+               "alarmLevel":"INFORMATION",
+               "state":true,
+               "durationType":"SECONDS",
+               "duration":0,
+               "alias":"UFV Araputanga I - Cabine 1 - Relé de Proteção - Disjuntor Geral Fechado"
+            },
+            {
+               "xid":"ARA_RELE1_STA_0_Estado do Disjuntor",
+               "type":"BINARY_STATE",
+               "alarmLevel":"CRITICAL",
+               "state":false,
+               "durationType":"SECONDS",
+               "duration":0,
+               "alias":"UFV Araputanga I - Cabine 1 - Relé de Proteção - Disjuntor Geral Aberto"
+            }
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"ARA_RELE1_A",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"ARA_RELE1_A",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"ARA_RELE1_STA_Estado do Disjuntor",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid": "ARA_RELE1_ALM_Função 51-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1572,23 +1749,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 51-1",
+               "xid": "ARA_RELE1_ALM_1_Função 51-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 51-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 51-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1597,7 +1774,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 51-1",
+         "name": "ARA_RELE1_ALM_Função 51-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1607,7 +1784,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50-1",
+         "xid": "ARA_RELE1_ALM_Função 50-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1628,23 +1805,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50-1",
+               "xid": "ARA_RELE1_ALM_1_Função 50-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1653,7 +1830,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50-1",
+         "name": "ARA_RELE1_ALM_Função 50-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1663,7 +1840,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 51N-1",
+         "xid": "ARA_RELE1_ALM_Função 51N-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1684,23 +1861,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 51N-1",
+               "xid": "ARA_RELE1_ALM_1_Função 51N-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 51N-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 51N-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1709,7 +1886,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 51N-1",
+         "name": "ARA_RELE1_ALM_Função 51N-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1719,7 +1896,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50N-1",
+         "xid": "ARA_RELE1_ALM_Função 50N-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1740,23 +1917,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50N-1",
+               "xid": "ARA_RELE1_ALM_1_Função 50N-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50N-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50N-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1765,7 +1942,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50N-1",
+         "name": "ARA_RELE1_ALM_Função 50N-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1775,7 +1952,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 51G-1",
+         "xid": "ARA_RELE1_ALM_Função 51G-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1796,23 +1973,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 51G-1",
+               "xid": "ARA_RELE1_ALM_1_Função 51G-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 51G-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 51G-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1821,7 +1998,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 51G-1",
+         "name": "ARA_RELE1_ALM_Função 51G-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1831,7 +2008,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50G-1",
+         "xid": "ARA_RELE1_ALM_Função 50G-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1852,23 +2029,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50G-1",
+               "xid": "ARA_RELE1_ALM_1_Função 50G-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50G-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50G-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1877,7 +2054,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50G-1",
+         "name": "ARA_RELE1_ALM_Função 50G-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1887,7 +2064,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 51-2",
+         "xid": "ARA_RELE1_ALM_Função 51-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1908,23 +2085,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 51-2",
+               "xid": "ARA_RELE1_ALM_1_Função 51-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 51-2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 51-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1933,7 +2110,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 51-2",
+         "name": "ARA_RELE1_ALM_Função 51-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1943,7 +2120,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50-2",
+         "xid": "ARA_RELE1_ALM_Função 50-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1964,23 +2141,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50-2",
+               "xid": "ARA_RELE1_ALM_1_Função 50-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50-2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1989,7 +2166,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50-2",
+         "name": "ARA_RELE1_ALM_Função 50-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1999,7 +2176,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 51N-2",
+         "xid": "ARA_RELE1_ALM_Função 51N-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2020,23 +2197,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 51N-2",
+               "xid": "ARA_RELE1_ALM_1_Função 51N-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 51N-2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 51N-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2045,7 +2222,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 51N-2",
+         "name": "ARA_RELE1_ALM_Função 51N-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2055,7 +2232,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50N-2",
+         "xid": "ARA_RELE1_ALM_Função 50N-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2076,23 +2253,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50N-2",
+               "xid": "ARA_RELE1_ALM_1_Função 50N-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50N-2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50N-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2101,7 +2278,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50N-2",
+         "name": "ARA_RELE1_ALM_Função 50N-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2111,7 +2288,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 51G-2",
+         "xid": "ARA_RELE1_ALM_Função 51G-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2132,23 +2309,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 51G-2",
+               "xid": "ARA_RELE1_ALM_1_Função 51G-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 51G-2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 51G-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2157,7 +2334,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 51G-2",
+         "name": "ARA_RELE1_ALM_Função 51G-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2167,7 +2344,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50G-2",
+         "xid": "ARA_RELE1_ALM_Função 50G-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2188,23 +2365,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50G-2",
+               "xid": "ARA_RELE1_ALM_1_Função 50G-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50G-2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50G-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2213,7 +2390,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50G-2",
+         "name": "ARA_RELE1_ALM_Função 50G-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2223,7 +2400,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 51-3",
+         "xid": "ARA_RELE1_ALM_Função 51-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2244,23 +2421,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 51-3",
+               "xid": "ARA_RELE1_ALM_1_Função 51-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 51-3 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 51-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2269,7 +2446,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 51-3",
+         "name": "ARA_RELE1_ALM_Função 51-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2279,7 +2456,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50-3",
+         "xid": "ARA_RELE1_ALM_Função 50-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2300,23 +2477,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50-3",
+               "xid": "ARA_RELE1_ALM_1_Função 50-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50-3 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2325,7 +2502,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50-3",
+         "name": "ARA_RELE1_ALM_Função 50-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2335,7 +2512,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 51N-3",
+         "xid": "ARA_RELE1_ALM_Função 51N-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2356,23 +2533,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 51N-3",
+               "xid": "ARA_RELE1_ALM_1_Função 51N-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 51N-3 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 51N-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2381,7 +2558,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 51N-3",
+         "name": "ARA_RELE1_ALM_Função 51N-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2391,7 +2568,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50N-3",
+         "xid": "ARA_RELE1_ALM_Função 50N-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2412,23 +2589,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50N-3",
+               "xid": "ARA_RELE1_ALM_1_Função 50N-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50N-3 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50N-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2437,7 +2614,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50N-3",
+         "name": "ARA_RELE1_ALM_Função 50N-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2447,7 +2624,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 51G-3",
+         "xid": "ARA_RELE1_ALM_Função 51G-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2468,23 +2645,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 51G-3",
+               "xid": "ARA_RELE1_ALM_1_Função 51G-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 51G-3 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 51G-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2493,7 +2670,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 51G-3",
+         "name": "ARA_RELE1_ALM_Função 51G-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2503,7 +2680,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50G-3",
+         "xid": "ARA_RELE1_ALM_Função 50G-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2524,23 +2701,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50G-3",
+               "xid": "ARA_RELE1_ALM_1_Função 50G-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50G-3 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50G-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2549,7 +2726,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50G-3",
+         "name": "ARA_RELE1_ALM_Função 50G-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2559,7 +2736,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 51-4",
+         "xid": "ARA_RELE1_ALM_Função 51-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2580,23 +2757,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 51-4",
+               "xid": "ARA_RELE1_ALM_1_Função 51-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 51-4 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 51-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2605,7 +2782,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 51-4",
+         "name": "ARA_RELE1_ALM_Função 51-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2615,7 +2792,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50-4",
+         "xid": "ARA_RELE1_ALM_Função 50-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2636,23 +2813,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50-4",
+               "xid": "ARA_RELE1_ALM_1_Função 50-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50-4 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2661,7 +2838,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50-4",
+         "name": "ARA_RELE1_ALM_Função 50-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2671,7 +2848,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 51N-4",
+         "xid": "ARA_RELE1_ALM_Função 51N-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2692,23 +2869,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 51N-4",
+               "xid": "ARA_RELE1_ALM_1_Função 51N-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 51N-4 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 51N-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2717,7 +2894,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 51N-4",
+         "name": "ARA_RELE1_ALM_Função 51N-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2727,7 +2904,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50N-4",
+         "xid": "ARA_RELE1_ALM_Função 50N-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2748,23 +2925,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50N-4",
+               "xid": "ARA_RELE1_ALM_1_Função 50N-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50N-4 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50N-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2773,7 +2950,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50N-4",
+         "name": "ARA_RELE1_ALM_Função 50N-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2783,7 +2960,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 51G-4",
+         "xid": "ARA_RELE1_ALM_Função 51G-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2804,23 +2981,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 51G-4",
+               "xid": "ARA_RELE1_ALM_1_Função 51G-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 51G-4 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 51G-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2829,7 +3006,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 51G-4",
+         "name": "ARA_RELE1_ALM_Função 51G-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2839,7 +3016,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50G-4",
+         "xid": "ARA_RELE1_ALM_Função 50G-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2860,23 +3037,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50G-4",
+               "xid": "ARA_RELE1_ALM_1_Função 50G-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50G-4 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50G-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2885,7 +3062,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50G-4",
+         "name": "ARA_RELE1_ALM_Função 50G-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2895,7 +3072,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50BF",
+         "xid": "ARA_RELE1_ALM_Função 50BF",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2916,23 +3093,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50BF",
+               "xid": "ARA_RELE1_ALM_1_Função 50BF",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50BF Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50BF Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2941,7 +3118,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50BF",
+         "name": "ARA_RELE1_ALM_Função 50BF",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2951,7 +3128,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 49",
+         "xid": "ARA_RELE1_ALM_Função 49",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2972,23 +3149,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 49",
+               "xid": "ARA_RELE1_ALM_1_Função 49",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 49 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 49 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2997,7 +3174,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 49",
+         "name": "ARA_RELE1_ALM_Função 49",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3007,7 +3184,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 49",
+         "xid": "ARA_RELE1_ALM_Função 49",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3028,23 +3205,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 49",
+               "xid": "ARA_RELE1_ALM_1_Função 49",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 49 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 49 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3053,7 +3230,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 49",
+         "name": "ARA_RELE1_ALM_Função 49",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3063,7 +3240,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 60",
+         "xid": "ARA_RELE1_ALM_Função 60",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3084,23 +3261,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 60",
+               "xid": "ARA_RELE1_ALM_1_Função 60",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 60 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 60 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3109,7 +3286,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 60",
+         "name": "ARA_RELE1_ALM_Função 60",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3119,7 +3296,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 46IT",
+         "xid": "ARA_RELE1_ALM_Função 46IT",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3140,23 +3317,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 46IT",
+               "xid": "ARA_RELE1_ALM_1_Função 46IT",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 46IT Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 46IT Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3165,7 +3342,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 46IT",
+         "name": "ARA_RELE1_ALM_Função 46IT",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3175,7 +3352,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 46DT",
+         "xid": "ARA_RELE1_ALM_Função 46DT",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3196,23 +3373,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 46DT",
+               "xid": "ARA_RELE1_ALM_1_Função 46DT",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 46DT Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 46DT Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3221,7 +3398,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 46DT",
+         "name": "ARA_RELE1_ALM_Função 46DT",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3231,7 +3408,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 47-1",
+         "xid": "ARA_RELE1_ALM_Função 47-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3252,23 +3429,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 47-1",
+               "xid": "ARA_RELE1_ALM_1_Função 47-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 47-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 47-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3277,7 +3454,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 47-1",
+         "name": "ARA_RELE1_ALM_Função 47-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3287,7 +3464,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 47-2",
+         "xid": "ARA_RELE1_ALM_Função 47-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3308,23 +3485,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 47-2",
+               "xid": "ARA_RELE1_ALM_1_Função 47-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 47-2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 47-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3333,7 +3510,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 47-2",
+         "name": "ARA_RELE1_ALM_Função 47-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3343,7 +3520,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 46BC",
+         "xid": "ARA_RELE1_ALM_Função 46BC",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3364,23 +3541,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 46BC",
+               "xid": "ARA_RELE1_ALM_1_Função 46BC",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 46BC Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 46BC Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3389,7 +3566,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 46BC",
+         "name": "ARA_RELE1_ALM_Função 46BC",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3399,7 +3576,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 27/59-1",
+         "xid": "ARA_RELE1_ALM_Função 27/59-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3420,23 +3597,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 27/59-1",
+               "xid": "ARA_RELE1_ALM_1_Função 27/59-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 27/59-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 27/59-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3445,7 +3622,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 27/59-1",
+         "name": "ARA_RELE1_ALM_Função 27/59-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3455,7 +3632,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 27/59-2",
+         "xid": "ARA_RELE1_ALM_Função 27/59-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3476,23 +3653,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 27/59-2",
+               "xid": "ARA_RELE1_ALM_1_Função 27/59-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 27/59-2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 27/59-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3501,7 +3678,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 27/59-2",
+         "name": "ARA_RELE1_ALM_Função 27/59-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3511,7 +3688,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 27/59-3",
+         "xid": "ARA_RELE1_ALM_Função 27/59-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3532,23 +3709,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 27/59-3",
+               "xid": "ARA_RELE1_ALM_1_Função 27/59-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 27/59-3 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 27/59-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3557,7 +3734,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 27/59-3",
+         "name": "ARA_RELE1_ALM_Função 27/59-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3567,7 +3744,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 27/59-4",
+         "xid": "ARA_RELE1_ALM_Função 27/59-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3588,23 +3765,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 27/59-4",
+               "xid": "ARA_RELE1_ALM_1_Função 27/59-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 27/59-4 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 27/59-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3613,7 +3790,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 27/59-4",
+         "name": "ARA_RELE1_ALM_Função 27/59-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3623,7 +3800,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 59NIT",
+         "xid": "ARA_RELE1_ALM_Função 59NIT",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3644,23 +3821,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 59NIT",
+               "xid": "ARA_RELE1_ALM_1_Função 59NIT",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 59NIT Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 59NIT Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3669,7 +3846,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 59NIT",
+         "name": "ARA_RELE1_ALM_Função 59NIT",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3679,7 +3856,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 59NDT",
+         "xid": "ARA_RELE1_ALM_Função 59NDT",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3700,23 +3877,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 59NDT",
+               "xid": "ARA_RELE1_ALM_1_Função 59NDT",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 59NDT Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 59NDT Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3725,7 +3902,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 59NDT",
+         "name": "ARA_RELE1_ALM_Função 59NDT",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3735,7 +3912,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 81-1",
+         "xid": "ARA_RELE1_ALM_Função 81-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3756,23 +3933,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 81-1",
+               "xid": "ARA_RELE1_ALM_1_Função 81-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 81-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 81-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3781,7 +3958,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 81-1",
+         "name": "ARA_RELE1_ALM_Função 81-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3791,7 +3968,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 81-2",
+         "xid": "ARA_RELE1_ALM_Função 81-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3812,23 +3989,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 81-2",
+               "xid": "ARA_RELE1_ALM_1_Função 81-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 81-2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 81-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3837,7 +4014,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 81-2",
+         "name": "ARA_RELE1_ALM_Função 81-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3847,7 +4024,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 81-3",
+         "xid": "ARA_RELE1_ALM_Função 81-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3868,23 +4045,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 81-3",
+               "xid": "ARA_RELE1_ALM_1_Função 81-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 81-3 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 81-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3893,7 +4070,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 81-3",
+         "name": "ARA_RELE1_ALM_Função 81-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3903,7 +4080,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 81-4",
+         "xid": "ARA_RELE1_ALM_Função 81-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3924,23 +4101,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 81-4",
+               "xid": "ARA_RELE1_ALM_1_Função 81-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 81-4 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 81-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3949,7 +4126,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 81-4",
+         "name": "ARA_RELE1_ALM_Função 81-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3959,7 +4136,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 64H",
+         "xid": "ARA_RELE1_ALM_Função 64H",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3980,23 +4157,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 64H",
+               "xid": "ARA_RELE1_ALM_1_Função 64H",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 64H Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 64H Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4005,7 +4182,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 64H",
+         "name": "ARA_RELE1_ALM_Função 64H",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4015,7 +4192,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 37-1",
+         "xid": "ARA_RELE1_ALM_Função 37-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4036,23 +4213,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 37-1",
+               "xid": "ARA_RELE1_ALM_1_Função 37-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 37-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 37-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4061,7 +4238,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 37-1",
+         "name": "ARA_RELE1_ALM_Função 37-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4071,7 +4248,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 37-2",
+         "xid": "ARA_RELE1_ALM_Função 37-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4092,23 +4269,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 37-2",
+               "xid": "ARA_RELE1_ALM_1_Função 37-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 37-2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 37-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4117,7 +4294,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 37-2",
+         "name": "ARA_RELE1_ALM_Função 37-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4127,7 +4304,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 60 CTS-I",
+         "xid": "ARA_RELE1_ALM_Função 60 CTS-I",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4148,23 +4325,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 60 CTS-I",
+               "xid": "ARA_RELE1_ALM_1_Função 60 CTS-I",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 60 CTS-I Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 60 CTS-I Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4173,7 +4350,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 60 CTS-I",
+         "name": "ARA_RELE1_ALM_Função 60 CTS-I",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4183,7 +4360,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 81HBL2",
+         "xid": "ARA_RELE1_ALM_Função 81HBL2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4204,23 +4381,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 81HBL2",
+               "xid": "ARA_RELE1_ALM_1_Função 81HBL2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 81HBL2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 81HBL2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4229,7 +4406,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 81HBL2",
+         "name": "ARA_RELE1_ALM_Função 81HBL2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4239,7 +4416,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 37G-1",
+         "xid": "ARA_RELE1_ALM_Função 37G-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4260,23 +4437,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 37G-1",
+               "xid": "ARA_RELE1_ALM_1_Função 37G-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 37G-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 37G-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4285,7 +4462,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 37G-1",
+         "name": "ARA_RELE1_ALM_Função 37G-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4295,7 +4472,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 37G-2",
+         "xid": "ARA_RELE1_ALM_Função 37G-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4316,23 +4493,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 37G-2",
+               "xid": "ARA_RELE1_ALM_1_Função 37G-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 37G-2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 37G-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4341,7 +4518,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 37G-2",
+         "name": "ARA_RELE1_ALM_Função 37G-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4351,7 +4528,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 37SEF-1",
+         "xid": "ARA_RELE1_ALM_Função 37SEF-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4372,23 +4549,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 37SEF-1",
+               "xid": "ARA_RELE1_ALM_1_Função 37SEF-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 37SEF-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 37SEF-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4397,7 +4574,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 37SEF-1",
+         "name": "ARA_RELE1_ALM_Função 37SEF-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4407,7 +4584,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 37SEF-2",
+         "xid": "ARA_RELE1_ALM_Função 37SEF-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4428,23 +4605,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 37SEF-2",
+               "xid": "ARA_RELE1_ALM_1_Função 37SEF-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 37SEF-2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 37SEF-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4453,7 +4630,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 37SEF-2",
+         "name": "ARA_RELE1_ALM_Função 37SEF-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4463,7 +4640,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50BF-1",
+         "xid": "ARA_RELE1_ALM_Função 50BF-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4484,23 +4661,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50BF-1",
+               "xid": "ARA_RELE1_ALM_1_Função 50BF-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50BF-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50BF-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4509,7 +4686,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50BF-1",
+         "name": "ARA_RELE1_ALM_Função 50BF-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4519,7 +4696,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 37-PhA",
+         "xid": "ARA_RELE1_ALM_Função 37-PhA",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4540,23 +4717,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 37-PhA",
+               "xid": "ARA_RELE1_ALM_1_Função 37-PhA",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 37-PhA Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 37-PhA Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4565,7 +4742,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 37-PhA",
+         "name": "ARA_RELE1_ALM_Função 37-PhA",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4575,7 +4752,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 37-PhB",
+         "xid": "ARA_RELE1_ALM_Função 37-PhB",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4596,23 +4773,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 37-PhB",
+               "xid": "ARA_RELE1_ALM_1_Função 37-PhB",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 37-PhB Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 37-PhB Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4621,7 +4798,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 37-PhB",
+         "name": "ARA_RELE1_ALM_Função 37-PhB",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4631,7 +4808,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 37-PhC",
+         "xid": "ARA_RELE1_ALM_Função 37-PhC",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4652,23 +4829,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 37-PhC",
+               "xid": "ARA_RELE1_ALM_1_Função 37-PhC",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 37-PhC Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 37-PhC Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4677,7 +4854,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 37-PhC",
+         "name": "ARA_RELE1_ALM_Função 37-PhC",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4687,7 +4864,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50 LC-1",
+         "xid": "ARA_RELE1_ALM_Função 50 LC-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4708,23 +4885,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50 LC-1",
+               "xid": "ARA_RELE1_ALM_1_Função 50 LC-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50 LC-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50 LC-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4733,7 +4910,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50 LC-1",
+         "name": "ARA_RELE1_ALM_Função 50 LC-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4743,7 +4920,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50 LC-2",
+         "xid": "ARA_RELE1_ALM_Função 50 LC-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4764,23 +4941,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50 LC-2",
+               "xid": "ARA_RELE1_ALM_1_Função 50 LC-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50 LC-2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50 LC-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4789,7 +4966,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50 LC-2",
+         "name": "ARA_RELE1_ALM_Função 50 LC-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4799,7 +4976,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50G LC-1",
+         "xid": "ARA_RELE1_ALM_Função 50G LC-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4820,23 +4997,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50G LC-1",
+               "xid": "ARA_RELE1_ALM_1_Função 50G LC-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50G LC-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50G LC-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4845,7 +5022,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50G LC-1",
+         "name": "ARA_RELE1_ALM_Função 50G LC-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4855,7 +5032,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50G LC-2",
+         "xid": "ARA_RELE1_ALM_Função 50G LC-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4876,23 +5053,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50G LC-2",
+               "xid": "ARA_RELE1_ALM_1_Função 50G LC-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50G LC-2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50G LC-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4901,7 +5078,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50G LC-2",
+         "name": "ARA_RELE1_ALM_Função 50G LC-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4911,7 +5088,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50SEF LC-1",
+         "xid": "ARA_RELE1_ALM_Função 50SEF LC-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4932,23 +5109,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50SEF LC-1",
+               "xid": "ARA_RELE1_ALM_1_Função 50SEF LC-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50SEF LC-1 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50SEF LC-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4957,7 +5134,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50SEF LC-1",
+         "name": "ARA_RELE1_ALM_Função 50SEF LC-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4967,7 +5144,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50SEF LC-2",
+         "xid": "ARA_RELE1_ALM_Função 50SEF LC-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4988,23 +5165,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50SEF LC-2",
+               "xid": "ARA_RELE1_ALM_1_Função 50SEF LC-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50SEF LC-2 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50SEF LC-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5013,7 +5190,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50SEF LC-2",
+         "name": "ARA_RELE1_ALM_Função 50SEF LC-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5023,7 +5200,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50BF-PhA",
+         "xid": "ARA_RELE1_ALM_Função 50BF-PhA",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5044,23 +5221,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50BF-PhA",
+               "xid": "ARA_RELE1_ALM_1_Função 50BF-PhA",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50BF-PhA Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50BF-PhA Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5069,7 +5246,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50BF-PhA",
+         "name": "ARA_RELE1_ALM_Função 50BF-PhA",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5079,7 +5256,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50BF-PhB",
+         "xid": "ARA_RELE1_ALM_Função 50BF-PhB",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5100,23 +5277,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50BF-PhB",
+               "xid": "ARA_RELE1_ALM_1_Função 50BF-PhB",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50BF-PhB Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50BF-PhB Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5125,7 +5302,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50BF-PhB",
+         "name": "ARA_RELE1_ALM_Função 50BF-PhB",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5135,7 +5312,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50BF-PhC",
+         "xid": "ARA_RELE1_ALM_Função 50BF-PhC",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5156,23 +5333,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50BF-PhC",
+               "xid": "ARA_RELE1_ALM_1_Função 50BF-PhC",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50BF-PhC Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50BF-PhC Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5181,7 +5358,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50BF-PhC",
+         "name": "ARA_RELE1_ALM_Função 50BF-PhC",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5191,7 +5368,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 50BF-EF",
+         "xid": "ARA_RELE1_ALM_Função 50BF-EF",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5212,23 +5389,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 50BF-EF",
+               "xid": "ARA_RELE1_ALM_1_Função 50BF-EF",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 50BF-EF Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 50BF-EF Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5237,7 +5414,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 50BF-EF",
+         "name": "ARA_RELE1_ALM_Função 50BF-EF",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5247,7 +5424,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 79",
+         "xid": "ARA_RELE1_ALM_Função 79",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5268,23 +5445,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 79",
+               "xid": "ARA_RELE1_ALM_1_Função 79",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 79 Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 79 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5293,7 +5470,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 79",
+         "name": "ARA_RELE1_ALM_Função 79",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5303,7 +5480,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 60 CTS-I-PhA",
+         "xid": "ARA_RELE1_ALM_Função 60 CTS-I-PhA",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5324,23 +5501,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 60 CTS-I-PhA",
+               "xid": "ARA_RELE1_ALM_1_Função 60 CTS-I-PhA",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 60 CTS-I-PhA Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 60 CTS-I-PhA Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5349,7 +5526,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 60 CTS-I-PhA",
+         "name": "ARA_RELE1_ALM_Função 60 CTS-I-PhA",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5359,7 +5536,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 60 CTS-I-PhB",
+         "xid": "ARA_RELE1_ALM_Função 60 CTS-I-PhB",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5380,23 +5557,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 60 CTS-I-PhB",
+               "xid": "ARA_RELE1_ALM_1_Função 60 CTS-I-PhB",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 60 CTS-I-PhB Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 60 CTS-I-PhB Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5405,7 +5582,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 60 CTS-I-PhB",
+         "name": "ARA_RELE1_ALM_Função 60 CTS-I-PhB",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5415,7 +5592,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "IPX_RELE1_ALM_Função 60 CTS-I-PhC",
+         "xid": "ARA_RELE1_ALM_Função 60 CTS-I-PhC",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5436,23 +5613,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "IPX_RELE1_ALM_1_Função 60 CTS-I-PhC",
+               "xid": "ARA_RELE1_ALM_1_Função 60 CTS-I-PhC",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Ipixuna do Pará I - Cabine 1 - Relé de Proteção - Função 60 CTS-I-PhC Atuada"
+               "alias": "UFV Araputanga I - Cabine 1 - Relé de Proteção - Função 60 CTS-I-PhC Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "IPX_RELE1_A",
+         "dataSourceXid": "ARA_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "IPX_RELE1_A",
+         "deviceName": "ARA_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5461,7 +5638,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "IPX_RELE1_ALM_Função 60 CTS-I-PhC",
+         "name": "ARA_RELE1_ALM_Função 60 CTS-I-PhC",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5471,7 +5648,7 @@
          "tolerance": 0.0
       },
       {
-         "xid":"IPX_RELE1_STA_Monitor de Conexão",
+         "xid":"ARA_RELE1_STA_Monitor de Conexão",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -5496,10 +5673,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_RELE1_A",
+         "dataSourceXid":"ARA_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"IPX_RELE1_A",
+         "deviceName":"ARA_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -5508,7 +5685,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":15,
-         "name":"IPX_RELE1_STA_Monitor de Conexão",
+         "name":"ARA_RELE1_STA_Monitor de Conexão",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -5518,7 +5695,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"IPX_RELE1_VIR_Última Atualização (Data\/Hora)",
+         "xid":"ARA_RELE1_VIR_Última Atualização (Data\/Hora)",
          "loggingType":"NONE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -5529,7 +5706,7 @@
             "context":[
                {
                   "varName":"ts",
-                  "dataPointXid":"IPX_RELE1_MED_Corrente - Fase A (A)"
+                  "dataPointXid":"ARA_RELE1_MED_Corrente - Fase A (A)"
                }
             ],
             "executionDelayPeriodType":"SECONDS",
@@ -5544,10 +5721,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"IPX_Time Stamps",
+         "dataSourceXid":"ARA_Time Stamps",
          "defaultCacheSize":1,
          "description":"",
-         "deviceName":"IPX_Time Stamps",
+         "deviceName":"ARA_Time Stamps",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -5556,7 +5733,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":15,
-         "name":"IPX_RELE1_VIR_Última Atualização (Data\/Hora)",
+         "name":"ARA_RELE1_VIR_Última Atualização (Data\/Hora)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{

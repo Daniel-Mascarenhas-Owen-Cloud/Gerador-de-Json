@@ -118,7 +118,7 @@
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
+         "intervalLoggingPeriod":5,
          "name":"TUP_RELE1_CAL_Corrente - Fase A (A)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
@@ -219,7 +219,7 @@
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
+         "intervalLoggingPeriod":5,
          "name":"TUP_RELE1_CAL_Corrente - Fase B (A)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
@@ -320,7 +320,7 @@
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
+         "intervalLoggingPeriod":5,
          "name":"TUP_RELE1_CAL_Corrente - Fase C (A)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
@@ -473,7 +473,7 @@
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
+         "intervalLoggingPeriod":5,
          "name":"TUP_RELE1_CAL_Potência Ativa (KW)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
@@ -574,7 +574,7 @@
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
+         "intervalLoggingPeriod":5,
          "name":"TUP_RELE1_CAL_Tensão - Va (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
@@ -675,7 +675,7 @@
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
+         "intervalLoggingPeriod":5,
          "name":"TUP_RELE1_CAL_Tensão - Vb (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
@@ -776,7 +776,7 @@
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
+         "intervalLoggingPeriod":5,
          "name":"TUP_RELE1_CAL_Tensão - Vc (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
@@ -1112,7 +1112,7 @@
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
+         "intervalLoggingPeriod":5,
          "name":"TUP_RELE1_CAL_Fator de Potência - Fase A",
          "purgePeriod":1,
          "purgeValuesLimit":100,
@@ -1208,7 +1208,7 @@
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
+         "intervalLoggingPeriod":5,
          "name":"TUP_RELE1_CAL_Fator de Potência - Fase B",
          "purgePeriod":1,
          "purgeValuesLimit":100,
@@ -1304,7 +1304,7 @@
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
+         "intervalLoggingPeriod":5,
          "name":"TUP_RELE1_CAL_Fator de Potência - Fase C",
          "purgePeriod":1,
          "purgeValuesLimit":100,
@@ -1409,7 +1409,7 @@
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
+         "intervalLoggingPeriod":5,
          "name":"TUP_RELE1_CAL_Potência Ativa - Fase A (KW)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
@@ -1514,7 +1514,7 @@
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
+         "intervalLoggingPeriod":5,
          "name":"TUP_RELE1_CAL_Potência Ativa - Fase B (KW)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
@@ -1619,7 +1619,7 @@
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
+         "intervalLoggingPeriod":5,
          "name":"TUP_RELE1_CAL_Potência Ativa - Fase C (KW)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
@@ -1863,6 +1863,62 @@
          },
          "intervalLoggingPeriod":5,
          "name":"TUP_RELE1_CMD_Abrir Disjuntor",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_RELE1_CMD_Reset Remoto",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"COIL_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":48,
+            "registerCount":0,
+            "settableOverride":true,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+            {
+               "xid":"TUP_RELE1_CMD_1_Reset Remoto",
+               "type":"BINARY_STATE",
+               "alarmLevel":"INFORMATION",
+               "state":true,
+               "durationType":"SECONDS",
+               "duration":0,
+               "alias":"UFV Tupi Paulista I - Cabine 1 - Relé de Proteção - Comando para Reset Remoto enviado"
+            }
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_RELE1_C",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"TUP_RELE1_C",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"TUP_RELE1_CMD_Reset Remoto",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -3670,13 +3726,13 @@
          "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
-            "range":"HOLDING_REGISTER",
+            "range":"COIL_STATUS",
             "modbusDataType":"BINARY",
             "additive":0.0,
-            "bit":8,
+            "bit":0,
             "charset":"ASCII",
             "multiplier":1.0,
-            "offset":779,
+            "offset":40,
             "registerCount":0,
             "settableOverride":true,
             "slaveId":1,
@@ -3717,13 +3773,13 @@
          "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
-            "range":"HOLDING_REGISTER",
+            "range":"COIL_STATUS",
             "modbusDataType":"BINARY",
             "additive":0.0,
-            "bit":9,
+            "bit":0,
             "charset":"ASCII",
             "multiplier":1.0,
-            "offset":779,
+            "offset":41,
             "registerCount":0,
             "settableOverride":true,
             "slaveId":1,
@@ -3764,13 +3820,13 @@
          "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
-            "range":"HOLDING_REGISTER",
+            "range":"COIL_STATUS",
             "modbusDataType":"BINARY",
             "additive":0.0,
-            "bit":10,
+            "bit":0,
             "charset":"ASCII",
             "multiplier":1.0,
-            "offset":779,
+            "offset":42,
             "registerCount":0,
             "settableOverride":true,
             "slaveId":1,
@@ -3811,13 +3867,13 @@
          "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
-            "range":"HOLDING_REGISTER",
+            "range":"COIL_STATUS",
             "modbusDataType":"BINARY",
             "additive":0.0,
-            "bit":11,
+            "bit":0,
             "charset":"ASCII",
             "multiplier":1.0,
-            "offset":779,
+            "offset":43,
             "registerCount":0,
             "settableOverride":true,
             "slaveId":1,
@@ -3858,13 +3914,13 @@
          "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
-            "range":"HOLDING_REGISTER",
+            "range":"COIL_STATUS",
             "modbusDataType":"BINARY",
             "additive":0.0,
-            "bit":12,
+            "bit":0,
             "charset":"ASCII",
             "multiplier":1.0,
-            "offset":779,
+            "offset":44,
             "registerCount":0,
             "settableOverride":true,
             "slaveId":1,
@@ -4125,6 +4181,71 @@
          },
          "intervalLoggingPeriod":5,
          "name":"TUP_RELE1_STA_Entrada Binária 5",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"TUP_RELE1_STA_Estado do Disjuntor",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"HOLDING_REGISTER",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":779,
+            "registerCount":0,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+            {
+               "xid":"TUP_RELE1_STA_1_Estado do Disjuntor",
+               "type":"BINARY_STATE",
+               "alarmLevel":"INFORMATION",
+               "state":true,
+               "durationType":"SECONDS",
+               "duration":0,
+               "alias":"UFV Tupi Paulista I - Cabine 1 - Relé de Proteção - Disjuntor Geral Fechado"
+            },
+            {
+               "xid":"TUP_RELE1_STA_0_Estado do Disjuntor",
+               "type":"BINARY_STATE",
+               "alarmLevel":"CRITICAL",
+               "state":false,
+               "durationType":"SECONDS",
+               "duration":0,
+               "alias":"UFV Tupi Paulista I - Cabine 1 - Relé de Proteção - Disjuntor Geral Aberto"
+            }
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"TUP_RELE1_C",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"TUP_RELE1_C",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"TUP_RELE1_STA_Estado do Disjuntor",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
