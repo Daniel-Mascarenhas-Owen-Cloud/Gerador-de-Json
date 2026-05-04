@@ -242,19 +242,19 @@ while True:
 
     elif action in ["RELÉ", "10"]:
 
-        qtd_rele = int(input("Quantos relés existem? "))
-        tipo_rele = input("Qual o tipo dos relés? ")
+        qtd_rele = int(input("Quantos relés existem? ").strip())
+        tipo_rele = input("Qual o tipo dos relés? ").strip()
 
         for i in range(qtd_rele):
 
             print(f"\n--- Relé {i+1} ---")
 
-            ip = input("IP do Relé: ")
-            slave_id = input("Qual o SlaveId do relé? ")
-            numero_rele= input("Qual o número do relé? ")
-            Cabine = input("Qual a cabine do relé? ")
+            ip = input("IP do Relé: ").strip()
+            slave_id = input("Qual o SlaveId do relé? ").strip()
+            numero_rele = input("Qual o número do relé? ").strip()
+            Cabine = input("Qual a cabine do relé? ").strip()
 
-            numeroDoGerador = int(i+1)
+            numeroDoGerador = i + 1
 
             subprocess.run([
                 "python",
@@ -263,10 +263,10 @@ while True:
                 usina,
                 prefixo,
                 ip,
-                slave_id,
-                numero_rele,
-                Cabine,
-                numeroDoGerador
+                str(slave_id),
+                str(numero_rele),
+                str(Cabine),
+                str(numeroDoGerador)
             ])
 
         sys.exit()
