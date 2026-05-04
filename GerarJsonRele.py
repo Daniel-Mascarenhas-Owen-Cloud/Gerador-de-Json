@@ -6,8 +6,8 @@ os.makedirs("saida", exist_ok=True)
 
 
 tipo_rele = sys.argv[1].upper()
-usina = sys.argv[2].upper()
-prefix_usina = sys.argv[3]
+usina = sys.argv[2]
+prefix_usina = sys.argv[3].upper()
 IP = sys.argv[4]
 slave_id = sys.argv[5]
 numero_rele = sys.argv[6]

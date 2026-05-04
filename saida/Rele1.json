@@ -1,7 +1,7 @@
 {
    "dataSources":[
       {
-         "xid":"USN_RELE1_A",
+         "xid":"TST_RELE1_A",
          "type":"MODBUS_IP",
          "alarmLevels":{
             "POINT_WRITE_EXCEPTION":"NONE",
@@ -15,11 +15,11 @@
          "createSocketMonitorPoint":false,
          "enabled":true,
          "encapsulated":false,
-         "host":"000.000.000.000",
+         "host":"123.123.12.2",
          "maxReadBitCount":2000,
          "maxReadRegisterCount":125,
          "maxWriteRegisterCount":120,
-         "name":"USN_RELE1_A",
+         "name":"TST_RELE1_A",
          "port":502,
          "quantize":false,
          "retries":0,
@@ -29,7 +29,7 @@
    ],
    "dataPoints":[
       {
-         "xid":"USN_RELE1_MED_Corrente - Fase A (A)",
+         "xid":"TST_RELE1_MED_Corrente - Fase A (A)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -54,10 +54,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -66,7 +66,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Corrente - Fase A (A)",
+         "name":"TST_RELE1_MED_Corrente - Fase A (A)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -77,7 +77,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Corrente - Fase B (A)",
+         "xid":"TST_RELE1_MED_Corrente - Fase B (A)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -102,10 +102,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -114,7 +114,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Corrente - Fase B (A)",
+         "name":"TST_RELE1_MED_Corrente - Fase B (A)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -125,7 +125,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Corrente - Fase C (A)",
+         "xid":"TST_RELE1_MED_Corrente - Fase C (A)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -150,10 +150,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -162,7 +162,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Corrente - Fase C (A)",
+         "name":"TST_RELE1_MED_Corrente - Fase C (A)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -173,7 +173,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Frequência (Hz)",
+         "xid":"TST_RELE1_MED_Frequência (Hz)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -198,10 +198,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -210,7 +210,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Frequência (Hz)",
+         "name":"TST_RELE1_MED_Frequência (Hz)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -221,7 +221,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Potência Ativa (KW)",
+         "xid":"TST_RELE1_MED_Potência Ativa (KW)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -246,10 +246,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -258,7 +258,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Potência Ativa (KW)",
+         "name":"TST_RELE1_MED_Potência Ativa (KW)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -269,7 +269,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Potência Reativa (KVAr)",
+         "xid":"TST_RELE1_MED_Potência Reativa (KVAr)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -294,10 +294,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -306,7 +306,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Potência Reativa (KVAr)",
+         "name":"TST_RELE1_MED_Potência Reativa (KVAr)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -317,7 +317,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Potência Aparente (KVA)",
+         "xid":"TST_RELE1_MED_Potência Aparente (KVA)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -342,10 +342,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -354,7 +354,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Potência Aparente (KVA)",
+         "name":"TST_RELE1_MED_Potência Aparente (KVA)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -365,7 +365,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Fator de Potência Médio",
+         "xid":"TST_RELE1_MED_Fator de Potência Médio",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -390,10 +390,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -402,7 +402,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Fator de Potência Médio",
+         "name":"TST_RELE1_MED_Fator de Potência Médio",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -413,7 +413,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Tensão - Va (V)",
+         "xid":"TST_RELE1_MED_Tensão - Va (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -438,10 +438,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -450,7 +450,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Tensão - Va (V)",
+         "name":"TST_RELE1_MED_Tensão - Va (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -461,7 +461,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Tensão - Vb (V)",
+         "xid":"TST_RELE1_MED_Tensão - Vb (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -486,10 +486,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -498,7 +498,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Tensão - Vb (V)",
+         "name":"TST_RELE1_MED_Tensão - Vb (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -509,7 +509,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Tensão - Vc (V)",
+         "xid":"TST_RELE1_MED_Tensão - Vc (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -534,10 +534,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -546,7 +546,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Tensão - Vc (V)",
+         "name":"TST_RELE1_MED_Tensão - Vc (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -557,7 +557,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Tensão - Vab (V)",
+         "xid":"TST_RELE1_MED_Tensão - Vab (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -582,10 +582,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -594,7 +594,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Tensão - Vab (V)",
+         "name":"TST_RELE1_MED_Tensão - Vab (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -605,7 +605,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Tensão - Vbc (V)",
+         "xid":"TST_RELE1_MED_Tensão - Vbc (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -630,10 +630,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -642,7 +642,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Tensão - Vbc (V)",
+         "name":"TST_RELE1_MED_Tensão - Vbc (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -653,7 +653,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Tensão - Vca (V)",
+         "xid":"TST_RELE1_MED_Tensão - Vca (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -678,10 +678,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -690,7 +690,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Tensão - Vca (V)",
+         "name":"TST_RELE1_MED_Tensão - Vca (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -701,7 +701,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Energia Ativa Exportada (KWh)",
+         "xid":"TST_RELE1_MED_Energia Ativa Exportada (KWh)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -726,10 +726,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -738,7 +738,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Energia Ativa Exportada (KWh)",
+         "name":"TST_RELE1_MED_Energia Ativa Exportada (KWh)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -749,7 +749,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Energia Ativa Importada (KWh)",
+         "xid":"TST_RELE1_MED_Energia Ativa Importada (KWh)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -774,10 +774,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -786,7 +786,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Energia Ativa Importada (KWh)",
+         "name":"TST_RELE1_MED_Energia Ativa Importada (KWh)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -797,7 +797,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Energia Reativa Importada (KVArh)",
+         "xid":"TST_RELE1_MED_Energia Reativa Importada (KVArh)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -822,10 +822,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -834,7 +834,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Energia Reativa Importada (KVArh)",
+         "name":"TST_RELE1_MED_Energia Reativa Importada (KVArh)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -845,7 +845,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_MED_Energia Reativa Exportada (KVArh)",
+         "xid":"TST_RELE1_MED_Energia Reativa Exportada (KVArh)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"AVERAGE",
@@ -870,10 +870,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -882,7 +882,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_MED_Energia Reativa Exportada (KVArh)",
+         "name":"TST_RELE1_MED_Energia Reativa Exportada (KVArh)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -893,7 +893,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_CMD_Saida Binária 1",
+         "xid":"TST_RELE1_CMD_Saida Binária 1",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -918,10 +918,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -930,7 +930,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_CMD_Saida Binária 1",
+         "name":"TST_RELE1_CMD_Saida Binária 1",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -940,7 +940,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_CMD_Saida Binária 2",
+         "xid":"TST_RELE1_CMD_Saida Binária 2",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -965,10 +965,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -977,7 +977,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_CMD_Saida Binária 2",
+         "name":"TST_RELE1_CMD_Saida Binária 2",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -987,7 +987,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_CMD_Saida Binária 3",
+         "xid":"TST_RELE1_CMD_Saida Binária 3",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1012,10 +1012,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1024,7 +1024,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_CMD_Saida Binária 3",
+         "name":"TST_RELE1_CMD_Saida Binária 3",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1034,7 +1034,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_CMD_Saida Binária 4",
+         "xid":"TST_RELE1_CMD_Saida Binária 4",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1059,10 +1059,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1071,7 +1071,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_CMD_Saida Binária 4",
+         "name":"TST_RELE1_CMD_Saida Binária 4",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1081,7 +1081,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_CMD_Saida Binária 5",
+         "xid":"TST_RELE1_CMD_Saida Binária 5",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1106,10 +1106,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1118,7 +1118,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_CMD_Saida Binária 5",
+         "name":"TST_RELE1_CMD_Saida Binária 5",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1128,7 +1128,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_CMD_Saida Binária 6",
+         "xid":"TST_RELE1_CMD_Saida Binária 6",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1153,10 +1153,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1165,7 +1165,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_CMD_Saida Binária 6",
+         "name":"TST_RELE1_CMD_Saida Binária 6",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1175,7 +1175,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_CMD_Saida Binária 7",
+         "xid":"TST_RELE1_CMD_Saida Binária 7",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1200,10 +1200,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1212,7 +1212,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_CMD_Saida Binária 7",
+         "name":"TST_RELE1_CMD_Saida Binária 7",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1222,7 +1222,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_CMD_Saida Binária 8",
+         "xid":"TST_RELE1_CMD_Saida Binária 8",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1247,10 +1247,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1259,7 +1259,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_CMD_Saida Binária 8",
+         "name":"TST_RELE1_CMD_Saida Binária 8",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1269,7 +1269,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_CMD_Abrir Disjuntor",
+         "xid":"TST_RELE1_CMD_Abrir Disjuntor",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1290,23 +1290,23 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_RELE1_CMD_1_Abrir Disjuntor",
+               "xid":"TST_RELE1_CMD_1_Abrir Disjuntor",
                "type":"BINARY_STATE",
                "alarmLevel":"INFORMATION",
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Usina - Cabine 1 - Relé de Proteção - Comando para Abrir o Disjuntor Enviado"
+               "alias":"UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Comando para Abrir o Disjuntor Enviado"
             }
          ],
          "engineeringUnits":"",
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1315,7 +1315,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_CMD_Abrir Disjuntor",
+         "name":"TST_RELE1_CMD_Abrir Disjuntor",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1325,7 +1325,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_CMD_Fechar Disjuntor",
+         "xid":"TST_RELE1_CMD_Fechar Disjuntor",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1346,23 +1346,23 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_RELE1_CMD_1_Fechar Disjuntor",
+               "xid":"TST_RELE1_CMD_1_Fechar Disjuntor",
                "type":"BINARY_STATE",
                "alarmLevel":"INFORMATION",
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Usina - Cabine 1 - Relé de Proteção - Comando para Fechar o Disjuntor Enviado"
+               "alias":"UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Comando para Fechar o Disjuntor Enviado"
             }
          ],
          "engineeringUnits":"",
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1371,7 +1371,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_CMD_Fechar Disjuntor",
+         "name":"TST_RELE1_CMD_Fechar Disjuntor",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1381,7 +1381,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_STA_Entrada Binária 1",
+         "xid":"TST_RELE1_STA_Entrada Binária 1",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1406,10 +1406,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1418,7 +1418,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_STA_Entrada Binária 1",
+         "name":"TST_RELE1_STA_Entrada Binária 1",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1428,7 +1428,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_STA_Entrada Binária 2",
+         "xid":"TST_RELE1_STA_Entrada Binária 2",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1453,10 +1453,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1465,7 +1465,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_STA_Entrada Binária 2",
+         "name":"TST_RELE1_STA_Entrada Binária 2",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1475,7 +1475,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_STA_Entrada Binária 3",
+         "xid":"TST_RELE1_STA_Entrada Binária 3",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1500,10 +1500,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1512,7 +1512,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_STA_Entrada Binária 3",
+         "name":"TST_RELE1_STA_Entrada Binária 3",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1522,7 +1522,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_STA_Entrada Binária 4",
+         "xid":"TST_RELE1_STA_Entrada Binária 4",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1547,10 +1547,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1559,7 +1559,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_STA_Entrada Binária 4",
+         "name":"TST_RELE1_STA_Entrada Binária 4",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1569,7 +1569,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_STA_Entrada Binária 5",
+         "xid":"TST_RELE1_STA_Entrada Binária 5",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1594,10 +1594,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1606,7 +1606,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_STA_Entrada Binária 5",
+         "name":"TST_RELE1_STA_Entrada Binária 5",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1616,7 +1616,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_STA_Entrada Binária 6",
+         "xid":"TST_RELE1_STA_Entrada Binária 6",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1641,10 +1641,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1653,7 +1653,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_STA_Entrada Binária 6",
+         "name":"TST_RELE1_STA_Entrada Binária 6",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1663,7 +1663,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_STA_Estado do Disjuntor",
+         "xid":"TST_RELE1_STA_Estado do Disjuntor",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1684,32 +1684,32 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_RELE1_STA_1_Estado do Disjuntor",
+               "xid":"TST_RELE1_STA_1_Estado do Disjuntor",
                "type":"BINARY_STATE",
                "alarmLevel":"INFORMATION",
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Usina - Cabine 1 - Relé de Proteção - Disjuntor Geral Fechado"
+               "alias":"UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Disjuntor Geral Fechado"
             },
             {
-               "xid":"USN_RELE1_STA_0_Estado do Disjuntor",
+               "xid":"TST_RELE1_STA_0_Estado do Disjuntor",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":false,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Usina - Cabine 1 - Relé de Proteção - Disjuntor Geral Aberto"
+               "alias":"UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Disjuntor Geral Aberto"
             }
          ],
          "engineeringUnits":"",
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1718,7 +1718,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_RELE1_STA_Estado do Disjuntor",
+         "name":"TST_RELE1_STA_Estado do Disjuntor",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1728,7 +1728,7 @@
          "tolerance":0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 51-1",
+         "xid": "TST_RELE1_ALM_Função 51-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1749,23 +1749,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 51-1",
+               "xid": "TST_RELE1_ALM_1_Função 51-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 51-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1774,7 +1774,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 51-1",
+         "name": "TST_RELE1_ALM_Função 51-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1784,7 +1784,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50-1",
+         "xid": "TST_RELE1_ALM_Função 50-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1805,23 +1805,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50-1",
+               "xid": "TST_RELE1_ALM_1_Função 50-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1830,7 +1830,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50-1",
+         "name": "TST_RELE1_ALM_Função 50-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1840,7 +1840,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 51N-1",
+         "xid": "TST_RELE1_ALM_Função 51N-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1861,23 +1861,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 51N-1",
+               "xid": "TST_RELE1_ALM_1_Função 51N-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51N-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 51N-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1886,7 +1886,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 51N-1",
+         "name": "TST_RELE1_ALM_Função 51N-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1896,7 +1896,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50N-1",
+         "xid": "TST_RELE1_ALM_Função 50N-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1917,23 +1917,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50N-1",
+               "xid": "TST_RELE1_ALM_1_Função 50N-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50N-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50N-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1942,7 +1942,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50N-1",
+         "name": "TST_RELE1_ALM_Função 50N-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1952,7 +1952,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 51G-1",
+         "xid": "TST_RELE1_ALM_Função 51G-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1973,23 +1973,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 51G-1",
+               "xid": "TST_RELE1_ALM_1_Função 51G-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51G-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 51G-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1998,7 +1998,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 51G-1",
+         "name": "TST_RELE1_ALM_Função 51G-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2008,7 +2008,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50G-1",
+         "xid": "TST_RELE1_ALM_Função 50G-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2029,23 +2029,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50G-1",
+               "xid": "TST_RELE1_ALM_1_Função 50G-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50G-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50G-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2054,7 +2054,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50G-1",
+         "name": "TST_RELE1_ALM_Função 50G-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2064,7 +2064,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 51-2",
+         "xid": "TST_RELE1_ALM_Função 51-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2085,23 +2085,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 51-2",
+               "xid": "TST_RELE1_ALM_1_Função 51-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51-2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 51-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2110,7 +2110,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 51-2",
+         "name": "TST_RELE1_ALM_Função 51-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2120,7 +2120,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50-2",
+         "xid": "TST_RELE1_ALM_Função 50-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2141,23 +2141,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50-2",
+               "xid": "TST_RELE1_ALM_1_Função 50-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50-2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2166,7 +2166,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50-2",
+         "name": "TST_RELE1_ALM_Função 50-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2176,7 +2176,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 51N-2",
+         "xid": "TST_RELE1_ALM_Função 51N-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2197,23 +2197,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 51N-2",
+               "xid": "TST_RELE1_ALM_1_Função 51N-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51N-2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 51N-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2222,7 +2222,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 51N-2",
+         "name": "TST_RELE1_ALM_Função 51N-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2232,7 +2232,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50N-2",
+         "xid": "TST_RELE1_ALM_Função 50N-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2253,23 +2253,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50N-2",
+               "xid": "TST_RELE1_ALM_1_Função 50N-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50N-2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50N-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2278,7 +2278,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50N-2",
+         "name": "TST_RELE1_ALM_Função 50N-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2288,7 +2288,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 51G-2",
+         "xid": "TST_RELE1_ALM_Função 51G-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2309,23 +2309,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 51G-2",
+               "xid": "TST_RELE1_ALM_1_Função 51G-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51G-2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 51G-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2334,7 +2334,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 51G-2",
+         "name": "TST_RELE1_ALM_Função 51G-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2344,7 +2344,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50G-2",
+         "xid": "TST_RELE1_ALM_Função 50G-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2365,23 +2365,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50G-2",
+               "xid": "TST_RELE1_ALM_1_Função 50G-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50G-2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50G-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2390,7 +2390,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50G-2",
+         "name": "TST_RELE1_ALM_Função 50G-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2400,7 +2400,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 51-3",
+         "xid": "TST_RELE1_ALM_Função 51-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2421,23 +2421,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 51-3",
+               "xid": "TST_RELE1_ALM_1_Função 51-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51-3 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 51-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2446,7 +2446,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 51-3",
+         "name": "TST_RELE1_ALM_Função 51-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2456,7 +2456,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50-3",
+         "xid": "TST_RELE1_ALM_Função 50-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2477,23 +2477,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50-3",
+               "xid": "TST_RELE1_ALM_1_Função 50-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50-3 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2502,7 +2502,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50-3",
+         "name": "TST_RELE1_ALM_Função 50-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2512,7 +2512,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 51N-3",
+         "xid": "TST_RELE1_ALM_Função 51N-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2533,23 +2533,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 51N-3",
+               "xid": "TST_RELE1_ALM_1_Função 51N-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51N-3 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 51N-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2558,7 +2558,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 51N-3",
+         "name": "TST_RELE1_ALM_Função 51N-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2568,7 +2568,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50N-3",
+         "xid": "TST_RELE1_ALM_Função 50N-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2589,23 +2589,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50N-3",
+               "xid": "TST_RELE1_ALM_1_Função 50N-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50N-3 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50N-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2614,7 +2614,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50N-3",
+         "name": "TST_RELE1_ALM_Função 50N-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2624,7 +2624,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 51G-3",
+         "xid": "TST_RELE1_ALM_Função 51G-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2645,23 +2645,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 51G-3",
+               "xid": "TST_RELE1_ALM_1_Função 51G-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51G-3 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 51G-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2670,7 +2670,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 51G-3",
+         "name": "TST_RELE1_ALM_Função 51G-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2680,7 +2680,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50G-3",
+         "xid": "TST_RELE1_ALM_Função 50G-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2701,23 +2701,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50G-3",
+               "xid": "TST_RELE1_ALM_1_Função 50G-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50G-3 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50G-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2726,7 +2726,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50G-3",
+         "name": "TST_RELE1_ALM_Função 50G-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2736,7 +2736,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 51-4",
+         "xid": "TST_RELE1_ALM_Função 51-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2757,23 +2757,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 51-4",
+               "xid": "TST_RELE1_ALM_1_Função 51-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51-4 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 51-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2782,7 +2782,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 51-4",
+         "name": "TST_RELE1_ALM_Função 51-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2792,7 +2792,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50-4",
+         "xid": "TST_RELE1_ALM_Função 50-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2813,23 +2813,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50-4",
+               "xid": "TST_RELE1_ALM_1_Função 50-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50-4 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2838,7 +2838,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50-4",
+         "name": "TST_RELE1_ALM_Função 50-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2848,7 +2848,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 51N-4",
+         "xid": "TST_RELE1_ALM_Função 51N-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2869,23 +2869,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 51N-4",
+               "xid": "TST_RELE1_ALM_1_Função 51N-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51N-4 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 51N-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2894,7 +2894,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 51N-4",
+         "name": "TST_RELE1_ALM_Função 51N-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2904,7 +2904,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50N-4",
+         "xid": "TST_RELE1_ALM_Função 50N-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2925,23 +2925,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50N-4",
+               "xid": "TST_RELE1_ALM_1_Função 50N-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50N-4 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50N-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2950,7 +2950,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50N-4",
+         "name": "TST_RELE1_ALM_Função 50N-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2960,7 +2960,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 51G-4",
+         "xid": "TST_RELE1_ALM_Função 51G-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2981,23 +2981,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 51G-4",
+               "xid": "TST_RELE1_ALM_1_Função 51G-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 51G-4 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 51G-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3006,7 +3006,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 51G-4",
+         "name": "TST_RELE1_ALM_Função 51G-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3016,7 +3016,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50G-4",
+         "xid": "TST_RELE1_ALM_Função 50G-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3037,23 +3037,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50G-4",
+               "xid": "TST_RELE1_ALM_1_Função 50G-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50G-4 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50G-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3062,7 +3062,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50G-4",
+         "name": "TST_RELE1_ALM_Função 50G-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3072,7 +3072,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50BF",
+         "xid": "TST_RELE1_ALM_Função 50BF",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3093,23 +3093,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50BF",
+               "xid": "TST_RELE1_ALM_1_Função 50BF",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50BF Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50BF Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3118,7 +3118,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50BF",
+         "name": "TST_RELE1_ALM_Função 50BF",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3128,7 +3128,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 49",
+         "xid": "TST_RELE1_ALM_Função 49",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3149,23 +3149,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 49",
+               "xid": "TST_RELE1_ALM_1_Função 49",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 49 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 49 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3174,7 +3174,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 49",
+         "name": "TST_RELE1_ALM_Função 49",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3184,7 +3184,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 49",
+         "xid": "TST_RELE1_ALM_Função 49",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3205,23 +3205,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 49",
+               "xid": "TST_RELE1_ALM_1_Função 49",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 49 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 49 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3230,7 +3230,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 49",
+         "name": "TST_RELE1_ALM_Função 49",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3240,7 +3240,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 60",
+         "xid": "TST_RELE1_ALM_Função 60",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3261,23 +3261,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 60",
+               "xid": "TST_RELE1_ALM_1_Função 60",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 60 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 60 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3286,7 +3286,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 60",
+         "name": "TST_RELE1_ALM_Função 60",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3296,7 +3296,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 46IT",
+         "xid": "TST_RELE1_ALM_Função 46IT",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3317,23 +3317,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 46IT",
+               "xid": "TST_RELE1_ALM_1_Função 46IT",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 46IT Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 46IT Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3342,7 +3342,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 46IT",
+         "name": "TST_RELE1_ALM_Função 46IT",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3352,7 +3352,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 46DT",
+         "xid": "TST_RELE1_ALM_Função 46DT",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3373,23 +3373,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 46DT",
+               "xid": "TST_RELE1_ALM_1_Função 46DT",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 46DT Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 46DT Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3398,7 +3398,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 46DT",
+         "name": "TST_RELE1_ALM_Função 46DT",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3408,7 +3408,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 47-1",
+         "xid": "TST_RELE1_ALM_Função 47-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3429,23 +3429,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 47-1",
+               "xid": "TST_RELE1_ALM_1_Função 47-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 47-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 47-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3454,7 +3454,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 47-1",
+         "name": "TST_RELE1_ALM_Função 47-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3464,7 +3464,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 47-2",
+         "xid": "TST_RELE1_ALM_Função 47-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3485,23 +3485,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 47-2",
+               "xid": "TST_RELE1_ALM_1_Função 47-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 47-2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 47-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3510,7 +3510,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 47-2",
+         "name": "TST_RELE1_ALM_Função 47-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3520,7 +3520,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 46BC",
+         "xid": "TST_RELE1_ALM_Função 46BC",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3541,23 +3541,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 46BC",
+               "xid": "TST_RELE1_ALM_1_Função 46BC",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 46BC Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 46BC Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3566,7 +3566,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 46BC",
+         "name": "TST_RELE1_ALM_Função 46BC",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3576,7 +3576,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 27/59-1",
+         "xid": "TST_RELE1_ALM_Função 27/59-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3597,23 +3597,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 27/59-1",
+               "xid": "TST_RELE1_ALM_1_Função 27/59-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 27/59-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 27/59-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3622,7 +3622,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 27/59-1",
+         "name": "TST_RELE1_ALM_Função 27/59-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3632,7 +3632,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 27/59-2",
+         "xid": "TST_RELE1_ALM_Função 27/59-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3653,23 +3653,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 27/59-2",
+               "xid": "TST_RELE1_ALM_1_Função 27/59-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 27/59-2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 27/59-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3678,7 +3678,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 27/59-2",
+         "name": "TST_RELE1_ALM_Função 27/59-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3688,7 +3688,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 27/59-3",
+         "xid": "TST_RELE1_ALM_Função 27/59-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3709,23 +3709,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 27/59-3",
+               "xid": "TST_RELE1_ALM_1_Função 27/59-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 27/59-3 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 27/59-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3734,7 +3734,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 27/59-3",
+         "name": "TST_RELE1_ALM_Função 27/59-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3744,7 +3744,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 27/59-4",
+         "xid": "TST_RELE1_ALM_Função 27/59-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3765,23 +3765,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 27/59-4",
+               "xid": "TST_RELE1_ALM_1_Função 27/59-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 27/59-4 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 27/59-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3790,7 +3790,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 27/59-4",
+         "name": "TST_RELE1_ALM_Função 27/59-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3800,7 +3800,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 59NIT",
+         "xid": "TST_RELE1_ALM_Função 59NIT",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3821,23 +3821,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 59NIT",
+               "xid": "TST_RELE1_ALM_1_Função 59NIT",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 59NIT Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 59NIT Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3846,7 +3846,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 59NIT",
+         "name": "TST_RELE1_ALM_Função 59NIT",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3856,7 +3856,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 59NDT",
+         "xid": "TST_RELE1_ALM_Função 59NDT",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3877,23 +3877,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 59NDT",
+               "xid": "TST_RELE1_ALM_1_Função 59NDT",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 59NDT Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 59NDT Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3902,7 +3902,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 59NDT",
+         "name": "TST_RELE1_ALM_Função 59NDT",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3912,7 +3912,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 81-1",
+         "xid": "TST_RELE1_ALM_Função 81-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3933,23 +3933,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 81-1",
+               "xid": "TST_RELE1_ALM_1_Função 81-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 81-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 81-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -3958,7 +3958,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 81-1",
+         "name": "TST_RELE1_ALM_Função 81-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -3968,7 +3968,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 81-2",
+         "xid": "TST_RELE1_ALM_Função 81-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -3989,23 +3989,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 81-2",
+               "xid": "TST_RELE1_ALM_1_Função 81-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 81-2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 81-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4014,7 +4014,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 81-2",
+         "name": "TST_RELE1_ALM_Função 81-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4024,7 +4024,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 81-3",
+         "xid": "TST_RELE1_ALM_Função 81-3",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4045,23 +4045,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 81-3",
+               "xid": "TST_RELE1_ALM_1_Função 81-3",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 81-3 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 81-3 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4070,7 +4070,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 81-3",
+         "name": "TST_RELE1_ALM_Função 81-3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4080,7 +4080,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 81-4",
+         "xid": "TST_RELE1_ALM_Função 81-4",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4101,23 +4101,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 81-4",
+               "xid": "TST_RELE1_ALM_1_Função 81-4",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 81-4 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 81-4 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4126,7 +4126,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 81-4",
+         "name": "TST_RELE1_ALM_Função 81-4",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4136,7 +4136,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 64H",
+         "xid": "TST_RELE1_ALM_Função 64H",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4157,23 +4157,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 64H",
+               "xid": "TST_RELE1_ALM_1_Função 64H",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 64H Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 64H Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4182,7 +4182,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 64H",
+         "name": "TST_RELE1_ALM_Função 64H",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4192,7 +4192,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 37-1",
+         "xid": "TST_RELE1_ALM_Função 37-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4213,23 +4213,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 37-1",
+               "xid": "TST_RELE1_ALM_1_Função 37-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 37-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4238,7 +4238,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 37-1",
+         "name": "TST_RELE1_ALM_Função 37-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4248,7 +4248,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 37-2",
+         "xid": "TST_RELE1_ALM_Função 37-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4269,23 +4269,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 37-2",
+               "xid": "TST_RELE1_ALM_1_Função 37-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37-2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 37-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4294,7 +4294,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 37-2",
+         "name": "TST_RELE1_ALM_Função 37-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4304,7 +4304,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 60 CTS-I",
+         "xid": "TST_RELE1_ALM_Função 60 CTS-I",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4325,23 +4325,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 60 CTS-I",
+               "xid": "TST_RELE1_ALM_1_Função 60 CTS-I",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 60 CTS-I Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 60 CTS-I Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4350,7 +4350,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 60 CTS-I",
+         "name": "TST_RELE1_ALM_Função 60 CTS-I",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4360,7 +4360,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 81HBL2",
+         "xid": "TST_RELE1_ALM_Função 81HBL2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4381,23 +4381,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 81HBL2",
+               "xid": "TST_RELE1_ALM_1_Função 81HBL2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 81HBL2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 81HBL2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4406,7 +4406,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 81HBL2",
+         "name": "TST_RELE1_ALM_Função 81HBL2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4416,7 +4416,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 37G-1",
+         "xid": "TST_RELE1_ALM_Função 37G-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4437,23 +4437,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 37G-1",
+               "xid": "TST_RELE1_ALM_1_Função 37G-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37G-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 37G-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4462,7 +4462,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 37G-1",
+         "name": "TST_RELE1_ALM_Função 37G-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4472,7 +4472,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 37G-2",
+         "xid": "TST_RELE1_ALM_Função 37G-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4493,23 +4493,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 37G-2",
+               "xid": "TST_RELE1_ALM_1_Função 37G-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37G-2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 37G-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4518,7 +4518,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 37G-2",
+         "name": "TST_RELE1_ALM_Função 37G-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4528,7 +4528,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 37SEF-1",
+         "xid": "TST_RELE1_ALM_Função 37SEF-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4549,23 +4549,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 37SEF-1",
+               "xid": "TST_RELE1_ALM_1_Função 37SEF-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37SEF-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 37SEF-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4574,7 +4574,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 37SEF-1",
+         "name": "TST_RELE1_ALM_Função 37SEF-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4584,7 +4584,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 37SEF-2",
+         "xid": "TST_RELE1_ALM_Função 37SEF-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4605,23 +4605,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 37SEF-2",
+               "xid": "TST_RELE1_ALM_1_Função 37SEF-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37SEF-2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 37SEF-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4630,7 +4630,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 37SEF-2",
+         "name": "TST_RELE1_ALM_Função 37SEF-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4640,7 +4640,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50BF-1",
+         "xid": "TST_RELE1_ALM_Função 50BF-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4661,23 +4661,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50BF-1",
+               "xid": "TST_RELE1_ALM_1_Função 50BF-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50BF-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50BF-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4686,7 +4686,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50BF-1",
+         "name": "TST_RELE1_ALM_Função 50BF-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4696,7 +4696,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 37-PhA",
+         "xid": "TST_RELE1_ALM_Função 37-PhA",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4717,23 +4717,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 37-PhA",
+               "xid": "TST_RELE1_ALM_1_Função 37-PhA",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37-PhA Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 37-PhA Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4742,7 +4742,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 37-PhA",
+         "name": "TST_RELE1_ALM_Função 37-PhA",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4752,7 +4752,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 37-PhB",
+         "xid": "TST_RELE1_ALM_Função 37-PhB",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4773,23 +4773,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 37-PhB",
+               "xid": "TST_RELE1_ALM_1_Função 37-PhB",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37-PhB Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 37-PhB Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4798,7 +4798,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 37-PhB",
+         "name": "TST_RELE1_ALM_Função 37-PhB",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4808,7 +4808,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 37-PhC",
+         "xid": "TST_RELE1_ALM_Função 37-PhC",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4829,23 +4829,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 37-PhC",
+               "xid": "TST_RELE1_ALM_1_Função 37-PhC",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 37-PhC Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 37-PhC Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4854,7 +4854,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 37-PhC",
+         "name": "TST_RELE1_ALM_Função 37-PhC",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4864,7 +4864,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50 LC-1",
+         "xid": "TST_RELE1_ALM_Função 50 LC-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4885,23 +4885,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50 LC-1",
+               "xid": "TST_RELE1_ALM_1_Função 50 LC-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50 LC-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50 LC-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4910,7 +4910,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50 LC-1",
+         "name": "TST_RELE1_ALM_Função 50 LC-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4920,7 +4920,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50 LC-2",
+         "xid": "TST_RELE1_ALM_Função 50 LC-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4941,23 +4941,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50 LC-2",
+               "xid": "TST_RELE1_ALM_1_Função 50 LC-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50 LC-2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50 LC-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -4966,7 +4966,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50 LC-2",
+         "name": "TST_RELE1_ALM_Função 50 LC-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -4976,7 +4976,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50G LC-1",
+         "xid": "TST_RELE1_ALM_Função 50G LC-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -4997,23 +4997,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50G LC-1",
+               "xid": "TST_RELE1_ALM_1_Função 50G LC-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50G LC-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50G LC-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5022,7 +5022,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50G LC-1",
+         "name": "TST_RELE1_ALM_Função 50G LC-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5032,7 +5032,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50G LC-2",
+         "xid": "TST_RELE1_ALM_Função 50G LC-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5053,23 +5053,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50G LC-2",
+               "xid": "TST_RELE1_ALM_1_Função 50G LC-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50G LC-2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50G LC-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5078,7 +5078,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50G LC-2",
+         "name": "TST_RELE1_ALM_Função 50G LC-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5088,7 +5088,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50SEF LC-1",
+         "xid": "TST_RELE1_ALM_Função 50SEF LC-1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5109,23 +5109,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50SEF LC-1",
+               "xid": "TST_RELE1_ALM_1_Função 50SEF LC-1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50SEF LC-1 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50SEF LC-1 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5134,7 +5134,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50SEF LC-1",
+         "name": "TST_RELE1_ALM_Função 50SEF LC-1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5144,7 +5144,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50SEF LC-2",
+         "xid": "TST_RELE1_ALM_Função 50SEF LC-2",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5165,23 +5165,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50SEF LC-2",
+               "xid": "TST_RELE1_ALM_1_Função 50SEF LC-2",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50SEF LC-2 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50SEF LC-2 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5190,7 +5190,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50SEF LC-2",
+         "name": "TST_RELE1_ALM_Função 50SEF LC-2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5200,7 +5200,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50BF-PhA",
+         "xid": "TST_RELE1_ALM_Função 50BF-PhA",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5221,23 +5221,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50BF-PhA",
+               "xid": "TST_RELE1_ALM_1_Função 50BF-PhA",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50BF-PhA Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50BF-PhA Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5246,7 +5246,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50BF-PhA",
+         "name": "TST_RELE1_ALM_Função 50BF-PhA",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5256,7 +5256,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50BF-PhB",
+         "xid": "TST_RELE1_ALM_Função 50BF-PhB",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5277,23 +5277,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50BF-PhB",
+               "xid": "TST_RELE1_ALM_1_Função 50BF-PhB",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50BF-PhB Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50BF-PhB Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5302,7 +5302,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50BF-PhB",
+         "name": "TST_RELE1_ALM_Função 50BF-PhB",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5312,7 +5312,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50BF-PhC",
+         "xid": "TST_RELE1_ALM_Função 50BF-PhC",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5333,23 +5333,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50BF-PhC",
+               "xid": "TST_RELE1_ALM_1_Função 50BF-PhC",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50BF-PhC Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50BF-PhC Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5358,7 +5358,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50BF-PhC",
+         "name": "TST_RELE1_ALM_Função 50BF-PhC",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5368,7 +5368,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 50BF-EF",
+         "xid": "TST_RELE1_ALM_Função 50BF-EF",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5389,23 +5389,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 50BF-EF",
+               "xid": "TST_RELE1_ALM_1_Função 50BF-EF",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 50BF-EF Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 50BF-EF Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5414,7 +5414,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 50BF-EF",
+         "name": "TST_RELE1_ALM_Função 50BF-EF",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5424,7 +5424,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 79",
+         "xid": "TST_RELE1_ALM_Função 79",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5445,23 +5445,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 79",
+               "xid": "TST_RELE1_ALM_1_Função 79",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 79 Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 79 Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5470,7 +5470,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 79",
+         "name": "TST_RELE1_ALM_Função 79",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5480,7 +5480,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 60 CTS-I-PhA",
+         "xid": "TST_RELE1_ALM_Função 60 CTS-I-PhA",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5501,23 +5501,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 60 CTS-I-PhA",
+               "xid": "TST_RELE1_ALM_1_Função 60 CTS-I-PhA",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 60 CTS-I-PhA Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 60 CTS-I-PhA Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5526,7 +5526,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 60 CTS-I-PhA",
+         "name": "TST_RELE1_ALM_Função 60 CTS-I-PhA",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5536,7 +5536,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 60 CTS-I-PhB",
+         "xid": "TST_RELE1_ALM_Função 60 CTS-I-PhB",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5557,23 +5557,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 60 CTS-I-PhB",
+               "xid": "TST_RELE1_ALM_1_Função 60 CTS-I-PhB",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 60 CTS-I-PhB Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 60 CTS-I-PhB Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5582,7 +5582,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 60 CTS-I-PhB",
+         "name": "TST_RELE1_ALM_Função 60 CTS-I-PhB",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5592,7 +5592,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_RELE1_ALM_Função 60 CTS-I-PhC",
+         "xid": "TST_RELE1_ALM_Função 60 CTS-I-PhC",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -5613,23 +5613,23 @@
          },
          "eventDetectors": [
             {
-               "xid": "USN_RELE1_ALM_1_Função 60 CTS-I-PhC",
+               "xid": "TST_RELE1_ALM_1_Função 60 CTS-I-PhC",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Cabine 1 - Relé de Proteção - Função 60 CTS-I-PhC Atuada"
+               "alias": "UFV TESTE DE USINA - Cabine 1 - Relé de Proteção - Função 60 CTS-I-PhC Atuada"
             }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_RELE1_A",
+         "dataSourceXid": "TST_RELE1_A",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_RELE1_A",
+         "deviceName": "TST_RELE1_A",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -5638,7 +5638,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_RELE1_ALM_Função 60 CTS-I-PhC",
+         "name": "TST_RELE1_ALM_Função 60 CTS-I-PhC",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -5648,7 +5648,7 @@
          "tolerance": 0.0
       },
       {
-         "xid":"USN_RELE1_STA_Monitor de Conexão",
+         "xid":"TST_RELE1_STA_Monitor de Conexão",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -5673,10 +5673,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_RELE1_A",
+         "dataSourceXid":"TST_RELE1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_RELE1_A",
+         "deviceName":"TST_RELE1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -5685,7 +5685,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":15,
-         "name":"USN_RELE1_STA_Monitor de Conexão",
+         "name":"TST_RELE1_STA_Monitor de Conexão",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -5695,7 +5695,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_RELE1_VIR_Última Atualização (Data\/Hora)",
+         "xid":"TST_RELE1_VIR_Última Atualização (Data\/Hora)",
          "loggingType":"NONE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -5706,7 +5706,7 @@
             "context":[
                {
                   "varName":"ts",
-                  "dataPointXid":"USN_RELE1_MED_Corrente - Fase A (A)"
+                  "dataPointXid":"TST_RELE1_MED_Corrente - Fase A (A)"
                }
             ],
             "executionDelayPeriodType":"SECONDS",
@@ -5721,10 +5721,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_Time Stamps",
+         "dataSourceXid":"TST_Time Stamps",
          "defaultCacheSize":1,
          "description":"",
-         "deviceName":"USN_Time Stamps",
+         "deviceName":"TST_Time Stamps",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -5733,7 +5733,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":15,
-         "name":"USN_RELE1_VIR_Última Atualização (Data\/Hora)",
+         "name":"TST_RELE1_VIR_Última Atualização (Data\/Hora)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
