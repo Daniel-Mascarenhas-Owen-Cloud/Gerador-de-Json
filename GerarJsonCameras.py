@@ -35,6 +35,7 @@ for i in range(qtd_cameras):
     conteudo = ( conteudo
                 .replace("Monitor de Conexão Câmera 1", f"Monitor de Conexão Câmera {i+1}")
                 .replace('"offset": 0,', f'"offset": {offset+i},')
+                .replace("CFTV - Câmera 1", f"CFTV - Câmera {i+1}")
                 )
 
     dados = json.loads(conteudo)
