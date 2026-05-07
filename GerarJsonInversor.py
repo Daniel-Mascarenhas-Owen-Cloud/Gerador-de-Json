@@ -122,6 +122,7 @@ for i in range(inv_quantidade):
             .replace("_1a5","_" + str(start) + "a" + str(end) )
             .replace("Inversor 1.1", f"Inversor {skid}.{i+1}")
             .replace('"slaveId":1,', f'"slaveId":{numero_slaveid + i},')
+            .replace('Esperada 1', f'Esperada {skid}')
     )
 
 

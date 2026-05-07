@@ -460,17 +460,17 @@
             "updateEvent":"CONTEXT_UPDATE",
             "context":[
                {
-                  "varName":"potencia",
-                  "dataPointXid":"USN_Inv_1.1_MED_Potência Ativa (KW)"
+                  "varName":"energia_real",
+                  "dataPointXid":"USN_Inv_1.1_MED_Energia Diária (KWh)"
                },
                {
-                  "varName":"capacity",
-                  "dataPointXid":"USN_Smart1_VIR_Capacidade dos Inversores (KWp)"
+                  "varName":"energia_esperada",
+                  "dataPointXid":"USN_CAL_Energia Esperada 1 (KWh)"
                }
             ],
             "executionDelayPeriodType":"SECONDS",
             "executionDelaySeconds":0,
-            "script":"return (potencia.value / capacity.value) * 100;",
+            "script":"return (energia_real.value / energia_esperada.value) * 100;",
             "settable":false,
             "updateCronPattern":""
          },
