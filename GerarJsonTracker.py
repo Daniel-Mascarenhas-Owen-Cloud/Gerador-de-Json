@@ -101,7 +101,9 @@ for tracker in range(1, qtd_trackers + 1):
         novo_dp["deviceName"] = datasource_por_tracker(tracker)
 
         # ====== OFFSET ======
-        novo_dp["pointLocator"]["offset"] += (tracker - 1) * 22
+        # novo_dp["pointLocator"]["offset"] += (tracker - 1) * 22
+        if "offset" in novo_dp["pointLocator"]:
+            novo_dp["pointLocator"]["offset"] += (tracker - 1) * 22
 
         # ====== EVENT DETECTORS ======
         for ed in novo_dp.get("eventDetectors", []):
