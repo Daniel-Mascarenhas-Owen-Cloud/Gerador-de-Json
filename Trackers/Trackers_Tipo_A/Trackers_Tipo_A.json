@@ -3273,7 +3273,7 @@
          },
          "tolerance":0.0
       },
-            {
+      {
          "xid":"USN_TRK_1.1_CAL_Desvio (%)",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
