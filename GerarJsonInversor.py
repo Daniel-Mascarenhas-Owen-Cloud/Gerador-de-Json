@@ -44,7 +44,7 @@ endereco_DataPoint = "Inversores/" + tipo + "/DataPoints.json"
 
 if tipo_inversor == "C":
     with open(f"saida/inversor{skid}.json", "a", encoding="utf-8") as destino:
-        with open("INV_C/Sungrow.json", "r", encoding="utf-8") as origem:
+        with open("Inversores/INV_C/Sungrow.json", "r", encoding="utf-8") as origem:
             destino.write(origem.read())
 
 
