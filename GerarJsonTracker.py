@@ -97,8 +97,13 @@ for tracker in range(1, qtd_trackers + 1):
         )
 
         # ====== DATASOURCE ======
-        novo_dp["dataSourceXid"] = datasource_por_tracker(tracker)
-        novo_dp["deviceName"] = datasource_por_tracker(tracker)
+        
+        if "USN_Dados Calculados" in novo_dp["dataSourceXid"]:
+            novo_dp["dataSourceXid"] = novo_dp["dataSourceXid"].replace("USN", prefixo)
+            novo_dp["deviceName"] = novo_dp["deviceName"].replace("USN", prefixo)
+        else:
+            novo_dp["dataSourceXid"] = datasource_por_tracker(tracker)
+            novo_dp["deviceName"] = datasource_por_tracker(tracker)
 
         # ====== OFFSET ======
         # novo_dp["pointLocator"]["offset"] += (tracker - 1) * 22
