@@ -101,6 +101,7 @@ for tracker in range(1, qtd_trackers + 1):
         if "USN_Dados Calculados" in novo_dp["dataSourceXid"]:
             novo_dp["dataSourceXid"] = novo_dp["dataSourceXid"].replace("USN", prefixo)
             novo_dp["deviceName"] = novo_dp["deviceName"].replace("USN", prefixo)
+            novo_dp["context"]["deviceName"] = novo_dp["context"]["deviceName"].replace("USN", prefixo).replace("TRK_1.1", f"TRK_{ncu_num}.{tracker}")
         else:
             novo_dp["dataSourceXid"] = datasource_por_tracker(tracker)
             novo_dp["deviceName"] = datasource_por_tracker(tracker)
