@@ -380,10 +380,8 @@ for i in range(1, num_skids + 1):
 
     bloco = json.loads(texto)
 
-    ponto = bloco["dataPoints"][0]
-
-
-    json_final["dataPoints"].append(ponto)
+    for ponto in bloco["dataPoints"]:
+        json_final["dataPoints"].append(ponto)
 
 
 # POTENCIA TOTAL LOGGERS
