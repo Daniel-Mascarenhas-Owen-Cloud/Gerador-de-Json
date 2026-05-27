@@ -748,7 +748,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MM1_MED_Tensão - Va (KV)",
+         "xid":"USN_MM1_MED_Tensão - Va (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -785,7 +785,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MM1_MED_Tensão - Va (KV)",
+         "name":"USN_MM1_MED_Tensão - Va (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -796,7 +796,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MM1_MED_Tensão - Vb (KV)",
+         "xid":"USN_MM1_MED_Tensão - Vb (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -833,7 +833,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MM1_MED_Tensão - Vb (KV)",
+         "name":"USN_MM1_MED_Tensão - Vb (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -844,7 +844,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MM1_MED_Tensão - Vc (KV)",
+         "xid":"USN_MM1_MED_Tensão - Vc (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -881,7 +881,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MM1_MED_Tensão - Vc (KV)",
+         "name":"USN_MM1_MED_Tensão - Vc (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1372,7 +1372,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MM1_MED_Potência Aparente Total (MVA)",
+         "xid":"USN_MM1_MED_Potência Aparente Total (KVA)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1409,7 +1409,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MM1_MED_Potência Aparente Total (MVA)",
+         "name":"USN_MM1_MED_Potência Aparente Total (KVA)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{

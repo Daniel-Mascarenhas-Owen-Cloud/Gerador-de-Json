@@ -2314,7 +2314,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_UPS_ALM_Monitor de Conexão",
+         "xid":"USN_UPS_STA_Monitor de Conexão",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -2351,7 +2351,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":15,
-         "name":"USN_UPS_ALM_Monitor de Conexão",
+         "name":"USN_UPS_STA_Monitor de Conexão",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{

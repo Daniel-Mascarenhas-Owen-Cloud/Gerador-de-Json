@@ -8,6 +8,8 @@ os.makedirs("saida", exist_ok=True)
 tipo_ETM = sys.argv[1].upper()
 prefix_usina = sys.argv[2]
 IP = sys.argv[3]
+slaveId = sys.argv[4]
+nomeUsina = sys.argv[5]
 
 
 while(tipo_ETM != 'A'):
@@ -34,7 +36,8 @@ conteudo = (
     conteudo
         .replace("USN", prefix_usina)
         .replace("000.000.000.000", IP)
-    )
+        .replace('"slaveId":1,', f'"slaveId":{slaveId},')
+        .replace("UFV Usina", f"UFV {nomeUsina}")
 
 # Sobrescrever o arquivo original
 with open("saida/ETM.json", "w", encoding="utf-8") as f:

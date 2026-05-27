@@ -13,7 +13,7 @@ IP = sys.argv[5]
 slave_id = sys.argv[6]
 
 
-while(tipo_Multimedidor != 'A'):
+while(tipo_Multimedidor != 'A' and tipo_Multimedidor != 'C'):
     print("Tipo inválido!")
     tipo_Multimedidor = input("Qual o tipo do Multimedidor?\n")
 
@@ -42,6 +42,7 @@ conteudo = (
         .replace("Nome Usina",usina)
         .replace("000.000.000.000", IP)
         .replace("MM1","MM" + cabine)
+        .replace("Cabine 1", "Cabine " + cabine)
         .replace('"slaveId":1', '"slaveId":' + slave_id)
     )
 

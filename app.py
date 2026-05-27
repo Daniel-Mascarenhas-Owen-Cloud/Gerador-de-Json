@@ -96,6 +96,7 @@ while True:
 
         quantidade = int(input("Quantos ETM existem? "))
         tipo = input("Tipo do ETM: ").upper()
+        slaveId = input("Qual SlaveId: ")
 
         for i in range(quantidade):
 
@@ -108,7 +109,8 @@ while True:
                 "GerarJsonETM.py",
                 tipo,
                 prefixo,
-                ip
+                ip,
+                slaveId
             ])
 
         sys.exit()
