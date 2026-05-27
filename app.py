@@ -110,7 +110,8 @@ while True:
                 tipo,
                 prefixo,
                 ip,
-                slaveId
+                slaveId,
+                str(i+1)
             ])
 
         sys.exit()

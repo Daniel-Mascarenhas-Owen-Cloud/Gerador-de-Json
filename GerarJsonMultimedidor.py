@@ -21,7 +21,7 @@ tipo = "Multimedidor_TIPO_" + tipo_Multimedidor
 
 # Criar arquivo Json com inicio padrão
 shutil.copy("Multimedidor/" + tipo + "/" + tipo + ".json", "saida/" )
-destino = "saida/Multimedidor{cabine}.json"
+destino = f"saida/Multimedidor{cabine}.json"
 if os.path.exists(destino):
     os.remove(destino)
 
