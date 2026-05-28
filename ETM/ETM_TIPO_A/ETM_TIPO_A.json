@@ -568,7 +568,7 @@
             "additive":0.0,
             "bit":0,
             "charset":"ASCII",
-            "multiplier":1000.0,
+            "multiplier":1.0,
             "offset":54,
             "registerCount":1,
             "settableOverride":false,

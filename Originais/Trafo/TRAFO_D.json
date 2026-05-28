@@ -77,6 +77,53 @@
          "tolerance":0.0
       },
       {
+         "xid":"IRA_TRF1_STA_Monitor de Conexão",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"COIL_STATUS",
+            "modbusDataType":"BINARY",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":0,
+            "registerCount":0,
+            "settableOverride":true,
+            "slaveId":1,
+            "slaveMonitor":true,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"IRA_TRAFO1_D",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"IRA_TRAFO1_D",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"IRA_TRF1_STA_Monitor de Conexão",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
          "xid":"IRA_TRF1_MED_Sensor 1 - Temperatura Máxima (°C)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
@@ -139,7 +186,7 @@
             "multiplier":1.0,
             "offset":26,
             "registerCount":0,
-            "settableOverride":false,
+            "settableOverride":true,
             "slaveId":1,
             "slaveMonitor":false,
             "socketMonitor":false
@@ -187,7 +234,7 @@
             "multiplier":1.0,
             "offset":27,
             "registerCount":0,
-            "settableOverride":false,
+            "settableOverride":true,
             "slaveId":1,
             "slaveMonitor":false,
             "socketMonitor":false
@@ -230,7 +277,7 @@
             "range":"HOLDING_REGISTER",
             "modbusDataType":"BINARY",
             "additive":0.0,
-            "bit":2,
+            "bit":5,
             "charset":"ASCII",
             "multiplier":1.0,
             "offset":64,
@@ -286,7 +333,7 @@
             "range":"HOLDING_REGISTER",
             "modbusDataType":"BINARY",
             "additive":0.0,
-            "bit":3,
+            "bit":6,
             "charset":"ASCII",
             "multiplier":1.0,
             "offset":64,
@@ -324,62 +371,6 @@
          },
          "intervalLoggingPeriod":5,
          "name":"IRA_TRF1_ALM_Sensor 1 - Trip de Temperatura",
-         "purgePeriod":1,
-         "purgeValuesLimit":100,
-         "textRenderer":{
-            "type":"PLAIN",
-            "suffix":""
-         },
-         "tolerance":0.0
-      },
-      {
-         "xid":"IRA_TRF1_ALM_Sensor 1 - Falha de Temperatura",
-         "loggingType":"ON_CHANGE",
-         "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
-         "purgeType":"YEARS",
-         "pointLocator":{
-            "range":"HOLDING_REGISTER",
-            "modbusDataType":"BINARY",
-            "additive":0.0,
-            "bit":4,
-            "charset":"ASCII",
-            "multiplier":1.0,
-            "offset":64,
-            "registerCount":0,
-            "settableOverride":false,
-            "slaveId":1,
-            "slaveMonitor":false,
-            "socketMonitor":false
-         },
-         "eventDetectors":[
-            {
-               "xid":"IRA_TRF1_ALM_1_Sensor 1 - Falha de Temperatura",
-               "type":"BINARY_STATE",
-               "alarmLevel":"CRITICAL",
-               "state":true,
-               "durationType":"SECONDS",
-               "duration":0,
-               "alias":"UFV Iramaia - Skid 1 - Trafo 1 - Falha por Temperatura Alta no Sensor 1"
-            }
-         ],
-         "engineeringUnits":"",
-         "purgeStrategy":"PERIOD",
-         "chartColour":null,
-         "chartRenderer":null,
-         "dataSourceXid":"IRA_TRAFO1_D",
-         "defaultCacheSize":1,
-         "description":null,
-         "deviceName":"IRA_TRAFO1_D",
-         "discardExtremeValues":false,
-         "discardHighLimit":1.7976931348623157E308,
-         "discardLowLimit":-1.7976931348623157E308,
-         "enabled":true,
-         "eventTextRenderer":{
-            "type":"EVENT_NONE"
-         },
-         "intervalLoggingPeriod":5,
-         "name":"IRA_TRF1_ALM_Sensor 1 - Falha de Temperatura",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -499,7 +490,7 @@
             "multiplier":1.0,
             "offset":30,
             "registerCount":0,
-            "settableOverride":false,
+            "settableOverride":true,
             "slaveId":1,
             "slaveMonitor":false,
             "socketMonitor":false
@@ -547,7 +538,7 @@
             "multiplier":1.0,
             "offset":31,
             "registerCount":0,
-            "settableOverride":false,
+            "settableOverride":true,
             "slaveId":1,
             "slaveMonitor":false,
             "socketMonitor":false
@@ -590,7 +581,7 @@
             "range":"HOLDING_REGISTER",
             "modbusDataType":"BINARY",
             "additive":0.0,
-            "bit":2,
+            "bit":5,
             "charset":"ASCII",
             "multiplier":1.0,
             "offset":65,
@@ -646,7 +637,7 @@
             "range":"HOLDING_REGISTER",
             "modbusDataType":"BINARY",
             "additive":0.0,
-            "bit":3,
+            "bit":6,
             "charset":"ASCII",
             "multiplier":1.0,
             "offset":65,
@@ -684,62 +675,6 @@
          },
          "intervalLoggingPeriod":5,
          "name":"IRA_TRF1_ALM_Sensor 2 - Trip de Temperatura",
-         "purgePeriod":1,
-         "purgeValuesLimit":100,
-         "textRenderer":{
-            "type":"PLAIN",
-            "suffix":""
-         },
-         "tolerance":0.0
-      },
-      {
-         "xid":"IRA_TRF1_ALM_Sensor 2 - Falha de Temperatura",
-         "loggingType":"ON_CHANGE",
-         "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
-         "purgeType":"YEARS",
-         "pointLocator":{
-            "range":"HOLDING_REGISTER",
-            "modbusDataType":"BINARY",
-            "additive":0.0,
-            "bit":4,
-            "charset":"ASCII",
-            "multiplier":1.0,
-            "offset":65,
-            "registerCount":0,
-            "settableOverride":false,
-            "slaveId":1,
-            "slaveMonitor":false,
-            "socketMonitor":false
-         },
-         "eventDetectors":[
-            {
-               "xid":"IRA_TRF1_ALM_1_Sensor 2 - Falha de Temperatura",
-               "type":"BINARY_STATE",
-               "alarmLevel":"CRITICAL",
-               "state":true,
-               "durationType":"SECONDS",
-               "duration":0,
-               "alias":"UFV Iramaia - Skid 1 - Trafo 1 - Falha por Temperatura Alta no Sensor 2"
-            }
-         ],
-         "engineeringUnits":"",
-         "purgeStrategy":"PERIOD",
-         "chartColour":null,
-         "chartRenderer":null,
-         "dataSourceXid":"IRA_TRAFO1_D",
-         "defaultCacheSize":1,
-         "description":null,
-         "deviceName":"IRA_TRAFO1_D",
-         "discardExtremeValues":false,
-         "discardHighLimit":1.7976931348623157E308,
-         "discardLowLimit":-1.7976931348623157E308,
-         "enabled":true,
-         "eventTextRenderer":{
-            "type":"EVENT_NONE"
-         },
-         "intervalLoggingPeriod":5,
-         "name":"IRA_TRF1_ALM_Sensor 2 - Falha de Temperatura",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -859,7 +794,7 @@
             "multiplier":1.0,
             "offset":34,
             "registerCount":0,
-            "settableOverride":false,
+            "settableOverride":true,
             "slaveId":1,
             "slaveMonitor":false,
             "socketMonitor":false
@@ -907,7 +842,7 @@
             "multiplier":1.0,
             "offset":35,
             "registerCount":0,
-            "settableOverride":false,
+            "settableOverride":true,
             "slaveId":1,
             "slaveMonitor":false,
             "socketMonitor":false
@@ -950,7 +885,7 @@
             "range":"HOLDING_REGISTER",
             "modbusDataType":"BINARY",
             "additive":0.0,
-            "bit":2,
+            "bit":5,
             "charset":"ASCII",
             "multiplier":1.0,
             "offset":66,
@@ -1006,7 +941,7 @@
             "range":"HOLDING_REGISTER",
             "modbusDataType":"BINARY",
             "additive":0.0,
-            "bit":3,
+            "bit":6,
             "charset":"ASCII",
             "multiplier":1.0,
             "offset":66,
@@ -1044,62 +979,6 @@
          },
          "intervalLoggingPeriod":5,
          "name":"IRA_TRF1_ALM_Sensor 3 - Trip de Temperatura",
-         "purgePeriod":1,
-         "purgeValuesLimit":100,
-         "textRenderer":{
-            "type":"PLAIN",
-            "suffix":""
-         },
-         "tolerance":0.0
-      },
-      {
-         "xid":"IRA_TRF1_ALM_Sensor 3 - Falha de Temperatura",
-         "loggingType":"ON_CHANGE",
-         "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
-         "purgeType":"YEARS",
-         "pointLocator":{
-            "range":"HOLDING_REGISTER",
-            "modbusDataType":"BINARY",
-            "additive":0.0,
-            "bit":4,
-            "charset":"ASCII",
-            "multiplier":1.0,
-            "offset":66,
-            "registerCount":0,
-            "settableOverride":false,
-            "slaveId":1,
-            "slaveMonitor":false,
-            "socketMonitor":false
-         },
-         "eventDetectors":[
-            {
-               "xid":"IRA_TRF1_ALM_1_Sensor 3 - Falha de Temperatura",
-               "type":"BINARY_STATE",
-               "alarmLevel":"CRITICAL",
-               "state":true,
-               "durationType":"SECONDS",
-               "duration":0,
-               "alias":"UFV Iramaia - Skid 1 - Trafo 1 - Falha por Temperatura Alta no Sensor 3"
-            }
-         ],
-         "engineeringUnits":"",
-         "purgeStrategy":"PERIOD",
-         "chartColour":null,
-         "chartRenderer":null,
-         "dataSourceXid":"IRA_TRAFO1_D",
-         "defaultCacheSize":1,
-         "description":null,
-         "deviceName":"IRA_TRAFO1_D",
-         "discardExtremeValues":false,
-         "discardHighLimit":1.7976931348623157E308,
-         "discardLowLimit":-1.7976931348623157E308,
-         "enabled":true,
-         "eventTextRenderer":{
-            "type":"EVENT_NONE"
-         },
-         "intervalLoggingPeriod":5,
-         "name":"IRA_TRF1_ALM_Sensor 3 - Falha de Temperatura",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1219,7 +1098,7 @@
             "multiplier":1.0,
             "offset":38,
             "registerCount":0,
-            "settableOverride":false,
+            "settableOverride":true,
             "slaveId":1,
             "slaveMonitor":false,
             "socketMonitor":false
@@ -1267,7 +1146,7 @@
             "multiplier":1.0,
             "offset":39,
             "registerCount":0,
-            "settableOverride":false,
+            "settableOverride":true,
             "slaveId":1,
             "slaveMonitor":false,
             "socketMonitor":false
@@ -1310,7 +1189,7 @@
             "range":"HOLDING_REGISTER",
             "modbusDataType":"BINARY",
             "additive":0.0,
-            "bit":2,
+            "bit":5,
             "charset":"ASCII",
             "multiplier":1.0,
             "offset":67,
@@ -1366,7 +1245,7 @@
             "range":"HOLDING_REGISTER",
             "modbusDataType":"BINARY",
             "additive":0.0,
-            "bit":3,
+            "bit":6,
             "charset":"ASCII",
             "multiplier":1.0,
             "offset":67,
@@ -1404,62 +1283,6 @@
          },
          "intervalLoggingPeriod":5,
          "name":"IRA_TRF1_ALM_Sensor 4 - Trip de Temperatura",
-         "purgePeriod":1,
-         "purgeValuesLimit":100,
-         "textRenderer":{
-            "type":"PLAIN",
-            "suffix":""
-         },
-         "tolerance":0.0
-      },
-      {
-         "xid":"IRA_TRF1_ALM_Sensor 4 - Falha de Temperatura",
-         "loggingType":"ON_CHANGE",
-         "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
-         "purgeType":"YEARS",
-         "pointLocator":{
-            "range":"HOLDING_REGISTER",
-            "modbusDataType":"BINARY",
-            "additive":0.0,
-            "bit":4,
-            "charset":"ASCII",
-            "multiplier":1.0,
-            "offset":67,
-            "registerCount":0,
-            "settableOverride":false,
-            "slaveId":1,
-            "slaveMonitor":false,
-            "socketMonitor":false
-         },
-         "eventDetectors":[
-            {
-               "xid":"IRA_TRF1_ALM_1_Sensor 4 - Falha de Temperatura",
-               "type":"BINARY_STATE",
-               "alarmLevel":"CRITICAL",
-               "state":true,
-               "durationType":"SECONDS",
-               "duration":0,
-               "alias":"UFV Iramaia - Skid 1 - Trafo 1 - Falha por Temperatura Alta no Sensor 4"
-            }
-         ],
-         "engineeringUnits":"",
-         "purgeStrategy":"PERIOD",
-         "chartColour":null,
-         "chartRenderer":null,
-         "dataSourceXid":"IRA_TRAFO1_D",
-         "defaultCacheSize":1,
-         "description":null,
-         "deviceName":"IRA_TRAFO1_D",
-         "discardExtremeValues":false,
-         "discardHighLimit":1.7976931348623157E308,
-         "discardLowLimit":-1.7976931348623157E308,
-         "enabled":true,
-         "eventTextRenderer":{
-            "type":"EVENT_NONE"
-         },
-         "intervalLoggingPeriod":5,
-         "name":"IRA_TRF1_ALM_Sensor 4 - Falha de Temperatura",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1844,53 +1667,6 @@
          },
          "intervalLoggingPeriod":15,
          "name":"IRA_TRF1_VIR_Última Atualização (Data\/Hora)",
-         "purgePeriod":1,
-         "purgeValuesLimit":100,
-         "textRenderer":{
-            "type":"PLAIN",
-            "suffix":""
-         },
-         "tolerance":0.0
-      },
-      {
-         "xid":"IRA_TRF1_STA_Monitor de Conexão",
-         "loggingType":"ON_CHANGE",
-         "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"INSTANT",
-         "purgeType":"YEARS",
-         "pointLocator":{
-            "range":"COIL_STATUS",
-            "modbusDataType":"BINARY",
-            "additive":0.0,
-            "bit":0,
-            "charset":"ASCII",
-            "multiplier":1.0,
-            "offset":0,
-            "registerCount":0,
-            "settableOverride":true,
-            "slaveId":1,
-            "slaveMonitor":true,
-            "socketMonitor":false
-         },
-         "eventDetectors":[
-         ],
-         "engineeringUnits":"",
-         "purgeStrategy":"PERIOD",
-         "chartColour":null,
-         "chartRenderer":null,
-         "dataSourceXid":"IRA_TRAFO1_D",
-         "defaultCacheSize":1,
-         "description":null,
-         "deviceName":"IRA_TRAFO1_D",
-         "discardExtremeValues":false,
-         "discardHighLimit":1.7976931348623157E308,
-         "discardLowLimit":-1.7976931348623157E308,
-         "enabled":true,
-         "eventTextRenderer":{
-            "type":"EVENT_NONE"
-         },
-         "intervalLoggingPeriod":15,
-         "name":"IRA_TRF1_STA_Monitor de Conexão",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
