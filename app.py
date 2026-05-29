@@ -24,6 +24,29 @@ while True:
         "13. Trafo\n"
     ).upper()
 
+    if action not in [
+        "CONFIGURAÇÃO", "CONFIG", "0",
+        "INVERSOR", "1",
+        "SMARTLOGGER", "2",
+        "ETM", "3",
+        "NCU", "4",
+        "TRACKER", "5",
+        "NOBREAK", "6",
+        "MULTIMEDIDOR", "7",
+        "GERAR TUDO", "8",
+        "CALCULOS", "9",
+        "RELÉ", "RELE", "10",
+        "CÁMERAS", "11",
+        "MEDIDOR", "12",
+        "TRAFO", "13"
+    ]:
+        print("\nOpção inválida!\n")
+        sys.exit()
+
+    gerarTudo = False
+    if action in ["GERAR TUDO", "8"]:
+        gerarTudo = True
+
 # ---------------- CONFIG ----------------
 
     if action in ["CONFIGURAÇÃO", "CONFIG", "0"]:
@@ -34,11 +57,12 @@ while True:
             prefixo
         ])
 
-        sys.exit()
+        if not gerarTudo:
+            sys.exit()
 
 # ---------------- INVERSOR ----------------
 
-    elif action in ["INVERSOR", "1"]:
+    if action in ["INVERSOR", "1"] or gerarTudo:
 
         qtd_skids = int(input("Quantos Skids existem? "))
         tipo_inversor = input("Tipo do inversor (B ou C): ").upper()
@@ -63,11 +87,12 @@ while True:
                 numero_slaveid
             ])
 
-        sys.exit()
+        if not gerarTudo:
+            sys.exit()
 
 # ---------------- SMARTLOGGER ----------------
 
-    elif action in ["SMARTLOGGER", "2"]:
+    if action in ["SMARTLOGGER", "2"] or gerarTudo:
 
         qtd_skids = int(input("Quantos Skids existem? "))
         tipo_smart = input("Tipo do SmartLogger: ").upper()
@@ -88,11 +113,12 @@ while True:
                 ip
             ])
 
-        sys.exit()
+        if not gerarTudo:
+            sys.exit()
 
 # ---------------- ETM ----------------
 
-    elif action in ["ETM", "3"]:
+    if action in ["ETM", "3"] or gerarTudo:
 
         quantidade = int(input("Quantos ETM existem? "))
         tipo = input("Tipo do ETM: ").upper()
@@ -114,11 +140,12 @@ while True:
                 str(i+1)
             ])
 
-        sys.exit()
+        if not gerarTudo:
+            sys.exit()
 
 # ---------------- NCU ----------------
 
-    elif action in ["NCU", "4"]:
+    if action in ["NCU", "4"] or gerarTudo:
 
         quantidade = int(input("Quantas NCUs existem? "))
         tipo = input("Tipo da NCU: ")
@@ -139,11 +166,12 @@ while True:
                 ip
             ])
 
-        sys.exit()
+        if not gerarTudo:
+            sys.exit()
 
 # ---------------- TRACKER ----------------
 
-    elif action in ["TRACKER", "5"]:
+    if action in ["TRACKER", "5"] or gerarTudo:
 
         quantidade = int(input("Quantas NCUs com Trackers existem? "))
         tipo_tracker = input("Tipo do Tracker: ")
@@ -166,11 +194,12 @@ while True:
                 qtd_trackers
             ])
 
-        sys.exit()
+        if not gerarTudo:
+            sys.exit()
 
 # ---------------- NOBREAK ----------------
 
-    elif action in ["NOBREAK", "6"]:
+    if action in ["NOBREAK", "6"] or gerarTudo:
 
         print("\n--- Nobreak ---")
 
@@ -186,11 +215,12 @@ while True:
             ip
         ])
 
-        sys.exit()
+        if not gerarTudo:
+            sys.exit()
 
 # ---------------- MULTIMEDIDOR ----------------
 
-    elif action in ["MULTIMEDIDOR", "7"]:
+    if action in ["MULTIMEDIDOR", "7"] or gerarTudo:
 
         quantidade = int(input("Quantos Multimedidores existem? "))
         tipo_multimedidor = input("Tipo do Multimedidor: ")
@@ -213,11 +243,12 @@ while True:
                 slave_id
             ])
 
-        sys.exit()
+        if not gerarTudo:
+            sys.exit()
 
 # ---------------- CALCULOS ----------------
 
-    elif action in ["CALCULOS", "CALCULO", "9"]:
+    if action in ["CALCULOS", "CALCULO", "9"] or gerarTudo:
 
         qtd_skids = int(input("Quantos skids existem? "))
 
@@ -239,12 +270,13 @@ while True:
             str(qtd_skids)
         ])
 
-        sys.exit()
+        if not gerarTudo:
+            sys.exit()
 
 
 # ---------------- RELÉ ----------------
 
-    elif action in ["RELÉ", "10"]:
+    if action in ["RELÉ", "RELE", "10"] or gerarTudo:
 
         qtd_rele = int(input("Quantos relés existem? ").strip())
         tipo_rele = input("Qual o tipo dos relés? ").strip()
@@ -273,11 +305,12 @@ while True:
                 str(numeroDoGerador)
             ])
 
-        sys.exit()
+        if not gerarTudo:
+            sys.exit()
 
 # ---------------- CAMERAS ----------------
 
-    elif action in ["CAMERAS", "11"]:
+    if action in ["CAMERAS", "11"] or gerarTudo:
 
         qtd_cameras = input("Quantas câmeras existem? ")
         ip = input("IP das Câmeras: ")
@@ -294,13 +327,14 @@ while True:
             qtd_cameras
             ])
 
-        sys.exit()
+        if not gerarTudo:
+            sys.exit()
 
 
 
 # ---------------- MEDIDOR ----------------
 
-    elif action in ["MEDIDOR", "12"]:
+    if action in ["MEDIDOR", "12"] or gerarTudo:
 
         quantidade = int(input("Quantos Multimedidores existem? "))
         tipo_multimedidor = input("Tipo do Multimedidor: ")
@@ -321,12 +355,13 @@ while True:
                 str(i+1)
             ])
 
-        sys.exit()
+        if not gerarTudo:
+            sys.exit()
 
 
-# ---------------- MEDIDOR ----------------
+# ---------------- TRAFO ----------------
 
-    elif action in ["Trafo", "13"]:
+    if action in ["Trafo", "13"] or gerarTudo:
 
         quantidade = int(input("Quantos Trafos existem? "))
         tipo_trafo = input("Tipo do Trafo: ")
@@ -356,245 +391,18 @@ while True:
                 str(i+1)
             ])
 
+    if not gerarTudo:
         sys.exit()
 
-# ---------------- GERAR TUDO ----------------
+    print("\nTodos os JSON foram gerados!")
 
-    elif action in ["GERAR TUDO", "8"]:
+    unir = input("\nDeseja unir os arquivos em um unico arquivo? (S/N): ").upper()
 
-        print("\n=== CONFIGURAÇÃO DOS EQUIPAMENTOS ===\n")
-
-        subprocess.run(["python", "GerarJsonConfig.py", prefixo])
-
-        qtd_skids = int(input("Quantos Skids existem? "))
-
-        tipo_inversor = input("Tipo do inversor: ").upper()
-        tipo_smart = input("Tipo do SmartLogger: ").upper()
-
-        inversores_lista = []
-
-# INVERSORES
-
-        for i in range(qtd_skids):
-
-            print(f"\n--- Skid Inversor {i+1} ---")
-
-            ip_inv = input("IP do DataSource: ")
-            inv_quantidade = input("Quantidade de inversores: ")
-            numero_slaveid = input("Primeiro slaveId: ")
-
-            inversores_lista.append(inv_quantidade)
-
-            subprocess.run([
-                "python","GerarJsonInversor.py",
-                tipo_inversor,usina,prefixo,str(i+1),
-                ip_inv,inv_quantidade,numero_slaveid
-            ])
-
-# SMARTLOGGER
-
-        for i in range(qtd_skids):
-
-            print(f"\n--- SmartLogger Skid {i+1} ---")
-
-            ip_smart = input("IP do SmartLogger: ")
-
-            subprocess.run([
-                "python","GerarJsonSmart.py",
-                tipo_smart,usina,prefixo,str(i+1),ip_smart
-            ])
-
-# CALCULOS
-
-        print("\nGerando cálculos...")
-
-        subprocess.run([
-            "python",
-            "GerarJsonCalculos.py",
-            prefixo,
-            str(qtd_skids),
-            ",".join(inversores_lista),
-        ])
-
-# ---------------- ETM ----------------
-
-        quantidade = int(input("Quantos ETM existem? "))
-        tipo = input("Tipo do ETM: ").upper()
-
-        for i in range(quantidade):
-
-            print(f"\n--- ETM {i+1} ---")
-
-            ip = input("IP do ETM: ")
-
-            subprocess.run([
-                "python",
-                "GerarJsonETM.py",
-                tipo,
-                prefixo,
-                ip
-            ])
-
+    if unir == "S":
+        subprocess.run(["python","UnirJsons.py"])
         sys.exit()
 
-# ---------------- NCU ----------------
-
-        quantidade = int(input("Quantas NCUs existem? "))
-        tipo = input("Tipo da NCU: ")
-
-        for i in range(quantidade):
-
-            print(f"\n--- NCU {i+1} ---")
-
-            ip = input("IP do DataSource: ")
-
-            subprocess.run([
-                "python",
-                "GerarJsonNCU.py",
-                tipo,
-                usina,
-                prefixo,
-                str(i+1),
-                ip
-            ])
-
-        sys.exit()
-
-# ---------------- TRACKER ----------------
-
-
-        quantidade = int(input("Quantas NCUs com Trackers existem? "))
-        tipo_tracker = input("Tipo do Tracker: ")
-
-        for i in range(quantidade):
-
-            print(f"\n--- Tracker grupo {i+1} ---")
-
-            ip = input("IP do Tracker: ")
-            qtd_trackers = input("Quantidade de Trackers: ")
-
-            subprocess.run([
-                "python",
-                "GerarJsonTracker.py",
-                tipo_tracker,
-                usina,
-                prefixo,
-                str(i+1),
-                ip,
-                qtd_trackers
-            ])
-
-        sys.exit()
-
-
-
-        # ---------------- NOBREAK ----------------
-
-        print("\n--- Nobreak ---")
-
-        tipo_equipamento = input("Tipo do Nobreak: ")
-        ip = input("IP do Nobreak: ")
-
-        subprocess.run([
-            "python",
-            "GerarJsonNobreak.py",
-            tipo_equipamento,
-            usina,
-            prefixo,
-            ip
-        ])
-
-        sys.exit()
-
-
-# ---------------- RELÉ ----------------
-
-
-
-        qtd_rele = int(input("Quantos relés existem? "))
-        tipo_rele = input("Qual o tipo dos relés? ")
-
-        for i in range(qtd_rele):
-
-            print(f"\n--- Relé {i+1} ---")
-
-            ip = input("IP do Relé: ")
-            slave_id = input("Qual o SlaveId do relé? ")
-            numero_rele= input("Qual o número do relé? ")
-            Cabine = input("Qual a cabine do relé? ")
-
-            numeroDoGerador = int(i+1)
-
-            subprocess.run([
-                "python",
-                "GerarJsonRele.py",
-                tipo_rele,
-                usina,
-                prefixo,
-                ip,
-                slave_id,
-                numero_rele,
-                Cabine,
-                numeroDoGerador
-            ])
-
-        sys.exit()
-
-# ---------------- CAMERAS ----------------
-
-        qtd_cameras = input("Quantas câmeras existem? ")
-        ip = input("IP das Câmeras: ")
-        offset = input("Qual o offset de início das Câmeras? ")
-
-
-        subprocess.run([
-            "python",
-            "GerarJsonCameras.py",
-            usina,
-            prefixo,
-            ip,
-            offset,
-            qtd_cameras
-            ])
-
-        sys.exit()
-
-
-
-# ---------------- MULTIMEDIDOR ----------------
-
-
-        quantidade = int(input("Quantos Multimedidores existem? "))
-        tipo_multimedidor = input("Tipo do Multimedidor: ")
-
-        for i in range(quantidade):
-
-            print(f"\n--- Multimedidor {i+1} ---")
-
-            ip = input("IP do DataSource: ")
-
-            subprocess.run([
-                "python",
-                "GerarJsonMedidor.py",
-                tipo_multimedidor,
-                usina,
-                prefixo,
-                ip,
-                str(i+1)
-            ])
-
-        sys.exit()
-
-
-        print("\nTodos os JSON foram gerados!")
-
-        unir = input("\nDeseja unir os arquivos em um unico arquivo? (S/N): ").upper()
-
-        if unir == "S":
-            subprocess.run(["python","UnirJsons.py"])
-
-        sys.exit()
+        
+    
 
     
-    else:
-        print("Json Inválido\n")
