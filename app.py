@@ -102,6 +102,7 @@ while True:
             print(f"\n--- SmartLogger Skid {i+1} ---")
 
             ip = input("IP do SmartLogger: ")
+            slaveID = input("Qual o SlaveId do SmartLogger? ")
 
             subprocess.run([
                 "python",
@@ -110,7 +111,8 @@ while True:
                 usina,
                 prefixo,
                 str(i+1),
-                ip
+                ip,
+                slaveID
             ])
 
         if not gerarTudo:

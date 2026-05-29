@@ -11,6 +11,7 @@ usina = sys.argv[2]
 prefix_usina = sys.argv[3]
 skid = sys.argv[4]
 IP = sys.argv[5]
+slaveID = sys.argv[6]
 
 
 while(tipo_smartlogger != 'A'):
@@ -56,6 +57,7 @@ conteudo = (
         .replace("Diário 1","Diário " + skid)
         .replace("Mensal 1","Mensal " + skid)
         .replace("Anual 1","Anual " + skid)
+        .replace("'slaveId': 30,","'slaveId': " + slaveID + ",")
     )
 
 # Sobrescrever o arquivo original
