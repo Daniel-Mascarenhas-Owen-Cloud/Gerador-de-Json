@@ -4301,6 +4301,102 @@
             "suffix":""
          },
          "tolerance":0.0
+      },
+      {
+         "xid":"IRA_RELE1_CTE_Valor de RTC",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"HOLDING_REGISTER",
+            "modbusDataType":"TWO_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":60,
+            "registerCount":0,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"IRA_RELE1_C",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"IRA_RELE1_C",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"IRA_RELE1_CTE_Valor de RTC",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"IRA_RELE1_CTE_Valor de RTP",
+         "loggingType":"INTERVAL",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"AVERAGE",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "range":"HOLDING_REGISTER",
+            "modbusDataType":"TWO_BYTE_INT_SIGNED",
+            "additive":0.0,
+            "bit":0,
+            "charset":"ASCII",
+            "multiplier":1.0,
+            "offset":62,
+            "registerCount":0,
+            "settableOverride":false,
+            "slaveId":1,
+            "slaveMonitor":false,
+            "socketMonitor":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"IRA_RELE1_C",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"IRA_RELE1_C",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":5,
+         "name":"IRA_RELE1_CTE_Valor de RTP",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
+         },
+         "tolerance":0.0
       }
    ]
 }
