@@ -5416,7 +5416,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"Inv_1.1_ALM_1_Componente CC Saída muito Alto",
+               "xid":"USN_Inv_1.1_ALM_1_Componente CC Saída muito Alto",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
