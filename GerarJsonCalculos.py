@@ -37,7 +37,7 @@ def gerar_contexto_inversor(prefixo, skid, qtd, tipo):
             "dataPointXid": f"{prefixo}_Inv_{skid}.{i+1}_STA_Monitor de Conexao"
         })
 
-        vars_script.append(f"({varMonitor}.value ? {var}.value : 0"))
+        vars_script.append(f"({varMonitor}.value ? {var}.value : 0)")
 
     if tipo == "Mensal":
         divisor = ""
