@@ -228,13 +228,18 @@ vars_mensal = []
 
 for i in range(num_skids):
     var = letras[i]
-
+    varMonitor = "monitor_" + var;
     context_mensal.append({
         "varName": var,
         "dataPointXid": f"{prefixo}_CAL_Energia Mensal {i+1} (KWh)"
     })
 
-    vars_mensal.append(f"{var}.value")
+    context_mensal.append({
+        "varName": varMonitor,
+        "dataPointXid": f"{prefixo}_Smart{i+1}_STA_Monitor de Conexao"
+    })
+
+    vars_mensal.append(f"({varMonitor}.value ? {var}.value : 0)")
 
 script_mensal = "energy = " + " + ".join(vars_mensal) + ";\nreturn energy;"
 
@@ -291,13 +296,19 @@ vars_anual = []
 
 for i in range(num_skids):
     var = letras[i]
+    varMonitor = "monitor_" + var;
 
     context_anual.append({
         "varName": var,
         "dataPointXid": f"{prefixo}_CAL_Energia Anual {i+1} (GWh)"
     })
 
-    vars_anual.append(f"{var}.value")
+    context_anual.append({
+        "varName": varMonitor,
+        "dataPointXid": f"{prefixo}_Smart{i+1}_STA_Monitor de Conexao"
+    })
+
+    vars_anual.append(f"({varMonitor}.value ? {var}.value : 0)")
 
 script_anual = "energy = " + " + ".join(vars_anual) + ";\nreturn energy;"
 
