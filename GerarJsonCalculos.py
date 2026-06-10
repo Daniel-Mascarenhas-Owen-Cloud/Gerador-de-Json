@@ -26,13 +26,18 @@ def gerar_contexto_inversor(prefixo, skid, qtd, tipo):
     for i in range(qtd):
 
         var = letras[i]
-
+        varMonitor =  "monitor_" + var;
         context.append({
             "varName": var,
             "dataPointXid": f"{prefixo}_Inv_{skid}.{i+1}_MED_Energia {tipo} (KWh)"
         })
 
-        vars_script.append(f"{var}.value")
+        context.append({
+            "varName": varMonitor,
+            "dataPointXid": f"{prefixo}_Inv_{skid}.{i+1}_STA_Monitor de Conexao"
+        })
+
+        vars_script.append(f"monitor_{var}.value ? {var}.value : 0")
 
     if tipo == "Mensal":
         divisor = ""
@@ -154,10 +159,15 @@ vars_smart = []
 for i in range(num_skids):
 
     var = letras[i]
-
+    varMonitor = "monitor_" + var;
     context_smart.append({
         "varName": var,
         "dataPointXid": f"{prefixo}_Smart{i+1}_MED_Energia Diaria Total (KWh)"
+    })
+
+    context_smart.append({
+        "varName": varMonitor,
+        "dataPointXid": f"{prefixo}_Smart{i+1}_STA_Monitor de Conexao"
     })
 
     vars_smart.append(f"{var}.value")
