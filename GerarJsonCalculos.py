@@ -35,7 +35,7 @@ def gerar_contexto_inversor(prefixo, skid, qtd, tipo):
         vars_script.append(f"{var}.value")
 
     if tipo == "Mensal":
-        divisor = "/1000"
+        divisor = ""
         unidade = "(KWh)"
     else:
         divisor = "/1000000"
