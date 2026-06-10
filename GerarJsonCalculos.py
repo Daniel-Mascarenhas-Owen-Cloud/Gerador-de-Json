@@ -37,7 +37,7 @@ def gerar_contexto_inversor(prefixo, skid, qtd, tipo):
             "dataPointXid": f"{prefixo}_Inv_{skid}.{i+1}_STA_Monitor de Conexao"
         })
 
-        vars_script.append(f"monitor_{var}.value ? {var}.value : 0")
+        vars_script.append(f"({varMonitor}.value ? {var}.value : 0"))
 
     if tipo == "Mensal":
         divisor = ""
@@ -170,7 +170,7 @@ for i in range(num_skids):
         "dataPointXid": f"{prefixo}_Smart{i+1}_STA_Monitor de Conexao"
     })
 
-    vars_smart.append(f"{var}.value")
+    vars_smart.append(f"({varMonitor}.value ? {var}.value : 0)")
 
 script_smart = "energy = " + " + ".join(vars_smart) + ";\nreturn energy;"
 
