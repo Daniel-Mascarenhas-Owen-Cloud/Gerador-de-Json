@@ -40,8 +40,8 @@ def gerar_contexto_inversor(prefixo, skid, qtd, tipo):
         vars_script.append(f"({varMonitor}.value ? {var}.value : 0)")
 
     if tipo == "Mensal":
-        divisor = ""
-        unidade = "(KWh)"
+        divisor = "/1000"
+        unidade = "(MWh)"
     else:
         divisor = "/1000000"
         unidade = "(GWh)"
@@ -56,7 +56,7 @@ for skid, qtd in enumerate(inversores_por_skid, start=1):
     context, script, unidade = gerar_contexto_inversor(prefixo, skid, qtd, "Mensal")
 
     ponto = {
-        "xid": f"{prefixo}_CAL_Energia Mensal {skid} (KWh)",
+        "xid": f"{prefixo}_CAL_Energia Mensal {skid} (MWh)",
         "loggingType": "INTERVAL",
         "intervalLoggingPeriodType": "MINUTES",
         "intervalLoggingType": "INSTANT",
@@ -88,7 +88,7 @@ for skid, qtd in enumerate(inversores_por_skid, start=1):
             "type": "EVENT_NONE"
         },
         "intervalLoggingPeriod": 5,
-        "name": f"{prefixo}_CAL_Energia Mensal {skid} (KWh)",
+        "name": f"{prefixo}_CAL_Energia Mensal {skid} (MWh)",
         "purgePeriod": 1,
         "purgeValuesLimit": 100,
         "textRenderer": {
@@ -231,7 +231,7 @@ for i in range(num_skids):
     varMonitor = "monitor_" + var;
     context_mensal.append({
         "varName": var,
-        "dataPointXid": f"{prefixo}_CAL_Energia Mensal {i+1} (KWh)"
+        "dataPointXid": f"{prefixo}_CAL_Energia Mensal {i+1} (MWh)"
     })
 
     context_mensal.append({
@@ -244,7 +244,7 @@ for i in range(num_skids):
 script_mensal = "energy = " + " + ".join(vars_mensal) + ";\nreturn energy;"
 
 mensal_total = {
-    "xid": f"{prefixo}_CAL_Energia Mensal Total (KWh)",
+    "xid": f"{prefixo}_CAL_Energia Mensal Total (MWh)",
     "loggingType": "INTERVAL",
     "intervalLoggingPeriodType": "MINUTES",
     "intervalLoggingType": "INSTANT",
@@ -276,7 +276,7 @@ mensal_total = {
         "type": "EVENT_NONE"
     },
     "intervalLoggingPeriod": 5,
-    "name": f"{prefixo}_CAL_Energia Mensal Total (KWh)",
+    "name": f"{prefixo}_CAL_Energia Mensal Total (MWh)",
     "purgePeriod": 1,
     "purgeValuesLimit": 100,
     "textRenderer": {
