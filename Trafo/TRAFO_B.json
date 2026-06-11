@@ -1,0 +1,2999 @@
+{
+   "dataSources": [
+      {
+         "xid": "USN_TRAFO1_B",
+         "type": "MODBUS_IP",
+         "alarmLevels": {
+            "POINT_WRITE_EXCEPTION": "NONE",
+            "DATA_SOURCE_EXCEPTION": "NONE",
+            "POINT_READ_EXCEPTION": "NONE"
+         },
+         "updatePeriodType": "SECONDS",
+         "transportType": "TCP",
+         "contiguousBatches": false,
+         "createSlaveMonitorPoints": true,
+         "createSocketMonitorPoint": false,
+         "enabled": true,
+         "encapsulated": false,
+         "host": "000.000.000.000",
+         "maxReadBitCount": 2000,
+         "maxReadRegisterCount": 125,
+         "maxWriteRegisterCount": 120,
+         "name": "USN_TRAFO1_B",
+         "port": 502,
+         "quantize": false,
+         "retries": 2,
+         "timeout": 5000,
+         "updatePeriods": 5
+      }
+   ],
+   "dataPoints": [
+      {
+         "xid": "USN_TRF1_STA_Monitor de Conexão",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "COIL_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 0,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": true,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_STA_0_Monitor de Conexão",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": false,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Falha de Comunicação"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_TRF1_STA_Monitor de Conexão",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 1 - Temperatura (°C)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 29,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 1 - Temperatura (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_MED_Sensor 1 - Temperatura (°C)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 1 - Temperatura (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_MED_Sensor 1 - Temperatura (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 1 - Temperatura de Alarme (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 1,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 1 - Temperatura de Alarme (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_CFG_Sensor 1 - Temperatura de Alarme (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 1 - Temperatura de Alarme (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": true,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_CFG_Sensor 1 - Temperatura de Alarme (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 1 - Temperatura de Trip (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 10,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 1 - Temperatura de Trip (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_CFG_Sensor 1 - Temperatura de Trip (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 1 - Temperatura de Trip (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": true,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_CFG_Sensor 1 - Temperatura de Trip (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 1 - Temp. de Refrigeração (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 19,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 1 - Temp. de Refrigeração (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_CFG_Sensor 1 - Temp. de Refrigeração (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 1 - Temp. de Refrigeração (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": true,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_CFG_Sensor 1 - Temp. de Refrigeração (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_STA_Sensor 1 - Estado de Conexão",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 42,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_STA_0_Sensor 1 - Estado de Conexão",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": false,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor Desconectado"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_STA_Sensor 1 - Estado de Conexão",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_ALM_Sensor 1 - Alarme de Temperatura",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 45,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_ALM_1_Sensor 1 - Alarme de Temperatura",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Alarme por Temperatura Alta no Sensor 1"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_ALM_Sensor 1 - Alarme de Temperatura",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_STA_Sensor 1 - Contator de Trips",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 46,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_STA_1_Sensor 1 - Contator de Trips",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 1 - Contator de Trips"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_STA_Sensor 1 - Contator de Trips",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_ALM_Sensor 1 - Trip de Temperatura",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 47,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_ALM_1_Sensor 1 - Trip de Temperatura",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Trip por Temperatura Alta no Sensor 1"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_ALM_Sensor 1 - Trip de Temperatura",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_STA_Sensor 1 - Refrigerador Acionado",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 48,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_STA_1_Sensor 1 - Refrigerador Acionado",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 1 - Refrigerador Acionado"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_STA_Sensor 1 - Refrigerador Acionado",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_ALM_Sensor 1 - Falha de Leitura",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 49,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_ALM_1_Sensor 1 - Falha de Leitura",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Falha de Leitura no Sensor 1"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_ALM_Sensor 1 - Falha de Leitura",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 2 - Temperatura (°C)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 30,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 2 - Temperatura (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_MED_Sensor 2 - Temperatura (°C)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 2 - Temperatura (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_MED_Sensor 2 - Temperatura (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 2 - Temperatura de Alarme (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 2,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 2 - Temperatura de Alarme (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_CFG_Sensor 2 - Temperatura de Alarme (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 2 - Temperatura de Alarme (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": true,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_CFG_Sensor 2 - Temperatura de Alarme (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 2 - Temperatura de Trip (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 11,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 2 - Temperatura de Trip (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_CFG_Sensor 2 - Temperatura de Trip (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 2 - Temperatura de Trip (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": true,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_CFG_Sensor 2 - Temperatura de Trip (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 2 - Temp. de Refrigeração (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 20,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 2 - Temp. de Refrigeração (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_CFG_Sensor 2 - Temp. de Refrigeração (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 2 - Temp. de Refrigeração (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": true,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_CFG_Sensor 2 - Temp. de Refrigeração (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_STA_Sensor 2 - Estado de Conexão",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 1,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 42,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_STA_0_Sensor 2 - Estado de Conexão",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": false,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Trafo 1 - Sensor 2 - Sensor Desconectado"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_STA_Sensor 2 - Estado de Conexão",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_ALM_Sensor 2 - Alarme de Temperatura",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 1,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 45,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_ALM_1_Sensor 2 - Alarme de Temperatura",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Alarme por Temperatura Alta no Sensor 2"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_ALM_Sensor 2 - Alarme de Temperatura",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_STA_Sensor 2 - Contator de Trips",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 1,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 46,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_STA_1_Sensor 2 - Contator de Trips",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 2 - Contator de Trips"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_STA_Sensor 2 - Contator de Trips",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_ALM_Sensor 2 - Trip de Temperatura",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 1,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 47,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_ALM_1_Sensor 2 - Trip de Temperatura",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Trip por Temperatura Alta no Sensor 2"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_ALM_Sensor 2 - Trip de Temperatura",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_STA_Sensor 2 - Refrigerador Acionado",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 1,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 48,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_STA_1_Sensor 2 - Refrigerador Acionado",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 2 - Refrigerador Acionado"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_STA_Sensor 2 - Refrigerador Acionado",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_ALM_Sensor 2 - Falha de Leitura",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 1,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 49,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_ALM_1_Sensor 2 - Falha de Leitura",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Falha de Leitura no Sensor 2"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_ALM_Sensor 2 - Falha de Leitura",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 3 - Temperatura (°C)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 31,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 3 - Temperatura (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_MED_Sensor 3 - Temperatura (°C)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 3 - Temperatura (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_MED_Sensor 3 - Temperatura (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 3 - Temperatura de Alarme (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 3,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 3 - Temperatura de Alarme (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_CFG_Sensor 3 - Temperatura de Alarme (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 3 - Temperatura de Alarme (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": true,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_CFG_Sensor 3 - Temperatura de Alarme (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 3 - Temperatura de Trip (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 12,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 3 - Temperatura de Trip (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_CFG_Sensor 3 - Temperatura de Trip (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 3 - Temperatura de Trip (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": true,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_CFG_Sensor 3 - Temperatura de Trip (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 3 - Temp. de Refrigeração (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 21,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 3 - Temp. de Refrigeração (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_CFG_Sensor 3 - Temp. de Refrigeração (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 3 - Temp. de Refrigeração (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": true,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_CFG_Sensor 3 - Temp. de Refrigeração (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_STA_Sensor 3 - Estado de Conexão",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 2,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 42,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_STA_0_Sensor 3 - Estado de Conexão",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": false,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Trafo 1 - Sensor 3 - Sensor Desconectado"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_STA_Sensor 3 - Estado de Conexão",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_ALM_Sensor 3 - Alarme de Temperatura",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 2,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 45,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_ALM_1_Sensor 3 - Alarme de Temperatura",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Alarme por Temperatura Alta no Sensor 3"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_ALM_Sensor 3 - Alarme de Temperatura",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_STA_Sensor 3 - Contator de Trips",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 2,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 46,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_STA_1_Sensor 3 - Contator de Trips",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 3 - Contator de Trips"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_STA_Sensor 3 - Contator de Trips",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_ALM_Sensor 3 - Trip de Temperatura",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 2,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 47,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_ALM_1_Sensor 3 - Trip de Temperatura",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Trip por Temperatura Alta no Sensor 3"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_ALM_Sensor 3 - Trip de Temperatura",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_STA_Sensor 3 - Refrigerador Acionado",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 2,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 48,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_STA_1_Sensor 3 - Refrigerador Acionado",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 3 - Refrigerador Acionado"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_STA_Sensor 3 - Refrigerador Acionado",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_ALM_Sensor 3 - Falha de Leitura",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 2,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 49,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_ALM_1_Sensor 3 - Falha de Leitura",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Falha de Leitura no Sensor 3"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_ALM_Sensor 3 - Falha de Leitura",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 4 - Temperatura (°C)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 32,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 4 - Temperatura (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_MED_Sensor 4 - Temperatura (°C)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 4 - Temperatura (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_MED_Sensor 4 - Temperatura (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 4 - Temperatura de Alarme (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 4,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 4 - Temperatura de Alarme (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_CFG_Sensor 4 - Temperatura de Alarme (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 4 - Temperatura de Alarme (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": true,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_CFG_Sensor 4 - Temperatura de Alarme (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 4 - Temperatura de Trip (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 13,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 4 - Temperatura de Trip (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_CFG_Sensor 4 - Temperatura de Trip (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 4 - Temperatura de Trip (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": true,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_CFG_Sensor 4 - Temperatura de Trip (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_BRT_Sensor 4 - Temp. de Refrigeração (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_SIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 22,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_BRT_Sensor 4 - Temp. de Refrigeração (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_CFG_Sensor 4 - Temp. de Refrigeração (°C)",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "a",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 4 - Temp. de Refrigeração (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (a.value - 1000) / 10;",
+            "settable": true,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_CFG_Sensor 4 - Temp. de Refrigeração (°C)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_STA_Sensor 4 - Estado de Conexão",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 3,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 42,
+            "registerCount": 0,
+            "settableOverride": true,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_STA_0_Sensor 4 - Estado de Conexão",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": false,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Trafo 1 - Sensor 4 - Sensor Desconectado"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_STA_Sensor 4 - Estado de Conexão",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_ALM_Sensor 4 - Alarme de Temperatura",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 3,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 45,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_ALM_1_Sensor 4 - Alarme de Temperatura",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Alarme por Temperatura Alta no Sensor 4"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_ALM_Sensor 4 - Alarme de Temperatura",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_STA_Sensor 4 - Contator de Trips",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 3,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 46,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_STA_1_Sensor 4 - Contator de Trips",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 4 - Contator de Trips"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_STA_Sensor 4 - Contator de Trips",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_ALM_Sensor 4 - Trip de Temperatura",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 3,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 47,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_ALM_1_Sensor 4 - Trip de Temperatura",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Trip por Temperatura Alta no Sensor 4"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_ALM_Sensor 4 - Trip de Temperatura",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_STA_Sensor 4 - Refrigerador Acionado",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 3,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 48,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_STA_1_Sensor 4 - Refrigerador Acionado",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 4 - Refrigerador Acionado"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_STA_Sensor 4 - Refrigerador Acionado",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_ALM_Sensor 4 - Falha de Leitura",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "AVERAGE",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 3,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 49,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRF1_ALM_1_Sensor 4 - Falha de Leitura",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Falha de Leitura no Sensor 4"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_TRAFO1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_TRAFO1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRF1_ALM_Sensor 4 - Falha de Leitura",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_TRF1_VIR_Última Atualização (Data/Hora)",
+         "loggingType": "NONE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "ALPHANUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "ts",
+                  "dataPointXid": "USN_TRF1_BRT_Sensor 1 - Temperatura (°C)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"/\"+mes+\"/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Time Stamps",
+         "defaultCacheSize": 1,
+         "description": "",
+         "deviceName": "USN_Time Stamps",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_TRF1_VIR_Última Atualização (Data/Hora)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+   ]
+}
