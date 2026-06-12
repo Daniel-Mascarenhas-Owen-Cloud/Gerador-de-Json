@@ -74,7 +74,7 @@ novo_json = {"dataPoints": []}
 def datasource_por_tracker(tracker):
     inicio = ((tracker - 1) // 20) * 20 + 1
     fim = inicio + 19
-    return f"{prefixo}_NCU{ncu_num}_A_{inicio}a{fim}"
+    return f"{prefixo}_NCU{ncu_num}_{tipo_tracker}_{inicio}a{fim}"
 
 # ====== PROCESSAMENTO ======
 for tracker in range(1, qtd_trackers + 1):
