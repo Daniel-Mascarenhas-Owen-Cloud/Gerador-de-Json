@@ -417,14 +417,15 @@ vars_pot = []
 for i in range(num_skids):
     var = letras[i]
     varMonitor =  "monitor_" + var;
+    
     context_pot.append({
         "varName": var,
-        "dataPointXid": f"{prefixo}_Smart{i+1}_STA_Monitor de Conexao"
+        "dataPointXid": f"{prefixo}_Smart{i+1}_MED_Potência Ativa Total (KW)"
     })
 
     context_pot.append({
         "varName": varMonitor,
-        "dataPointXid": f"{prefixo}_Smart{i+1}_MED_Potência Ativa Total (KW)"
+        "dataPointXid": f"{prefixo}_Smart{i+1}_STA_Monitor de Conexao"
     })
 
     vars_pot.append(f"({varMonitor}.value ? {var}.value : 0)")
