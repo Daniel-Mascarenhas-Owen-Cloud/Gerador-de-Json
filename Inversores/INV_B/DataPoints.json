@@ -7242,3 +7242,227 @@
          },
          "tolerance":0.0
       },
+      {
+         "xid":"USN_Inv_1.1_STA_Produzindo",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "updateEvent":"CONTEXT_CHANGE",
+            "context":[
+               {
+                  "varName":"status1",
+                  "dataPointXid":"USN_Inv_1.1_STA_Status do Inversor"
+               },
+               {
+                  "varName":"status2",
+                  "dataPointXid":"USN_Inv_1.1_STA_Status Operacional"
+               },
+               {
+                  "varName":"status3",
+                  "dataPointXid":"USN_Inv_1.1_STA_Sem Comunicação"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"if (status3.value == 0 &&\n    (status1.value == 512 ||\n     status1.value == 513 ||\n     status1.value == 514) &&\n    ((status2.value & 2) != 0)) {\n\n    return 1;\n}\n\nreturn 0;",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Calculados",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_Dados Calculados",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"USN_Inv_1.1_STA_Produzindo",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_Inv_1.1_STA_Disponivel",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "updateEvent":"CONTEXT_CHANGE",
+            "context":[
+               {
+                  "varName":"status1",
+                  "dataPointXid":"USN_Inv_1.1_STA_Status do Inversor"
+               },
+               {
+                  "varName":"status2",
+                  "dataPointXid":"USN_Inv_1.1_STA_Status Operacional"
+               },
+               {
+                  "varName":"status3",
+                  "dataPointXid":"USN_Inv_1.1_STA_Sem Comunicação"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"if (status3.value == 0 &&\n\n    status1.value != 768 &&\n    status1.value != 770 &&\n    status1.value != 771 &&\n    status1.value != 772 &&\n    status1.value != 773 &&\n    status1.value != 774 &&\n    status1.value != 775 &&\n    status1.value != 776 &&\n    status1.value != 777 &&\n    status1.value != 778 &&\n\n    !(status1.value == 512 ||\n      status1.value == 513 ||\n      status1.value == 514)\n) {\n\n    return 1;\n}\n\nreturn 0;",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Calculados",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_Dados Calculados",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"USN_Inv_1.1_STA_Disponivel",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_Inv_1.1_STA_Sem Comunicação",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "updateEvent":"CONTEXT_CHANGE",
+            "context":[
+               {
+                  "varName":"status1",
+                  "dataPointXid":"USN_Inv_1.1_STA_Status do Inversor"
+               },
+               {
+                  "varName":"status2",
+                  "dataPointXid":"USN_Inv_1.1_STA_Monitor de Conexão"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"if ((status1.value == 771) || (status2.value == 0)) {\n\n    return 1;\n\n}\n\nreturn 0;",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Calculados",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_Dados Calculados",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"USN_Inv_1.1_STA_Sem Comunicação",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"USN_Inv_1.1_STA_Parado",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "updateEvent":"CONTEXT_CHANGE",
+            "context":[
+               {
+                  "varName":"status1",
+                  "dataPointXid":"USN_Inv_1.1_STA_Status do Inversor"
+               },
+               {
+                  "varName":"status2",
+                  "dataPointXid":"USN_Inv_1.1_STA_Status Operacional"
+               },
+               {
+                  "varName":"status3",
+                  "dataPointXid":"USN_Inv_1.1_STA_Sem Comunicação"
+               }
+            ],
+            "executionDelayPeriodType":"SECONDS",
+            "executionDelaySeconds":0,
+            "script":"if (status3.value == 0 &&\n\n   (\n    status1.value == 768 ||\n    status1.value == 770 ||\n    status1.value == 772 ||\n    status1.value == 773 ||\n    status1.value == 774 ||\n    status1.value == 775 ||\n    status1.value == 776 ||\n    status1.value == 777 ||\n    status1.value == 778 ||\n\n    (status2.value & 32)  != 0 ||\n    (status2.value & 64)  != 0 ||\n    (status2.value & 128) != 0 ||\n    (status2.value & 256) != 0\n   )\n) {\n\n    return 1;\n}\n\nreturn 0;",
+            "settable":false,
+            "updateCronPattern":""
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "purgeStrategy":"PERIOD",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"USN_Dados Calculados",
+         "defaultCacheSize":1,
+         "description":null,
+         "deviceName":"USN_Dados Calculados",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "eventTextRenderer":{
+            "type":"EVENT_NONE"
+         },
+         "intervalLoggingPeriod":15,
+         "name":"USN_Inv_1.1_STA_Parado",
+         "purgePeriod":1,
+         "purgeValuesLimit":100,
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
