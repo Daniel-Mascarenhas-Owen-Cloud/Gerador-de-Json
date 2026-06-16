@@ -26,8 +26,8 @@
                     "type": "BINARY_STATE",
                     "alarmLevel": "URGENT",
                     "state": false,
-                    "durationType": "SECONDS",
-                    "duration": 60,
+                    "durationType": "MINUTES",
+                    "duration": 5,
                     "alias": "UFV Usina I - CFTV - Câmera 1 - Falha de Comunicação"
                 }
             ],
