@@ -12,7 +12,7 @@ NCU = sys.argv[4]
 IP = sys.argv[5]
 
 
-while(tipo_NCU != 'A'):
+while(tipo_NCU != 'A' and tipo_NCU != 'B'):
     print("Tipo inválido!")
     tipo_NCU = input("Qual o tipo do NCU?\n")
 
@@ -37,7 +37,7 @@ with open(f"saida/NCU{NCU}.json", "r", encoding="utf-8") as f:
 conteudo = ( 
     conteudo
         .replace("USN", prefix_usina)
-        .replace("Nome Usina",usina)
+        .replace("Nome Usina", usina)
         .replace("000.000.000.000", IP)
         .replace("NCU1", f"NCU{NCU}")
         .replace("NCU x", f"NCU {NCU}")
