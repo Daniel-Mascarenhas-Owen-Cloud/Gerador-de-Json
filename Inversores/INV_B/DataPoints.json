@@ -3969,7 +3969,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_Inv_1.1_MED_Temperatura Interna (oC)",
+         "name":"USN_Inv_1.1_MED_Temperatura Interna (°C)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
