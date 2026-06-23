@@ -14,7 +14,7 @@ IP = sys.argv[5]
 slaveID = sys.argv[6]
 
 
-while(tipo_smartlogger != 'A'):
+while((tipo_smartlogger != 'A') and (tipo_smartlogger != 'C')):
     print("Tipo inválido!")
     tipo_smartlogger = input("Qual o tipo do smartlogger?\n")
 
