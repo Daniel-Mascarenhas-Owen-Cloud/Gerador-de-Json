@@ -22,6 +22,7 @@ while True:
         "11. Câmeras\n"
         "12. Medidor\n"
         "13. Trafo\n"
+        "14. Combiner Box\n"
     ).upper()
 
     if action not in [
@@ -38,7 +39,8 @@ while True:
         "RELÉ", "RELE", "10",
         "CÁMERAS", "11",
         "MEDIDOR", "12",
-        "TRAFO", "13"
+        "TRAFO", "13",
+        "COMBINER BOX", "COMBINER", "CBX", "14"
     ]:
         print("\nOpção inválida!\n")
         sys.exit()
@@ -361,6 +363,40 @@ while True:
             sys.exit()
 
 
+# ---------------- COMBINER BOX ----------------
+
+    if action in ["COMBINER BOX", "COMBINER", "CBX", "14"] or gerarTudo:
+
+        qtd_skids = int(input("Quantos Skids com Combiner Box existem? "))
+        tipo_combiner = input("Tipo da Combiner Box: ").upper()
+
+        for i in range(qtd_skids):
+
+            print(f"\n--- Combiner Box Skid {i+1} ---")
+
+            ip = input("IP do DataSource: ")
+            cbx_quantidade = int(input("Quantidade de Combiner Boxes: "))
+            slave_ids = []
+
+            for cbx in range(cbx_quantidade):
+                slave_ids.append(input(f"SlaveId da Combiner Box {cbx + 1}: "))
+
+            subprocess.run([
+                "python",
+                "GerarJsonCombinerBox.py",
+                tipo_combiner,
+                usina,
+                prefixo,
+                str(i+1),
+                ip,
+                str(cbx_quantidade),
+                ",".join(slave_ids)
+            ])
+
+        if not gerarTudo:
+            sys.exit()
+
+
 # ---------------- TRAFO ----------------
 
     if action in ["Trafo", "13"] or gerarTudo:
@@ -403,8 +439,3 @@ while True:
     if unir == "S":
         subprocess.run(["python","UnirJsons.py"])
         sys.exit()
-
-        
-    
-
-    
