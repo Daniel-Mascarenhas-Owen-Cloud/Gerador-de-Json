@@ -14,7 +14,7 @@ skid = sys.argv[6]
 numero_trafo = sys.argv[7]
 numeroDoGerador = int(sys.argv[8])
 
-while(tipo_trafo != 'D'):
+while(tipo_trafo != 'B' and tipo_trafo != 'D'):
     print("Tipo inválido!")
     tipo_trafo = input("Qual o tipo dos relés? ").upper()
 
