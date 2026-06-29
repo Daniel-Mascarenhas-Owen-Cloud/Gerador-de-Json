@@ -39,7 +39,7 @@ def substituir_strings(valor, cbx_numero):
             .replace("SMART1", f"SMART{skid}")
             .replace("CBX_1.1", f"CBX_{skid}.{cbx_numero}")
             .replace("Inv_1.1", f"Inv_{skid}.{cbx_numero}")
-            .replace("192.167.16.12", ip)
+            .replace("000.000.000.000", ip)
         )
 
     if isinstance(valor, list):
