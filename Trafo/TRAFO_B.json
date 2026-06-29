@@ -597,15 +597,6 @@
             "socketMonitor": false
          },
          "eventDetectors": [
-            {
-               "xid": "USN_TRF1_STA_1_Sensor 1 - Contator de Trips",
-               "type": "BINARY_STATE",
-               "alarmLevel": "INFORMATION",
-               "state": true,
-               "durationType": "SECONDS",
-               "duration": 0,
-               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor 1 - Contator de Trips"
-            }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
@@ -1313,15 +1304,6 @@
             "socketMonitor": false
          },
          "eventDetectors": [
-            {
-               "xid": "USN_TRF1_STA_1_Sensor 2 - Contator de Trips",
-               "type": "BINARY_STATE",
-               "alarmLevel": "INFORMATION",
-               "state": true,
-               "durationType": "SECONDS",
-               "duration": 0,
-               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor 2 - Contator de Trips"
-            }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
@@ -2029,15 +2011,6 @@
             "socketMonitor": false
          },
          "eventDetectors": [
-            {
-               "xid": "USN_TRF1_STA_1_Sensor 3 - Contator de Trips",
-               "type": "BINARY_STATE",
-               "alarmLevel": "INFORMATION",
-               "state": true,
-               "durationType": "SECONDS",
-               "duration": 0,
-               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor 3 - Contator de Trips"
-            }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
@@ -2745,15 +2718,6 @@
             "socketMonitor": false
          },
          "eventDetectors": [
-            {
-               "xid": "USN_TRF1_STA_1_Sensor 4 - Contator de Trips",
-               "type": "BINARY_STATE",
-               "alarmLevel": "INFORMATION",
-               "state": true,
-               "durationType": "SECONDS",
-               "duration": 0,
-               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor 4 - Contator de Trips"
-            }
          ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
