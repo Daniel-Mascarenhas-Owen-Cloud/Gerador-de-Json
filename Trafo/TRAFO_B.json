@@ -56,7 +56,7 @@
                "state": false,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Falha de Comunicação"
+               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Falha de Comunicação"
             }
          ],
          "engineeringUnits": "",
@@ -548,7 +548,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Alarme por Temperatura Alta no Sensor 1"
+               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Alarme por Temperatura Alta no Sensor 1"
             }
          ],
          "engineeringUnits": "",
@@ -604,7 +604,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 1 - Contator de Trips"
+               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor 1 - Contator de Trips"
             }
          ],
          "engineeringUnits": "",
@@ -660,7 +660,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Trip por Temperatura Alta no Sensor 1"
+               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Trip por Temperatura Alta no Sensor 1"
             }
          ],
          "engineeringUnits": "",
@@ -716,7 +716,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 1 - Refrigerador Acionado"
+               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor 1 - Refrigerador Acionado"
             }
          ],
          "engineeringUnits": "",
@@ -772,7 +772,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Falha de Leitura no Sensor 1"
+               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Falha de Leitura no Sensor 1"
             }
          ],
          "engineeringUnits": "",
@@ -1264,7 +1264,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Alarme por Temperatura Alta no Sensor 2"
+               "alias": "UFV Usina - Trafo 1 - Sensor 2 - Alarme por Temperatura Alta no Sensor 2"
             }
          ],
          "engineeringUnits": "",
@@ -1320,7 +1320,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 2 - Contator de Trips"
+               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor 2 - Contator de Trips"
             }
          ],
          "engineeringUnits": "",
@@ -1376,7 +1376,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Trip por Temperatura Alta no Sensor 2"
+               "alias": "UFV Usina - Trafo 1 - Sensor 2 - Trip por Temperatura Alta no Sensor 2"
             }
          ],
          "engineeringUnits": "",
@@ -1432,7 +1432,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 2 - Refrigerador Acionado"
+               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor 2 - Refrigerador Acionado"
             }
          ],
          "engineeringUnits": "",
@@ -1488,7 +1488,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Falha de Leitura no Sensor 2"
+               "alias": "UFV Usina - Trafo 1 - Sensor 2 - Falha de Leitura no Sensor 2"
             }
          ],
          "engineeringUnits": "",
@@ -1980,7 +1980,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Alarme por Temperatura Alta no Sensor 3"
+               "alias": "UFV Usina - Trafo 1 - Sensor 3 - Alarme por Temperatura Alta no Sensor 3"
             }
          ],
          "engineeringUnits": "",
@@ -2036,7 +2036,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 3 - Contator de Trips"
+               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor 3 - Contator de Trips"
             }
          ],
          "engineeringUnits": "",
@@ -2092,7 +2092,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Trip por Temperatura Alta no Sensor 3"
+               "alias": "UFV Usina - Trafo 1 - Sensor 3 - Trip por Temperatura Alta no Sensor 3"
             }
          ],
          "engineeringUnits": "",
@@ -2148,7 +2148,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 3 - Refrigerador Acionado"
+               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor 3 - Refrigerador Acionado"
             }
          ],
          "engineeringUnits": "",
@@ -2204,7 +2204,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Falha de Leitura no Sensor 3"
+               "alias": "UFV Usina - Trafo 1 - Sensor 3 - Falha de Leitura no Sensor 3"
             }
          ],
          "engineeringUnits": "",
@@ -2696,7 +2696,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Alarme por Temperatura Alta no Sensor 4"
+               "alias": "UFV Usina - Trafo 1 - Sensor 4 - Alarme por Temperatura Alta no Sensor 4"
             }
          ],
          "engineeringUnits": "",
@@ -2752,7 +2752,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 4 - Contator de Trips"
+               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor 4 - Contator de Trips"
             }
          ],
          "engineeringUnits": "",
@@ -2808,7 +2808,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Trip por Temperatura Alta no Sensor 4"
+               "alias": "UFV Usina - Trafo 1 - Sensor 4 - Trip por Temperatura Alta no Sensor 4"
             }
          ],
          "engineeringUnits": "",
@@ -2864,7 +2864,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sensor 4 - Refrigerador Acionado"
+               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor 4 - Refrigerador Acionado"
             }
          ],
          "engineeringUnits": "",
@@ -2920,7 +2920,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Skid 1 - Trafo 1 - Falha de Leitura no Sensor 4"
+               "alias": "UFV Usina - Trafo 1 - Sensor 4 - Falha de Leitura no Sensor 4"
             }
          ],
          "engineeringUnits": "",
