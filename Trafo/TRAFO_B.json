@@ -56,7 +56,7 @@
                "state": false,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Falha de Comunicação"
+               "alias": "UFV Usina - Trafo 1 - Falha de Comunicação"
             }
          ],
          "engineeringUnits": "",
@@ -1414,7 +1414,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor 2 - Refrigerador Acionado"
+               "alias": "UFV Usina - Trafo 1 - Sensor 2 - Refrigerador Acionado"
             }
          ],
          "engineeringUnits": "",
@@ -2121,7 +2121,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor 3 - Refrigerador Acionado"
+               "alias": "UFV Usina - Trafo 1 - Sensor 3 - Refrigerador Acionado"
             }
          ],
          "engineeringUnits": "",
@@ -2828,7 +2828,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Usina - Trafo 1 - Sensor 1 - Sensor 4 - Refrigerador Acionado"
+               "alias": "UFV Usina - Trafo 1 - Sensor 4 - Refrigerador Acionado"
             }
          ],
          "engineeringUnits": "",
