@@ -1304,7 +1304,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Agendamento Ativo Anormal - B0"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Agendamento Ativo Anormal - B0"
             }
          ],
          "engineeringUnits":"",
@@ -1360,7 +1360,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Agendamento Ativo Anormal - B1"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Agendamento Ativo Anormal - B1"
             }
          ],
          "engineeringUnits":"",
@@ -1416,7 +1416,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Agendamento Ativo Anormal - B2"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Agendamento Ativo Anormal - B2"
             }
          ],
          "engineeringUnits":"",
@@ -1472,7 +1472,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Agendamento Ativo Anormal - B3"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Agendamento Ativo Anormal - B3"
             }
          ],
          "engineeringUnits":"",
@@ -1528,7 +1528,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Agendamento Reativo Anormal - B8"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Agendamento Reativo Anormal - B8"
             }
          ],
          "engineeringUnits":"",
@@ -1584,7 +1584,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Agendamento Reativo Anormal - B9"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Agendamento Reativo Anormal - B9"
             }
          ],
          "engineeringUnits":"",
@@ -1640,7 +1640,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Agendamento Reativo Anormal - B10"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Agendamento Reativo Anormal - B10"
             }
          ],
          "engineeringUnits":"",
@@ -1696,7 +1696,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Agendamento Reativo Anormal - B11"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Agendamento Reativo Anormal - B11"
             }
          ],
          "engineeringUnits":"",
@@ -1752,7 +1752,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Dados de Potência Anormais (Alarme Atuado)"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Dados de Potência Anormais (Alarme Atuado)"
             }
          ],
          "engineeringUnits":"",
@@ -1808,7 +1808,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - MCB Desconectado"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - MCB Desconectado"
             }
          ],
          "engineeringUnits":"",
@@ -1864,7 +1864,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Cubículo Anormal"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Cubículo Anormal"
             }
          ],
          "engineeringUnits":"",
@@ -1920,7 +1920,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Device Address Conflict (Alarme Atuado)"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Device Address Conflict (Alarme Atuado)"
             }
          ],
          "engineeringUnits":"",
@@ -1976,7 +1976,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Falha no DPS CA"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Falha no DPS CA"
             }
          ],
          "engineeringUnits":"",
@@ -2032,7 +2032,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Alarme Personalizado DI1"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Alarme Personalizado DI1"
             }
          ],
          "engineeringUnits":"",
@@ -2088,7 +2088,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Alarme Personalizado DI2"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Alarme Personalizado DI2"
             }
          ],
          "engineeringUnits":"",
@@ -2144,7 +2144,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Alarme Personalizado DI3"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Alarme Personalizado DI3"
             }
          ],
          "engineeringUnits":"",
@@ -2200,7 +2200,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Alarme Personalizado DI4"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Alarme Personalizado DI4"
             }
          ],
          "engineeringUnits":"",
@@ -2256,7 +2256,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Alarme Personalizado DI5"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Alarme Personalizado DI5"
             }
          ],
          "engineeringUnits":"",
@@ -2312,7 +2312,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Alarme Personalizado DI6"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Alarme Personalizado DI6"
             }
          ],
          "engineeringUnits":"",
@@ -2368,7 +2368,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Alarme Personalizado DI7"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Alarme Personalizado DI7"
             }
          ],
          "engineeringUnits":"",
@@ -2424,7 +2424,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Alarme Personalizado DI8"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Alarme Personalizado DI8"
             }
          ],
          "engineeringUnits":"",
@@ -2480,7 +2480,7 @@
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Morrinhos - Skid 1 - Smartlogger - Falha Alimentação 24V"
+               "alias":"UFV Nome Usina - Skid 1 - Smartlogger - Falha Alimentação 24V"
             }
          ],
          "engineeringUnits":"",
