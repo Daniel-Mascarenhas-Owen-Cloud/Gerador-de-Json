@@ -1,4 +1,4 @@
-   "dataPoints":[
+
       {
          "xid":"USN_Inv_1.1_STA_Monitor de Conexão",
          "loggingType":"ON_CHANGE",
@@ -1245,4 +1245,4 @@
             "suffix":""
          },
          "tolerance":0.0
-      }
+      },
