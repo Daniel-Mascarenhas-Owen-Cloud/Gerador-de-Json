@@ -7187,7 +7187,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_Inv_1.1_ALM_Alarme 3 Bit 15",
+         "xid":"USN_Inv_1.1_ALM_Temp. Terminal CA Anormal",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -7208,13 +7208,13 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_Inv_1.1_ALM_1_Alarme 3 Bit 15",
+               "xid":"USN_Inv_1.1_ALM_1_Temp. Terminal CA Anormal",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
                "durationType":"SECONDS",
                "duration":0,
-               "alias":"UFV Nome Usina - Skid x - Inversor 1.1 - ALM_Alarme 3 Bit 15 (Alarme Atuado)"
+               "alias":"UFV Nome Usina - Skid x - Inversor 1.1 - Temperatura do Terminal CA Anormal (Alarme Atuado)"
             }
          ],
          "engineeringUnits":"",
@@ -7233,7 +7233,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_Inv_1.1_ALM_Alarme 3 Bit 15",
+         "name":"USN_Inv_1.1_ALM_Temp. Terminal CA Anormal",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
