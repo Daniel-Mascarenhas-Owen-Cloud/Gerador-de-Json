@@ -33,7 +33,7 @@ if os.path.exists(destino):
 
 os.rename("saida/inicio.json", destino)
 
-while(tipo_inversor != 'B' and tipo_inversor != 'C' and tipo_inversor != 'D'):
+while(tipo_inversor != 'B' and tipo_inversor != 'C' and tipo_inversor != 'D' and tipo_inversor != 'E'):
     print("Tipo inválido!")
     tipo_inversor = input("Qual o tipo do inversor?\n")
 
