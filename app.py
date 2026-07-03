@@ -362,7 +362,6 @@ while True:
         if not gerarTudo:
             sys.exit()
 
-
 # ---------------- COMBINER BOX ----------------
 
     if action in ["COMBINER BOX", "COMBINER", "CBX", "14"] or gerarTudo:
