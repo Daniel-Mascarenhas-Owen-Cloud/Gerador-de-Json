@@ -101,7 +101,7 @@ for i in range(inv_quantidade):
     end = start + 4
 
 
-    if i>0:
+    if i>0 and i<=inv_quantidade:
         with open(f"saida/inversor{skid}.json", "a", encoding="utf-8") as destino:
             destino.write(",")
     
@@ -157,5 +157,3 @@ with open(f"saida/inversor{skid}.json", "w", encoding="utf-8") as f:
 shutil.rmtree("temp")
 
 print(f"Arquivo Json gerado em saida/inversor{skid}.json!")
-
-# conteudo = conteudo.replace("Skid x","Skid " + skid)
