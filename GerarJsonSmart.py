@@ -57,7 +57,7 @@ conteudo = (
         .replace("Diário 1","Diário " + skid)
         .replace("Mensal 1","Mensal " + skid)
         .replace("Anual 1","Anual " + skid)
-        .replace("'slaveId':1,","'slaveId':" + slaveID + ",")
+        .replace('"slaveId":1', f'"slaveId":{slaveID}')
         .replace("Sistema 1","Sistema " + skid + ",")
     )
 
