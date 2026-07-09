@@ -2697,7 +2697,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_Smart1_STA_Monitor de Conexao",
+         "xid":"USN_Smart1_STA_Monitor de Conexão",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
