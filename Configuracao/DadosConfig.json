@@ -231,7 +231,7 @@
             "context":[
                {
                   "varName":"energy",
-                  "dataPointXid":"USN_CAL_Energia Mensal Total (KWh)"
+                  "dataPointXid":"USN_CAL_Energia Mensal Total (MWh)"
                },
                {
                   "varName":"KWp",
