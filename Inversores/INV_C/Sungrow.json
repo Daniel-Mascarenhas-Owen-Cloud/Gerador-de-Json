@@ -1,5 +1,5 @@
     {
-         "xid":"USN_Alarmes_Sungrow",
+         "xid":"USN_Alarmes Sungrow",
          "type":"META",
          "alarmLevels":{
             "SCRIPT_ERROR":"NONE",
@@ -7,5 +7,5 @@
             "RESULT_TYPE_ERROR":"NONE"
          },
          "enabled":true,
-         "name":"USN_Alarmes_Sungrow"
+         "name":"USN_Alarmes Sungrow"
       },
