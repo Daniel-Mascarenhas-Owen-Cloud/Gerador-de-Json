@@ -38,7 +38,7 @@ conteudo = (
         .replace("USN", prefix_usina)
         .replace("000.000.000.000", IP)
         .replace("Usina", usina)
-        .replace("MEDIDOR1", f"MEDIDOR{numero_medidor}")
+        .replace("Medidor1", f"Medidor{numero_medidor}")
         .replace("Cabine 1", f"Cabine {numero_medidor}")
     )
 

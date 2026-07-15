@@ -340,8 +340,8 @@ while True:
 
     if action in ["MEDIDOR", "12"] or gerarTudo:
 
-        quantidade = int(input("Quantos Multimedidores existem? "))
-        tipo_multimedidor = input("Tipo do Multimedidor: ")
+        quantidade = int(input("Quantos Medidores existem? "))
+        tipo_multimedidor = input("Tipo do Medidor: ")
 
         for i in range(quantidade):
 
