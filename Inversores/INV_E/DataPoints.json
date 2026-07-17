@@ -2874,4 +2874,2056 @@
             "suffix": ""
          },
          "tolerance": 0.0
+      },
+            {
+         "xid": "USN_Inv_1.1_ALM_Sem Comunicação SolarNet",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 1);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Sem Comunicação SolarNet",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Sem Comunicação SolarNet"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Sem Comunicação SolarNet",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Endereço do Inversor Incorreto",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 2);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Endereço do Inversor Incorreto",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Endereço do Inversor Incorreto"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Endereço do Inversor Incorreto",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Sem Injeção por 24h",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 4);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Sem Injeção por 24h",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Sem injeção de energia por 24 horas"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Sem Injeção por 24h",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Falha no Conector",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 8);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Falha no Conector",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Conexões defeituosas de plug CC ou CA"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Falha no Conector",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Alocação de Fase Incorreta",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 16);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Alocação de Fase Incorreta",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Alocação de Fase Incorreta"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Alocação de Fase Incorreta",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Condutor de Rede Aberto",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 32);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Condutor de Rede Aberto",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Condutor de rede aberto ou falha em uma fase da alimentação"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Condutor de Rede Aberto",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Falha de Software",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 64);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Falha de Software",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Software incompatível ou desatualizado"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Falha de Software",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Redução Potência por Temp.",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 128);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Redução Potência por Temp.",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Redução de potência devido à sobretemperatura"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Redução Potência por Temp.",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Jumper Incorreto",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 256);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Jumper Incorreto",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Jumper configurado incorretamente"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Jumper Incorreto",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Recurso Incompatível",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 512);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Recurso Incompatível",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Recurso Incompatível"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Recurso Incompatível",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Ventilação Obstruída",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 1024);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Ventilação Obstruída",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Ventilador defeituoso ou aberturas de ventilação obstruídas"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Ventilação Obstruída",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Redução de Potência por Erro",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 2048);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Redução de Potência por Erro",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Redução de potência devido a erro"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Redução de Potência por Erro",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Falha de Arco Elétrico CC",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 4096);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Falha de Arco Elétrico CC",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Falha de Arco Elétrico CC"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Falha de Arco Elétrico CC",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Falha Autoteste AFCI",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 8192);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Falha Autoteste AFCI",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Falha Autoteste AFCI"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Falha Autoteste AFCI",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Erro no Sensor de Corrente",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 16384);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Erro no Sensor de Corrente",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Erro no Sensor de Corrente"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Erro no Sensor de Corrente",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Falha na Chave CC",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 32768);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Falha na Chave CC",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Falha na Chave CC"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Falha na Chave CC",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_AFCI Defeituoso",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 65536);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_AFCI Defeituoso",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - AFCI Defeituoso"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_AFCI Defeituoso",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Teste Manual AFCI Sucesso",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 131072);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Teste Manual AFCI Sucesso",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Teste manual do AFCI concluído com sucesso"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Teste Manual AFCI Sucesso",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Falha Alimentação de Potência",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 262144);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Falha Alimentação de Potência",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Alimentação do estágio de potência ausente"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Falha Alimentação de Potência",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Sem Comunicação AFCI",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 524288);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Sem Comunicação AFCI",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Comunicação com o AFCI interrompida"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Sem Comunicação AFCI",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Falha no Teste Manual AFCI",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 1048576);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Falha no Teste Manual AFCI",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Falha no Teste Manual AFCI"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Falha no Teste Manual AFCI",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Seq. Fases CA Invertida",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 2097152);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Seq. Fases CA Invertida",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Sequência de Fases CA Invertida"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Seq. Fases CA Invertida",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Falha no Dispositivo CA",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 4194304);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Falha no Dispositivo CA",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Falha no dispositivo de medição CA"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Falha no Dispositivo CA",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Falha na Memória Flash",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 8388608);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Falha na Memória Flash",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Falha na Memória Flash"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Falha na Memória Flash",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Erro Geral",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 16777216);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Erro Geral",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Erro Geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Erro Geral",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Falha de Aterramento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 33554432);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Falha de Aterramento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Falha de Aterramento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Falha de Aterramento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Falha de Limitação de Potência",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 67108864);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Falha de Limitação de Potência",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Falha de Limitação de Potência"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Falha de Limitação de Potência",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Contato Externo Aberto",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 134217728);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Contato Externo Aberto",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Contato Externo Aberto"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Contato Externo Aberto",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Proteção de Sobretensão",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 268435456);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Proteção de Sobretensão",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - A proteção externa contra sobretensão foi acionada."
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Proteção de Sobretensão",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Status do Programa",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 536870912);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Status do Programa",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Status do programa interno do processador"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Status do Programa",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Problema na SolarNet",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 1073741824);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Problema na SolarNet",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Problema na SolarNet"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Problema na SolarNet",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Tensão de Alimentação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 2147483648);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Tensão de Alimentação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Falha na Tensão de Alimentação"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Tensão de Alimentação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+            {
+         "xid": "USN_Inv_1.1_ALM_Falha de Tempo",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 3"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 1);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Falha de Tempo",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina GO 02 - Skid 1 - Inversor 1.1 - Falha de Tempo"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Falha de Tempo",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Falha de USB",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 3"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 2);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Falha de USB",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina GO 02 - Skid 1 - Inversor 1.1 - Falha de USB"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Falha de USB",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Sobretensão CC",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 3"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 4);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Sobretensão CC",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina GO 02 - Skid 1 - Inversor 1.1 - Sobretensão CC"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Sobretensão CC",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_Inv_1.1_ALM_Erro de Inicialização",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "fault",
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 3"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return (fault.value == 8);",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_Inv_1.1_ALM_1_Erro de Inicialização",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome Usina GO 02 - Skid 1 - Inversor 1.1 - Erro de Inicialização"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Alarmes Fronius",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_Alarmes Fronius",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_Inv_1.1_ALM_Erro de Inicialização",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
       }
