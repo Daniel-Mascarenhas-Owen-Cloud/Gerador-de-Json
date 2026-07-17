@@ -911,7 +911,7 @@
          "tolerance":0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1",
+         "xid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1",
          "loggingType": "INTERVAL",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "AVERAGE",
@@ -935,10 +935,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_SMART1_INV_E_1a5",
+         "dataSourceXid": "USN_SMART1_INV_E_1a5",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_SMART1_INV_E_1a5",
+         "deviceName": "USN_SMART1_INV_E_1a5",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -947,7 +947,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "HID_Inv_1.1_ALM_Grupo de Alarmes 1",
+         "name": "USN_Inv_1.1_ALM_Grupo de Alarmes 1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -958,7 +958,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Grupo de Alarmes 2",
+         "xid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2",
          "loggingType": "INTERVAL",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "AVERAGE",
@@ -982,10 +982,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_SMART1_INV_E_1a5",
+         "dataSourceXid": "USN_SMART1_INV_E_1a5",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_SMART1_INV_E_1a5",
+         "deviceName": "USN_SMART1_INV_E_1a5",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -994,7 +994,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "HID_Inv_1.1_ALM_Grupo de Alarmes 2",
+         "name": "USN_Inv_1.1_ALM_Grupo de Alarmes 2",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1005,7 +1005,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Grupo de Alarmes 3",
+         "xid": "USN_Inv_1.1_ALM_Grupo de Alarmes 3",
          "loggingType": "INTERVAL",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "AVERAGE",
@@ -1029,10 +1029,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_SMART1_INV_E_1a5",
+         "dataSourceXid": "USN_SMART1_INV_E_1a5",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_SMART1_INV_E_1a5",
+         "deviceName": "USN_SMART1_INV_E_1a5",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1041,7 +1041,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "HID_Inv_1.1_ALM_Grupo de Alarmes 3",
+         "name": "USN_Inv_1.1_ALM_Grupo de Alarmes 3",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1052,7 +1052,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Baixo Isolamento do Sistema",
+         "xid": "USN_Inv_1.1_ALM_Baixo Isolamento do Sistema",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1063,7 +1063,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1074,7 +1074,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Baixo Isolamento do Sistema",
+               "xid": "USN_Inv_1.1_ALM_1_Baixo Isolamento do Sistema",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1087,10 +1087,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1099,7 +1099,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Baixo Isolamento do Sistema",
+         "name": "USN_Inv_1.1_ALM_Baixo Isolamento do Sistema",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1109,7 +1109,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Rede Anormal",
+         "xid": "USN_Inv_1.1_ALM_Rede Anormal",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1120,7 +1120,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1131,7 +1131,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Rede Anormal",
+               "xid": "USN_Inv_1.1_ALM_1_Rede Anormal",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1144,10 +1144,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1156,7 +1156,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Rede Anormal",
+         "name": "USN_Inv_1.1_ALM_Rede Anormal",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1166,7 +1166,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Sobrecorrente de Saída",
+         "xid": "USN_Inv_1.1_ALM_Sobrecorrente de Saída",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1177,7 +1177,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1188,7 +1188,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Sobrecorrente de Saída",
+               "xid": "USN_Inv_1.1_ALM_1_Sobrecorrente de Saída",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1201,10 +1201,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1213,7 +1213,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Sobrecorrente de Saída",
+         "name": "USN_Inv_1.1_ALM_Sobrecorrente de Saída",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1223,7 +1223,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Superaquecimento Interno",
+         "xid": "USN_Inv_1.1_ALM_Superaquecimento Interno",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1234,7 +1234,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1245,7 +1245,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Superaquecimento Interno",
+               "xid": "USN_Inv_1.1_ALM_1_Superaquecimento Interno",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1258,10 +1258,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1270,7 +1270,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Superaquecimento Interno",
+         "name": "USN_Inv_1.1_ALM_Superaquecimento Interno",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1280,7 +1280,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Entrada CC Anormal 1",
+         "xid": "USN_Inv_1.1_ALM_Entrada CC Anormal 1",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1291,7 +1291,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1302,7 +1302,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Entrada CC Anormal 1",
+               "xid": "USN_Inv_1.1_ALM_1_Entrada CC Anormal 1",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1315,10 +1315,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1327,7 +1327,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Entrada CC Anormal 1",
+         "name": "USN_Inv_1.1_ALM_Entrada CC Anormal 1",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1337,7 +1337,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Sobrefrequência da Rede",
+         "xid": "USN_Inv_1.1_ALM_Sobrefrequência da Rede",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1348,7 +1348,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1359,7 +1359,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Sobrefrequência da Rede",
+               "xid": "USN_Inv_1.1_ALM_1_Sobrefrequência da Rede",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1372,10 +1372,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1384,7 +1384,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Sobrefrequência da Rede",
+         "name": "USN_Inv_1.1_ALM_Sobrefrequência da Rede",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1394,7 +1394,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Subfrequência da Rede",
+         "xid": "USN_Inv_1.1_ALM_Subfrequência da Rede",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1405,7 +1405,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1416,7 +1416,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Subfrequência da Rede",
+               "xid": "USN_Inv_1.1_ALM_1_Subfrequência da Rede",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1429,10 +1429,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1441,7 +1441,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Subfrequência da Rede",
+         "name": "USN_Inv_1.1_ALM_Subfrequência da Rede",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1451,7 +1451,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Sobretensão da Rede",
+         "xid": "USN_Inv_1.1_ALM_Sobretensão da Rede",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1462,7 +1462,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1473,7 +1473,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Sobretensão da Rede",
+               "xid": "USN_Inv_1.1_ALM_1_Sobretensão da Rede",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1486,10 +1486,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1498,7 +1498,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Sobretensão da Rede",
+         "name": "USN_Inv_1.1_ALM_Sobretensão da Rede",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1508,7 +1508,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Subtensão da Rede",
+         "xid": "USN_Inv_1.1_ALM_Subtensão da Rede",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1519,7 +1519,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1530,7 +1530,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Subtensão da Rede",
+               "xid": "USN_Inv_1.1_ALM_1_Subtensão da Rede",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1543,10 +1543,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1555,7 +1555,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Subtensão da Rede",
+         "name": "USN_Inv_1.1_ALM_Subtensão da Rede",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1565,7 +1565,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Componente CC Saída muito Alto",
+         "xid": "USN_Inv_1.1_ALM_Componente CC Saída muito Alto",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1576,7 +1576,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1587,7 +1587,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Componente CC Saída muito Alto",
+               "xid": "USN_Inv_1.1_ALM_1_Componente CC Saída muito Alto",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1600,10 +1600,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1612,7 +1612,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Componente CC Saída muito Alto",
+         "name": "USN_Inv_1.1_ALM_Componente CC Saída muito Alto",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1622,7 +1622,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Falha no Equipamento",
+         "xid": "USN_Inv_1.1_ALM_Falha no Equipamento",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1633,7 +1633,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1644,7 +1644,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Falha no Equipamento",
+               "xid": "USN_Inv_1.1_ALM_1_Falha no Equipamento",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1657,10 +1657,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1669,7 +1669,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Falha no Equipamento",
+         "name": "USN_Inv_1.1_ALM_Falha no Equipamento",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1679,7 +1679,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Falha Controle On e Off-Grid",
+         "xid": "USN_Inv_1.1_ALM_Falha Controle On e Off-Grid",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1690,7 +1690,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1701,7 +1701,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Falha Controle On e Off-Grid",
+               "xid": "USN_Inv_1.1_ALM_1_Falha Controle On e Off-Grid",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1714,10 +1714,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1726,7 +1726,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Falha Controle On e Off-Grid",
+         "name": "USN_Inv_1.1_ALM_Falha Controle On e Off-Grid",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1736,7 +1736,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Frequência de Rede Instável",
+         "xid": "USN_Inv_1.1_ALM_Frequência de Rede Instável",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1747,7 +1747,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1758,7 +1758,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Frequência de Rede Instável",
+               "xid": "USN_Inv_1.1_ALM_1_Frequência de Rede Instável",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1771,10 +1771,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1783,7 +1783,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Frequência de Rede Instável",
+         "name": "USN_Inv_1.1_ALM_Frequência de Rede Instável",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1793,7 +1793,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Ilhamento Ativo Detectado",
+         "xid": "USN_Inv_1.1_ALM_Ilhamento Ativo Detectado",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1804,7 +1804,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1815,7 +1815,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Ilhamento Ativo Detectado",
+               "xid": "USN_Inv_1.1_ALM_1_Ilhamento Ativo Detectado",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1828,10 +1828,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1840,7 +1840,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Ilhamento Ativo Detectado",
+         "name": "USN_Inv_1.1_ALM_Ilhamento Ativo Detectado",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1850,7 +1850,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Falha na Monitorização",
+         "xid": "USN_Inv_1.1_ALM_Falha na Monitorização",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1861,7 +1861,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1872,7 +1872,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Falha na Monitorização",
+               "xid": "USN_Inv_1.1_ALM_1_Falha na Monitorização",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1885,10 +1885,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1897,7 +1897,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Falha na Monitorização",
+         "name": "USN_Inv_1.1_ALM_Falha na Monitorização",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1907,7 +1907,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Falha Link Comunicação",
+         "xid": "USN_Inv_1.1_ALM_Falha Link Comunicação",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1918,7 +1918,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1929,7 +1929,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Falha Link Comunicação",
+               "xid": "USN_Inv_1.1_ALM_1_Falha Link Comunicação",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1942,10 +1942,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -1954,7 +1954,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Falha Link Comunicação",
+         "name": "USN_Inv_1.1_ALM_Falha Link Comunicação",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -1964,7 +1964,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Temp. Terminal CA Anormal",
+         "xid": "USN_Inv_1.1_ALM_Temp. Terminal CA Anormal",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -1975,7 +1975,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1986,7 +1986,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Temp. Terminal CA Anormal",
+               "xid": "USN_Inv_1.1_ALM_1_Temp. Terminal CA Anormal",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -1999,10 +1999,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2011,7 +2011,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Temp. Terminal CA Anormal",
+         "name": "USN_Inv_1.1_ALM_Temp. Terminal CA Anormal",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2021,7 +2021,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Falha de Hardware do Sistema",
+         "xid": "USN_Inv_1.1_ALM_Falha de Hardware do Sistema",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2032,7 +2032,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -2043,7 +2043,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Falha de Hardware do Sistema",
+               "xid": "USN_Inv_1.1_ALM_1_Falha de Hardware do Sistema",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -2056,10 +2056,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2068,7 +2068,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Falha de Hardware do Sistema",
+         "name": "USN_Inv_1.1_ALM_Falha de Hardware do Sistema",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2078,7 +2078,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Ilhamento Passivo Detectado",
+         "xid": "USN_Inv_1.1_ALM_Ilhamento Passivo Detectado",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2089,7 +2089,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -2100,7 +2100,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Ilhamento Passivo Detectado",
+               "xid": "USN_Inv_1.1_ALM_1_Ilhamento Passivo Detectado",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -2113,10 +2113,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2125,7 +2125,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Ilhamento Passivo Detectado",
+         "name": "USN_Inv_1.1_ALM_Ilhamento Passivo Detectado",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2135,7 +2135,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Falha Ventilador Interno",
+         "xid": "USN_Inv_1.1_ALM_Falha Ventilador Interno",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2146,7 +2146,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -2157,7 +2157,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Falha Ventilador Interno",
+               "xid": "USN_Inv_1.1_ALM_1_Falha Ventilador Interno",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -2170,10 +2170,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2182,7 +2182,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Falha Ventilador Interno",
+         "name": "USN_Inv_1.1_ALM_Falha Ventilador Interno",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2192,7 +2192,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Sobrecorrente CC",
+         "xid": "USN_Inv_1.1_ALM_Sobrecorrente CC",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2203,7 +2203,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -2214,7 +2214,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Sobrecorrente CC",
+               "xid": "USN_Inv_1.1_ALM_1_Sobrecorrente CC",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -2227,10 +2227,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2239,7 +2239,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Sobrecorrente CC",
+         "name": "USN_Inv_1.1_ALM_Sobrecorrente CC",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2249,7 +2249,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Potência Baixa",
+         "xid": "USN_Inv_1.1_ALM_Potência Baixa",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2260,7 +2260,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -2271,7 +2271,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Potência Baixa",
+               "xid": "USN_Inv_1.1_ALM_1_Potência Baixa",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -2284,10 +2284,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2296,7 +2296,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Potência Baixa",
+         "name": "USN_Inv_1.1_ALM_Potência Baixa",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2306,7 +2306,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Falha Circuito Intermediário",
+         "xid": "USN_Inv_1.1_ALM_Falha Circuito Intermediário",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2317,7 +2317,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -2328,7 +2328,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Falha Circuito Intermediário",
+               "xid": "USN_Inv_1.1_ALM_1_Falha Circuito Intermediário",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -2341,10 +2341,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2353,7 +2353,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Falha Circuito Intermediário",
+         "name": "USN_Inv_1.1_ALM_Falha Circuito Intermediário",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2363,7 +2363,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Falha no Relé",
+         "xid": "USN_Inv_1.1_ALM_Falha no Relé",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2374,7 +2374,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -2385,7 +2385,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Falha no Relé",
+               "xid": "USN_Inv_1.1_ALM_1_Falha no Relé",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -2398,10 +2398,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2410,7 +2410,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Falha no Relé",
+         "name": "USN_Inv_1.1_ALM_Falha no Relé",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2420,7 +2420,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Erro de Tensão da Rede",
+         "xid": "USN_Inv_1.1_ALM_Erro de Tensão da Rede",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2431,7 +2431,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -2442,7 +2442,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Erro de Tensão da Rede",
+               "xid": "USN_Inv_1.1_ALM_1_Erro de Tensão da Rede",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -2455,10 +2455,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2467,7 +2467,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Erro de Tensão da Rede",
+         "name": "USN_Inv_1.1_ALM_Erro de Tensão da Rede",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2477,7 +2477,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Falha Transferência de Energia",
+         "xid": "USN_Inv_1.1_ALM_Falha Transferência de Energia",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2488,7 +2488,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -2499,7 +2499,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Falha Transferência de Energia",
+               "xid": "USN_Inv_1.1_ALM_1_Falha Transferência de Energia",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -2512,10 +2512,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2524,7 +2524,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Falha Transferência de Energia",
+         "name": "USN_Inv_1.1_ALM_Falha Transferência de Energia",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2534,7 +2534,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Fonte CA Fora da Tolerância",
+         "xid": "USN_Inv_1.1_ALM_Fonte CA Fora da Tolerância",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2545,7 +2545,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -2556,7 +2556,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Fonte CA Fora da Tolerância",
+               "xid": "USN_Inv_1.1_ALM_1_Fonte CA Fora da Tolerância",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -2569,10 +2569,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2581,7 +2581,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Fonte CA Fora da Tolerância",
+         "name": "USN_Inv_1.1_ALM_Fonte CA Fora da Tolerância",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2591,7 +2591,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Falha de Tensão Fixa",
+         "xid": "USN_Inv_1.1_ALM_Falha de Tensão Fixa",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2602,7 +2602,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -2613,7 +2613,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Falha de Tensão Fixa",
+               "xid": "USN_Inv_1.1_ALM_1_Falha de Tensão Fixa",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -2626,10 +2626,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2638,7 +2638,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Falha de Tensão Fixa",
+         "name": "USN_Inv_1.1_ALM_Falha de Tensão Fixa",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2648,7 +2648,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Falha de Memória",
+         "xid": "USN_Inv_1.1_ALM_Falha de Memória",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2659,7 +2659,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -2670,7 +2670,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Falha de Memória",
+               "xid": "USN_Inv_1.1_ALM_1_Falha de Memória",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -2683,10 +2683,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2695,7 +2695,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Falha de Memória",
+         "name": "USN_Inv_1.1_ALM_Falha de Memória",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2705,7 +2705,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Fusível Defeituoso",
+         "xid": "USN_Inv_1.1_ALM_Fusível Defeituoso",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2716,7 +2716,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -2727,7 +2727,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Fusível Defeituoso",
+               "xid": "USN_Inv_1.1_ALM_1_Fusível Defeituoso",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -2740,10 +2740,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2752,7 +2752,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Fusível Defeituoso",
+         "name": "USN_Inv_1.1_ALM_Fusível Defeituoso",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2762,7 +2762,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Falha no Reator de Saída",
+         "xid": "USN_Inv_1.1_ALM_Falha no Reator de Saída",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2773,7 +2773,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -2784,7 +2784,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Falha no Reator de Saída",
+               "xid": "USN_Inv_1.1_ALM_1_Falha no Reator de Saída",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -2797,10 +2797,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2809,7 +2809,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Falha no Reator de Saída",
+         "name": "USN_Inv_1.1_ALM_Falha no Reator de Saída",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -2819,7 +2819,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "HID_Inv_1.1_ALM_Falha no Relé do Conversor",
+         "xid": "USN_Inv_1.1_ALM_Falha no Relé do Conversor",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -2830,7 +2830,7 @@
             "context": [
                {
                   "varName": "fault",
-                  "dataPointXid": "HID_Inv_1.1_ALM_Grupo de Alarmes 1"
+                  "dataPointXid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -2841,7 +2841,7 @@
          },
          "eventDetectors": [
             {
-               "xid": "HID_Inv_1.1_ALM_1_Falha no Relé do Conversor",
+               "xid": "USN_Inv_1.1_ALM_1_Falha no Relé do Conversor",
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": true,
@@ -2854,10 +2854,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "HID_Alarmes Fronius",
+         "dataSourceXid": "USN_Alarmes Fronius",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "HID_Alarmes Fronius",
+         "deviceName": "USN_Alarmes Fronius",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -2866,7 +2866,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "HID_Inv_1.1_ALM_Falha no Relé do Conversor",
+         "name": "USN_Inv_1.1_ALM_Falha no Relé do Conversor",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
