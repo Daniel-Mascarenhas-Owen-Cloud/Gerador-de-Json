@@ -48,6 +48,12 @@ if tipo_inversor == "C":
             destino.write(origem.read())
 
 
+if tipo_inversor == "E":
+    with open(f"saida/inversor{skid}.json", "a", encoding="utf-8") as destino:
+        with open("Inversores/INV_E/Fronius.json", "r", encoding="utf-8") as origem:
+            destino.write(origem.read())
+
+
 quantos_DataSources = math.ceil(inv_quantidade / 5 )
 
 # Copiar para editar sem modificar anterior
