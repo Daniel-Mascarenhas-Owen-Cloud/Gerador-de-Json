@@ -5,9 +5,6 @@ import sys
 os.makedirs("saida", exist_ok=True)
 
 
-letras = "abcdefghijklmnopqrstuvwxyz"
-
-
 prefixo = sys.argv[1]
 num_skids = int(sys.argv[2])
 inversores_por_skid = sys.argv[3].split(",")
@@ -25,8 +22,8 @@ def gerar_contexto_inversor(prefixo, skid, qtd, tipo):
 
     for i in range(qtd):
 
-        var = letras[i]
-        varMonitor =  "monitor_" + var;
+        var = f"inv{i+1}"
+        varMonitor = f"monitor_inv{i+1}"
         context.append({
             "varName": var,
             "dataPointXid": f"{prefixo}_Inv_{skid}.{i+1}_MED_Energia {tipo} (KWh)"
@@ -158,8 +155,8 @@ vars_smart = []
 
 for i in range(num_skids):
 
-    var = letras[i]
-    varMonitor = "monitor_" + var;
+    var = f"smart{i+1}"
+    varMonitor = f"monitor_smart{i+1}"
     context_smart.append({
         "varName": var,
         "dataPointXid": f"{prefixo}_Smart{i+1}_MED_Energia Diaria Total (KWh)"
@@ -227,8 +224,8 @@ context_mensal = []
 vars_mensal = []
 
 for i in range(num_skids):
-    var = letras[i]
-    varMonitor = "monitor_" + var;
+    var = f"smart{i+1}"
+    varMonitor = f"monitor_smart{i+1}"
     context_mensal.append({
         "varName": var,
         "dataPointXid": f"{prefixo}_CAL_Energia Mensal {i+1} (MWh)"
@@ -295,8 +292,8 @@ context_anual = []
 vars_anual = []
 
 for i in range(num_skids):
-    var = letras[i]
-    varMonitor = "monitor_" + var;
+    var = f"smart{i+1}"
+    varMonitor = f"monitor_smart{i+1}"
 
     context_anual.append({
         "varName": var,
@@ -415,8 +412,8 @@ context_pot = []
 vars_pot = []
 
 for i in range(num_skids):
-    var = letras[i]
-    varMonitor =  "monitor_" + var;
+    var = f"smart{i+1}"
+    varMonitor = f"monitor_smart{i+1}"
     
     context_pot.append({
         "varName": var,
