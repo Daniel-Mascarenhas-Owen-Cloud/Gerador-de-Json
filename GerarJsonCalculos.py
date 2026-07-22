@@ -9,6 +9,7 @@ prefixo = sys.argv[1]
 num_skids = int(sys.argv[2])
 inversores_por_skid = sys.argv[3].split(",")
 inversores_por_skid = [int(x) for x in inversores_por_skid]
+tipo_inversor = sys.argv[4].upper() if len(sys.argv) > 4 else ""
 
 
 
@@ -101,7 +102,21 @@ for skid, qtd in enumerate(inversores_por_skid, start=1):
 
 for skid, qtd in enumerate(inversores_por_skid, start=1):
 
-    context, script, unidade = gerar_contexto_inversor(prefixo, skid, qtd, "Anual")
+    if tipo_inversor == "E":
+        context = [
+            {
+                "varName": "a",
+                "dataPointXid": f"{prefixo}_Smart{skid}_MED_Energia Anual (KWh)"
+            },
+            {
+                "varName": "monitor_a",
+                "dataPointXid": f"{prefixo}_Smart{skid}_STA_Monitor de Conexao"
+            }
+        ]
+        script = "return (monitor_a.value ? a.value : 0)/1000000;"
+        unidade = "(GWh)"
+    else:
+        context, script, unidade = gerar_contexto_inversor(prefixo, skid, qtd, "Anual")
 
     ponto = {
         "xid": f"{prefixo}_CAL_Energia Anual {skid} (GWh)",

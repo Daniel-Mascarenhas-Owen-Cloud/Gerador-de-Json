@@ -76,7 +76,7 @@
             "tolerance": 0.0
         },
         {
-            "xid": "USN_Smart1_MED_Energia Anual (MWh)",
+         "xid": "USN_Smart1_MED_Energia Anual Total (KWh)",
             "loggingType": "INTERVAL",
             "intervalLoggingPeriodType": "MINUTES",
             "intervalLoggingType": "INSTANT",
@@ -87,7 +87,7 @@
                 "additive": 0.0,
                 "bit": 0,
                 "charset": "ASCII",
-                "multiplier": 1.0E-6,
+                "multiplier": 0.001,
                 "offset": 505,
                 "registerCount": 0,
                 "settableOverride": false,
@@ -112,7 +112,7 @@
                 "type": "EVENT_NONE"
             },
             "intervalLoggingPeriod": 5,
-            "name": "USN_Smart1_MED_Energia Anual (MWh)",
+            "name": "USN_Smart1_MED_Energia Anual Total (KWh)",
             "purgePeriod": 1,
             "purgeValuesLimit": 100,
             "textRenderer": {

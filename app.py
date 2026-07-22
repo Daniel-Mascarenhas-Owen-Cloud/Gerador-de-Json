@@ -98,6 +98,8 @@ while True:
 
         qtd_skids = int(input("Quantos Skids existem? "))
         tipo_smart = input("Tipo do SmartLogger: ").upper()
+        if not gerarTudo:
+            tipo_inversor = input("Tipo do inversor: ").upper()
 
         for i in range(qtd_skids):
 
@@ -114,7 +116,8 @@ while True:
                 prefixo,
                 str(i+1),
                 ip,
-                slaveID
+                slaveID,
+                tipo_inversor
             ])
 
         if not gerarTudo:
@@ -255,6 +258,8 @@ while True:
     if action in ["CALCULOS", "CALCULO", "9"] or gerarTudo:
 
         qtd_skids = int(input("Quantos skids existem? "))
+        if not gerarTudo:
+            tipo_inversor = input("Tipo do inversor: ").upper()
 
         inversores = []
 
@@ -271,7 +276,7 @@ while True:
             prefixo,
             str(qtd_skids),
             ",".join(inversores),
-            str(qtd_skids)
+            tipo_inversor
         ])
 
         if not gerarTudo:
