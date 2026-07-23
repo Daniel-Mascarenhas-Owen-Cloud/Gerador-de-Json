@@ -106,7 +106,7 @@ for skid, qtd in enumerate(inversores_por_skid, start=1):
         context = [
             {
                 "varName": "a",
-                "dataPointXid": f"{prefixo}_Smart{skid}_MED_Energia Anual (KWh)"
+                "dataPointXid": f"{prefixo}_Smart{skid}_MED_Energia Anual Total (KWh)"
             },
             {
                 "varName": "monitor_a",
