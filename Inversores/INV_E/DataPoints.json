@@ -5007,7 +5007,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled": true,
+         "enabled": false,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -5114,7 +5114,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled": true,
+         "enabled": false,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -5174,7 +5174,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled": true,
+         "enabled": false,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -5286,7 +5286,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled": true,
+         "enabled": false,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
