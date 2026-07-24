@@ -19,7 +19,7 @@
          "maxReadBitCount":2000,
          "maxReadRegisterCount":125,
          "maxWriteRegisterCount":120,
-         "name":"USN_SMART1_C",
+         "name":"USN_Smart1_C",
          "port":5030,
          "quantize":false,
          "retries":2,
@@ -1122,7 +1122,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Alarme 2",
+         "name":"USN_Smart1_ALM_Alarme 2",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1266,7 +1266,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Alarme 1",
+         "name":"USN_Smart1_ALM_Alarme 1",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1323,7 +1323,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Agendamento Anormal - B0",
+         "name":"USN_Smart1_ALM_Agendamento Anormal - B0",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1379,7 +1379,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Agendamento Anormal - B1",
+         "name":"USN_Smart1_ALM_Agendamento Anormal - B1",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1435,7 +1435,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Agendamento Anormal - B2",
+         "name":"USN_Smart1_ALM_Agendamento Anormal - B2",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1491,7 +1491,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Agendamento Anormal - B3",
+         "name":"USN_Smart1_ALM_Agendamento Anormal - B3",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1547,7 +1547,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Agendamento Anormal - B8",
+         "name":"USN_Smart1_ALM_Agendamento Anormal - B8",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1603,7 +1603,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Agendamento Anormal - B9",
+         "name":"USN_Smart1_ALM_Agendamento Anormal - B9",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1659,7 +1659,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Agendamento Anormal - B10",
+         "name":"USN_Smart1_ALM_Agendamento Anormal - B10",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1715,7 +1715,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Agendamento Anormal - B11",
+         "name":"USN_Smart1_ALM_Agendamento Anormal - B11",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1771,7 +1771,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Dados de Potência Anormais",
+         "name":"USN_Smart1_ALM_Dados de Potência Anormais",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1827,7 +1827,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_MCB Desconectado",
+         "name":"USN_Smart1_ALM_MCB Desconectado",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1883,7 +1883,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Cubículo Anormal",
+         "name":"USN_Smart1_ALM_Cubículo Anormal",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1939,7 +1939,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Conflito de Endereços",
+         "name":"USN_Smart1_ALM_Conflito de Endereços",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1995,7 +1995,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Falha no DPS CA",
+         "name":"USN_Smart1_ALM_Falha no DPS CA",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -2051,7 +2051,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Alarme Personalizado DI1",
+         "name":"USN_Smart1_ALM_Alarme Personalizado DI1",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -2107,7 +2107,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Alarme Personalizado DI2",
+         "name":"USN_Smart1_ALM_Alarme Personalizado DI2",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -2163,7 +2163,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Alarme Personalizado DI3",
+         "name":"USN_Smart1_ALM_Alarme Personalizado DI3",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -2219,7 +2219,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Alarme Personalizado DI4",
+         "name":"USN_Smart1_ALM_Alarme Personalizado DI4",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -2275,7 +2275,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Alarme Personalizado DI5",
+         "name":"USN_Smart1_ALM_Alarme Personalizado DI5",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -2331,7 +2331,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Alarme Personalizado DI6",
+         "name":"USN_Smart1_ALM_Alarme Personalizado DI6",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -2387,7 +2387,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Alarme Personalizado DI7",
+         "name":"USN_Smart1_ALM_Alarme Personalizado DI7",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -2443,7 +2443,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Alarme Personalizado DI8",
+         "name":"USN_Smart1_ALM_Alarme Personalizado DI8",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -2499,7 +2499,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_SMART1_ALM_Falha Alimentação 24V",
+         "name":"USN_Smart1_ALM_Falha Alimentação 24V",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
