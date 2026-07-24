@@ -88,7 +88,7 @@
             "context":[
                {
                   "varName":"RTC",
-                  "dataPointXid":"USN_RELE1_VIR_Valor de RTC"
+                  "dataPointXid":"USN_RELE1_CTE_Valor de RTC"
                },
                {
                   "varName":"current",
@@ -189,7 +189,7 @@
             "context":[
                {
                   "varName":"RTC",
-                  "dataPointXid":"USN_RELE1_VIR_Valor de RTC"
+                  "dataPointXid":"USN_RELE1_CTE_Valor de RTC"
                },
                {
                   "varName":"current",
@@ -290,7 +290,7 @@
             "context":[
                {
                   "varName":"RTC",
-                  "dataPointXid":"USN_RELE1_VIR_Valor de RTC"
+                  "dataPointXid":"USN_RELE1_CTE_Valor de RTC"
                },
                {
                   "varName":"current",
@@ -1375,7 +1375,7 @@
             "context":[
                {
                   "varName":"RTC",
-                  "dataPointXid":"USN_RELE1_VIR_Valor de RTC"
+                  "dataPointXid":"USN_RELE1_CTE_Valor de RTC"
                },
                {
                   "varName":"RTP",
@@ -1480,7 +1480,7 @@
             "context":[
                {
                   "varName":"RTC",
-                  "dataPointXid":"USN_RELE1_VIR_Valor de RTC"
+                  "dataPointXid":"USN_RELE1_CTE_Valor de RTC"
                },
                {
                   "varName":"RTP",
@@ -1585,7 +1585,7 @@
             "context":[
                {
                   "varName":"RTC",
-                  "dataPointXid":"USN_RELE1_VIR_Valor de RTC"
+                  "dataPointXid":"USN_RELE1_CTE_Valor de RTC"
                },
                {
                   "varName":"RTP",
@@ -1669,88 +1669,6 @@
          },
          "intervalLoggingPeriod":5,
          "name":"USN_RELE1_STA_Modo de Operação",
-         "purgePeriod":1,
-         "purgeValuesLimit":100,
-         "textRenderer":{
-            "type":"PLAIN",
-            "suffix":""
-         },
-         "tolerance":0.0
-      },
-      {
-         "xid":"USN_RELE1_VIR_Valor de RTC",
-         "loggingType":"ON_CHANGE",
-         "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"INSTANT",
-         "purgeType":"YEARS",
-         "pointLocator":{
-            "dataType":"NUMERIC",
-            "changeType":{
-               "type":"NO_CHANGE",
-               "startValue":"40"
-            },
-            "settable":true
-         },
-         "eventDetectors":[
-         ],
-         "engineeringUnits":"",
-         "purgeStrategy":"PERIOD",
-         "chartColour":null,
-         "chartRenderer":null,
-         "dataSourceXid":"USN_Dados Virtuais",
-         "defaultCacheSize":1,
-         "description":null,
-         "deviceName":"USN_Dados Virtuais",
-         "discardExtremeValues":false,
-         "discardHighLimit":1.7976931348623157E308,
-         "discardLowLimit":-1.7976931348623157E308,
-         "enabled":true,
-         "eventTextRenderer":{
-            "type":"EVENT_NONE"
-         },
-         "intervalLoggingPeriod":15,
-         "name":"USN_RELE1_VIR_Valor de RTC",
-         "purgePeriod":1,
-         "purgeValuesLimit":100,
-         "textRenderer":{
-            "type":"PLAIN",
-            "suffix":""
-         },
-         "tolerance":0.0
-      },
-      {
-         "xid":"USN_RELE1_VIR_Valor de RTP",
-         "loggingType":"ON_CHANGE",
-         "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"INSTANT",
-         "purgeType":"YEARS",
-         "pointLocator":{
-            "dataType":"NUMERIC",
-            "changeType":{
-               "type":"NO_CHANGE",
-               "startValue":"120"
-            },
-            "settable":true
-         },
-         "eventDetectors":[
-         ],
-         "engineeringUnits":"",
-         "purgeStrategy":"PERIOD",
-         "chartColour":null,
-         "chartRenderer":null,
-         "dataSourceXid":"USN_Dados Virtuais",
-         "defaultCacheSize":1,
-         "description":null,
-         "deviceName":"USN_Dados Virtuais",
-         "discardExtremeValues":false,
-         "discardHighLimit":1.7976931348623157E308,
-         "discardLowLimit":-1.7976931348623157E308,
-         "enabled":true,
-         "eventTextRenderer":{
-            "type":"EVENT_NONE"
-         },
-         "intervalLoggingPeriod":15,
-         "name":"USN_RELE1_VIR_Valor de RTP",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
