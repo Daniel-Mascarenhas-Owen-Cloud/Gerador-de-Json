@@ -6,7 +6,7 @@ os.makedirs("saida", exist_ok=True)
 
 
 tipo_medidor = sys.argv[1].upper()
-usina = sys.argv[2].upper()
+usina = sys.argv[2]
 prefix_usina = sys.argv[3]
 IP = sys.argv[4]
 numero_medidor = sys.argv[5]
