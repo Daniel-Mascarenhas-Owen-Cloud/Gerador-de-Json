@@ -1,7 +1,7 @@
 {
    "dataSources":[
       {
-         "xid":"USN_SMART1_C",
+         "xid":"USN_Smart1_C",
          "type":"MODBUS_IP",
          "alarmLevels":{
             "POINT_WRITE_EXCEPTION":"NONE",
@@ -1085,7 +1085,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Alarme 2",
+         "xid":"USN_Smart1_ALM_Alarme 2",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1229,7 +1229,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Alarme 1",
+         "xid":"USN_Smart1_ALM_Alarme 1",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1277,7 +1277,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Agendamento Anormal - B0",
+         "xid":"USN_Smart1_ALM_Agendamento Anormal - B0",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1298,7 +1298,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Agendamento Anormal - B0",
+               "xid":"USN_Smart1_ALM_1_Agendamento Anormal - B0",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -1333,7 +1333,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Agendamento Anormal - B1",
+         "xid":"USN_Smart1_ALM_Agendamento Anormal - B1",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1354,7 +1354,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Agendamento Anormal - B1",
+               "xid":"USN_Smart1_ALM_1_Agendamento Anormal - B1",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -1389,7 +1389,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Agendamento Anormal - B2",
+         "xid":"USN_Smart1_ALM_Agendamento Anormal - B2",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1410,7 +1410,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Agendamento Anormal - B2",
+               "xid":"USN_Smart1_ALM_1_Agendamento Anormal - B2",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -1445,7 +1445,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Agendamento Anormal - B3",
+         "xid":"USN_Smart1_ALM_Agendamento Anormal - B3",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1466,7 +1466,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Agendamento Anormal - B3",
+               "xid":"USN_Smart1_ALM_1_Agendamento Anormal - B3",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -1501,7 +1501,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Agendamento Anormal - B8",
+         "xid":"USN_Smart1_ALM_Agendamento Anormal - B8",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1522,7 +1522,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Agendamento Anormal - B8",
+               "xid":"USN_Smart1_ALM_1_Agendamento Anormal - B8",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -1557,7 +1557,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Agendamento Anormal - B9",
+         "xid":"USN_Smart1_ALM_Agendamento Anormal - B9",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1578,7 +1578,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Agendamento Anormal - B9",
+               "xid":"USN_Smart1_ALM_1_Agendamento Anormal - B9",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -1613,7 +1613,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Agendamento Anormal - B10",
+         "xid":"USN_Smart1_ALM_Agendamento Anormal - B10",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1634,7 +1634,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Agendamento Anormal - B10",
+               "xid":"USN_Smart1_ALM_1_Agendamento Anormal - B10",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -1669,7 +1669,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Agendamento Anormal - B11",
+         "xid":"USN_Smart1_ALM_Agendamento Anormal - B11",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1690,7 +1690,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Agendamento Anormal - B11",
+               "xid":"USN_Smart1_ALM_1_Agendamento Anormal - B11",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -1725,7 +1725,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Dados de Potência Anormais",
+         "xid":"USN_Smart1_ALM_Dados de Potência Anormais",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1746,7 +1746,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Dados de Potência Anormais",
+               "xid":"USN_Smart1_ALM_1_Dados de Potência Anormais",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -1781,7 +1781,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_MCB Desconectado",
+         "xid":"USN_Smart1_ALM_MCB Desconectado",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1802,7 +1802,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_MCB Desconectado",
+               "xid":"USN_Smart1_ALM_1_MCB Desconectado",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -1837,7 +1837,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Cubículo Anormal",
+         "xid":"USN_Smart1_ALM_Cubículo Anormal",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1858,7 +1858,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Cubículo Anormal",
+               "xid":"USN_Smart1_ALM_1_Cubículo Anormal",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -1893,7 +1893,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Conflito de Endereços",
+         "xid":"USN_Smart1_ALM_Conflito de Endereços",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1914,7 +1914,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Conflito de Endereços",
+               "xid":"USN_Smart1_ALM_1_Conflito de Endereços",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -1949,7 +1949,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Falha no DPS CA",
+         "xid":"USN_Smart1_ALM_Falha no DPS CA",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1970,7 +1970,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Falha no DPS CA",
+               "xid":"USN_Smart1_ALM_1_Falha no DPS CA",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -2005,7 +2005,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Alarme Personalizado DI1",
+         "xid":"USN_Smart1_ALM_Alarme Personalizado DI1",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -2026,7 +2026,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Alarme Personalizado DI1",
+               "xid":"USN_Smart1_ALM_1_Alarme Personalizado DI1",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -2061,7 +2061,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Alarme Personalizado DI2",
+         "xid":"USN_Smart1_ALM_Alarme Personalizado DI2",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -2082,7 +2082,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Alarme Personalizado DI2",
+               "xid":"USN_Smart1_ALM_1_Alarme Personalizado DI2",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -2117,7 +2117,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Alarme Personalizado DI3",
+         "xid":"USN_Smart1_ALM_Alarme Personalizado DI3",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -2138,7 +2138,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Alarme Personalizado DI3",
+               "xid":"USN_Smart1_ALM_1_Alarme Personalizado DI3",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -2173,7 +2173,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Alarme Personalizado DI4",
+         "xid":"USN_Smart1_ALM_Alarme Personalizado DI4",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -2194,7 +2194,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Alarme Personalizado DI4",
+               "xid":"USN_Smart1_ALM_1_Alarme Personalizado DI4",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -2229,7 +2229,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Alarme Personalizado DI5",
+         "xid":"USN_Smart1_ALM_Alarme Personalizado DI5",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -2250,7 +2250,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Alarme Personalizado DI5",
+               "xid":"USN_Smart1_ALM_1_Alarme Personalizado DI5",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -2285,7 +2285,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Alarme Personalizado DI6",
+         "xid":"USN_Smart1_ALM_Alarme Personalizado DI6",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -2306,7 +2306,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Alarme Personalizado DI6",
+               "xid":"USN_Smart1_ALM_1_Alarme Personalizado DI6",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -2341,7 +2341,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Alarme Personalizado DI7",
+         "xid":"USN_Smart1_ALM_Alarme Personalizado DI7",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -2362,7 +2362,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Alarme Personalizado DI7",
+               "xid":"USN_Smart1_ALM_1_Alarme Personalizado DI7",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -2397,7 +2397,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Alarme Personalizado DI8",
+         "xid":"USN_Smart1_ALM_Alarme Personalizado DI8",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -2418,7 +2418,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Alarme Personalizado DI8",
+               "xid":"USN_Smart1_ALM_1_Alarme Personalizado DI8",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
@@ -2453,7 +2453,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_SMART1_ALM_Falha Alimentação 24V",
+         "xid":"USN_Smart1_ALM_Falha Alimentação 24V",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -2474,7 +2474,7 @@
          },
          "eventDetectors":[
             {
-               "xid":"USN_SMART1_ALM_1_Falha Alimentação 24V",
+               "xid":"USN_Smart1_ALM_1_Falha Alimentação 24V",
                "type":"BINARY_STATE",
                "alarmLevel":"CRITICAL",
                "state":true,
