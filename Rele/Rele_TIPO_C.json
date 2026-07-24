@@ -544,7 +544,7 @@
             "context":[
                {
                   "varName":"RTP",
-                  "dataPointXid":"USN_RELE1_VIR_Valor de RTP"
+                  "dataPointXid":"USN_RELE1_CTE_Valor de RTP"
                },
                {
                   "varName":"voltage",
@@ -645,7 +645,7 @@
             "context":[
                {
                   "varName":"RTP",
-                  "dataPointXid":"USN_RELE1_VIR_Valor de RTP"
+                  "dataPointXid":"USN_RELE1_CTE_Valor de RTP"
                },
                {
                   "varName":"voltage",
@@ -746,7 +746,7 @@
             "context":[
                {
                   "varName":"RTP",
-                  "dataPointXid":"USN_RELE1_VIR_Valor de RTP"
+                  "dataPointXid":"USN_RELE1_CTE_Valor de RTP"
                },
                {
                   "varName":"voltage",
@@ -1379,7 +1379,7 @@
                },
                {
                   "varName":"RTP",
-                  "dataPointXid":"USN_RELE1_VIR_Valor de RTP"
+                  "dataPointXid":"USN_RELE1_CTE_Valor de RTP"
                },
                {
                   "varName":"power",
@@ -1484,7 +1484,7 @@
                },
                {
                   "varName":"RTP",
-                  "dataPointXid":"USN_RELE1_VIR_Valor de RTP"
+                  "dataPointXid":"USN_RELE1_CTE_Valor de RTP"
                },
                {
                   "varName":"power",
@@ -1589,7 +1589,7 @@
                },
                {
                   "varName":"RTP",
-                  "dataPointXid":"USN_RELE1_VIR_Valor de RTP"
+                  "dataPointXid":"USN_RELE1_CTE_Valor de RTP"
                },
                {
                   "varName":"power",
