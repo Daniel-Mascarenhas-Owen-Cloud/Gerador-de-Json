@@ -67,7 +67,7 @@ while True:
     if action in ["INVERSOR", "1"] or gerarTudo:
 
         qtd_skids = int(input("Quantos Skids existem? "))
-        tipo_inversor = input("Tipo do inversor ?: ").upper()
+        tipo_inversor = input("Tipo do inversor ? ").upper()
 
         for i in range(qtd_skids):
 
