@@ -91,7 +91,7 @@ with open(f"saida/inversor{skid}.json", "a", encoding="utf-8") as destino:
     with open(f"saida/inversor{skid}.json", "r", encoding="utf-8") as f:
         conteudo = f.read()
 
-    conteudo = conteudo[:-1] 
+    conteudo = conteudo[:-7] 
 
     with open(f"saida/inversor{skid}.json", "w", encoding="utf-8") as f:
         f.write(conteudo)
