@@ -5110,7 +5110,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Nome Usina GO 02 - Skid 1 - Inversor 1.1 - Falha de Tempo"
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Falha de Tempo"
             }
          ],
          "engineeringUnits": "",
@@ -5167,7 +5167,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Nome Usina GO 02 - Skid 1 - Inversor 1.1 - Falha de USB"
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Falha de USB"
             }
          ],
          "engineeringUnits": "",
@@ -5224,7 +5224,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Nome Usina GO 02 - Skid 1 - Inversor 1.1 - Sobretensão CC"
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Sobretensão CC"
             }
          ],
          "engineeringUnits": "",
@@ -5281,7 +5281,7 @@
                "state": true,
                "durationType": "SECONDS",
                "duration": 0,
-               "alias": "UFV Nome Usina GO 02 - Skid 1 - Inversor 1.1 - Erro de Inicialização"
+               "alias": "UFV Nome Usina - Skid 1 - Inversor 1.1 - Erro de Inicialização"
             }
          ],
          "engineeringUnits": "",
