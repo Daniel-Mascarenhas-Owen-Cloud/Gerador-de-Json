@@ -1400,7 +1400,7 @@
             "charset":"ASCII",
             "multiplier":1.0,
             "offset":40052,
-            "registerCount":16,
+            "registerCount":8,
             "settableOverride":false,
             "slaveId":1,
             "slaveMonitor":false,
