@@ -12,7 +12,6 @@ prefix_usina = sys.argv[3]
 skid = sys.argv[4]
 IP = sys.argv[5]
 slaveID = sys.argv[6]
-tipo_inversor = sys.argv[7].upper() if len(sys.argv) > 7 else ""
 
 
 while((tipo_smartlogger != 'A') and (tipo_smartlogger != 'C') and (tipo_smartlogger != 'E')):
@@ -37,14 +36,17 @@ with open("Smarts/Genericos.json", "r", encoding="utf-8") as f:
 
     smartJson["dataPoints"].extend(smartJson_generico["dataPoints"])
 
-    if tipo_inversor == "E":
+    if tipo_smartlogger == "E":
+        xid_fator_mensal = "USN_CAL_Fator de Capacidade Mensal 1"
         xid_fator_anual = "USN_CAL_Fator de Capacidade Anual 1"
 
         for ponto in smartJson["dataPoints"]:
+            if ponto.get("xid") == xid_fator_mensal:
+                ponto["enabled"] = False
+
             if ponto.get("xid") == xid_fator_anual:
                 ponto["loggingType"] = "ON_CHANGE"
                 ponto["intervalLoggingPeriod"] = 15
-                break
 
 with open(f"saida/smartlogger{skid}.json", "w", encoding="utf-8") as f:
     json.dump(smartJson, f, indent=3, ensure_ascii=False)

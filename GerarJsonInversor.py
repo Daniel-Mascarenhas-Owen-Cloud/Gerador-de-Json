@@ -10,6 +10,7 @@ import shutil
 import os
 import math
 import sys
+import json
 
 os.makedirs("temp/saida", exist_ok=True)
 os.makedirs("saida", exist_ok=True)
@@ -41,6 +42,35 @@ while(tipo_inversor != 'B' and tipo_inversor != 'C' and tipo_inversor != 'D' and
 tipo = "INV_" + tipo_inversor 
 endereco_DataSource = "Inversores/" + tipo + "/DataSource.json"
 endereco_DataPoint = "Inversores/" + tipo + "/DataPoints.json"
+
+data_points_genericos_tipo_e = ""
+
+if tipo_inversor == "E":
+    xids_desabilitados_tipo_e = {
+        "USN_Inv_1.1_CAL_Energia Esperada (KWh)",
+        "USN_Inv_1.1_CAL_PR Ajustado (%)",
+        "USN_Inv_1.1_CAL_PR Simples (%)",
+        "USN_Inv_1.1_CAL_Rendimento (%)"
+    }
+
+    with open("Inversores/Genericos.json", "r", encoding="utf-8") as f:
+        pontos_genericos = json.loads("[" + f.read() + "]")
+
+    pontos_tipo_e = []
+
+    for ponto in pontos_genericos:
+        if ponto.get("xid") in xids_desabilitados_tipo_e:
+            ponto["enabled"] = False
+            pontos_tipo_e.append(ponto)
+
+    blocos_tipo_e = []
+
+    for ponto in pontos_tipo_e:
+        bloco = json.dumps(ponto, indent=3, ensure_ascii=False)
+        bloco = "\n".join("      " + linha for linha in bloco.splitlines())
+        blocos_tipo_e.append(bloco)
+
+    data_points_genericos_tipo_e = ",\n".join(blocos_tipo_e)
 
 if tipo_inversor == "C":
     with open(f"saida/inversor{skid}.json", "a", encoding="utf-8") as destino:
@@ -116,6 +146,9 @@ for i in range(inv_quantidade):
 
     with open("temp/DataPoints.json", "r", encoding="utf-8") as f:
         conteudo = f.read()
+
+    if data_points_genericos_tipo_e:
+        conteudo = conteudo.rstrip() + ",\n" + data_points_genericos_tipo_e
 
     conteudo = ( 
         conteudo

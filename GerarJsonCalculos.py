@@ -146,7 +146,7 @@ for skid, qtd in enumerate(inversores_por_skid, start=1):
         "discardExtremeValues": False,
         "discardHighLimit": 1.7976931348623157E308,
         "discardLowLimit": -1.7976931348623157E308,
-        "enabled": True,
+        "enabled": tipo_inversor != "C",
         "eventTextRenderer": {
             "type": "EVENT_NONE"
         },
@@ -369,6 +369,74 @@ anual_total = {
 }
 
 json_final["dataPoints"].append(anual_total)
+
+
+# POTENCIA ESPERADA - PLACEHOLDERS PARA INVERSOR TIPO E
+
+def criar_ponto_potencia_esperada(nome):
+    xid = f"{prefixo}_Potência Esperada {nome}"
+
+    return {
+        "xid": xid,
+        "loggingType": "INTERVAL",
+        "intervalLoggingPeriodType": "MINUTES",
+        "intervalLoggingType": "INSTANT",
+        "purgeType": "YEARS",
+        "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return 0;",
+            "settable": False,
+            "updateCronPattern": ""
+        },
+        "eventDetectors": [],
+        "engineeringUnits": "",
+        "purgeStrategy": "PERIOD",
+        "chartColour": None,
+        "chartRenderer": None,
+        "dataSourceXid": f"{prefixo}_Dados Calculados",
+        "defaultCacheSize": 1,
+        "description": "",
+        "deviceName": f"{prefixo}_Dados Calculados",
+        "discardExtremeValues": False,
+        "discardHighLimit": 1.7976931348623157E308,
+        "discardLowLimit": -1.7976931348623157E308,
+        "enabled": False,
+        "eventTextRenderer": {
+            "type": "EVENT_NONE"
+        },
+        "intervalLoggingPeriod": 5,
+        "name": xid,
+        "purgePeriod": 1,
+        "purgeValuesLimit": 100,
+        "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.0",
+            "suffix": ""
+        },
+        "tolerance": 0.0
+    }
+
+
+if tipo_inversor == "E":
+    for skid in range(1, num_skids + 1):
+        json_final["dataPoints"].append(
+            criar_ponto_potencia_esperada(f"Simples {skid}")
+        )
+        json_final["dataPoints"].append(
+            criar_ponto_potencia_esperada(f"Ajustada {skid}")
+        )
+
+    json_final["dataPoints"].append(
+        criar_ponto_potencia_esperada("Simples Total")
+    )
+    json_final["dataPoints"].append(
+        criar_ponto_potencia_esperada("Ajustada Total")
+    )
+
 
 # ENERGIA ESPERADA
 

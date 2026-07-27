@@ -48,15 +48,20 @@ while True:
     gerarTudo = False
     if action in ["GERAR TUDO", "8"]:
         gerarTudo = True
+        tipo_inversor = input("Tipo do inversor: ").upper()
 
 # ---------------- CONFIG ----------------
 
-    if action in ["CONFIGURAÇÃO", "CONFIG", "0"]:
+    if action in ["CONFIGURAÇÃO", "CONFIG", "0"] or gerarTudo:
+
+        if not gerarTudo:
+            tipo_inversor = input("Tipo do inversor: ").upper()
 
         subprocess.run([
             "python",
             "GerarJsonConfig.py",
-            prefixo
+            prefixo,
+            tipo_inversor
         ])
 
         if not gerarTudo:
@@ -67,7 +72,8 @@ while True:
     if action in ["INVERSOR", "1"] or gerarTudo:
 
         qtd_skids = int(input("Quantos Skids existem? "))
-        tipo_inversor = input("Tipo do inversor ? ").upper()
+        if not gerarTudo:
+            tipo_inversor = input("Tipo do inversor ? ").upper()
 
         for i in range(qtd_skids):
 
@@ -98,8 +104,6 @@ while True:
 
         qtd_skids = int(input("Quantos Skids existem? "))
         tipo_smart = input("Tipo do SmartLogger: ").upper()
-        if not gerarTudo:
-            tipo_inversor = input("Tipo do inversor: ").upper()
 
         for i in range(qtd_skids):
 
@@ -116,8 +120,7 @@ while True:
                 prefixo,
                 str(i+1),
                 ip,
-                slaveID,
-                tipo_inversor
+                slaveID
             ])
 
         if not gerarTudo:
