@@ -13,7 +13,7 @@ IP = sys.argv[5]
 slave_id = sys.argv[6]
 
 
-while(tipo_Multimedidor != 'A' and tipo_Multimedidor != 'C'):
+while(tipo_Multimedidor != 'A' and tipo_Multimedidor != 'C' and tipo_Multimedidor != 'D'):
     print("Tipo inválido!")
     tipo_Multimedidor = input("Qual o tipo do Multimedidor?\n")
 
