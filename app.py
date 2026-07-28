@@ -23,6 +23,7 @@ while True:
         "12. Medidor\n"
         "13. Trafo\n"
         "14. Combiner Box\n"
+        "15. DJBT\n"
     ).upper()
 
     if action not in [
@@ -41,6 +42,7 @@ while True:
         "MEDIDOR", "12",
         "TRAFO", "13",
         "COMBINER BOX", "COMBINER", "CBX", "14"
+        "DJBT", "15",
     ]:
         print("\nOpção inválida!\n")
         sys.exit()
@@ -402,7 +404,7 @@ while True:
 
         if not gerarTudo:
             sys.exit()
-
+            
 
 # ---------------- TRAFO ----------------
 
@@ -435,6 +437,36 @@ while True:
                 numero_trafo,
                 str(i+1)
             ])
+            
+
+# ---------------- DJBT ----------------
+
+    if action in ["DJBT", "15"] or gerarTudo:
+
+        tipo = input("Tipo do Disjuntor BT: ").upper()
+
+        print("\n--- DJBT ---")
+
+        ip = input("IP do DJBT: ")
+
+        skid = input("Número do Skid: ")
+
+        numero_djbt = input("Qual o número do disjuntor? ").strip()
+
+        subprocess.run([
+            "python",
+            "GerarJsonDJBT.py",
+            tipo,
+            prefixo,
+            usina,
+            ip,
+            skid,
+            numero_djbt
+        ])
+
+        if not gerarTudo:
+            sys.exit()
+
 
     if not gerarTudo:
         sys.exit()
