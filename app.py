@@ -113,6 +113,9 @@ while True:
 
             ip = input("IP do SmartLogger: ")
             slaveID = input("Qual o SlaveId do SmartLogger? ")
+            quantidade_inversores = input(
+                "Quantos inversores existem neste SmartLogger? "
+            )
 
             subprocess.run([
                 "python",
@@ -122,7 +125,9 @@ while True:
                 prefixo,
                 str(i+1),
                 ip,
-                slaveID
+                slaveID,
+                quantidade_inversores,
+                str(qtd_skids)
             ])
 
         if not gerarTudo:
