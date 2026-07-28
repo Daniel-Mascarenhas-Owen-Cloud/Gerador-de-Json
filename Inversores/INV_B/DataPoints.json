@@ -7250,7 +7250,7 @@
          "purgeType":"YEARS",
          "pointLocator":{
             "dataType":"NUMERIC",
-            "updateEvent":"CONTEXT_CHANGE",
+            "updateEvent":"CONTEXT_UPDATE",
             "context":[
                {
                   "varName":"status1",
@@ -7307,7 +7307,7 @@
          "purgeType":"YEARS",
          "pointLocator":{
             "dataType":"NUMERIC",
-            "updateEvent":"CONTEXT_CHANGE",
+            "updateEvent":"CONTEXT_UPDATE",
             "context":[
                {
                   "varName":"status1",
@@ -7364,7 +7364,7 @@
          "purgeType":"YEARS",
          "pointLocator":{
             "dataType":"NUMERIC",
-            "updateEvent":"CONTEXT_CHANGE",
+            "updateEvent":"CONTEXT_UPDATE",
             "context":[
                {
                   "varName":"status1",
@@ -7417,7 +7417,7 @@
          "purgeType":"YEARS",
          "pointLocator":{
             "dataType":"NUMERIC",
-            "updateEvent":"CONTEXT_CHANGE",
+            "updateEvent":"CONTEXT_UPDATE",
             "context":[
                {
                   "varName":"status1",
