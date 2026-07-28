@@ -30,6 +30,15 @@ os.rename("saida/" + tipo + ".json", destino)
 with open(f"saida/Multimedidor{cabine}.json", "r", encoding="utf-8") as f:
     smartJson = json.load(f)
 
+# Os PRs são adicionados a qualquer tipo de multimedidor suportado.
+with open("Configuracao/JsonsConfig/PRMultimedidor.json", "r", encoding="utf-8") as f:
+    template_pr_multimedidor = json.load(f)
+
+smartJson["dataPoints"].extend(template_pr_multimedidor["dataPoints"])
+
+with open(f"saida/Multimedidor{cabine}.json", "w", encoding="utf-8") as f:
+    json.dump(smartJson, f, indent=3, ensure_ascii=False)
+
 
 # Ler arquivo original
 with open(f"saida/Multimedidor{cabine}.json", "r", encoding="utf-8") as f:
