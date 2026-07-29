@@ -39,6 +39,7 @@ conteudo = (
         .replace("000.000.000.000", IP)
         .replace("Usina", usina)
         .replace("Medidor1", f"Medidor{numero_medidor}")
+        .replace("MEDIDOR1", f"Medidor{numero_medidor}")
         .replace("Cabine 1", f"Cabine {numero_medidor}")
     )
 
