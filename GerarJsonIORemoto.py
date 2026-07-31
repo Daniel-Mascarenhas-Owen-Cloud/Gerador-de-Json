@@ -74,7 +74,10 @@ def aplicar_placeholders(
         .replace("000.000.000.000", IP)
         .replace("Remota1", f"Remota{numero_io}")
         .replace("IO1", f"IO{numero_io}")
-        .replace("QGBT1", f"QGBT{numero_qgbt}")
+        .replace(
+            "QGBT1",
+            f"{'QGBT' if local_equipamento == 'Skid' else 'QMT'}{numero_qgbt}"
+        )
         .replace("Skid 1", f"{local_equipamento} {numero_local}")
     )
     return json.loads(texto)
