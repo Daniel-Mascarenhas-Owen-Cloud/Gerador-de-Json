@@ -49,6 +49,20 @@ if tipo_NCU == "C":
     ) as f:
         trackers = json.loads("[" + f.read() + "]")
 
+    with open(
+        "NCU/NCU_TIPO_C/Motores.json",
+        "r",
+        encoding="utf-8"
+    ) as f:
+        motores_base = json.load(f)
+
+    datapoints_auxiliares_skc = [
+        ponto
+        for ponto in trackers
+        if ponto["xid"].startswith("USN_TRK_1.1_STA_Monitor")
+        or ponto["xid"].startswith("USN_TRK_1.1_VIR_")
+    ]
+
     # O arquivo contém os trackers expandidos da referência original.
     # Os quatro primeiros datapoints formam o modelo do Tracker 1.
     trackers_base = trackers[:4]
@@ -94,45 +108,23 @@ if tipo_NCU == "C":
 
             json_ncu["dataPoints"].append(tracker)
 
-        # Os modelos dos motores são derivados dos datapoints originais do
-        # Tracker 1: dois estados binários e uma posição em holding register.
-        falha_motor_base = copy.deepcopy(trackers_base[1])
-        falha_motor_base["xid"] = "USN_TRK_1.1.1_ALM_Falha Motor"
-        falha_motor_base["name"] = falha_motor_base["xid"]
-        falha_motor_base["pointLocator"]["offset"] = 260
-        falha_motor_base["eventDetectors"][0]["xid"] = (
-            "USN_TRK_1.1.1_ALM_1_Falha Motor"
-        )
-        falha_motor_base["eventDetectors"][0]["alias"] = (
-            "UFV Nome da Usina - NCU 1 - SKC 1 - Motor 1 com Falha"
-        )
+        for auxiliar_base in datapoints_auxiliares_skc:
+            auxiliar = copy.deepcopy(auxiliar_base)
+            texto_auxiliar = json.dumps(auxiliar, ensure_ascii=False)
+            texto_auxiliar = (
+                texto_auxiliar
+                .replace("TRK_1.1", f"TRK_1.{numero_tracker}")
+                .replace("SKC 1", f"SKC {numero_tracker}")
+            )
+            auxiliar = json.loads(texto_auxiliar)
 
-        motor_ausente_base = copy.deepcopy(trackers_base[2])
-        motor_ausente_base["xid"] = "USN_TRK_1.1.1_ALM_Motor Não Presente"
-        motor_ausente_base["name"] = motor_ausente_base["xid"]
-        motor_ausente_base["pointLocator"]["offset"] = 261
-        motor_ausente_base["eventDetectors"][0]["xid"] = (
-            "USN_TRK_1.1.1_ALM_1_Motor Não Presente"
-        )
-        motor_ausente_base["eventDetectors"][0]["alias"] = (
-            "UFV Nome da Usina - NCU 1 - SKC 1 - Motor 1 Não Presente"
-        )
+            if "slaveId" in auxiliar.get("pointLocator", {}):
+                auxiliar["pointLocator"]["slaveId"] = numero_tracker
 
-        posicao_motor_base = copy.deepcopy(trackers_base[0])
-        posicao_motor_base["xid"] = "USN_TRK_1.1.1_MED_Posição Atual"
-        posicao_motor_base["name"] = posicao_motor_base["xid"]
-        posicao_motor_base["pointLocator"]["modbusDataType"] = (
-            "TWO_BYTE_INT_SIGNED"
-        )
-        posicao_motor_base["pointLocator"]["multiplier"] = 0.1
-        posicao_motor_base["pointLocator"]["offset"] = 40305
+            json_ncu["dataPoints"].append(auxiliar)
 
         for numero_motor in range(1, motores_por_tracker[numero_tracker - 1] + 1):
-            for motor_base in (
-                falha_motor_base,
-                motor_ausente_base,
-                posicao_motor_base
-            ):
+            for motor_base in motores_base:
                 motor = copy.deepcopy(motor_base)
                 identificador_base = "TRK_1.1.1"
                 identificador_motor = (
@@ -196,6 +188,7 @@ conteudo = (
         .replace("NCU 1", f"NCU {NCU}")
         .replace("TRK_1.", f"TRK_{NCU}.")
         .replace("Nome da Usina", usina)
+        .replace("e+308", "E308")
     )
 
 # Sobrescrever o arquivo original

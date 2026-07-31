@@ -1,0 +1,161 @@
+[
+   {
+      "xid": "USN_TRK_1.1.1_ALM_Falha Motor",
+      "loggingType": "ON_CHANGE",
+      "intervalLoggingPeriodType": "MINUTES",
+      "intervalLoggingType": "INSTANT",
+      "purgeType": "YEARS",
+      "pointLocator": {
+         "range": "INPUT_STATUS",
+         "modbusDataType": "BINARY",
+         "additive": 0.0,
+         "bit": 0,
+         "charset": "ASCII",
+         "multiplier": 1.0,
+         "offset": 260,
+         "registerCount": 0,
+         "settableOverride": false,
+         "slaveId": 1,
+         "slaveMonitor": false,
+         "socketMonitor": false
+      },
+      "eventDetectors": [
+         {
+            "xid": "USN_TRK_1.1.1_ALM_1_Falha Motor",
+            "type": "BINARY_STATE",
+            "alarmLevel": "CRITICAL",
+            "state": true,
+            "durationType": "SECONDS",
+            "duration": 0,
+            "alias": "UFV Nome da Usina - NCU 1 - SKC 1 - Motor 1 com Falha"
+         }
+      ],
+      "engineeringUnits": "",
+      "purgeStrategy": "PERIOD",
+      "chartColour": null,
+      "chartRenderer": null,
+      "dataSourceXid": "USN_NCU1_C_1a10",
+      "defaultCacheSize": 1,
+      "description": null,
+      "deviceName": "USN_NCU1_C_1a10",
+      "discardExtremeValues": false,
+      "discardHighLimit": 1.7976931348623157e+308,
+      "discardLowLimit": -1.7976931348623157e+308,
+      "enabled": true,
+      "eventTextRenderer": {
+         "type": "EVENT_NONE"
+      },
+      "intervalLoggingPeriod": 5,
+      "name": "USN_TRK_1.1.1_ALM_Falha Motor",
+      "purgePeriod": 1,
+      "purgeValuesLimit": 100,
+      "textRenderer": {
+         "type": "PLAIN",
+         "suffix": ""
+      },
+      "tolerance": 0.0
+   },
+   {
+      "xid": "USN_TRK_1.1.1_ALM_Motor Não Presente",
+      "loggingType": "ON_CHANGE",
+      "intervalLoggingPeriodType": "MINUTES",
+      "intervalLoggingType": "INSTANT",
+      "purgeType": "YEARS",
+      "pointLocator": {
+         "range": "INPUT_STATUS",
+         "modbusDataType": "BINARY",
+         "additive": 0.0,
+         "bit": 0,
+         "charset": "ASCII",
+         "multiplier": 1.0,
+         "offset": 261,
+         "registerCount": 0,
+         "settableOverride": false,
+         "slaveId": 1,
+         "slaveMonitor": false,
+         "socketMonitor": false
+      },
+      "eventDetectors": [
+         {
+            "xid": "USN_TRK_1.1.1_ALM_1_Motor Não Presente",
+            "type": "BINARY_STATE",
+            "alarmLevel": "CRITICAL",
+            "state": true,
+            "durationType": "SECONDS",
+            "duration": 0,
+            "alias": "UFV Nome da Usina - NCU 1 - SKC 1 - Motor 1 Não Presente"
+         }
+      ],
+      "engineeringUnits": "",
+      "purgeStrategy": "PERIOD",
+      "chartColour": null,
+      "chartRenderer": null,
+      "dataSourceXid": "USN_NCU1_C_1a10",
+      "defaultCacheSize": 1,
+      "description": null,
+      "deviceName": "USN_NCU1_C_1a10",
+      "discardExtremeValues": false,
+      "discardHighLimit": 1.7976931348623157e+308,
+      "discardLowLimit": -1.7976931348623157e+308,
+      "enabled": true,
+      "eventTextRenderer": {
+         "type": "EVENT_NONE"
+      },
+      "intervalLoggingPeriod": 5,
+      "name": "USN_TRK_1.1.1_ALM_Motor Não Presente",
+      "purgePeriod": 1,
+      "purgeValuesLimit": 100,
+      "textRenderer": {
+         "type": "PLAIN",
+         "suffix": ""
+      },
+      "tolerance": 0.0
+   },
+   {
+      "xid": "USN_TRK_1.1.1_MED_Posição Atual",
+      "loggingType": "INTERVAL",
+      "intervalLoggingPeriodType": "MINUTES",
+      "intervalLoggingType": "INSTANT",
+      "purgeType": "YEARS",
+      "pointLocator": {
+         "range": "HOLDING_REGISTER",
+         "modbusDataType": "TWO_BYTE_INT_SIGNED",
+         "additive": 0.0,
+         "bit": 0,
+         "charset": "ASCII",
+         "multiplier": 0.1,
+         "offset": 40305,
+         "registerCount": 1,
+         "settableOverride": false,
+         "slaveId": 1,
+         "slaveMonitor": false,
+         "socketMonitor": false
+      },
+      "eventDetectors": [],
+      "engineeringUnits": "",
+      "purgeStrategy": "PERIOD",
+      "chartColour": null,
+      "chartRenderer": null,
+      "dataSourceXid": "USN_NCU1_C_1a10",
+      "defaultCacheSize": 1,
+      "description": null,
+      "deviceName": "USN_NCU1_C_1a10",
+      "discardExtremeValues": false,
+      "discardHighLimit": 1.7976931348623157e+308,
+      "discardLowLimit": -1.7976931348623157e+308,
+      "enabled": true,
+      "eventTextRenderer": {
+         "type": "EVENT_NONE"
+      },
+      "intervalLoggingPeriod": 5,
+      "name": "USN_TRK_1.1.1_MED_Posição Atual",
+      "purgePeriod": 1,
+      "purgeValuesLimit": 100,
+      "textRenderer": {
+         "type": "ANALOG",
+         "format": "0.00",
+         "suffix": ""
+      },
+      "tolerance": 0.0
+   }
+]
