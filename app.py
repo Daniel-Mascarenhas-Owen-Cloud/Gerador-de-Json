@@ -1,6 +1,21 @@
 import subprocess
 import sys
 
+
+def gerar_json_io_remoto(usina, prefixo):
+    tipo_io_remoto = input("Tipo do IO Remoto: ").upper()
+    quantidade_io_remoto = input("Quantos IOs Remotos existem? ")
+
+    subprocess.run([
+        "python",
+        "GerarJsonIORemoto.py",
+        tipo_io_remoto,
+        usina,
+        prefixo,
+        quantidade_io_remoto
+    ])
+
+
 usina = input("Nome da usina: ")
 prefixo = input("Prefixo da usina: ")
 
@@ -24,6 +39,7 @@ while True:
         "13. Trafo\n"
         "14. Combiner Box\n"
         "15. DJBT\n"
+        "16. IO Remoto\n"
     ).upper()
 
     if action not in [
@@ -41,8 +57,9 @@ while True:
         "CÁMERAS", "11",
         "MEDIDOR", "12",
         "TRAFO", "13",
-        "COMBINER BOX", "COMBINER", "CBX", "14"
+        "COMBINER BOX", "COMBINER", "CBX", "14",
         "DJBT", "15",
+        "IO REMOTO", "IO", "16",
     ]:
         print("\nOpção inválida!\n")
         sys.exit()
@@ -222,6 +239,15 @@ while True:
                 ip,
                 qtd_trackers
             ])
+
+        if not gerarTudo:
+            sys.exit()
+
+# ---------------- IO REMOTO ----------------
+
+    if action in ["IO REMOTO", "IO", "16"] or gerarTudo:
+
+        gerar_json_io_remoto(usina, prefixo)
 
         if not gerarTudo:
             sys.exit()
