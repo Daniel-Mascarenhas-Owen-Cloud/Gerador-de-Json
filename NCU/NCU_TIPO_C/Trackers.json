@@ -1,0 +1,3722 @@
+      {
+         "xid": "USN_TRK_1.1_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40315,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.1_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.1_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 257,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.1_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 1 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.1_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.1_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 258,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.1_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 1 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.1_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.1_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 259,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.1_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 1 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.1_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.2_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40327,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 2,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.2_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.2_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 280,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 2,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.2_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 2 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.2_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.2_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 281,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 2,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.2_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 2 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.2_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.2_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 282,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 2,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.2_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 2 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.2_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.3_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40339,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 3,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.3_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.3_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 303,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 3,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.3_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 3 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.3_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.3_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 304,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 3,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.3_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 3 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.3_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.3_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 305,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 3,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.3_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 3 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.3_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.4_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40351,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 4,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.4_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.4_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 326,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 4,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.4_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 4 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.4_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.4_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 327,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 4,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.4_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 4 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.4_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.4_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 328,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 4,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.4_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 4 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.4_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.5_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40363,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 5,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.5_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.5_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 349,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 5,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.5_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 5 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.5_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.5_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 350,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 5,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.5_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 5 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.5_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.5_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 351,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 5,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.5_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 5 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.5_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.6_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40375,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 6,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.6_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.6_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 372,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 6,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.6_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 6 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.6_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.6_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 373,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 6,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.6_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 6 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.6_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.6_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 374,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 6,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.6_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 6 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.6_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.7_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40387,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 7,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.7_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.7_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 395,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 7,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.7_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 7 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.7_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.7_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 396,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 7,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.7_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 7 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.7_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.7_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 397,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 7,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.7_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 7 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.7_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.8_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40399,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 8,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.8_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.8_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 418,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 8,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.8_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 8 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.8_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.8_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 419,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 8,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.8_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 8 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.8_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.8_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 420,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 8,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.8_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 8 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.8_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.9_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40411,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 9,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.9_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.9_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 441,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 9,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.9_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 9 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.9_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.9_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 442,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 9,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.9_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 9 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.9_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.9_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 443,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 9,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.9_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 9 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.9_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.10_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40423,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 10,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.10_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.10_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 464,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 10,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.10_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 10 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.10_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.10_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 465,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 10,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.10_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 10 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.10_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.10_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 466,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 10,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.10_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 10 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.10_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.11_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40435,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 11,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.11_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.11_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 487,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 11,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.11_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 11 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.11_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.11_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 488,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 11,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.11_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 11 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.11_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.11_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 489,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 11,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.11_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 11 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.11_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.12_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40447,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 12,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.12_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.12_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 510,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 12,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.12_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 12 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.12_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.12_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 511,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 12,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.12_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 12 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.12_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.12_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 512,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 12,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.12_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 12 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.12_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.13_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40459,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 13,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.13_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.13_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 533,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 13,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.13_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 13 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.13_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.13_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 534,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 13,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.13_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 13 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.13_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.13_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 535,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 13,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.13_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 13 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.13_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.14_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40471,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 14,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.14_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.14_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 556,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 14,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.14_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 14 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.14_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.14_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 557,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 14,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.14_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 14 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.14_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.14_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 558,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 14,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.14_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 14 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.14_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.15_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40483,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 15,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.15_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.15_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 579,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 15,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.15_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 15 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.15_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.15_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 580,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 15,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.15_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 15 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.15_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.15_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 581,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 15,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.15_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 15 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.15_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.16_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40495,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 16,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.16_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.16_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 602,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 16,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.16_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 16 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.16_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.16_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 603,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 16,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.16_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 16 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.16_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.16_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 604,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 16,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.16_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 16 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.16_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.17_MED_Velocidade do Vento (m/s)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "TWO_BYTE_INT_UNSIGNED",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 40507,
+            "registerCount": 1,
+            "settableOverride": false,
+            "slaveId": 17,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.17_MED_Velocidade do Vento (m/s)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.17_ALM_Alarme de Vento",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 625,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 17,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.17_ALM_1_Alarme de Vento",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 17 - Alarme de Vento"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.17_ALM_Alarme de Vento",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.17_ALM_Falha de Comunicação",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 626,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 17,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.17_ALM_1_Falha de Comunicação",
+               "type": "BINARY_STATE",
+               "alarmLevel": "CRITICAL",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 17 - Falha de comunicação geral"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.17_ALM_Falha de Comunicação",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+,
+      {
+         "xid": "USN_TRK_1.17_STA_Modo Manual",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "INPUT_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 627,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 17,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [
+            {
+               "xid": "USN_TRK_1.17_STA_1_Modo Manual",
+               "type": "BINARY_STATE",
+               "alarmLevel": "INFORMATION",
+               "state": true,
+               "durationType": "SECONDS",
+               "duration": 0,
+               "alias": "UFV Nome da Usina - NCU 1 - SKC 17 - Modo Manual"
+            }
+         ],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_NCU1_C",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_NCU1_C",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_TRK_1.17_STA_Modo Manual",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }

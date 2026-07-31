@@ -173,7 +173,7 @@ while True:
 
             ip = input("IP do DataSource: ")
 
-            subprocess.run([
+            argumentos = [
                 "python",
                 "GerarJsonNCU.py",
                 tipo,
@@ -181,7 +181,19 @@ while True:
                 prefixo,
                 str(i+1),
                 ip
-            ])
+            ]
+
+            if tipo.strip().upper() == "C":
+                quantidade_trackers = input("Quantas SKC existem nesta NCU? ")
+                argumentos.append(quantidade_trackers)
+
+                for numero_tracker in range(1, int(quantidade_trackers) + 1):
+                    quantidade_motores = input(
+                        f"Quantos motores tem a SKC {i+1}.{numero_tracker}? "
+                    )
+                    argumentos.append(quantidade_motores)
+
+            subprocess.run(argumentos)
 
         if not gerarTudo:
             sys.exit()

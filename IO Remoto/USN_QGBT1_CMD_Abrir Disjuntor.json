@@ -1,0 +1,9 @@
+      {
+         "xid": "USN_IO1_PTL_MOD1_Saida Digital 2",
+         "sourcePointId": "USN_QGBT1_CMD_Abrir Disjuntor",
+         "targetPointId": "USN_IO1_CMD_MOD1_Saida Digital 2",
+         "event": "UPDATE",
+         "disabled": false,
+         "script": "return source.value;"
+      }
+
