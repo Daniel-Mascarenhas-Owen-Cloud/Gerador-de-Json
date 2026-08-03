@@ -20,7 +20,7 @@
          "maxReadRegisterCount":125,
          "maxWriteRegisterCount":120,
          "name":"USN_NCU1_C",
-         "port":502,
+         "port":505,
          "quantize":false,
          "retries":2,
          "timeout":1000,
