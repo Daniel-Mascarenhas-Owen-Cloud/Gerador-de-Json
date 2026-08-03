@@ -2725,7 +2725,7 @@
          "dataSourceXid":"USN_SMART1_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_DS_SMARTLOGGER5",
+         "deviceName":"USN_SMART1_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
