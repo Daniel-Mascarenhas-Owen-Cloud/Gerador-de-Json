@@ -92,7 +92,7 @@ if tipo_NCU == "C":
                 "TRK_1.1", f"TRK_1.{numero_tracker}"
             )
 
-            incremento_offset = 15 if "Velocidade do Vento" in tracker["xid"] else 23
+            incremento_offset = 12 if "Velocidade do Vento" in tracker["xid"] else 23
             tracker["pointLocator"]["offset"] += (
                 numero_tracker - 1
             ) * incremento_offset
@@ -139,7 +139,7 @@ if tipo_NCU == "C":
 
                 if "Posição Atual" in motor["xid"]:
                     motor["pointLocator"]["offset"] += (
-                        (numero_tracker - 1) * 15 + numero_motor - 1
+                        (numero_tracker - 1) * 12 + numero_motor - 1
                     )
                 else:
                     motor["pointLocator"]["offset"] += (
