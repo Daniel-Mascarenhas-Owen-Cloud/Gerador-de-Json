@@ -6,7 +6,8 @@ saida = "saida_final.json"
 
 resultado = {
     "dataSources": [],
-    "dataPoints": []
+    "dataPoints": [],
+    "pointLinks": []
 }
 
 # percorre todos os arquivos da pasta
@@ -23,6 +24,11 @@ for arquivo in os.listdir(pasta):
 
             if "dataPoints" in dados:
                 resultado["dataPoints"].extend(dados["dataPoints"])
+
+            if "pointLinks" in dados:
+                resultado["pointLinks"].extend(dados["pointLinks"])
+            elif "sourcePointId" in dados and "targetPointId" in dados:
+                resultado["pointLinks"].append(dados)
 
 # salva o json final
 with open(saida, "w", encoding="utf-8") as f:
