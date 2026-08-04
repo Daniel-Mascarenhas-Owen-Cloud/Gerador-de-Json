@@ -16,7 +16,7 @@ def gerar_json_io_remoto(usina, prefixo):
     ])
 
 
-usina = input("Nome da usina: ")
+usina = input("Nome da usina: ").strip()
 prefixo = input("Prefixo da usina: ")
 
 while True:
