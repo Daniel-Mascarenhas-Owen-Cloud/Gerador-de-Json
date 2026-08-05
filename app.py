@@ -156,7 +156,10 @@ while True:
 
         quantidade = int(input("Quantos ETM existem? "))
         tipo = input("Tipo do ETM: ").upper()
-        slaveId = input("Qual SlaveId: ")
+        if tipo == "C":
+            slaveId = 60
+        else:
+            slaveId = input("Qual SlaveId: ")
 
         for i in range(quantidade):
 

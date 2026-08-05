@@ -11,7 +11,7 @@ IP = sys.argv[3]
 slaveId = sys.argv[4]
 numero = sys.argv[5]
 
-while(tipo_ETM != 'A'):
+while(tipo_ETM != 'A' and tipo_ETM != 'C'):
     print("Tipo inválido!")
     tipo_ETM = input("Qual o tipo da estação meteorológica?\n")
 
