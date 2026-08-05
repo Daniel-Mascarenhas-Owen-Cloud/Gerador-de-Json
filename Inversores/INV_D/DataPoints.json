@@ -996,7 +996,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_Inv_1.1_CFG_Tempo de Operação Diário (min)",
+         "name":"USN_Inv_1.1_MED_Tempo de Operação Diário (min)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
