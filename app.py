@@ -157,7 +157,7 @@ while True:
         quantidade = int(input("Quantos ETM existem? "))
         tipo = input("Tipo do ETM: ").upper()
         if tipo == "C":
-            slaveId = 60
+            slaveId = "60"
         else:
             slaveId = input("Qual SlaveId: ")
 
