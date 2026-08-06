@@ -1,7 +1,7 @@
 {
    "dataSources":[
       {
-         "xid":"USN_ETM_C",
+         "xid":"TST_ETM_A",
          "type":"MODBUS_IP",
          "alarmLevels":{
             "POINT_WRITE_EXCEPTION":"NONE",
@@ -15,11 +15,11 @@
          "createSocketMonitorPoint":false,
          "enabled":true,
          "encapsulated":false,
-         "host":"000.000.000.000",
+         "host":"1",
          "maxReadBitCount":2000,
          "maxReadRegisterCount":125,
          "maxWriteRegisterCount":120,
-         "name":"USN_ETM_A",
+         "name":"TST_ETM_A",
          "port":502,
          "quantize":false,
          "retries":2,
@@ -29,7 +29,7 @@
    ],
    "dataPoints":[
       {
-         "xid":"USN_MED_Temperatura do Ar (°C)",
+         "xid":"TST_MED_Temperatura do Ar (°C)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -54,10 +54,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -66,7 +66,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Temperatura do Ar (°C)",
+         "name":"TST_MED_Temperatura do Ar (°C)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -77,7 +77,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Umidade do Ar",
+         "xid":"TST_MED_Umidade do Ar",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -102,10 +102,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -114,7 +114,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Umidade do Ar",
+         "name":"TST_MED_Umidade do Ar",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -125,7 +125,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Velocidade do Vento (m/s)",
+         "xid":"TST_MED_Velocidade do Vento (m/s)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -150,10 +150,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -162,7 +162,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Velocidade do Vento (m/s)",
+         "name":"TST_MED_Velocidade do Vento (m/s)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -173,7 +173,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Direção do Vento (graus)",
+         "xid":"TST_MED_Direção do Vento (graus)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -198,10 +198,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -210,7 +210,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Direção do Vento (graus)",
+         "name":"TST_MED_Direção do Vento (graus)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -221,7 +221,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Chuva Instante (mm)",
+         "xid":"TST_MED_Chuva Instante (mm)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -246,10 +246,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -258,7 +258,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Chuva Instante (mm)",
+         "name":"TST_MED_Chuva Instante (mm)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -269,7 +269,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Piranômetro HOR - GHI (W/m²)",
+         "xid":"TST_MED_Piranômetro HOR - GHI (W/m²)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -294,10 +294,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -306,7 +306,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Piranômetro HOR - GHI (W/m²)",
+         "name":"TST_MED_Piranômetro HOR - GHI (W/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -317,7 +317,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Piranômetro INC - POA (W/m²)",
+         "xid":"TST_MED_Piranômetro INC - POA (W/m²)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -342,10 +342,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -354,7 +354,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Piranômetro INC - POA (W/m²)",
+         "name":"TST_MED_Piranômetro INC - POA (W/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -365,7 +365,7 @@
          "tolerance":0.0
       },
       {
-         "xid": "USN_MED_Acumulado Diário - POA (Wh\/m²)",
+         "xid": "TST_MED_Acumulado Diário - POA (Wh\/m²)",
          "loggingType": "ON_TS_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -376,15 +376,15 @@
             "context": [
                {
                   "varName": "self",
-                  "dataPointXid": "USN_MED_Acumulado Diário - POA (Wh\/m²)"
+                  "dataPointXid": "TST_MED_Acumulado Diário - POA (Wh\/m²)"
                },
                {
                   "varName": "POA",
-                  "dataPointXid": "USN_CAL_Piranômetro INC - POA 5 min. (W\/m²)"
+                  "dataPointXid": "TST_CAL_Piranômetro INC - POA 5 min. (W\/m²)"
                },
                {
                   "varName": "monitor",
-                  "dataPointXid": "USN_STA_Monitor de Conexao ETM"
+                  "dataPointXid": "TST_STA_Monitor de Conexao ETM"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -398,10 +398,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_Dados Calculados",
+         "dataSourceXid": "TST_Dados Calculados",
          "defaultCacheSize": 1,
          "description": "",
-         "deviceName": "USN_Dados Calculados",
+         "deviceName": "TST_Dados Calculados",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -410,7 +410,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_MED_Acumulado Diário - POA (Wh\/m²)",
+         "name": "TST_MED_Acumulado Diário - POA (Wh\/m²)",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -421,7 +421,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_CAL_Piranômetro INC - POA 5 min. (W\/m²)",
+         "xid": "TST_CAL_Piranômetro INC - POA 5 min. (W\/m²)",
          "loggingType": "ON_TS_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -432,7 +432,7 @@
             "context": [
                {
                   "varName": "x",
-                  "dataPointXid": "USN_MED_Piranômetro INC - POA (W\/m²)"
+                  "dataPointXid": "TST_MED_Piranômetro INC - POA (W\/m²)"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -446,10 +446,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_Dados Calculados",
+         "dataSourceXid": "TST_Dados Calculados",
          "defaultCacheSize": 1,
          "description": "",
-         "deviceName": "USN_Dados Calculados",
+         "deviceName": "TST_Dados Calculados",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -458,7 +458,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_CAL_Piranômetro INC - POA 5 min. (W\/m²)",
+         "name": "TST_CAL_Piranômetro INC - POA 5 min. (W\/m²)",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -469,7 +469,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_MED_Acumulado Diário - GHI (Wh\/m²)",
+         "xid": "TST_MED_Acumulado Diário - GHI (Wh\/m²)",
          "loggingType": "ON_TS_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -480,15 +480,15 @@
             "context": [
                {
                   "varName": "self",
-                  "dataPointXid": "USN_MED_Acumulado Diário - GHI (Wh\/m²)"
+                  "dataPointXid": "TST_MED_Acumulado Diário - GHI (Wh\/m²)"
                },
                {
                   "varName": "GHI",
-                  "dataPointXid": "USN_CAL_Piranômetro HOR - GHI 5 min. (W\/m²)"
+                  "dataPointXid": "TST_CAL_Piranômetro HOR - GHI 5 min. (W\/m²)"
                },
                {
                   "varName": "monitor",
-                  "dataPointXid": "USN_STA_Monitor de Conexao ETM"
+                  "dataPointXid": "TST_STA_Monitor de Conexao ETM"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -502,10 +502,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_Dados Calculados",
+         "dataSourceXid": "TST_Dados Calculados",
          "defaultCacheSize": 1,
          "description": "",
-         "deviceName": "USN_Dados Calculados",
+         "deviceName": "TST_Dados Calculados",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -514,7 +514,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_MED_Acumulado Diário - GHI (Wh\/m²)",
+         "name": "TST_MED_Acumulado Diário - GHI (Wh\/m²)",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -525,7 +525,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "USN_CAL_Piranômetro HOR - GHI 5 min. (W\/m²)",
+         "xid": "TST_CAL_Piranômetro HOR - GHI 5 min. (W\/m²)",
          "loggingType": "ON_TS_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -536,7 +536,7 @@
             "context": [
                {
                   "varName": "x",
-                  "dataPointXid": "USN_MED_Piranômetro HOR - GHI (W\/m²)"
+                  "dataPointXid": "TST_MED_Piranômetro HOR - GHI (W\/m²)"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -550,10 +550,10 @@
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_Dados Calculados",
+         "dataSourceXid": "TST_Dados Calculados",
          "defaultCacheSize": 1,
          "description": "",
-         "deviceName": "USN_Dados Calculados",
+         "deviceName": "TST_Dados Calculados",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
@@ -562,7 +562,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_CAL_Piranômetro HOR - GHI 5 min. (W\/m²)",
+         "name": "TST_CAL_Piranômetro HOR - GHI 5 min. (W\/m²)",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -573,7 +573,7 @@
          "tolerance": 0.0
       },
       {
-         "xid":"USN_MED_Piranômetro INC - Difusa (W/m²)",
+         "xid":"TST_MED_Piranômetro INC - Difusa (W/m²)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -598,10 +598,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -610,7 +610,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Piranômetro INC- Difusa (W/m²)",
+         "name":"TST_MED_Piranômetro INC- Difusa (W/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -621,7 +621,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Piranômetro INC - Direta (W/m²)",
+         "xid":"TST_MED_Piranômetro INC - Direta (W/m²)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -646,10 +646,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -658,7 +658,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Piranômetro INC- Direta (W/m²)",
+         "name":"TST_MED_Piranômetro INC- Direta (W/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -669,7 +669,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Temperatura do Módulo 1 (°C)",
+         "xid":"TST_MED_Temperatura do Módulo 1 (°C)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -694,10 +694,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -706,7 +706,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Temperatura do Módulo 1 (°C)",
+         "name":"TST_MED_Temperatura do Módulo 1 (°C)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -717,7 +717,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Temperatura do Módulo 2 (°C)",
+         "xid":"TST_MED_Temperatura do Módulo 2 (°C)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -742,10 +742,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -754,7 +754,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Temperatura do Módulo 2 (°C)",
+         "name":"TST_MED_Temperatura do Módulo 2 (°C)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -765,7 +765,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Temperatura do Módulo 3 (°C)",
+         "xid":"TST_MED_Temperatura do Módulo 3 (°C)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -790,10 +790,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -802,7 +802,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Temperatura do Módulo 3 (°C)",
+         "name":"TST_MED_Temperatura do Módulo 3 (°C)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -813,7 +813,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_STA_Monitor de Conexao ETM",
+         "xid":"TST_STA_Monitor de Conexao ETM",
          "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -838,10 +838,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -850,7 +850,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":15,
-         "name":"USN_STA_Monitor de Conexao ETM",
+         "name":"TST_STA_Monitor de Conexao ETM",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -860,7 +860,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Albedometro INC - POA-RI (W/m²)",
+         "xid":"TST_MED_Albedometro INC - POA-RI (W/m²)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -885,10 +885,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -897,7 +897,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Albedometro INC - POA-RI (W/m²)",
+         "name":"TST_MED_Albedometro INC - POA-RI (W/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -908,7 +908,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Albedometro HOR - GHI-RI (W/m²)",
+         "xid":"TST_MED_Albedometro HOR - GHI-RI (W/m²)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -933,10 +933,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -945,7 +945,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Albedometro HOR - GHI-RI (W/m²)",
+         "name":"TST_MED_Albedometro HOR - GHI-RI (W/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -956,7 +956,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Irradiação Acumulada - GHI (Wh/m²)",
+         "xid":"TST_MED_Irradiação Acumulada - GHI (Wh/m²)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -981,10 +981,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -993,7 +993,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Irradiação Acumulada - GHI (Wh/m²)",
+         "name":"TST_MED_Irradiação Acumulada - GHI (Wh/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1004,7 +1004,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Irradiação Acumulada - POA (Wh/m²)",
+         "xid":"TST_MED_Irradiação Acumulada - POA (Wh/m²)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1029,10 +1029,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1041,7 +1041,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Irradiação Acumulada - POA (Wh/m²)",
+         "name":"TST_MED_Irradiação Acumulada - POA (Wh/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1052,7 +1052,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Irradiação Acumulada - POA-RI (Wh/m²)",
+         "xid":"TST_MED_Irradiação Acumulada - POA-RI (Wh/m²)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1077,10 +1077,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1089,7 +1089,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Irradiação Acumulada - POA-RI (Wh/m²)",
+         "name":"TST_MED_Irradiação Acumulada - POA-RI (Wh/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1100,7 +1100,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Irradiação Acumulada - GHI-RI (Wh/m²)",
+         "xid":"TST_MED_Irradiação Acumulada - GHI-RI (Wh/m²)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1125,10 +1125,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1137,7 +1137,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Irradiação Acumulada - GHI-RI (Wh/m²)",
+         "name":"TST_MED_Irradiação Acumulada - GHI-RI (Wh/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1148,7 +1148,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Absorvidade 1",
+         "xid":"TST_MED_Absorvidade 1",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1173,10 +1173,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1185,7 +1185,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Absorvidade 1",
+         "name":"TST_MED_Absorvidade 1",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1196,7 +1196,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Razao Sujidade 1",
+         "xid":"TST_MED_Razao Sujidade 1",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1221,10 +1221,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1233,7 +1233,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Razao Sujidade 1",
+         "name":"TST_MED_Razao Sujidade 1",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1244,7 +1244,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Absorvidade 2",
+         "xid":"TST_MED_Absorvidade 2",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1269,10 +1269,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1281,7 +1281,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Absorvidade 2",
+         "name":"TST_MED_Absorvidade 2",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1292,7 +1292,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Razão Sujidade 2",
+         "xid":"TST_MED_Razão Sujidade 2",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1317,10 +1317,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1329,7 +1329,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Razão Sujidade 2",
+         "name":"TST_MED_Razão Sujidade 2",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1340,7 +1340,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Chuva Acumulada (mm)",
+         "xid":"TST_MED_Chuva Acumulada (mm)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1365,10 +1365,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1377,7 +1377,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Chuva Acumulada (mm)",
+         "name":"TST_MED_Chuva Acumulada (mm)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1388,7 +1388,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Indice Albedo",
+         "xid":"TST_MED_Indice Albedo",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1413,10 +1413,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1425,7 +1425,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Indice Albedo",
+         "name":"TST_MED_Indice Albedo",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1436,7 +1436,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Célula Limpa (W/m²)",
+         "xid":"TST_MED_Célula Limpa (W/m²)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1461,10 +1461,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1473,7 +1473,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Célula Limpa (W/m²)",
+         "name":"TST_MED_Célula Limpa (W/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1484,7 +1484,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Célula Suja (W/m²)",
+         "xid":"TST_MED_Célula Suja (W/m²)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1509,10 +1509,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1521,7 +1521,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Célula Suja (W/m²)",
+         "name":"TST_MED_Célula Suja (W/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1532,7 +1532,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Tensão da Bateria (V)",
+         "xid":"TST_MED_Tensão da Bateria (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1557,10 +1557,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1569,7 +1569,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Tensão da Bateria (V)",
+         "name":"TST_MED_Tensão da Bateria (V)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1580,7 +1580,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_ETM_VIR_Última Atualização (Data\/Hora)",
+         "xid":"TST_ETM_VIR_Última Atualização (Data\/Hora)",
          "loggingType":"NONE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1591,7 +1591,7 @@
             "context":[
                {
                   "varName":"ts",
-                  "dataPointXid":"USN_MED_Temperatura do Ar (°C)"
+                  "dataPointXid":"TST_MED_Temperatura do Ar (°C)"
                }
             ],
             "executionDelayPeriodType":"SECONDS",
@@ -1606,10 +1606,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_Time Stamps",
+         "dataSourceXid":"TST_Time Stamps",
          "defaultCacheSize":1,
          "description":"",
-         "deviceName":"USN_Time Stamps",
+         "deviceName":"TST_Time Stamps",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1618,7 +1618,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":15,
-         "name":"USN_ETM_VIR_Última Atualização (Data\/Hora)",
+         "name":"TST_ETM_VIR_Última Atualização (Data\/Hora)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1628,7 +1628,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Acumulado Diário - POA-RI (Wh\/m²)",
+         "xid":"TST_MED_Acumulado Diário - POA-RI (Wh\/m²)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1653,10 +1653,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1665,7 +1665,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Acumulado Diário - POA-RI (Wh\/m²)",
+         "name":"TST_MED_Acumulado Diário - POA-RI (Wh\/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
@@ -1676,7 +1676,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_MED_Acumulado Diário - GHI-RI (Wh\/m²)",
+         "xid":"TST_MED_Acumulado Diário - GHI-RI (Wh\/m²)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -1701,10 +1701,10 @@
          "purgeStrategy":"PERIOD",
          "chartColour":null,
          "chartRenderer":null,
-         "dataSourceXid":"USN_ETM_A",
+         "dataSourceXid":"TST_ETM_A",
          "defaultCacheSize":1,
          "description":null,
-         "deviceName":"USN_ETM_A",
+         "deviceName":"TST_ETM_A",
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
@@ -1713,7 +1713,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Acumulado Diário - GHI-RI (Wh\/m²)",
+         "name":"TST_MED_Acumulado Diário - GHI-RI (Wh\/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
