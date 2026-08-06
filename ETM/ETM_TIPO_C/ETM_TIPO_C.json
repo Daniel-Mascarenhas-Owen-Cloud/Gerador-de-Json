@@ -658,7 +658,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_MED_Piranômetro INC- Direta (W/m²)",
+         "name":"USN_MED_Piranômetro INC - Direta (W/m²)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
