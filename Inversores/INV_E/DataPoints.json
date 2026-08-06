@@ -1214,7 +1214,7 @@
             "offset": 40123,
             "registerCount": 0,
             "settableOverride": false,
-            "slaveId": 1,
+            "slaveId":1,
             "slaveMonitor": false,
             "socketMonitor": false
          },
@@ -1261,7 +1261,7 @@
             "offset": 40125,
             "registerCount": 0,
             "settableOverride": false,
-            "slaveId": 1,
+            "slaveId":1,
             "slaveMonitor": false,
             "socketMonitor": false
          },
@@ -1308,7 +1308,7 @@
             "offset": 40127,
             "registerCount": 0,
             "settableOverride": false,
-            "slaveId": 1,
+            "slaveId":1,
             "slaveMonitor": false,
             "socketMonitor": false
          },
@@ -5373,7 +5373,7 @@
             "offset": 32118,
             "registerCount": 1,
             "settableOverride": false,
-            "slaveId": 1,
+            "slaveId":1,
             "slaveMonitor": false,
             "socketMonitor": false
          },
@@ -5480,7 +5480,7 @@
             "offset": 32116,
             "registerCount": 1,
             "settableOverride": false,
-            "slaveId": 1,
+            "slaveId":1,
             "slaveMonitor": false,
             "socketMonitor": false
          },
