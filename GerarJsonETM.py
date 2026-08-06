@@ -23,7 +23,7 @@ destino = f"saida/ETM{numero}.json"
 if os.path.exists(destino):
     os.remove(destino)
 
-os.rename("saida/ETM_TIPO_A.json", destino)
+os.rename(f"saida/{tipo}.json", destino)
 
 
 # Ler arquivo original
