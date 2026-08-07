@@ -1140,7 +1140,7 @@
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"INPUT_REGISTER",
-            "modbusDataType":"TWO_BYTE_INT_UNSIGNED",
+            "modbusDataType":"FOUR_BYTE_INT_UNSIGNED_SWAPPED",
             "additive":0.0,
             "bit":0,
             "charset":"ASCII",
