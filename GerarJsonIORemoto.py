@@ -94,6 +94,21 @@ def salvar_json(caminho, valor):
         arquivo.write(texto)
 
 
+def gerar_pontos_digitais(template, texto_base, quantidade):
+    pontos = []
+    offset_base = template["pointLocator"]["offset"]
+
+    for numero in range(1, quantidade + 1):
+        ponto = copy.deepcopy(template)
+        texto = json.dumps(ponto, ensure_ascii=False)
+        texto = texto.replace(texto_base + "1", texto_base + str(numero))
+        ponto = json.loads(texto)
+        ponto["pointLocator"]["offset"] = offset_base + numero - 1
+        pontos.append(ponto)
+
+    return pontos
+
+
 def gerar_io_remoto(
     numero_io,
     tipo_io_remoto,
@@ -107,6 +122,12 @@ def gerar_io_remoto(
 
     IP = input("IP do IO Remoto: ")
     slave_id = int(perguntar_inteiro("Slave ID do IO Remoto: "))
+    quantidade_entradas = int(perguntar_inteiro(
+        "Quantas entradas digitais existem neste IO Remoto? "
+    ))
+    quantidade_saidas = int(perguntar_inteiro(
+        "Quantas saídas digitais existem neste IO Remoto? "
+    ))
     local_io_remoto = perguntar_local()
 
     local_equipamento = (
@@ -134,14 +155,14 @@ def gerar_io_remoto(
         )
         entrada_disjuntor_fechado = perguntar_inteiro(
             "Qual entrada monitora Disjuntor Fechado? ",
-            maximo=8
+            maximo=quantidade_entradas
         )
         modulo_disjuntor_aberto = perguntar_inteiro(
             "Qual módulo monitora Disjuntor Aberto? "
         )
         entrada_disjuntor_aberto = perguntar_inteiro(
             "Qual entrada monitora Disjuntor Aberto? ",
-            maximo=8
+            maximo=quantidade_entradas
         )
 
     comanda_disjuntor_geral = perguntar_sim_nao(
@@ -156,14 +177,43 @@ def gerar_io_remoto(
     if comanda_disjuntor_geral == "S":
         print("Qual saída utilizada para fechar?")
         modulo_saida_fechar = perguntar_inteiro("Módulo: ")
-        saida_fechar = perguntar_inteiro("Saída: ", maximo=8)
+        saida_fechar = perguntar_inteiro(
+            "Saída: ", maximo=quantidade_saidas
+        )
 
         print("Qual saída utilizada para abrir?")
         modulo_saida_abrir = perguntar_inteiro("Módulo: ")
-        saida_abrir = perguntar_inteiro("Saída: ", maximo=8)
+        saida_abrir = perguntar_inteiro(
+            "Saída: ", maximo=quantidade_saidas
+        )
 
     data_source = copy.deepcopy(template_data_source)
     data_points = copy.deepcopy(template_data_points)
+
+    template_entrada = next(
+        ponto for ponto in data_points
+        if ponto.get("xid", "").endswith("Estado da Entrada Digital 1")
+    )
+    template_saida = next(
+        ponto for ponto in data_points
+        if ponto.get("xid", "").endswith("Saida Digital 1")
+    )
+    outros_pontos = [
+        ponto for ponto in data_points
+        if "Estado da Entrada Digital " not in ponto.get("xid", "")
+        and "Saida Digital " not in ponto.get("xid", "")
+    ]
+    entradas = gerar_pontos_digitais(
+        template_entrada,
+        "Estado da Entrada Digital ",
+        quantidade_entradas
+    )
+    saidas = gerar_pontos_digitais(
+        template_saida,
+        "Saida Digital ",
+        quantidade_saidas
+    )
+    data_points = entradas + saidas + outros_pontos
 
     xids_disjuntor_geral = {
         "USN_QGBT1_STA_Disjuntor Geral Aberto",
