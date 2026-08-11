@@ -1,0 +1,1034 @@
+[
+   {
+      "xid": "USN_Smart1_PTL_Energia Diaria Total (KWh)",
+      "sourcePointId": "US1_Smart1_MED_Energia Diaria Total (KWh)",
+      "targetPointId": "USN_Smart1_MED_Energia Diaria Total (KWh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Energia Mensal 1 (MWh)",
+      "sourcePointId": "US1_CAL_Energia Mensal 1 (MWh)",
+      "targetPointId": "USN_CAL_Energia Mensal 1 (MWh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Energia Anual 1 (GWh)",
+      "sourcePointId": "US1_CAL_Energia Anual 1 (GWh)",
+      "targetPointId": "USN_CAL_Energia Anual 1 (GWh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_PR Ajustado 1 (%)",
+      "sourcePointId": "US1_CAL_PR Ajustado 1 (%)",
+      "targetPointId": "USN_CAL_PR Ajustado 1 (%)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_PR Simples 1 (%)",
+      "sourcePointId": "US1_CAL_PR Simples 1 (%)",
+      "targetPointId": "USN_CAL_PR Simples 1 (%)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_Potência Ativa Total (KW)",
+      "sourcePointId": "US1_Smart1_MED_Potência Ativa Total (KW)",
+      "targetPointId": "USN_Smart1_MED_Potência Ativa Total (KW)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Temperatura do Ar (°C)",
+      "sourcePointId": "US1_MED_Temperatura do Ar (°C)",
+      "targetPointId": "USN_MED_Temperatura do Ar (°C)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Temperatura do Módulo 1 (°C)",
+      "sourcePointId": "US1_MED_Temperatura do Módulo 1 (°C)",
+      "targetPointId": "USN_MED_Temperatura do Módulo 1 (°C)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Irradiação Acumulada - POA (Wh/m²)",
+      "sourcePointId": "US1_MED_Irradiação Acumulada - POA (Wh/m²)",
+      "targetPointId": "USN_MED_Irradiação Acumulada - POA (Wh/m²)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Irradiação Acumulada - GHI (Wh/m²)",
+      "sourcePointId": "US1_MED_Irradiação Acumulada - GHI (Wh/m²)",
+      "targetPointId": "USN_MED_Irradiação Acumulada - GHI (Wh/m²)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Inv_1.1_PTL_Potência Ativa (KW)",
+      "sourcePointId": "US1_Inv_1.1_MED_Potência Ativa (KW)",
+      "targetPointId": "USN_Inv_1.1_MED_Potência Ativa (KW)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_VIR_PTL_Latitude da Usina (graus)",
+      "sourcePointId": "US1_VIR_Latitude da Usina (graus)",
+      "targetPointId": "USN_VIR_Latitude da Usina (graus)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_VIR_PTL_Longitude da Usina (graus)",
+      "sourcePointId": "US1_VIR_Longitude da Usina (graus)",
+      "targetPointId": "USN_VIR_Longitude da Usina (graus)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Inv_1.1_PTL_Energia Diária (KWh)",
+      "sourcePointId": "US1_Inv_1.1_MED_Energia Diária (KWh)",
+      "targetPointId": "USN_Inv_1.1_MED_Energia Diária (KWh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Inv_1.1_PTL_Energia Mensal (KWh)",
+      "sourcePointId": "US1_Inv_1.1_MED_Energia Mensal (KWh)",
+      "targetPointId": "USN_Inv_1.1_MED_Energia Mensal (KWh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Inv_1.1_PTL_Energia Anual (KWh)",
+      "sourcePointId": "US1_Inv_1.1_MED_Energia Anual (KWh)",
+      "targetPointId": "USN_Inv_1.1_MED_Energia Anual (KWh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Inv_1.1_PTL_Fator de Capacidade Diário",
+      "sourcePointId": "US1_Inv_1.1_CAL_Fator de Capacidade Diário",
+      "targetPointId": "USN_Inv_1.1_CAL_Fator de Capacidade Diário",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Inv_1.1_PTL_Fator de Capacidade Mensal",
+      "sourcePointId": "US1_Inv_1.1_CAL_Fator de Capacidade Mensal",
+      "targetPointId": "USN_Inv_1.1_CAL_Fator de Capacidade Mensal",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Inv_1.1_PTL_Fator de Capacidade Anual",
+      "sourcePointId": "US1_Inv_1.1_CAL_Fator de Capacidade Anual",
+      "targetPointId": "USN_Inv_1.1_CAL_Fator de Capacidade Anual",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Inv_1.1_PTL_PR Simples (%)",
+      "sourcePointId": "US1_Inv_1.1_CAL_PR Simples (%)",
+      "targetPointId": "USN_Inv_1.1_CAL_PR Simples (%)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Inv_1.1_PTL_PR Ajustado (%)",
+      "sourcePointId": "US1_Inv_1.1_CAL_PR Ajustado (%)",
+      "targetPointId": "USN_Inv_1.1_CAL_PR Ajustado (%)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Inv_1.1_PTL_Temperatura Interna (°C)",
+      "sourcePointId": "US1_Inv_1.1_MED_Temperatura Interna (°C)",
+      "targetPointId": "USN_Inv_1.1_MED_Temperatura Interna (°C)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Acumulado Diário - GHI (Wh/m²)",
+      "sourcePointId": "US1_MED_Acumulado Diário - GHI (Wh/m²)",
+      "targetPointId": "USN_MED_Acumulado Diário - GHI (Wh/m²)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Acumulado Diário - GHI-RI (Wh/m²)",
+      "sourcePointId": "US1_MED_Acumulado Diário - GHI-RI (Wh/m²)",
+      "targetPointId": "USN_MED_Acumulado Diário - GHI-RI (Wh/m²)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Acumulado Diário - POA (Wh/m²)",
+      "sourcePointId": "US1_MED_Acumulado Diário - POA (Wh/m²)",
+      "targetPointId": "USN_MED_Acumulado Diário - POA (Wh/m²)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Acumulado Diário - POA-RI (Wh/m²)",
+      "sourcePointId": "US1_MED_Acumulado Diário - POA-RI (Wh/m²)",
+      "targetPointId": "USN_MED_Acumulado Diário - POA-RI (Wh/m²)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Albedometro HOR - GHI-RI (W/m²)",
+      "sourcePointId": "US1_MED_Albedometro HOR - GHI-RI (W/m²)",
+      "targetPointId": "USN_MED_Albedometro HOR - GHI-RI (W/m²)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Albedometro INC - POA-RI (W/m²)",
+      "sourcePointId": "US1_MED_Albedometro INC - POA-RI (W/m²)",
+      "targetPointId": "USN_MED_Albedometro INC - POA-RI (W/m²)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Chuva Acumulada (mm)",
+      "sourcePointId": "US1_MED_Chuva Acumulada (mm)",
+      "targetPointId": "USN_MED_Chuva Acumulada (mm)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Chuva Instante (mm)",
+      "sourcePointId": "US1_MED_Chuva Instante (mm)",
+      "targetPointId": "USN_MED_Chuva Instante (mm)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Célula Limpa (W/m²)",
+      "sourcePointId": "US1_MED_Célula Limpa (W/m²)",
+      "targetPointId": "USN_MED_Célula Limpa (W/m²)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Célula Suja (W/m²)",
+      "sourcePointId": "US1_MED_Célula Suja (W/m²)",
+      "targetPointId": "USN_MED_Célula Suja (W/m²)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Direção do Vento (graus)",
+      "sourcePointId": "US1_MED_Direção do Vento (graus)",
+      "targetPointId": "USN_MED_Direção do Vento (graus)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Indice Albedo",
+      "sourcePointId": "US1_MED_Indice Albedo",
+      "targetPointId": "USN_MED_Indice Albedo",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Irradiação Acumulada - GHI-RI (Wh/m²)",
+      "sourcePointId": "US1_MED_Irradiação Acumulada - GHI-RI (Wh/m²)",
+      "targetPointId": "USN_MED_Irradiação Acumulada - GHI-RI (Wh/m²)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Irradiação Acumulada - POA-RI (Wh/m²)",
+      "sourcePointId": "US1_MED_Irradiação Acumulada - POA-RI (Wh/m²)",
+      "targetPointId": "USN_MED_Irradiação Acumulada - POA-RI (Wh/m²)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Piranômetro HOR - GHI (W/m²)",
+      "sourcePointId": "US1_MED_Piranômetro HOR - GHI (W/m²)",
+      "targetPointId": "USN_MED_Piranômetro HOR - GHI (W/m²)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Piranômetro INC - POA (W/m²)",
+      "sourcePointId": "US1_MED_Piranômetro INC - POA (W/m²)",
+      "targetPointId": "USN_MED_Piranômetro INC - POA (W/m²)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Razao Sujidade 1",
+      "sourcePointId": "US1_MED_Razao Sujidade 1",
+      "targetPointId": "USN_MED_Razao Sujidade 1",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Razao Sujidade 2",
+      "sourcePointId": "US1_MED_Razão Sujidade 2",
+      "targetPointId": "USN_MED_Razao Sujidade 2",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Temperatura do Módulo 2 (°C)",
+      "sourcePointId": "US1_MED_Temperatura do Módulo 2 (°C)",
+      "targetPointId": "USN_MED_Temperatura do Módulo 2 (°C)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Tensão da Bateria (V)",
+      "sourcePointId": "US1_MED_Tensão da Bateria (V)",
+      "targetPointId": "USN_MED_Tensão da Bateria (V)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Umidade do Ar",
+      "sourcePointId": "US1_MED_Umidade do Ar",
+      "targetPointId": "USN_MED_Umidade do Ar",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Velocidade do Vento (m/s)",
+      "sourcePointId": "US1_MED_Velocidade do Vento (m/s)",
+      "targetPointId": "USN_MED_Velocidade do Vento (m/s)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Monitor de Conexao ETM",
+      "sourcePointId": "US1_STA_Monitor de Conexao ETM",
+      "targetPointId": "USN_STA_Monitor de Conexao ETM",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Absorvidade 1",
+      "sourcePointId": "US1_MED_Absorvidade 1",
+      "targetPointId": "USN_MED_Absorvidade 1",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Absorvidade 2",
+      "sourcePointId": "US1_MED_Absorvidade 2",
+      "targetPointId": "USN_MED_Absorvidade 2",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Corrente - Fase A (A)",
+      "sourcePointId": "US1_MM1_MED_Corrente - Fase A (A)",
+      "targetPointId": "USN_MM1_MED_Corrente - Fase A (A)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Corrente - Fase B (A)",
+      "sourcePointId": "US1_MM1_MED_Corrente - Fase B (A)",
+      "targetPointId": "USN_MM1_MED_Corrente - Fase B (A)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Corrente - Fase C (A)",
+      "sourcePointId": "US1_MM1_MED_Corrente - Fase C (A)",
+      "targetPointId": "USN_MM1_MED_Corrente - Fase C (A)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Corrente - Fase N (A)",
+      "sourcePointId": "US1_MM1_MED_Corrente - Fase N (A)",
+      "targetPointId": "USN_MM1_MED_Corrente - Fase N (A)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Corrente Total do Sistema (A)",
+      "sourcePointId": "US1_MM1_MED_Corrente Total do Sistema (A)",
+      "targetPointId": "USN_MM1_MED_Corrente Total do Sistema (A)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Ativa Exp. Diária (MWh)",
+      "sourcePointId": "US1_MM1_MED_Energia Ativa Exp. Diária (MWh)",
+      "targetPointId": "USN_MM1_MED_Energia Ativa Exp. Diária (MWh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Ativa Exp. Horária (MWh)",
+      "sourcePointId": "US1_MM1_MED_Energia Ativa Exp. Horária (MWh)",
+      "targetPointId": "USN_MM1_MED_Energia Ativa Exp. Horária (MWh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Ativa Exp. Mensal (MWh)",
+      "sourcePointId": "US1_MM1_MED_Energia Ativa Exp. Mensal (MWh)",
+      "targetPointId": "USN_MM1_MED_Energia Ativa Exp. Mensal (MWh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Ativa Exportada (MWh)",
+      "sourcePointId": "US1_MM1_MED_Energia Ativa Exportada (MWh)",
+      "targetPointId": "USN_MM1_MED_Energia Ativa Exportada (MWh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Ativa Imp. Diária (MWh)",
+      "sourcePointId": "US1_MM1_MED_Energia Ativa Imp. Diária (MWh)",
+      "targetPointId": "USN_MM1_MED_Energia Ativa Imp. Diária (MWh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Ativa Imp. Horária (MWh)",
+      "sourcePointId": "US1_MM1_MED_Energia Ativa Imp. Horária (MWh)",
+      "targetPointId": "USN_MM1_MED_Energia Ativa Imp. Horária (MWh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Ativa Imp. Mensal (MWh)",
+      "sourcePointId": "US1_MM1_MED_Energia Ativa Imp. Mensal (MWh)",
+      "targetPointId": "USN_MM1_MED_Energia Ativa Imp. Mensal (MWh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Ativa Importada (MWh)",
+      "sourcePointId": "US1_MM1_MED_Energia Ativa Importada (MWh)",
+      "targetPointId": "USN_MM1_MED_Energia Ativa Importada (MWh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Reativa Exp. Diária (MVArh)",
+      "sourcePointId": "US1_MM1_MED_Energia Reativa Exp. Diária (MVArh)",
+      "targetPointId": "USN_MM1_MED_Energia Reativa Exp. Diária (MVArh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Reativa Exp. Horária (MVArh)",
+      "sourcePointId": "US1_MM1_MED_Energia Reativa Exp. Horária (MVArh)",
+      "targetPointId": "USN_MM1_MED_Energia Reativa Exp. Horária (MVArh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Reativa Exp. Mensal (MVArh)",
+      "sourcePointId": "US1_MM1_MED_Energia Reativa Exp. Mensal (MVArh)",
+      "targetPointId": "USN_MM1_MED_Energia Reativa Exp. Mensal (MVArh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Reativa Exportada (MVArh)",
+      "sourcePointId": "US1_MM1_MED_Energia Reativa Exportada (MVArh)",
+      "targetPointId": "USN_MM1_MED_Energia Reativa Exportada (MVArh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Reativa Imp. Diária (MVArh)",
+      "sourcePointId": "US1_MM1_MED_Energia Reativa Imp. Diária (MVArh)",
+      "targetPointId": "USN_MM1_MED_Energia Reativa Imp. Diária (MVArh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Reativa Imp. Horária (MVArh)",
+      "sourcePointId": "US1_MM1_MED_Energia Reativa Imp. Horária (MVArh)",
+      "targetPointId": "USN_MM1_MED_Energia Reativa Imp. Horária (MVArh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Reativa Imp. Mensal (MVArh)",
+      "sourcePointId": "US1_MM1_MED_Energia Reativa Imp. Mensal (MVArh)",
+      "targetPointId": "USN_MM1_MED_Energia Reativa Imp. Mensal (MVArh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Energia Reativa Importada (MVArh)",
+      "sourcePointId": "US1_MM1_MED_Energia Reativa Importada (MVArh)",
+      "targetPointId": "USN_MM1_MED_Energia Reativa Importada (MVArh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Fator de Potencia",
+      "sourcePointId": "US1_MM1_MED_Fator de Potencia",
+      "targetPointId": "USN_MM1_MED_Fator de Potencia",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Fator de Potência - Fase A",
+      "sourcePointId": "US1_MM1_MED_Fator de Potência - Fase A",
+      "targetPointId": "USN_MM1_MED_Fator de Potência - Fase A",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Fator de Potência - Fase B",
+      "sourcePointId": "US1_MM1_MED_Fator de Potência - Fase B",
+      "targetPointId": "USN_MM1_MED_Fator de Potência - Fase B",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Fator de Potência - Fase C",
+      "sourcePointId": "US1_MM1_MED_Fator de Potência - Fase C",
+      "targetPointId": "USN_MM1_MED_Fator de Potência - Fase C",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Frequência (Hz)",
+      "sourcePointId": "US1_MM1_MED_Frequência (Hz)",
+      "targetPointId": "USN_MM1_MED_Frequência (Hz)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Potência Aparente - Fase A (KVA)",
+      "sourcePointId": "US1_MM1_MED_Potência Aparente - Fase A (KVA)",
+      "targetPointId": "USN_MM1_MED_Potência Aparente - Fase A (KVA)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Potência Aparente - Fase B (KVA)",
+      "sourcePointId": "US1_MM1_MED_Potência Aparente - Fase B (KVA)",
+      "targetPointId": "USN_MM1_MED_Potência Aparente - Fase B (KVA)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Potência Aparente - Fase C (KVA)",
+      "sourcePointId": "US1_MM1_MED_Potência Aparente - Fase C (KVA)",
+      "targetPointId": "USN_MM1_MED_Potência Aparente - Fase C (KVA)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Potência Aparente Total (KVA)",
+      "sourcePointId": "US1_MM1_MED_Potência Aparente Total (KVA)",
+      "targetPointId": "USN_MM1_MED_Potência Aparente Total (KVA)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Potência Ativa - Fase A (KW)",
+      "sourcePointId": "US1_MM1_MED_Potência Ativa - Fase A (KW)",
+      "targetPointId": "USN_MM1_MED_Potência Ativa - Fase A (KW)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Potência Ativa - Fase B (KW)",
+      "sourcePointId": "US1_MM1_MED_Potência Ativa - Fase B (KW)",
+      "targetPointId": "USN_MM1_MED_Potência Ativa - Fase B (KW)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Potência Ativa - Fase C (KW)",
+      "sourcePointId": "US1_MM1_MED_Potência Ativa - Fase C (KW)",
+      "targetPointId": "USN_MM1_MED_Potência Ativa - Fase C (KW)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Potência Ativa Total (KW)",
+      "sourcePointId": "US1_MM1_MED_Potência Ativa Total (KW)",
+      "targetPointId": "USN_MM1_MED_Potência Ativa Total (KW)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Potência Reativa - Fase A (KVAr)",
+      "sourcePointId": "US1_MM1_MED_Potência Reativa - Fase A (KVAr)",
+      "targetPointId": "USN_MM1_MED_Potência Reativa - Fase A (KVAr)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Potência Reativa - Fase B (KVAr)",
+      "sourcePointId": "US1_MM1_MED_Potência Reativa - Fase B (KVAr)",
+      "targetPointId": "USN_MM1_MED_Potência Reativa - Fase B (KVAr)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Potência Reativa - Fase C (KVAr)",
+      "sourcePointId": "US1_MM1_MED_Potência Reativa - Fase C (KVAr)",
+      "targetPointId": "USN_MM1_MED_Potência Reativa - Fase C (KVAr)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Potência Reativa Total (KVAr)",
+      "sourcePointId": "US1_MM1_MED_Potência Reativa Total (KVAr)",
+      "targetPointId": "USN_MM1_MED_Potência Reativa Total (KVAr)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Tensão - Va (KV)",
+      "sourcePointId": "US1_MM1_MED_Tensão - Va (KV)",
+      "targetPointId": "USN_MM1_MED_Tensão - Va (KV)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Tensão - Vab (KV)",
+      "sourcePointId": "US1_MM1_MED_Tensão - Vab (KV)",
+      "targetPointId": "USN_MM1_MED_Tensão - Vab (KV)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Tensão - Vb (KV)",
+      "sourcePointId": "US1_MM1_MED_Tensão - Vb (KV)",
+      "targetPointId": "USN_MM1_MED_Tensão - Vb (KV)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Tensão - Vbc (KV)",
+      "sourcePointId": "US1_MM1_MED_Tensão - Vbc (KV)",
+      "targetPointId": "USN_MM1_MED_Tensão - Vbc (KV)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Tensão - Vc (KV)",
+      "sourcePointId": "US1_MM1_MED_Tensão - Vc (KV)",
+      "targetPointId": "USN_MM1_MED_Tensão - Vc (KV)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Tensão - Vca (KV)",
+      "sourcePointId": "US1_MM1_MED_Tensão - Vca (KV)",
+      "targetPointId": "USN_MM1_MED_Tensão - Vca (KV)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Tensão Total do Sistema (KV)",
+      "sourcePointId": "US1_MM1_MED_Tensão Total do Sistema (KV)",
+      "targetPointId": "USN_MM1_MED_Tensão Total do Sistema (KV)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_MM1_PTL_Monitor de Conexão",
+      "sourcePointId": "US1_MM1_STA_Monitor de Conexão",
+      "targetPointId": "USN_MM1_STA_Monitor de Conexão",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_PTL_Capacidade Instalada 1 (KWp)",
+      "sourcePointId": "US1_VIR_Capacidade Instalada 1 (KWp)",
+      "targetPointId": "USN_VIR_Capacidade Instalada 1 (KWp)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_Energia Total (KWh)",
+      "sourcePointId": "US1_Smart1_MED_Energia Total (KWh)",
+      "targetPointId": "USN_Smart1_MED_Energia Total (KWh)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_Inversores Disponíveis",
+      "sourcePointId": "US1_Smart1_STA_Inversores Disponíveis",
+      "targetPointId": "USN_Smart1_STA_Inversores Disponíveis",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_Inversores Parados",
+      "sourcePointId": "US1_Smart1_STA_Inversores Parados",
+      "targetPointId": "USN_Smart1_STA_Inversores Parados",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_Inversores Produzindo",
+      "sourcePointId": "US1_Smart1_STA_Inversores Produzindo",
+      "targetPointId": "USN_Smart1_STA_Inversores Produzindo",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_Inversores Sem Comunicação",
+      "sourcePointId": "US1_Smart1_STA_Inversores Sem Comunicação",
+      "targetPointId": "USN_Smart1_STA_Inversores Sem Comunicação",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_Potência de Entrada (KW)",
+      "sourcePointId": "US1_Smart1_MED_Potência de Entrada (KW)",
+      "targetPointId": "USN_Smart1_MED_Potência de Entrada (KW)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_Fator de Potência",
+      "sourcePointId": "US1_Smart1_MED_Fator de Potência",
+      "targetPointId": "USN_Smart1_MED_Fator de Potência",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_Potência Reativa Total (KVAr)",
+      "sourcePointId": "US1_Smart1_MED_Potência Reativa Total (KVAr)",
+      "targetPointId": "USN_Smart1_MED_Potência Reativa Total (KVAr)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_Corrente CC Total (A)",
+      "sourcePointId": "US1_Smart1_MED_Corrente CC Total (A)",
+      "targetPointId": "USN_Smart1_MED_Corrente CC Total (A)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_Corrente - Fase R (A)",
+      "sourcePointId": "US1_Smart1_MED_Corrente - Fase R (A)",
+      "targetPointId": "USN_Smart1_MED_Corrente - Fase R (A)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_Corrente - Fase S (A)",
+      "sourcePointId": "US1_Smart1_MED_Corrente - Fase S (A)",
+      "targetPointId": "USN_Smart1_MED_Corrente - Fase S (A)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_Corrente - Fase T (A)",
+      "sourcePointId": "US1_Smart1_MED_Corrente - Fase T (A)",
+      "targetPointId": "USN_Smart1_MED_Corrente - Fase T (A)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_Smart1_PTL_Monitor de Conexao",
+      "sourcePointId": "US1_Smart1_STA_Monitor de Conexao",
+      "targetPointId": "USN_Smart1_STA_Monitor de Conexao",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_TRF1_PTL_Sensor 1 - Temperatura (°C)",
+      "sourcePointId": "US1_TRF1_MED_Sensor 1 - Temperatura (°C)",
+      "targetPointId": "USN_TRF1_MED_Sensor 1 - Temperatura (°C)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_TRF1_PTL_Sensor 2 - Temperatura (°C)",
+      "sourcePointId": "US1_TRF1_MED_Sensor 2 - Temperatura (°C)",
+      "targetPointId": "USN_TRF1_MED_Sensor 2 - Temperatura (°C)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_TRF1_PTL_Sensor 3 - Temperatura (°C)",
+      "sourcePointId": "US1_TRF1_MED_Sensor 3 - Temperatura (°C)",
+      "targetPointId": "USN_TRF1_MED_Sensor 3 - Temperatura (°C)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_TRF2_PTL_Sensor 1 - Temperatura (°C)",
+      "sourcePointId": "US1_TRF2_MED_Sensor 1 - Temperatura (°C)",
+      "targetPointId": "USN_TRF2_MED_Sensor 1 - Temperatura (°C)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_TRF2_PTL_Sensor 2 - Temperatura (°C)",
+      "sourcePointId": "US1_TRF2_MED_Sensor 2 - Temperatura (°C)",
+      "targetPointId": "USN_TRF2_MED_Sensor 2 - Temperatura (°C)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_TRF2_PTL_Sensor 3 - Temperatura (°C)",
+      "sourcePointId": "US1_TRF2_MED_Sensor 3 - Temperatura (°C)",
+      "targetPointId": "USN_TRF2_MED_Sensor 3 - Temperatura (°C)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_UPS_PTL_Capacidade da Bateria (%)",
+      "sourcePointId": "US1_UPS_MED_Capacidade da Bateria (%)",
+      "targetPointId": "USN_UPS_MED_Capacidade da Bateria (%)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_UPS_PTL_Frequência de Entrada (Hz)",
+      "sourcePointId": "US1_UPS_CAL_Frequência de Entrada (Hz)",
+      "targetPointId": "USN_UPS_CAL_Frequência de Entrada (Hz)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_UPS_PTL_Frequência de Saída (Hz)",
+      "sourcePointId": "US1_UPS_MED_Frequência de Saída (Hz)",
+      "targetPointId": "USN_UPS_MED_Frequência de Saída (Hz)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_UPS_PTL_Temperatura da Bateria (°C)",
+      "sourcePointId": "US1_UPS_MED_Temperatura da Bateria (°C)",
+      "targetPointId": "USN_UPS_MED_Temperatura da Bateria (°C)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_UPS_PTL_Tensão da Bateria (V)",
+      "sourcePointId": "US1_UPS_CAL_Tensão da Bateria (V)",
+      "targetPointId": "USN_UPS_CAL_Tensão da Bateria (V)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_UPS_PTL_Tensão de Entrada (V)",
+      "sourcePointId": "US1_UPS_CAL_Tensão de Entrada (V)",
+      "targetPointId": "USN_UPS_CAL_Tensão de Entrada (V)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "USN_UPS_PTL_Tensão de Saída (V)",
+      "sourcePointId": "US1_UPS_CAL_Tensão de Saída (V)",
+      "targetPointId": "USN_UPS_CAL_Tensão de Saída (V)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "RPX_Smart1_PTL_Última Atualização (Data/Hora)",
+      "sourcePointId": "US1_Smart1_VIR_Última Atualização (Data/Hora)",
+      "targetPointId": "USN_Smart1_VIR_Última Atualização (Data/Hora)",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "US1_IO1_PTL_MOD1_Saida Digital 2",
+      "sourcePointId": "US1_QGBT1_CMD_Abrir Disjuntor",
+      "targetPointId": "US1_IO1_CMD_MOD1_Saida Digital 2",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "US1_IO1_PTL_MOD1_Saida Digital 1",
+      "sourcePointId": "US1_QGBT1_CMD_Fechar Disjuntor",
+      "targetPointId": "US1_IO1_CMD_MOD1_Saida Digital 1",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "US1_IO2_PTL_MOD1_Saida Digital 2",
+      "sourcePointId": "US1_QGBT2_CMD_Abrir Disjuntor",
+      "targetPointId": "US1_IO2_CMD_MOD1_Saida Digital 2",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "US1_IO2_PTL_MOD1_Saida Digital 1",
+      "sourcePointId": "US1_QGBT2_CMD_Fechar Disjuntor",
+      "targetPointId": "US1_IO2_CMD_MOD1_Saida Digital 1",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "US2_IO1_PTL_MOD1_Saida Digital 2",
+      "sourcePointId": "US2_QGBT1_CMD_Abrir Disjuntor",
+      "targetPointId": "US2_IO1_CMD_MOD1_Saida Digital 2",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "US2_IO1_PTL_MOD1_Saida Digital 1",
+      "sourcePointId": "US2_QGBT1_CMD_Fechar Disjuntor",
+      "targetPointId": "US2_IO1_CMD_MOD1_Saida Digital 1",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "US2_IO2_PTL_MOD1_Saida Digital 2",
+      "sourcePointId": "US2_QGBT2_CMD_Abrir Disjuntor",
+      "targetPointId": "US2_IO2_CMD_MOD1_Saida Digital 2",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   },
+   {
+      "xid": "US2_IO2_PTL_MOD1_Saida Digital 1",
+      "sourcePointId": "US2_QGBT2_CMD_Fechar Disjuntor",
+      "targetPointId": "US2_IO2_CMD_MOD1_Saida Digital 1",
+      "event": "UPDATE",
+      "disabled": false,
+      "script": "return source.value;"
+   }
+]
