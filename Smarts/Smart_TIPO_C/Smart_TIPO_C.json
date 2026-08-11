@@ -2734,7 +2734,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":15,
-         "name":"USN_Smart1_STA_Monitor de Conexao",
+         "name":"USN_Smart1_STA_Monitor de Conexão",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
