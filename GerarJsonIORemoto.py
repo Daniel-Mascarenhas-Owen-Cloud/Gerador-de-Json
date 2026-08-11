@@ -94,19 +94,46 @@ def salvar_json(caminho, valor):
         arquivo.write(texto)
 
 
-def gerar_pontos_digitais(template, texto_base, quantidade):
+def gerar_pontos_digitais(
+    template,
+    texto_base,
+    quantidade,
+    numero_modulo,
+    offset_inicial
+):
     pontos = []
-    offset_base = template["pointLocator"]["offset"]
 
     for numero in range(1, quantidade + 1):
         ponto = copy.deepcopy(template)
         texto = json.dumps(ponto, ensure_ascii=False)
+        texto = texto.replace("MOD1", f"MOD{numero_modulo}")
         texto = texto.replace(texto_base + "1", texto_base + str(numero))
         ponto = json.loads(texto)
-        ponto["pointLocator"]["offset"] = offset_base + numero - 1
+        ponto["pointLocator"]["offset"] = offset_inicial + numero - 1
         pontos.append(ponto)
 
     return pontos
+
+
+def perguntar_canal_por_modulo(pergunta_modulo, pergunta_canal, modulos, chave):
+    while True:
+        numero_modulo = int(perguntar_inteiro(
+            pergunta_modulo,
+            maximo=len(modulos)
+        ))
+        quantidade = modulos[numero_modulo - 1][chave]
+
+        if quantidade > 0:
+            numero_canal = perguntar_inteiro(
+                pergunta_canal,
+                maximo=quantidade
+            )
+            return str(numero_modulo), numero_canal
+
+        print(
+            f"O módulo {numero_modulo} não possui "
+            f"{'entradas' if chave == 'entradas' else 'saídas'} digitais."
+        )
 
 
 def gerar_io_remoto(
@@ -122,12 +149,26 @@ def gerar_io_remoto(
 
     IP = input("IP do IO Remoto: ")
     slave_id = int(perguntar_inteiro("Slave ID do IO Remoto: "))
-    quantidade_entradas = int(perguntar_inteiro(
-        "Quantas entradas digitais existem neste IO Remoto? "
+    quantidade_modulos = int(perguntar_inteiro(
+        "Quantos módulos existem neste IO Remoto? "
     ))
-    quantidade_saidas = int(perguntar_inteiro(
-        "Quantas saídas digitais existem neste IO Remoto? "
-    ))
+    modulos = []
+
+    for numero_modulo in range(1, quantidade_modulos + 1):
+        print(f"\n--- Módulo {numero_modulo} ---")
+        quantidade_entradas = int(perguntar_inteiro(
+            "Quantas entradas digitais existem neste módulo? ",
+            minimo=0
+        ))
+        quantidade_saidas = int(perguntar_inteiro(
+            "Quantas saídas digitais existem neste módulo? ",
+            minimo=0
+        ))
+        modulos.append({
+            "entradas": quantidade_entradas,
+            "saidas": quantidade_saidas
+        })
+
     local_io_remoto = perguntar_local()
 
     local_equipamento = (
@@ -140,9 +181,14 @@ def gerar_io_remoto(
         numero_local = perguntar_inteiro("Qual o número do Skid? ")
         numero_qgbt = numero_local
 
-    monitora_disjuntor_geral = perguntar_sim_nao(
-        "Esse IO Remoto monitora o status do disjuntor geral [S/n]? "
-    )
+    total_entradas = sum(modulo["entradas"] for modulo in modulos)
+    if total_entradas > 0:
+        monitora_disjuntor_geral = perguntar_sim_nao(
+            "Esse IO Remoto monitora o status do disjuntor geral [S/n]? "
+        )
+    else:
+        monitora_disjuntor_geral = "N"
+        print("Este IO Remoto não possui entradas digitais para monitoramento.")
 
     modulo_disjuntor_fechado = None
     entrada_disjuntor_fechado = None
@@ -150,24 +196,31 @@ def gerar_io_remoto(
     entrada_disjuntor_aberto = None
 
     if monitora_disjuntor_geral == "S":
-        modulo_disjuntor_fechado = perguntar_inteiro(
-            "Qual módulo monitora Disjuntor Fechado? "
+        modulo_disjuntor_fechado, entrada_disjuntor_fechado = (
+            perguntar_canal_por_modulo(
+                "Qual módulo monitora Disjuntor Fechado? ",
+                "Qual entrada monitora Disjuntor Fechado? ",
+                modulos,
+                "entradas"
+            )
         )
-        entrada_disjuntor_fechado = perguntar_inteiro(
-            "Qual entrada monitora Disjuntor Fechado? ",
-            maximo=quantidade_entradas
-        )
-        modulo_disjuntor_aberto = perguntar_inteiro(
-            "Qual módulo monitora Disjuntor Aberto? "
-        )
-        entrada_disjuntor_aberto = perguntar_inteiro(
-            "Qual entrada monitora Disjuntor Aberto? ",
-            maximo=quantidade_entradas
+        modulo_disjuntor_aberto, entrada_disjuntor_aberto = (
+            perguntar_canal_por_modulo(
+                "Qual módulo monitora Disjuntor Aberto? ",
+                "Qual entrada monitora Disjuntor Aberto? ",
+                modulos,
+                "entradas"
+            )
         )
 
-    comanda_disjuntor_geral = perguntar_sim_nao(
-        "Esse IO Remoto comanda o disjuntor geral [S/n]? "
-    )
+    total_saidas = sum(modulo["saidas"] for modulo in modulos)
+    if total_saidas > 0:
+        comanda_disjuntor_geral = perguntar_sim_nao(
+            "Esse IO Remoto comanda o disjuntor geral [S/n]? "
+        )
+    else:
+        comanda_disjuntor_geral = "N"
+        print("Este IO Remoto não possui saídas digitais para comando.")
 
     modulo_saida_fechar = None
     saida_fechar = None
@@ -176,16 +229,32 @@ def gerar_io_remoto(
 
     if comanda_disjuntor_geral == "S":
         print("Qual saída utilizada para fechar?")
-        modulo_saida_fechar = perguntar_inteiro("Módulo: ")
-        saida_fechar = perguntar_inteiro(
-            "Saída: ", maximo=quantidade_saidas
+        modulo_saida_fechar, saida_fechar = perguntar_canal_por_modulo(
+            "Módulo: ",
+            "Saída: ",
+            modulos,
+            "saidas"
         )
 
         print("Qual saída utilizada para abrir?")
-        modulo_saida_abrir = perguntar_inteiro("Módulo: ")
-        saida_abrir = perguntar_inteiro(
-            "Saída: ", maximo=quantidade_saidas
+        modulo_saida_abrir, saida_abrir = perguntar_canal_por_modulo(
+            "Módulo: ",
+            "Saída: ",
+            modulos,
+            "saidas"
         )
+
+        while (
+            modulo_saida_abrir == modulo_saida_fechar
+            and saida_abrir == saida_fechar
+        ):
+            print("Abrir e fechar não podem utilizar a mesma saída digital.")
+            modulo_saida_abrir, saida_abrir = perguntar_canal_por_modulo(
+                "Módulo para abrir: ",
+                "Saída para abrir: ",
+                modulos,
+                "saidas"
+            )
 
     data_source = copy.deepcopy(template_data_source)
     data_points = copy.deepcopy(template_data_points)
@@ -203,16 +272,31 @@ def gerar_io_remoto(
         if "Estado da Entrada Digital " not in ponto.get("xid", "")
         and "Saida Digital " not in ponto.get("xid", "")
     ]
-    entradas = gerar_pontos_digitais(
-        template_entrada,
-        "Estado da Entrada Digital ",
-        quantidade_entradas
-    )
-    saidas = gerar_pontos_digitais(
-        template_saida,
-        "Saida Digital ",
-        quantidade_saidas
-    )
+    entradas = []
+    saidas = []
+    proximo_offset_entrada = template_entrada["pointLocator"]["offset"]
+    proximo_offset_saida = template_saida["pointLocator"]["offset"]
+
+    for numero_modulo, modulo in enumerate(modulos, start=1):
+        entradas_modulo = gerar_pontos_digitais(
+            template_entrada,
+            "Estado da Entrada Digital ",
+            modulo["entradas"],
+            numero_modulo,
+            proximo_offset_entrada
+        )
+        saidas_modulo = gerar_pontos_digitais(
+            template_saida,
+            "Saida Digital ",
+            modulo["saidas"],
+            numero_modulo,
+            proximo_offset_saida
+        )
+        entradas.extend(entradas_modulo)
+        saidas.extend(saidas_modulo)
+        proximo_offset_entrada += modulo["entradas"]
+        proximo_offset_saida += modulo["saidas"]
+
     data_points = entradas + saidas + outros_pontos
 
     xids_disjuntor_geral = {
@@ -288,6 +372,10 @@ def gerar_io_remoto(
             point_link = aplicar_placeholders(
                 point_link,
                 *argumentos_replace
+            )
+            point_link["xid"] = (
+                f"{prefix_usina}_IO{numero_io}_PTL_"
+                f"MOD{modulo_saida}_Saida Digital {numero_saida}"
             )
             nome_point_link = point_link["sourcePointId"] + ".json"
             destino_point_link = os.path.join("saida", nome_point_link)
