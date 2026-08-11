@@ -40,6 +40,7 @@ while True:
         "14. Combiner Box\n"
         "15. DJBT\n"
         "16. IO Remoto\n"
+        "17. Parque\n"
     ).upper()
 
     if action not in [
@@ -60,6 +61,7 @@ while True:
         "COMBINER BOX", "COMBINER", "CBX", "14",
         "DJBT", "15",
         "IO REMOTO", "IO", "16",
+        "PARQUE", "17",
     ]:
         print("\nOpção inválida!\n")
         sys.exit()
@@ -254,6 +256,17 @@ while True:
 
         if not gerarTudo:
             sys.exit()
+
+# ---------------- Parque ----------------
+
+    if action in ["PARQUE", "17"] or gerarTudo:
+
+        subprocess.run([
+            "python",
+            "GerarJsonParque.py",
+            prefixo,
+            usina
+        ])
 
 # ---------------- NOBREAK ----------------
 
