@@ -198,7 +198,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_CAL_Energia Mensal 2 (KWh)",
+         "name": "USN_CAL_Energia Mensal 1 (KWh)",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
@@ -250,7 +250,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
-         "name": "USN_CAL_Energia Anual 2 (GWh)",
+         "name": "USN_CAL_Energia Anual 1 (GWh)",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
