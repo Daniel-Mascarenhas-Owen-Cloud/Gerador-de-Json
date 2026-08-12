@@ -267,7 +267,9 @@ while True:
             prefixo,
             usina
         ])
-
+        
+        if not gerarTudo:
+            sys.exit()
 # ---------------- NOBREAK ----------------
 
     if action in ["NOBREAK", "6"] or gerarTudo:
