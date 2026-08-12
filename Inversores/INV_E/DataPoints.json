@@ -5604,7 +5604,7 @@
          "dataSourceXid": "USN_Dados Calculados",
          "defaultCacheSize": 1,
          "description": null,
-         "deviceName": "USN_SMART1_INV_E_1a5",
+         "deviceName": "USN_Dados Calculados",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
