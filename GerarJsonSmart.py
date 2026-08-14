@@ -114,6 +114,7 @@ conteudo = (
         .replace("Anual 1","Anual " + skid)
         .replace('"slaveId": 1', f'"slaveId": {slaveID}')
         .replace("Sistema 1","Sistema " + skid)
+        .replace("1.7976931348623157e+308", "1.7976931348623157E308")
     )
 
 # Sobrescrever o arquivo original
