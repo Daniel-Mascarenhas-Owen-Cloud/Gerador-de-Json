@@ -12,7 +12,7 @@ PASTA_MODELO = Path("Parque")
 ARQUIVO_DATASOURCES = PASTA_MODELO / "DataSources.json"
 ARQUIVO_DATAPOINTS = PASTA_MODELO / "DataPoints.json"
 ARQUIVO_POINTLINKS = PASTA_MODELO / "PointLinks.json"
-ARQUIVO_REFERENCIA_ORDEM = Path("Originais/Parque/RPX_.json")
+ARQUIVO_REFERENCIA_ORDEM = Path("Originais/Parque/RPX_Parque.json")
 PREFIXOS_REFERENCIA_FILHAS = (
     "RPA",
     "RPB",
@@ -453,30 +453,50 @@ def ajustar_contextos_usinas_filhas(data_points, quantidade_usinas):
         script = point_locator.get("script", "")
         if not isinstance(contexto, list) or not isinstance(script, str):
             continue
-        if not contexto or not all(
-            re.fullmatch(r"UF\d+", item.get("varName", ""))
-            for item in contexto
-        ):
+
+        contexto_por_base = {}
+        for item in contexto:
+            var_name = item.get("varName", "")
+            data_point_xid = item.get("dataPointXid", "")
+            match_var = re.fullmatch(r"(monitor_)?UF(\d+)", var_name)
+            match_xid = re.match(r"US\d+_(.+)", data_point_xid)
+            if not match_var or not match_xid:
+                contexto_por_base = {}
+                break
+
+            prefixo_monitor = match_var.group(1) or ""
+            contexto_por_base[prefixo_monitor] = match_xid.group(1)
+
+        if "" not in contexto_por_base:
             continue
 
-        primeiro_xid = contexto[0].get("dataPointXid", "")
-        match = re.match(r"US\d+_(.+)", primeiro_xid)
-        if not match:
-            continue
+        sufixo_valor = contexto_por_base[""]
+        sufixo_monitor = contexto_por_base.get("monitor_")
 
-        sufixo = match.group(1)
-        point_locator["context"] = [
-            {
+        novo_contexto = []
+        for indice in range(1, quantidade_usinas + 1):
+            novo_contexto.append({
                 "varName": f"UF{indice}",
-                "dataPointXid": f"US{indice}_{sufixo}"
-            }
-            for indice in range(1, quantidade_usinas + 1)
-        ]
+                "dataPointXid": f"US{indice}_{sufixo_valor}"
+            })
+            if sufixo_monitor:
+                novo_contexto.append({
+                    "varName": f"monitor_UF{indice}",
+                    "dataPointXid": f"US{indice}_{sufixo_monitor}"
+                })
+        point_locator["context"] = novo_contexto
 
-        soma = " + ".join(
-            f"UF{indice}.value"
-            for indice in range(1, quantidade_usinas + 1)
-        )
+        if sufixo_monitor:
+            soma = " + ".join(
+                f"(monitor_UF{indice}.value ? UF{indice}.value : 0)"
+                for indice in range(1, quantidade_usinas + 1)
+            )
+        else:
+            soma = " + ".join(
+                f"UF{indice}.value"
+                for indice in range(1, quantidade_usinas + 1)
+            )
+
         if re.search(r"/\s*2\b", script):
             point_locator["script"] = f"return ({soma}) / {quantidade_usinas};"
         else:
