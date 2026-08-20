@@ -36,6 +36,12 @@ with open("Configuracao/JsonsConfig/PRMultimedidor.json", "r", encoding="utf-8")
 
 smartJson["dataPoints"].extend(template_pr_multimedidor["dataPoints"])
 
+if tipo_Multimedidor in ("A", "D"):
+    with open("Configuracao/JsonsConfig/EnergiaDiariaMultimedidorAD.json", "r", encoding="utf-8") as f:
+        template_energia_diaria_tipo_ad = json.load(f)
+
+    smartJson["dataPoints"].extend(template_energia_diaria_tipo_ad["dataPoints"])
+
 with open(f"saida/Multimedidor{cabine}.json", "w", encoding="utf-8") as f:
     json.dump(smartJson, f, indent=3, ensure_ascii=False)
 

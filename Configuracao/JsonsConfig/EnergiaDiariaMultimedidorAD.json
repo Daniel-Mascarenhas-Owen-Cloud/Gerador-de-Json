@@ -1,0 +1,104 @@
+{
+   "dataPoints": [
+      {
+         "xid": "USN_MM1_CAL_Energia Ativa Exp. 5 min. (MWh)",
+         "loggingType": "ON_TS_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CRON",
+            "context": [
+               {
+                  "varName": "x",
+                  "dataPointXid": "USN_MM1_MED_Energia Ativa Exportada (MWh)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "return x.value;",
+            "settable": false,
+            "updateCronPattern": "0 */5 * * * ?"
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": "",
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_MM1_CAL_Energia Ativa Exp. 5 min. (MWh)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_MM1_MED_Energia Ativa Exp. Diária (MWh)",
+         "loggingType": "ON_TS_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "updateEvent": "CRON",
+            "context": [
+               {
+                  "varName": "self",
+                  "dataPointXid": "USN_MM1_MED_Energia Ativa Exp. Diária (MWh)"
+               },
+               {
+                  "varName": "total",
+                  "dataPointXid": "USN_MM1_CAL_Energia Ativa Exp. 5 min. (MWh)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 15,
+            "script": "var agora = new Date();\n\n// Reset diario na execucao da meia-noite\nif (agora.getHours() == 0 && agora.getMinutes() == 0)\n    return 0;\n\nvar atual = total.value;\n\n// Valor persistido 5 minutos atras\nvar anterior = total.ago(MINUTE, 5);\n\n// Valor atual do diario\nvar diario = self.value;\n\n// Inicializacao\nif (diario == null || isNaN(diario))\n    diario = 0;\n\n// Sem historico suficiente\nif (anterior == null || isNaN(anterior))\n    return diario;\n\n// Protecao contra regressao\nif (atual < anterior)\n    return diario;\n\n// Delta real\nvar delta = atual - anterior;\n\n// Ignora valores repetidos\nif (delta == 0)\n    return diario;\n\n// Ignora negativos\nif (delta < 0)\n    return diario;\n\n// Anti micro ruido\nif (delta < 0.00001)\n    return diario;\n\n// Anti salto absurdo\nif (delta > 5)\n    return diario;\n\n// Soma incremento\ndiario = diario + delta;\n\n// Limita precisao\ndiario = Math.round(diario * 1000000) / 1000000;\n\nreturn diario;",
+            "settable": true,
+            "updateCronPattern": "0 */5 * * * ?"
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Dados Calculados",
+         "defaultCacheSize": 1,
+         "description": "",
+         "deviceName": "USN_Dados Calculados",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_MM1_MED_Energia Ativa Exp. Diária (MWh)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      }
+   ]
+}
