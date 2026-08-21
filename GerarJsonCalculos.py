@@ -531,7 +531,11 @@ json_final["dataPoints"].append(ponto)
 
 
 conteudo_final = json.dumps(json_final, indent=3, ensure_ascii=False)
-conteudo_final = conteudo_final.replace("1.7976931348623157e+308", "1.7976931348623157E308")
+conteudo_final = conteudo_final.replace(
+    "1.7976931348623157e+308",
+    "1.7976931348623157E308"
+)
+conteudo_final = conteudo_final.replace("e+308", "E308")
 
 with open(f"saida/Calculos.json", "w", encoding="utf-8") as f:
     f.write(conteudo_final)

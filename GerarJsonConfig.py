@@ -27,7 +27,11 @@ if tipo_inversor == "E":
 
 conteudo = json.dumps(dados_config, indent=3, ensure_ascii=False)
 conteudo = conteudo.replace("USN", prefix_usina)
-conteudo = conteudo.replace("1.7976931348623157e+308", "1.7976931348623157E308")
+conteudo = conteudo.replace(
+    "1.7976931348623157e+308",
+    "1.7976931348623157E308"
+)
+conteudo = conteudo.replace("e+308", "E308")
 
 # Sobrescrever o arquivo original
 with open("saida/DadosConfig.json", "w", encoding="utf-8") as f:

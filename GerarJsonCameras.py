@@ -36,7 +36,6 @@ for i in range(qtd_cameras):
                 .replace("Monitor de Conexão Câmera 1", f"Monitor de Conexão Câmera {i+1}")
                 .replace('"offset": 0,', f'"offset": {offset+i},')
                 .replace("CFTV - Câmera 1", f"CFTV - Câmera {i+1}")
-                .replace("1.7976931348623157e+308", "1.7976931348623157E308")
                 )
 
     dados = json.loads(conteudo)
@@ -64,6 +63,8 @@ conteudo = ( conteudo
             .replace("Usina I", usina)
             .replace("USN", prefix_usina)
             .replace("000.000.000.000", ip)
+            .replace("1.7976931348623157e+308", "1.7976931348623157E308")
+            .replace("e+308", "E308")
             )
 
 # Sobrescrever o arquivo original

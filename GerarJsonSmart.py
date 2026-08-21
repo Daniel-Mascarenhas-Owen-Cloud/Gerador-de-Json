@@ -115,6 +115,7 @@ conteudo = (
         .replace('"slaveId": 1', f'"slaveId": {slaveID}')
         .replace("Sistema 1","Sistema " + skid)
         .replace("1.7976931348623157e+308", "1.7976931348623157E308")
+        .replace("e+308", "E308")
     )
 
 # Sobrescrever o arquivo original
@@ -154,6 +155,7 @@ texto_estados = texto_estados.replace(
     "1.7976931348623157e+308",
     "1.7976931348623157E308"
 )
+texto_estados = texto_estados.replace("e+308", "E308")
 
 with open("saida/EstadoDosInversores.json", "w", encoding="utf-8") as f:
     f.write(texto_estados)

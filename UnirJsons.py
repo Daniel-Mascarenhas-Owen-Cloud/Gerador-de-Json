@@ -37,7 +37,11 @@ with open(saida, "w", encoding="utf-8") as f:
 with open(saida, "r", encoding="utf-8") as f:
     conteudo = f.read()
 
-conteudo = conteudo.replace("1.7976931348623157e+308", "1.7976931348623157E308")
+conteudo = conteudo.replace(
+    "1.7976931348623157e+308",
+    "1.7976931348623157E308"
+)
+conteudo = conteudo.replace("e+308", "E308")
 
 with open(saida, "w", encoding="utf-8") as f:
     f.write(conteudo)

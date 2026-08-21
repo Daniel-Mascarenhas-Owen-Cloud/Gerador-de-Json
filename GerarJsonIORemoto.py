@@ -89,6 +89,7 @@ def salvar_json(caminho, valor):
         "1.7976931348623157e+308",
         "1.7976931348623157E308"
     )
+    texto = texto.replace("e+308", "E308")
 
     with open(caminho, "w", encoding="utf-8") as arquivo:
         arquivo.write(texto)

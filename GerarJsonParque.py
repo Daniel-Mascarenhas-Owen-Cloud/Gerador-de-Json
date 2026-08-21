@@ -890,7 +890,11 @@ with saida.open("w", encoding="utf-8") as arquivo:
 with saida.open("r", encoding="utf-8") as arquivo:
     conteudo = arquivo.read()
 
-conteudo = conteudo.replace("1.7976931348623157e+308", "1.7976931348623157E308")
+conteudo = conteudo.replace(
+    "1.7976931348623157e+308",
+    "1.7976931348623157E308"
+)
+conteudo = conteudo.replace("e+308", "E308")
 
 with saida.open("w", encoding="utf-8") as arquivo:
     arquivo.write(conteudo)
