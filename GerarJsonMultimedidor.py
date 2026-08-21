@@ -59,6 +59,11 @@ conteudo = (
         .replace("MM1","MM" + cabine)
         .replace("Cabine 1", "Cabine " + cabine)
         .replace('"slaveId":1', '"slaveId":' + slave_id)
+        .replace(
+            "1.7976931348623157e+308",
+            "1.7976931348623157E308"
+        )
+        .replace("e+308", "E308")
     )
 
 # Sobrescrever o arquivo original
