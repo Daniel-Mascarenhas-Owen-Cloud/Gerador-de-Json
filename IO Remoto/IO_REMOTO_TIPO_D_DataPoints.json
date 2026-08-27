@@ -914,7 +914,7 @@
       }
 ,
       {
-         "xid": "USN_IO1_VIR_MOD1_Última Atualização (Data/Hora)",
+         "xid": "USN_IO1_VIR_Última Atualização (Data/Hora)",
          "loggingType": "NONE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -951,7 +951,7 @@
             "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 15,
-         "name": "USN_IO1_VIR_MOD1_Última Atualização (Data/Hora)",
+         "name": "USN_IO1_VIR_Última Atualização (Data/Hora)",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
