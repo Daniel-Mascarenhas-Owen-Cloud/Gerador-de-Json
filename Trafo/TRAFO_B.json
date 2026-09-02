@@ -54,9 +54,9 @@
                "type": "BINARY_STATE",
                "alarmLevel": "CRITICAL",
                "state": false,
-               "durationType": "SECONDS",
-               "duration": 0,
-               "alias": "UFV Usina - Trafo 1 - Falha de Comunicação"
+               "durationType": "MINUTES",
+               "duration": 5,
+               "alias": "UFV Usina - Skid 1 - Trafo 1 - Sem Comunicação"
             }
          ],
          "engineeringUnits": "",

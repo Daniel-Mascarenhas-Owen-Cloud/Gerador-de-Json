@@ -48,7 +48,17 @@
             "slaveMonitor": true,
             "socketMonitor": false
          },
-         "eventDetectors": [],
+         "eventDetectors": [
+            {
+               "xid": "USN_NCU1_STA_0_Monitor de Conexão",
+               "type": "BINARY_STATE",
+               "alarmLevel": "URGENT",
+               "state": false,
+               "durationType": "MINUTES",
+               "duration": 5,
+               "alias": "UFV Nome da Usina - NCU 1 - Master - Sem Comunicação"
+            }
+         ],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,

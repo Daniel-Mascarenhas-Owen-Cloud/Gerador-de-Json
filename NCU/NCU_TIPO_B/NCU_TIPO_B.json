@@ -1338,51 +1338,60 @@
          "tolerance":0.0
       },
       {
-         "xid":"URU_NCU1_STA_Monitor de Conexão",
-         "loggingType":"ON_CHANGE",
-         "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"INSTANT",
-         "purgeType":"YEARS",
-         "pointLocator":{
-            "range":"COIL_STATUS",
-            "modbusDataType":"BINARY",
-            "additive":0.0,
-            "bit":0,
-            "charset":"ASCII",
-            "multiplier":1.0,
-            "offset":0,
-            "registerCount":0,
-            "settableOverride":false,
-            "slaveId":1,
-            "slaveMonitor":true,
-            "socketMonitor":false
+         "xid": "URU_NCU1_STA_Monitor de Conexão",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "COIL_STATUS",
+            "modbusDataType": "BINARY",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 0,
+            "registerCount": 0,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": true,
+            "socketMonitor": false
          },
-         "eventDetectors":[
+         "eventDetectors": [
+            {
+               "xid": "URU_NCU1_STA_0_Monitor de Conexão",
+               "type": "BINARY_STATE",
+               "alarmLevel": "URGENT",
+               "state": false,
+               "durationType": "MINUTES",
+               "duration": 5,
+               "alias": "UFV Uruguaiana I - NCU 1 - Master - Sem Comunicação"
+            }
          ],
-         "engineeringUnits":"",
-         "purgeStrategy":"PERIOD",
-         "chartColour":null,
-         "chartRenderer":null,
-         "dataSourceXid":"URU_NCU1_B",
-         "defaultCacheSize":1,
-         "description":null,
-         "deviceName":"URU_NCU1_B",
-         "discardExtremeValues":false,
-         "discardHighLimit":1.7976931348623157E308,
-         "discardLowLimit":-1.7976931348623157E308,
-         "enabled":true,
-         "eventTextRenderer":{
-            "type":"EVENT_NONE"
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "URU_NCU1_B",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "URU_NCU1_B",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
-         "name":"URU_NCU1_STA_Monitor de Conexão",
-         "purgePeriod":1,
-         "purgeValuesLimit":100,
-         "textRenderer":{
-            "type":"PLAIN",
-            "suffix":""
+         "intervalLoggingPeriod": 15,
+         "name": "URU_NCU1_STA_Monitor de Conexão",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
+            "suffix": ""
          },
-         "tolerance":0.0
+         "tolerance": 0.0
       },
       {
          "xid":"URU_NCU1_ALM_Alarme de Inundação",

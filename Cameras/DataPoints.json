@@ -28,7 +28,7 @@
                     "state": false,
                     "durationType": "MINUTES",
                     "duration": 5,
-                    "alias": "UFV Usina I - CFTV - Câmera 1 - Falha de Comunicação"
+                    "alias": "UFV Usina I - CFTV - Câmera 1 - Sem Comunicação"
                 }
             ],
             "engineeringUnits": "",

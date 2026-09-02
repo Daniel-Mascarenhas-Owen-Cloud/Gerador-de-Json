@@ -504,9 +504,9 @@
                "type": "BINARY_STATE",
                "alarmLevel": "URGENT",
                "state": false,
-               "durationType": "SECONDS",
-               "duration": 60,
-               "alias": "UFV Nome da Usina - Skid 1 - Disjuntor Geral BT - Falha de Comunicação"
+               "durationType": "MINUTES",
+               "duration": 5,
+               "alias": "UFV Nome da Usina - Skid 1 - Disjuntor Geral BT - Sem Comunicação"
             }
          ],
          "engineeringUnits": "",
