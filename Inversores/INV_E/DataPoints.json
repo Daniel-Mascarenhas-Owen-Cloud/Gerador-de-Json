@@ -151,7 +151,7 @@
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
-            "modbusDataType":"TWO_BYTE_INT_UNSIGNED",
+            "modbusDataType":"TWO_BYTE_INT_SIGNED",
             "additive":0.0,
             "bit":1,
             "charset":"ASCII",
@@ -295,7 +295,7 @@
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
-            "modbusDataType":"TWO_BYTE_INT_UNSIGNED",
+            "modbusDataType":"TWO_BYTE_INT_SIGNED",
             "additive":0.0,
             "bit":1,
             "charset":"ASCII",
