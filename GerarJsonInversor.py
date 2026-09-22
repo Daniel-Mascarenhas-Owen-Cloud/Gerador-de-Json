@@ -15,6 +15,28 @@ import json
 os.makedirs("temp/saida", exist_ok=True)
 os.makedirs("saida", exist_ok=True)
 
+
+def ajustar_offset_energia_diaria_tipo_e(conteudo, numero_inversor):
+    xid_energia_diaria = (
+        '"xid": "USN_Inv_1.1_MED_Energia Diária (KWh)"'
+    )
+    offset_original = '"offset": 100'
+
+    inicio, separador, restante = conteudo.partition(xid_energia_diaria)
+    if not separador or offset_original not in restante:
+        raise ValueError(
+            "Datapoint de Energia Diária do inversor tipo E não encontrado."
+        )
+
+    novo_offset = 100 + numero_inversor * 2
+    restante = restante.replace(
+        offset_original,
+        f'"offset": {novo_offset}',
+        1
+    )
+
+    return inicio + separador + restante
+
 # argumentos vindos do app.py
 tipo_inversor = sys.argv[1].upper()
 usina = sys.argv[2]
@@ -146,6 +168,9 @@ for i in range(inv_quantidade):
 
     with open("temp/DataPoints.json", "r", encoding="utf-8") as f:
         conteudo = f.read()
+
+    if tipo_inversor == "E":
+        conteudo = ajustar_offset_energia_diaria_tipo_e(conteudo, i1)
 
     if data_points_genericos_tipo_e:
         conteudo = conteudo.rstrip() + ",\n" + data_points_genericos_tipo_e
