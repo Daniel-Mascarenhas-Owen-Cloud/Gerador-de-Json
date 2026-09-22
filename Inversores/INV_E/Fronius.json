@@ -10,3 +10,29 @@
          "enabled":true,
          "name":"USN_Alarmes Fronius"
       },
+      {
+            "xid": "Fronius Energia Diaria",
+            "type": "MODBUS_IP",
+            "alarmLevels": {
+                "POINT_WRITE_EXCEPTION": "NONE",
+                "DATA_SOURCE_EXCEPTION": "NONE",
+                "POINT_READ_EXCEPTION": "NONE"
+            },
+            "updatePeriodType": "SECONDS",
+            "transportType": "TCP",
+            "contiguousBatches": false,
+            "createSlaveMonitorPoints": false,
+            "createSocketMonitorPoint": false,
+            "enabled": true,
+            "encapsulated": false,
+            "host": "127.0.0.1",
+            "maxReadBitCount": 2000,
+            "maxReadRegisterCount": 125,
+            "maxWriteRegisterCount": 120,
+            "name": "Fronius Energia Diaria",
+            "port": 5040,
+            "quantize": false,
+            "retries": 2,
+            "timeout": 5000,
+            "updatePeriods": 5
+        },

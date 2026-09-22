@@ -5741,7 +5741,7 @@
         "offset": 40091,
         "registerCount": 1,
         "settableOverride": false,
-        "slaveId": 1,
+        "slaveId":1,
         "slaveMonitor": false,
         "socketMonitor": false
       },
