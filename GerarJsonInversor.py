@@ -28,7 +28,7 @@ def ajustar_offset_energia_diaria_tipo_e(conteudo, numero_inversor):
             "Datapoint de Energia Diária do inversor tipo E não encontrado."
         )
 
-    novo_offset = 100 + numero_inversor * 2
+    novo_offset = 100 + (numero_inversor - 1) * 2
     restante = restante.replace(
         offset_original,
         f'"offset": {novo_offset}',
