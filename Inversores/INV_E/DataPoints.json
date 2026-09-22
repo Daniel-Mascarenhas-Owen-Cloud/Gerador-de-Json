@@ -3,7 +3,7 @@
          "xid":"USN_Inv_1.1_MED_Corrente - Fase A (A)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -51,7 +51,7 @@
          "xid":"USN_Inv_1.1_MED_Corrente - Fase B (A)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -99,7 +99,7 @@
          "xid":"USN_Inv_1.1_MED_Corrente - Fase C (A)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -147,7 +147,7 @@
          "xid":"USN_Inv_1.1_STR_Corrente PV01 (A)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -291,7 +291,7 @@
          "xid":"USN_Inv_1.1_STR_Corrente PV02 (A)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -483,7 +483,7 @@
          "xid":"USN_Inv_1.1_MED_Frequência (Hz)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -531,7 +531,7 @@
          "xid":"USN_Inv_1.1_MED_Potência de Entrada CC (KW)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -579,7 +579,7 @@
          "xid":"USN_Inv_1.1_MED_Tensão - Vab (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -627,7 +627,7 @@
          "xid":"USN_Inv_1.1_MED_Tensão - Vbc (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -675,7 +675,7 @@
          "xid":"USN_Inv_1.1_MED_Tensão - Vca (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -723,7 +723,7 @@
          "xid":"USN_Inv_1.1_MED_Tensão - Va (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -771,7 +771,7 @@
          "xid":"USN_Inv_1.1_MED_Tensão - Vb (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -819,7 +819,7 @@
          "xid":"USN_Inv_1.1_MED_Tensão - Vc (V)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -867,7 +867,7 @@
          "xid":"USN_Inv_1.1_MED_Potência Ativa (KW)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -915,7 +915,7 @@
          "xid":"USN_Inv_1.1_MED_Potência Reativa (KVAr)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -963,7 +963,7 @@
          "xid":"USN_Inv_1.1_MED_Fator de Potência",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -1059,7 +1059,7 @@
          "xid":"USN_Inv_1.1_CTE_Potência Nominal (W)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"AVERAGE",
+         "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
          "pointLocator":{
             "range":"HOLDING_REGISTER",
@@ -1202,7 +1202,7 @@
          "xid": "USN_Inv_1.1_ALM_Grupo de Alarmes 1",
          "loggingType": "INTERVAL",
          "intervalLoggingPeriodType": "MINUTES",
-         "intervalLoggingType": "AVERAGE",
+         "intervalLoggingType": "INSTANT",
          "purgeType": "YEARS",
          "pointLocator": {
             "range": "HOLDING_REGISTER",
@@ -1249,7 +1249,7 @@
          "xid": "USN_Inv_1.1_ALM_Grupo de Alarmes 2",
          "loggingType": "INTERVAL",
          "intervalLoggingPeriodType": "MINUTES",
-         "intervalLoggingType": "AVERAGE",
+         "intervalLoggingType": "INSTANT",
          "purgeType": "YEARS",
          "pointLocator": {
             "range": "HOLDING_REGISTER",
@@ -1296,7 +1296,7 @@
          "xid": "USN_Inv_1.1_ALM_Grupo de Alarmes 3",
          "loggingType": "INTERVAL",
          "intervalLoggingPeriodType": "MINUTES",
-         "intervalLoggingType": "AVERAGE",
+         "intervalLoggingType": "INSTANT",
          "purgeType": "YEARS",
          "pointLocator": {
             "range": "HOLDING_REGISTER",
