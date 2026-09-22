@@ -5573,55 +5573,50 @@
       },
       {
          "xid": "USN_Inv_1.1_MED_Energia Diária (KWh)",
-         "loggingType": "INTERVAL",
+         "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
          "purgeType": "YEARS",
          "pointLocator": {
-            "dataType": "NUMERIC",
-            "updateEvent": "CRON",
-            "context": [
-               {
-                  "varName": "self",
-                  "dataPointXid": "USN_Inv_1.1_MED_Energia Diária (KWh)"
-               },
-               {
-                  "varName": "total",
-                  "dataPointXid": "USN_Inv_1.1_MED_Energia Total Acum. 5min. (Wh)"
-               }
-            ],
-            "executionDelayPeriodType": "SECONDS",
-            "executionDelaySeconds": 15,
-            "script": "var atual = total.value;\n\n// Valor persistido 5 minutos atrás\nvar anterior = total.ago(MINUTE, 5);\n\n// Valor atual do diário (em kWh)\nvar diario = self.value;\n\n// Inicialização\nif (diario == null || isNaN(diario))\n    diario = 0;\n\n// Sem histórico suficiente\nif (anterior == null || isNaN(anterior))\n    return diario;\n\n// Proteção contra regressão\nif (atual < anterior)\n    return diario;\n\n// Delta em Wh\nvar delta = atual - anterior;\n\n// Ignora valores repetidos\nif (delta == 0)\n    return diario;\n\n// Ignora negativos\nif (delta < 0)\n    return diario;\n\n// Anti micro ruído (Wh)\nif (delta < 0.00001)\n    return diario;\n\n// Anti salto absurdo (Wh)\nif (delta > 5000)\n    return diario;\n\n// Converte Wh para kWh\nvar deltaKwh = delta / 1000;\n\n// Soma incremento em kWh\ndiario = diario + deltaKwh;\n\n// Limita precisão\nreturn Math.round(diario * 1000000) / 1000000;",
-            "settable": true,
-            "updateCronPattern": "0 */5 * * * ?"
+               "range": "HOLDING_REGISTER",
+               "modbusDataType": "FOUR_BYTE_FLOAT",
+               "additive": 0.0,
+               "bit": 0,
+               "charset": "ASCII",
+               "multiplier": 1.0,
+               "offset": 100,
+               "registerCount": 0,
+               "settableOverride": false,
+               "slaveId": 1,
+               "slaveMonitor": false,
+               "socketMonitor": false
          },
          "eventDetectors": [],
          "engineeringUnits": "",
          "purgeStrategy": "PERIOD",
          "chartColour": null,
          "chartRenderer": null,
-         "dataSourceXid": "USN_Dados Calculados",
+         "dataSourceXid": "Fronius Energia Diaria",
          "defaultCacheSize": 1,
-         "description": null,
-         "deviceName": "USN_Dados Calculados",
+         "description": "",
+         "deviceName": "Fronius Energia Diaria",
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
          "enabled": true,
          "eventTextRenderer": {
-            "type": "EVENT_NONE"
+               "type": "EVENT_NONE"
          },
          "intervalLoggingPeriod": 5,
          "name": "USN_Inv_1.1_MED_Energia Diária (KWh)",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
          "textRenderer": {
-            "type": "ANALOG",
-            "format": "0.00",
-            "suffix": ""
+               "type": "ANALOG",
+               "format": "0.00",
+               "suffix": ""
          },
-         "tolerance": 0
+         "tolerance": 0.0
       },
       {
          "xid": "USN_Inv_1.1_CAL_Fator de Capacidade Anual",
