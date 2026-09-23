@@ -3294,7 +3294,7 @@
             ],
             "executionDelayPeriodType":"SECONDS",
             "executionDelaySeconds":1,
-            "script":"return ((atual.value - alvo.value)\/110 * 100).toFixed(2);",
+            "script":"var alvoLimitado = Math.max(-55, Math.min(55, alvo.value)); return ((atual.value - alvoLimitado) / 110 * 100).toFixed(2);",
             "settable":false,
             "updateCronPattern":""
          },
