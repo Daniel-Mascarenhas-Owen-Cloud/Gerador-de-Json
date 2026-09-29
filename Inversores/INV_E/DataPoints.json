@@ -5671,9 +5671,10 @@
          "name": "USN_Inv_1.1_CAL_Fator de Capacidade Anual",
          "purgePeriod": 1,
          "purgeValuesLimit": 100,
-         "textRenderer": {
-            "type": "PLAIN",
-            "suffix": ""
+         "textRenderer":{
+            "type":"ANALOG",
+            "format":"0.00",
+            "suffix":""
          },
          "tolerance": 0
       },
