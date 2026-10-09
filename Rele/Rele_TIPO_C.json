@@ -1169,7 +1169,7 @@
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
+         "intervalLoggingPeriod":5,
          "name":"USN_RELE1_MED_Fator de Potência - Fase B",
          "purgePeriod":1,
          "purgeValuesLimit":100,
@@ -1265,7 +1265,7 @@
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
-         "intervalLoggingPeriod":15,
+         "intervalLoggingPeriod":5,
          "name":"USN_RELE1_MED_Fator de Potência - Fase C",
          "purgePeriod":1,
          "purgeValuesLimit":100,
