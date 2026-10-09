@@ -1,0 +1,259 @@
+Comparacao por XID, removendo somente PBO_ e CRC_ do inicio.
+251 divergencias entre 594 datapoints correspondentes; 343 com enabled igual.
+
+
+Xid                                           PBO   CRC DatasourcePBO        DatasourceCRC
+---                                           ---   --- -------------        -------------
+CBX_1.1_MED_Tensão FV (V)                   False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.1_MED_Temperatura Interna (°C)        False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV01 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV02 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV03 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV04 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV05 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV06 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV07 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV08 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV09 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV10 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV11 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV12 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV13 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV14 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV15 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV16 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV17 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV18 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV19 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STR_Corrente PV20 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.1_MED_Temperatura da Placa (ºC)       False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.1_MED_Tensão do Sistema FV (V)        False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.1_STA_Monitor de Conexão              False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.2_MED_Tensão FV (V)                   False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.2_MED_Temperatura Interna (°C)        False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV01 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV02 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV03 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV04 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV05 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV06 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV07 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV08 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV09 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV10 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV11 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV12 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV13 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV14 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV15 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV16 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV17 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV18 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV19 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.2_STR_Corrente PV20 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.2_MED_Temperatura da Placa (ºC)       False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.2_MED_Tensão do Sistema FV (V)        False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.2_STA_Monitor de Conexão              False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.3_MED_Tensão FV (V)                   False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.3_MED_Temperatura Interna (°C)        False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV01 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV02 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV03 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV04 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV05 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV06 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV07 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV08 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV09 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV10 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV11 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV12 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV13 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV14 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV15 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV16 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV17 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV18 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV19 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.3_STR_Corrente PV20 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.3_MED_Temperatura da Placa (ºC)       False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.3_MED_Tensão do Sistema FV (V)        False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.3_STA_Monitor de Conexão              False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.4_MED_Tensão FV (V)                   False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.4_MED_Temperatura Interna (°C)        False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV01 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV02 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV03 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV04 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV05 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV06 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV07 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV08 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV09 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV10 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV11 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV12 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV13 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV14 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV15 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV16 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV17 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV18 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV19 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.4_STR_Corrente PV20 (A)               False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.4_MED_Temperatura da Placa (ºC)       False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.4_MED_Tensão do Sistema FV (V)        False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+CBX_1.4_STA_Monitor de Conexão              False  True PBO_SMART1_CBX_A_1a5 CRC_SMART1_CBX_A_1a5
+Inv_1.1_STA_Monitor de Conexão              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Energia Diária (KWh)            False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Temperatura Interna (°C)        False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Tensão - Vab (V)                False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Tensão - Vbc (V)                False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Tensão - Vca (V)                False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Corrente - Fase A (A)           False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Corrente - Fase B (A)           False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Corrente - Fase C (A)           False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Potência Ativa (KW)             False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Potência Reativa (KVAr)         False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Fator de Potência               False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Frequência (Hz)                 False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Energia Mensal (KWh)            False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Energia Total (KWh)             False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Tempo Total de Operação (h)     False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Potência Aparente Total (KVA)   False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Potência CC Total (KW)          False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_STA_Estado de Operação              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_CFG_Setpoint de Potência Ativa (KW) False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Tempo de Operação Diário (min)  False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Tensão do Barramento (V)        False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Tensão MPPT 01 (V)              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_MED_Corrente MPPT 01 (A)            False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_STA_Código de Falha                 False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_CMD_Ligar/Desligar                  False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.1_CAL_Fator de Capacidade Diário       True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.1_CAL_Fator de Capacidade Mensal       True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.1_CAL_Fator de Capacidade Anual        True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.1_CAL_Energia Total Acumulada (KWh)    True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.2_STA_Monitor de Conexão              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Energia Diária (KWh)            False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Temperatura Interna (°C)        False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Tensão - Vab (V)                False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Tensão - Vbc (V)                False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Tensão - Vca (V)                False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Corrente - Fase A (A)           False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Corrente - Fase B (A)           False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Corrente - Fase C (A)           False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Potência Ativa (KW)             False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Potência Reativa (KVAr)         False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Fator de Potência               False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Frequência (Hz)                 False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Energia Mensal (KWh)            False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Energia Total (KWh)             False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Tempo Total de Operação (h)     False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Potência Aparente Total (KVA)   False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Potência CC Total (KW)          False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_STA_Estado de Operação              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_CFG_Setpoint de Potência Ativa (KW) False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Tempo de Operação Diário (min)  False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Tensão do Barramento (V)        False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Tensão MPPT 01 (V)              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Corrente MPPT 01 (A)            False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_STA_Código de Falha                 False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_CMD_Ligar/Desligar                  False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_VIR_Última Atualização (Data/Hora)  False  True PBO_Time Stamps      CRC_Time Stamps
+Inv_1.2_CAL_Fator de Capacidade Diário       True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.2_CAL_Fator de Capacidade Mensal       True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.2_CAL_Fator de Capacidade Anual        True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.2_CAL_Energia Total Acumulada (KWh)    True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.3_STA_Monitor de Conexão              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Energia Diária (KWh)            False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Temperatura Interna (°C)        False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Tensão - Vab (V)                False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Tensão - Vbc (V)                False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Tensão - Vca (V)                False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Corrente - Fase A (A)           False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Corrente - Fase B (A)           False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Corrente - Fase C (A)           False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Potência Ativa (KW)             False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Potência Reativa (KVAr)         False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Fator de Potência               False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Frequência (Hz)                 False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Energia Mensal (KWh)            False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Energia Total (KWh)             False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Tempo Total de Operação (h)     False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Potência Aparente Total (KVA)   False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Potência CC Total (KW)          False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_STA_Estado de Operação              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_CFG_Setpoint de Potência Ativa (KW) False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Tempo de Operação Diário (min)  False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Tensão do Barramento (V)        False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Tensão MPPT 01 (V)              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Corrente MPPT 01 (A)            False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_STA_Código de Falha                 False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_CMD_Ligar/Desligar                  False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_VIR_Última Atualização (Data/Hora)  False  True PBO_Time Stamps      CRC_Time Stamps
+Inv_1.3_CAL_Fator de Capacidade Diário       True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.3_CAL_Fator de Capacidade Mensal       True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.3_CAL_Fator de Capacidade Anual        True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.3_CAL_Energia Total Acumulada (KWh)    True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.4_STA_Monitor de Conexão              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Energia Diária (KWh)            False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Temperatura Interna (°C)        False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Tensão - Vab (V)                False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Tensão - Vbc (V)                False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Tensão - Vca (V)                False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Corrente - Fase A (A)           False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Corrente - Fase B (A)           False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Corrente - Fase C (A)           False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Potência Ativa (KW)             False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Potência Reativa (KVAr)         False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Fator de Potência               False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Frequência (Hz)                 False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Energia Mensal (KWh)            False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Energia Total (KWh)             False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Tempo Total de Operação (h)     False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Potência Aparente Total (KVA)   False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Potência CC Total (KW)          False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_STA_Estado de Operação              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_CFG_Setpoint de Potência Ativa (KW) False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Tempo de Operação Diário (min)  False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Tensão do Barramento (V)        False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Tensão MPPT 01 (V)              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Corrente MPPT 01 (A)            False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_STA_Código de Falha                 False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_CMD_Ligar/Desligar                  False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_VIR_Última Atualização (Data/Hora)  False  True PBO_Time Stamps      CRC_Time Stamps
+Inv_1.4_CAL_Fator de Capacidade Diário       True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.4_CAL_Fator de Capacidade Mensal       True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.4_CAL_Fator de Capacidade Anual        True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.4_CAL_Energia Total Acumulada (KWh)    True False PBO_Dados Calculados CRC_Dados Calculados
+Smart1_CMD_Ligar                            False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_CMD_Ajuste Potência Ativa (%)        False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_MED_Potência Reativa Total (KVAr)    False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_MED_Energia Total (KWh)              False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_MED_Energia Diaria Total (KWh)       False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_MED_Potência Ativa Total (KW)        False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_STA_Status - DI01                    False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_STA_Status - DI02                    False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_STA_Status - DI03                    False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_STA_Status - DI04                    False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_STA_Monitor de Conexao               False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_STA_Status - DI05                    False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_MED_Energia Mensal Total (KWh)       False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_MED_Energia Anual Total (KWh)        False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_MED_Potência Aparente Total (KVA)    False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_STA_Dispositivos Conectados          False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_STA_Dispositivos com Falha           False  True PBO_SMART1_C         CRC_SMART1_C
+Smart1_VIR_Última Atualização (Data/Hora)   False  True PBO_Time Stamps      CRC_Time Stamps
+CAL_Fator de Capacidade Anual 1              True False PBO_Dados Calculados CRC_Dados Calculados
+CAL_Energia Mensal 1 (MWh)                   True False PBO_Dados Calculados CRC_Dados Calculados
+CAL_Energia Anual 1 (GWh)                    True False PBO_Dados Calculados CRC_Dados Calculados
+Inv_1.1_MED_Potência Ativa (W)              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.2_MED_Potência Ativa (W)              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.3_MED_Potência Ativa (W)              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+Inv_1.4_MED_Potência Ativa (W)              False  True PBO_SMART1_INV_D_1a5 CRC_SMART1_INV_D_1a5
+CAL_Energia Mensal Total (MWh)               True False PBO_Dados Calculados CRC_Dados Calculados
+CAL_Fator de Capacidade Anual Total          True False PBO_Dados Calculados CRC_Dados Calculados
+CAL_Energia Anual Total (GWh)                True False PBO_Dados Calculados CRC_Dados Calculados
+
+

@@ -5594,7 +5594,7 @@
          "purgeType": "YEARS",
          "pointLocator": {
             "dataType": "NUMERIC",
-            "updateEvent": "CONTEXT_UPDATE",
+            "updateEvent": "CRON",
             "context": [
                {
                   "varName": "status1",
@@ -5613,7 +5613,7 @@
             "executionDelaySeconds": 0,
             "script": "if (status3.value == 0 &&\n    (status1.value == 512 ||\n     status1.value == 513 ||\n     status1.value == 514) &&\n    ((status2.value & 2) != 0)) {\n\n    return 1;\n}\n\nreturn 0;",
             "settable": false,
-            "updateCronPattern": ""
+            "updateCronPattern": "*/5 * * * * ?"
          },
          "eventDetectors": [],
          "engineeringUnits": "",
@@ -5650,7 +5650,7 @@
          "purgeType": "YEARS",
          "pointLocator": {
             "dataType": "NUMERIC",
-            "updateEvent": "CONTEXT_UPDATE",
+            "updateEvent": "CRON",
             "context": [
                {
                   "varName": "status1",
@@ -5669,7 +5669,7 @@
             "executionDelaySeconds": 0,
             "script": "if (status3.value == 0 &&\n\n    status1.value != 768 &&\n    status1.value != 770 &&\n    status1.value != 771 &&\n    status1.value != 772 &&\n    status1.value != 773 &&\n    status1.value != 774 &&\n    status1.value != 775 &&\n    status1.value != 776 &&\n    status1.value != 777 &&\n    status1.value != 778 &&\n\n    !(status1.value == 512 ||\n      status1.value == 513 ||\n      status1.value == 514)\n) {\n\n    return 1;\n}\n\nreturn 0;",
             "settable": false,
-            "updateCronPattern": ""
+            "updateCronPattern": "*/5 * * * * ?"
          },
          "eventDetectors": [],
          "engineeringUnits": "",
@@ -5706,7 +5706,7 @@
          "purgeType": "YEARS",
          "pointLocator": {
             "dataType": "NUMERIC",
-            "updateEvent": "CONTEXT_UPDATE",
+            "updateEvent": "CRON",
             "context": [
                {
                   "varName": "status1",
@@ -5721,7 +5721,7 @@
             "executionDelaySeconds": 0,
             "script": "if ((status1.value == 771) || (status2.value == 0)) {\n\n    return 1;\n\n}\n\nreturn 0;",
             "settable": false,
-            "updateCronPattern": ""
+            "updateCronPattern": "*/5 * * * * ?"
          },
          "eventDetectors": [],
          "engineeringUnits": "",
@@ -5758,7 +5758,7 @@
          "purgeType": "YEARS",
          "pointLocator": {
             "dataType": "NUMERIC",
-            "updateEvent": "CONTEXT_UPDATE",
+            "updateEvent": "CRON",
             "context": [
                {
                   "varName": "status1",
@@ -5777,7 +5777,7 @@
             "executionDelaySeconds": 0,
             "script": "if (status3.value == 0 &&\n\n   (\n    status1.value == 768 ||\n    status1.value == 770 ||\n    status1.value == 772 ||\n    status1.value == 773 ||\n    status1.value == 774 ||\n    status1.value == 775 ||\n    status1.value == 776 ||\n    status1.value == 777 ||\n    status1.value == 778 ||\n\n    (status2.value & 32)  != 0 ||\n    (status2.value & 64)  != 0 ||\n    (status2.value & 128) != 0 ||\n    (status2.value & 256) != 0\n   )\n) {\n\n    return 1;\n}\n\nreturn 0;",
             "settable": false,
-            "updateCronPattern": ""
+            "updateCronPattern": "*/5 * * * * ?"
          },
          "eventDetectors": [],
          "engineeringUnits": "",
