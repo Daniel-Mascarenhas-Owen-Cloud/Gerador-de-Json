@@ -1037,7 +1037,7 @@
       },
       {
          "xid":"USN_RELE1_MED_Fator de Potência - Fase A",
-         "loggingType":"INTERVAL",
+         "loggingType":"ON_CHANGE",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
          "purgeType":"YEARS",
