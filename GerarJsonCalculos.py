@@ -32,7 +32,7 @@ def gerar_contexto_inversor(prefixo, skid, qtd, tipo):
 
         context.append({
             "varName": varMonitor,
-            "dataPointXid": f"{prefixo}_Inv_{skid}.{i+1}_STA_Monitor de Conexao"
+            "dataPointXid": f"{prefixo}_Inv_{skid}.{i+1}_STA_Monitor de Conexão"
         })
 
         vars_script.append(f"({varMonitor}.value ? {var}.value : 0)")
@@ -110,7 +110,7 @@ for skid, qtd in enumerate(inversores_por_skid, start=1):
             },
             {
                 "varName": "monitor_a",
-                "dataPointXid": f"{prefixo}_Smart{skid}_STA_Monitor de Conexão"
+                "dataPointXid": f"{prefixo}_Smart{skid}_STA_Monitor de Conexao"
             }
         ]
         script = "return (monitor_a.value ? a.value : 0)/1000000;"
@@ -179,7 +179,7 @@ for i in range(num_skids):
 
     context_smart.append({
         "varName": varMonitor,
-        "dataPointXid": f"{prefixo}_Smart{i+1}_STA_Monitor de Conexão"
+        "dataPointXid": f"{prefixo}_Smart{i+1}_STA_Monitor de Conexao"
     })
 
     vars_smart.append(f"({varMonitor}.value ? {var}.value : 0)")
@@ -248,7 +248,7 @@ for i in range(num_skids):
 
     context_mensal.append({
         "varName": varMonitor,
-        "dataPointXid": f"{prefixo}_Smart{i+1}_STA_Monitor de Conexão"
+        "dataPointXid": f"{prefixo}_Smart{i+1}_STA_Monitor de Conexao"
     })
 
     vars_mensal.append(f"({varMonitor}.value ? {var}.value : 0)")
@@ -317,7 +317,7 @@ for i in range(num_skids):
 
     context_anual.append({
         "varName": varMonitor,
-        "dataPointXid": f"{prefixo}_Smart{i+1}_STA_Monitor de Conexão"
+        "dataPointXid": f"{prefixo}_Smart{i+1}_STA_Monitor de Conexao"
     })
 
     vars_anual.append(f"({varMonitor}.value ? {var}.value : 0)")
@@ -505,7 +505,7 @@ for i in range(num_skids):
 
     context_pot.append({
         "varName": varMonitor,
-        "dataPointXid": f"{prefixo}_Smart{i+1}_STA_Monitor de Conexão"
+        "dataPointXid": f"{prefixo}_Smart{i+1}_STA_Monitor de Conexao"
     })
 
     vars_pot.append(f"({varMonitor}.value ? {var}.value : 0)")
