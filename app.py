@@ -176,7 +176,8 @@ while True:
                 prefixo,
                 ip,
                 slaveId,
-                str(i+1)
+                str(i+1),
+                usina
             ])
 
         if not gerarTudo:

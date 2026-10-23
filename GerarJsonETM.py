@@ -10,6 +10,7 @@ prefix_usina = sys.argv[2]
 IP = sys.argv[3]
 slaveId = sys.argv[4]
 numero = sys.argv[5]
+usina = sys.argv[6]
 
 while(tipo_ETM != 'A' and tipo_ETM != 'C'):
     print("Tipo inválido!")
@@ -34,6 +35,7 @@ with open(destino, "r", encoding="utf-8") as f:
 conteudo = ( 
     conteudo
         .replace("USN", prefix_usina)
+        .replace("Nome Usina", usina)
         .replace("000.000.000.000", IP)
         .replace('"slaveId":1,', f'"slaveId":{slaveId},')
 )
