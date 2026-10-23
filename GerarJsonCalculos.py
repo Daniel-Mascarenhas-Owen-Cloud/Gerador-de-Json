@@ -32,7 +32,7 @@ def gerar_contexto_inversor(prefixo, skid, qtd, tipo):
 
         context.append({
             "varName": varMonitor,
-            "dataPointXid": f"{prefixo}_Inv_{skid}.{i+1}_STA_Monitor de Conexao"
+            "dataPointXid": f"{prefixo}_Inv_{skid}.{i+1}_STA_Monitor de Conexão"
         })
 
         vars_script.append(f"({varMonitor}.value ? {var}.value : 0)")
