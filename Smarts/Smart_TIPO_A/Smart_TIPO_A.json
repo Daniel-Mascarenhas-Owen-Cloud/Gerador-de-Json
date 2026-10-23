@@ -760,7 +760,7 @@
             "additive":0.0,
             "bit":0,
             "charset":"ASCII",
-            "multiplier":1.0,
+            "multiplier":0.1,
             "offset":40560,
             "registerCount":1,
             "settableOverride":false,
