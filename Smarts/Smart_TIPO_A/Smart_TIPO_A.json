@@ -413,7 +413,7 @@
          "tolerance":0.0
       },
       {
-         "xid":"USN_Smart1_CMD_Ajuste Potência Reativa (%)",
+         "xid":"USN_Smart1_CMD_Ajuste Potência Reativa (kVAr)",
          "loggingType":"INTERVAL",
          "intervalLoggingPeriodType":"MINUTES",
          "intervalLoggingType":"INSTANT",
@@ -450,7 +450,7 @@
             "type":"EVENT_NONE"
          },
          "intervalLoggingPeriod":5,
-         "name":"USN_Smart1_CMD_Ajuste Potência Reativa (%)",
+         "name":"USN_Smart1_CMD_Ajuste Potência Reativa (kVAr)",
          "purgePeriod":1,
          "purgeValuesLimit":100,
          "textRenderer":{
