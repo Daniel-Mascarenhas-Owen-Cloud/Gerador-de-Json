@@ -1258,7 +1258,7 @@
             "context": [
                {
                   "varName": "ts",
-                  "dataPointXid": "USN_Inv_1.1_MED_Potência Ativa (W)"
+                  "dataPointXid": "USN_Inv_1.1_MED_Potência Ativa (KW)"
                }
             ],
             "executionDelayPeriodType": "SECONDS",
@@ -1485,12 +1485,12 @@
             "context":[
                {
                   "varName":"x",
-                  "dataPointXid":"USN_Inv_1.1_MED_Energia Total Acumulada (Wh)"
+                  "dataPointXid":"USN_Inv_1.1_MED_Energia Total (KWh)"
                }
             ],
             "executionDelayPeriodType":"SECONDS",
             "executionDelaySeconds":0,
-            "script":"return x.value/1000;",
+            "script":"return x.value;",
             "settable":false,
             "updateCronPattern":""
          },
