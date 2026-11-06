@@ -124,14 +124,19 @@ while True:
     if action in ["SMARTLOGGER", "2"] or gerarTudo:
 
         qtd_skids = int(input("Quantos Skids existem? "))
-        tipo_smart = input("Tipo do SmartLogger: ").upper()
+        tipo_smart = input("Tipo do SmartLogger (A, C, E ou X): ").strip().upper()
 
         for i in range(qtd_skids):
 
             print(f"\n--- SmartLogger Skid {i+1} ---")
 
-            ip = input("IP do SmartLogger: ")
-            slaveID = input("Qual o SlaveId do SmartLogger? ")
+            if tipo_smart == "X":
+                # META utiliza os pontos dos inversores já cadastrados.
+                ip = "000.000.000.000"
+                slaveID = "1"
+            else:
+                ip = input("IP do SmartLogger: ")
+                slaveID = input("Qual o SlaveId do SmartLogger? ")
             quantidade_inversores = input(
                 "Quantos inversores existem neste SmartLogger? "
             )

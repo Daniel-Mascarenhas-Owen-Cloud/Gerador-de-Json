@@ -96,6 +96,16 @@ Deseja unir os arquivos em um unico arquivo? (S/N):
 
 Digite `S` para gerar o arquivo consolidado `saida_final.json` na raiz do projeto.
 
+### SmartLogger tipo X
+
+Na opção **2 — SmartLogger**, os tipos disponíveis são `A`, `C`, `E` e `X`.
+
+O tipo `X` utiliza uma fonte **META** para calcular os totais a partir dos pontos dos inversores do skid. Informe a quantidade de skids e de inversores em cada um; esse tipo não solicita IP nem Slave ID próprios.
+
+O gerador adapta o prefixo da usina, o número do SmartLogger e as referências `Inv_SKID.NUMERO` à quantidade informada. As medições são somadas apenas quando o monitor de conexão do respectivo inversor está verdadeiro. O monitor geral fica verdadeiro quando pelo menos um inversor está conectado. Os cálculos periódicos do modelo executam a cada cinco segundos.
+
+Os pontos dos inversores referenciados precisam existir no SCADA com os mesmos XIDs. O tipo X não gera os inversores; ele também depende da fonte `PREFIXO_Time Stamps` para o ponto de última atualização, além das fontes e pontos utilizados pelos cálculos genéricos do gerador.
+
 ## Onde encontrar os arquivos
 
 Os JSONs gerados ficam na pasta `saida`, criada automaticamente pelos geradores. Exemplos de arquivos:

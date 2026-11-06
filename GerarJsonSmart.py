@@ -24,9 +24,9 @@ quantidade_smartloggers = (
 )
 
 
-while((tipo_smartlogger != 'A') and (tipo_smartlogger != 'C') and (tipo_smartlogger != 'E')):
+while tipo_smartlogger not in ("A", "C", "E", "X"):
     print("Tipo inválido!")
-    tipo_smartlogger = input("Qual o tipo do smartlogger?\n")
+    tipo_smartlogger = input("Qual o tipo do smartlogger?\n").strip().upper()
 
 tipo = "Smart_TIPO_" + tipo_smartlogger
 
@@ -40,6 +40,48 @@ os.rename("saida/" + tipo + ".json", destino)
 
 with open(f"saida/smartlogger{skid}.json", "r", encoding="utf-8") as f:
     smartJson = json.load(f)
+
+if tipo_smartlogger == "X":
+    # O Smart X agrega os inversores por META, sem conexão Modbus própria.
+    for ponto in smartJson["dataPoints"]:
+        locator = ponto["pointLocator"]
+        referencias = locator.get("context", [])
+        referencia_medicao = next(
+            (ref["dataPointXid"] for ref in referencias
+             if "_Inv_1.1_" in ref["dataPointXid"]
+             and not ref["varName"].startswith("monitor_")),
+            None
+        )
+        if not any("_Inv_" in ref["dataPointXid"] for ref in referencias):
+            continue
+
+        contexto = []
+        parcelas = []
+        monitores = []
+        for inversor in range(1, quantidade_inversores + 1):
+            monitor = f"monitor_inv{inversor}"
+            if referencia_medicao is not None:
+                variavel = f"inv{inversor}"
+                contexto.append({
+                    "varName": variavel,
+                    "dataPointXid": referencia_medicao.replace(
+                        "_Inv_1.1_", f"_Inv_{skid}.{inversor}_"
+                    )
+                })
+                parcelas.append(f"({monitor}.value ? {variavel}.value : 0)")
+            contexto.append({
+                "varName": monitor,
+                "dataPointXid": (
+                    f"USN_Inv_{skid}.{inversor}_STA_Monitor de Conexão"
+                )
+            })
+            monitores.append(f"{monitor}.value")
+
+        locator["context"] = contexto
+        if referencia_medicao is not None:
+            locator["script"] = "return " + (" + ".join(parcelas) or "0") + ";"
+        else:
+            locator["script"] = "return " + (" || ".join(monitores) or "false") + ";"
 
 with open("Smarts/Genericos.json", "r", encoding="utf-8") as f:
     smartJson_generico = json.load(f)
@@ -65,7 +107,7 @@ with open("Smarts/Genericos.json", "r", encoding="utf-8") as f:
             contexto.append({
                 "varName": f"inv{inversor}",
                 "dataPointXid": (
-                    f"USN_Inv_1.{inversor}_STA_{estado_inversor}"
+                    f"USN_Inv_{skid if tipo_smartlogger == 'X' else '1'}.{inversor}_STA_{estado_inversor}"
                 )
             })
 
@@ -75,7 +117,7 @@ with open("Smarts/Genericos.json", "r", encoding="utf-8") as f:
             f"inv{inversor}.value"
             for inversor in range(1, quantidade_inversores + 1)
         )
-        ponto["pointLocator"]["script"] = f"return {soma};"
+        ponto["pointLocator"]["script"] = f"return {soma or '0'};"
 
     smartJson["dataPoints"].extend(pontos_inversores["dataPoints"])
 
