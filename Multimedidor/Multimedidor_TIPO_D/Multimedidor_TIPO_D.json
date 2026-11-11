@@ -1,30 +1,30 @@
 {
-   "dataSources":[
+   "dataSources": [
       {
-         "xid":"USN_MM1_D",
-         "type":"MODBUS_IP",
-         "alarmLevels":{
-            "POINT_WRITE_EXCEPTION":"NONE",
-            "DATA_SOURCE_EXCEPTION":"NONE",
-            "POINT_READ_EXCEPTION":"NONE"
+         "xid": "USN_MM1_D",
+         "type": "MODBUS_IP",
+         "alarmLevels": {
+            "POINT_WRITE_EXCEPTION": "NONE",
+            "DATA_SOURCE_EXCEPTION": "NONE",
+            "POINT_READ_EXCEPTION": "NONE"
          },
-         "updatePeriodType":"SECONDS",
-         "transportType":"TCP",
-         "contiguousBatches":false,
-         "createSlaveMonitorPoints":true,
-         "createSocketMonitorPoint":false,
-         "enabled":true,
-         "encapsulated":false,
-         "host":"0.0.0.0",
-         "maxReadBitCount":2000,
-         "maxReadRegisterCount":125,
-         "maxWriteRegisterCount":120,
-         "name":"USN_MM1_D",
-         "port":502,
-         "quantize":false,
-         "retries":2,
-         "timeout":10000,
-         "updatePeriods":5
+         "updatePeriodType": "SECONDS",
+         "transportType": "TCP",
+         "contiguousBatches": false,
+         "createSlaveMonitorPoints": true,
+         "createSocketMonitorPoint": false,
+         "enabled": true,
+         "encapsulated": false,
+         "host": "000.000.000.000",
+         "maxReadBitCount": 2000,
+         "maxReadRegisterCount": 125,
+         "maxWriteRegisterCount": 120,
+         "name": "USN_MM1_D",
+         "port": 502,
+         "quantize": false,
+         "retries": 2,
+         "timeout": 10000,
+         "updatePeriods": 5
       }
    ],
    "dataPoints": [
@@ -54,9 +54,9 @@
                "type": "BINARY_STATE",
                "alarmLevel": "URGENT",
                "state": false,
-               "durationType": "MINUTES",
-               "duration": 5,
-               "alias": "UFV Nome Usina - Cabine 1 - Multimedidor - Sem Comunicação"
+               "durationType": "SECONDS",
+               "duration": 60,
+               "alias": "UFV Amontada 1 - Skid 1 - Multimedidor - Sem Comunicação"
             }
          ],
          "engineeringUnits": "",
@@ -83,54 +83,6 @@
             "suffix": ""
          },
          "tolerance": 0.0
-      },
-      {
-         "xid":"USN_MM1_VIR_Última Atualização (Data\/Hora)",
-         "loggingType":"NONE",
-         "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"INSTANT",
-         "purgeType":"YEARS",
-         "pointLocator":{
-            "dataType":"ALPHANUMERIC",
-            "updateEvent":"CONTEXT_UPDATE",
-            "context":[
-               {
-                  "varName":"ts",
-                  "dataPointXid":"USN_MM1_MED_Potência Ativa Total (KW)"
-               }
-            ],
-            "executionDelayPeriodType":"SECONDS",
-            "executionDelaySeconds":0,
-            "script":"hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"\/\"+mes+\"\/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
-            "settable":false,
-            "updateCronPattern":""
-         },
-         "eventDetectors":[
-         ],
-         "engineeringUnits":"",
-         "purgeStrategy":"PERIOD",
-         "chartColour":null,
-         "chartRenderer":null,
-         "dataSourceXid":"USN_Time Stamps",
-         "defaultCacheSize":1,
-         "description":"",
-         "deviceName":"USN_Time Stamps",
-         "discardExtremeValues":false,
-         "discardHighLimit":1.7976931348623157E308,
-         "discardLowLimit":-1.7976931348623157E308,
-         "enabled":true,
-         "eventTextRenderer":{
-            "type":"EVENT_NONE"
-         },
-         "intervalLoggingPeriod":15,
-         "name":"USN_MM1_VIR_Última Atualização (Data\/Hora)",
-         "purgePeriod":1,
-         "purgeValuesLimit":100,
-         "textRenderer":{
-            "type":"PLAIN",
-            "suffix":""
-         },
-         "tolerance":0.0
       },
       {
          "xid": "USN_MM1_MED_Corrente - Fase A (A)",
@@ -164,7 +116,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -211,7 +163,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -258,7 +210,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -305,7 +257,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -352,7 +304,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -399,7 +351,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -446,7 +398,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -473,7 +425,7 @@
             "additive": 0.0,
             "bit": 0,
             "charset": "ASCII",
-            "multiplier": 0.001,
+            "multiplier": 1.0,
             "offset": 3027,
             "registerCount": 2,
             "settableOverride": false,
@@ -493,7 +445,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -540,7 +492,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -587,7 +539,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -634,7 +586,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -681,7 +633,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -728,7 +680,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -775,7 +727,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -822,7 +774,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -869,7 +821,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -916,7 +868,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -963,7 +915,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -1010,7 +962,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -1057,7 +1009,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -1104,7 +1056,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -1151,7 +1103,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -1167,52 +1119,51 @@
          "tolerance": 0.0
       },
       {
-         "xid":"USN_MM1_MED_Energia Ativa Importada (MWh)",
-         "loggingType":"INTERVAL",
-         "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"INSTANT",
-         "purgeType":"YEARS",
-         "pointLocator":{
-            "range":"HOLDING_REGISTER",
-            "modbusDataType":"FOUR_BYTE_FLOAT",
-            "additive":0.0,
-            "bit":0,
-            "charset":"ASCII",
+         "xid": "USN_MM1_MED_Energia Ativa Importada (MWh)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "FOUR_BYTE_FLOAT",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
             "multiplier": 0.001,
-            "offset":2677,
+            "offset": 2677,
             "registerCount": 2,
-            "settableOverride":false,
-            "slaveId":1,
-            "slaveMonitor":false,
-            "socketMonitor":false
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
          },
-         "eventDetectors":[
-         ],
-         "engineeringUnits":"",
-         "purgeStrategy":"PERIOD",
-         "chartColour":null,
-         "chartRenderer":null,
-         "dataSourceXid":"USN_MM1_D",
-         "defaultCacheSize":1,
-         "description":null,
-         "deviceName":"USN_MM1_D",
-         "discardExtremeValues":false,
-         "discardHighLimit":1.7976931348623157E308,
-         "discardLowLimit":-1.7976931348623157E308,
-         "enabled":true,
-         "eventTextRenderer":{
-            "type":"EVENT_NONE"
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_MM1_D",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_MM1_D",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
          },
-         "intervalLoggingPeriod":5,
-         "name":"USN_MM1_MED_Energia Ativa Importada (MWh)",
-         "purgePeriod":1,
-         "purgeValuesLimit":100,
-         "textRenderer":{
-            "type":"ANALOG",
-            "format":"0.00",
-            "suffix":""
+         "intervalLoggingPeriod": 5,
+         "name": "USN_MM1_MED_Energia Ativa Importada (MWh)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
          },
-         "tolerance":0.0
+         "tolerance": 0.0
       },
       {
          "xid": "USN_MM1_MED_Energia Reativa Exportada (MVArh)",
@@ -1246,7 +1197,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -1262,52 +1213,51 @@
          "tolerance": 0.0
       },
       {
-         "xid":"USN_MM1_MED_Energia Reativa Importada (MVArh)",
-         "loggingType":"INTERVAL",
-         "intervalLoggingPeriodType":"MINUTES",
-         "intervalLoggingType":"INSTANT",
-         "purgeType":"YEARS",
-         "pointLocator":{
-            "range":"HOLDING_REGISTER",
-            "modbusDataType":"FOUR_BYTE_FLOAT",
-            "additive":0.0,
-            "bit":0,
-            "charset":"ASCII",
+         "xid": "USN_MM1_MED_Energia Reativa Importada (MVArh)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "FOUR_BYTE_FLOAT",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
             "multiplier": 0.001,
-            "offset":2685,
+            "offset": 2685,
             "registerCount": 2,
-            "settableOverride":false,
-            "slaveId":1,
-            "slaveMonitor":false,
-            "socketMonitor":false
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
          },
-         "eventDetectors":[
-         ],
-         "engineeringUnits":"",
-         "purgeStrategy":"PERIOD",
-         "chartColour":null,
-         "chartRenderer":null,
-         "dataSourceXid":"USN_MM1_D",
-         "defaultCacheSize":1,
-         "description":null,
-         "deviceName":"USN_MM1_D",
-         "discardExtremeValues":false,
-         "discardHighLimit":1.7976931348623157E308,
-         "discardLowLimit":-1.7976931348623157E308,
-         "enabled":true,
-         "eventTextRenderer":{
-            "type":"EVENT_NONE"
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_MM1_D",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_MM1_D",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
          },
-         "intervalLoggingPeriod":5,
-         "name":"USN_MM1_MED_Energia Reativa Importada (MVArh)",
-         "purgePeriod":1,
-         "purgeValuesLimit":100,
-         "textRenderer":{
-            "type":"ANALOG",
-            "format":"0.00",
-            "suffix":""
+         "intervalLoggingPeriod": 5,
+         "name": "USN_MM1_MED_Energia Reativa Importada (MVArh)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
          },
-         "tolerance":0.0
+         "tolerance": 0.0
       },
       {
          "xid": "USN_MM1_MED_Corrente Total do Sistema (A)",
@@ -1341,7 +1291,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -1388,7 +1338,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -1435,7 +1385,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -1482,7 +1432,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -1529,7 +1479,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -1576,7 +1526,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -1623,7 +1573,7 @@
          "discardExtremeValues": false,
          "discardHighLimit": 1.7976931348623157E308,
          "discardLowLimit": -1.7976931348623157E308,
-         "enabled":true,
+         "enabled": true,
          "eventTextRenderer": {
             "type": "EVENT_NONE"
          },
@@ -1634,6 +1584,100 @@
          "textRenderer": {
             "type": "ANALOG",
             "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_MM1_MED_Energia Aparente Total (kVAh)",
+         "loggingType": "INTERVAL",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "range": "HOLDING_REGISTER",
+            "modbusDataType": "FOUR_BYTE_FLOAT",
+            "additive": 0.0,
+            "bit": 0,
+            "charset": "ASCII",
+            "multiplier": 1.0,
+            "offset": 2695,
+            "registerCount": 2,
+            "settableOverride": false,
+            "slaveId": 1,
+            "slaveMonitor": false,
+            "socketMonitor": false
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_MM1_D",
+         "defaultCacheSize": 1,
+         "description": null,
+         "deviceName": "USN_MM1_D",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 5,
+         "name": "USN_MM1_MED_Energia Aparente Total (kVAh)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "ANALOG",
+            "format": "0.00",
+            "suffix": ""
+         },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "USN_MM1_VIR_Última Atualização (Data/Hora)",
+         "loggingType": "NONE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "ALPHANUMERIC",
+            "updateEvent": "CONTEXT_UPDATE",
+            "context": [
+               {
+                  "varName": "ts",
+                  "dataPointXid": "USN_MM1_MED_Potência Ativa Total (KW)"
+               }
+            ],
+            "executionDelayPeriodType": "SECONDS",
+            "executionDelaySeconds": 0,
+            "script": "hora =ts.hour;\nminuto = ts.minute;\nsegundo = ts.second;\ndia = ts.day;\nmes = ts.month;\nano = ts.year;\n\n\nif (dia< 10){\ndia= \"0\"+dia;\n} else {\ndia= dia;\n}\n\nif (mes < 10){\nmes = \"0\"+mes;\n} else {\nmes = mes;\n}\n\nif (hora< 10){\nhora= \"0\"+hora;\n} else {\nhora= hora;\n}\n\nif (minuto< 10){\nminuto= \"0\"+minuto;\n} else {\nminuto= minuto;\n}\n\nif (segundo< 10){\nsegundo= \"0\"+segundo;\n} else {\nsegundo= segundo;\n}\n\nreturn \"\"+dia+\"/\"+mes+\"/\"+ano+\" - \"+hora+\":\"+minuto+\":\"+segundo\n",
+            "settable": false,
+            "updateCronPattern": ""
+         },
+         "eventDetectors": [],
+         "engineeringUnits": "",
+         "purgeStrategy": "PERIOD",
+         "chartColour": null,
+         "chartRenderer": null,
+         "dataSourceXid": "USN_Time Stamps",
+         "defaultCacheSize": 1,
+         "description": "",
+         "deviceName": "USN_Time Stamps",
+         "discardExtremeValues": false,
+         "discardHighLimit": 1.7976931348623157E308,
+         "discardLowLimit": -1.7976931348623157E308,
+         "enabled": true,
+         "eventTextRenderer": {
+            "type": "EVENT_NONE"
+         },
+         "intervalLoggingPeriod": 15,
+         "name": "USN_MM1_VIR_Última Atualização (Data/Hora)",
+         "purgePeriod": 1,
+         "purgeValuesLimit": 100,
+         "textRenderer": {
+            "type": "PLAIN",
             "suffix": ""
          },
          "tolerance": 0.0

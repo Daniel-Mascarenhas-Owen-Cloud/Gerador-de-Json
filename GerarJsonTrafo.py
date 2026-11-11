@@ -1,6 +1,7 @@
 import shutil
 import os
 import sys
+import re
 
 os.makedirs("saida", exist_ok=True)
 
@@ -14,9 +15,9 @@ skid = sys.argv[6]
 numero_trafo = sys.argv[7]
 numeroDoGerador = int(sys.argv[8])
 
-while(tipo_trafo != 'B' and tipo_trafo != 'D' and tipo_trafo != 'F'):
+while tipo_trafo not in ("A", "B", "D", "F"):
     print("Tipo inválido!")
-    tipo_trafo = input("Qual o tipo dos relés? ").upper()
+    tipo_trafo = input("Qual o tipo do trafo (A, B, D ou F)? ").strip().upper()
 
 tipo = "Trafo_" + tipo_trafo
 
@@ -39,12 +40,13 @@ conteudo = (
         .replace("USN", prefix_usina)
         .replace("000.000.000.000", IP)
         .replace("Usina", usina)
-        .replace('"slaveId":1,', f'"slaveId":{slave_id},') # ????
         .replace("Skid 1", f"Skid {skid}")
         .replace("Trafo 1", f"Trafo {numero_trafo}")
         .replace("TRAFO1", f"TRAFO{numero_trafo}")
         .replace("TRF1", f"TRF{numero_trafo}")
     )
+conteudo = re.sub(r'("slaveId"\s*:\s*)\d+',
+                  lambda match: match.group(1) + str(int(slave_id)), conteudo)
 
 # Sobrescrever o arquivo original
 with open(destino, "w", encoding="utf-8") as f:

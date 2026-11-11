@@ -2,6 +2,7 @@ import shutil
 import os
 import json
 import sys
+import re
 
 os.makedirs("saida", exist_ok=True)
 
@@ -58,13 +59,14 @@ conteudo = (
         .replace("000.000.000.000", IP)
         .replace("MM1","MM" + cabine)
         .replace("Cabine 1", "Cabine " + cabine)
-        .replace('"slaveId":1', '"slaveId":' + slave_id)
         .replace(
             "1.7976931348623157e+308",
             "1.7976931348623157E308"
         )
         .replace("e+308", "E308")
     )
+conteudo = re.sub(r'("slaveId"\s*:\s*)\d+',
+                  lambda match: match.group(1) + str(int(slave_id)), conteudo)
 
 # Sobrescrever o arquivo original
 with open(f"saida/Multimedidor{cabine}.json", "w", encoding="utf-8") as f:
