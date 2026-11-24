@@ -9,8 +9,8 @@
             "POINT_READ_EXCEPTION":"NONE"
          },
          "updatePeriodType":"SECONDS",
-         "transportType":"TCP_KEEP_ALIVE",
-         "contiguousBatches":true,
+         "transportType":"TCP",
+         "contiguousBatches":false,
          "createSlaveMonitorPoints":true,
          "createSocketMonitorPoint":false,
          "enabled":true,
@@ -22,8 +22,8 @@
          "name":"USN_RELE1_B",
          "port":502,
          "quantize":false,
-         "retries":0,
-         "timeout":1000,
+         "retries":2,
+         "timeout":5000,
          "updatePeriods":5
       }
    ],
@@ -60,7 +60,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -107,7 +107,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -154,7 +154,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -248,7 +248,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -295,7 +295,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -342,7 +342,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -389,7 +389,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -436,7 +436,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -483,7 +483,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -530,7 +530,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -577,7 +577,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -624,7 +624,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -671,7 +671,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -737,7 +737,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -951,7 +951,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -998,7 +998,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -1045,7 +1045,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -1092,7 +1092,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":false,
+         "enabled":true,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },

@@ -14,7 +14,7 @@ numero_rele = sys.argv[6]
 cabine = sys.argv[7]
 numeroDoGerador = int(sys.argv[8])
 
-while tipo_rele not in ("A", "B", "C"):
+while tipo_rele not in ("A", "B", "C", "D"):
     print("Tipo inválido!")
     tipo_rele = input("Qual o tipo dos relés? ").upper()
 
