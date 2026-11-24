@@ -56,7 +56,7 @@ if os.path.exists(destino):
 
 os.rename("saida/inicio.json", destino)
 
-while(tipo_inversor != 'B' and tipo_inversor != 'C' and tipo_inversor != 'D' and tipo_inversor != 'E' and tipo_inversor != 'G'):
+while tipo_inversor not in ("B", "C", "D", "E", "F", "G"):
     print("Tipo inválido!")
     tipo_inversor = input("Qual o tipo do inversor?\n")
 
@@ -143,7 +143,7 @@ with open(f"saida/inversor{skid}.json", "a", encoding="utf-8") as destino:
     with open(f"saida/inversor{skid}.json", "r", encoding="utf-8") as f:
         conteudo = f.read()
 
-    conteudo = conteudo[:-7] 
+    conteudo = conteudo[:-7]
 
     with open(f"saida/inversor{skid}.json", "w", encoding="utf-8") as f:
         f.write(conteudo)
