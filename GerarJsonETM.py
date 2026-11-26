@@ -12,7 +12,7 @@ slaveId = sys.argv[4]
 numero = sys.argv[5]
 usina = sys.argv[6]
 
-while(tipo_ETM != 'A' and tipo_ETM != 'C'):
+while tipo_ETM not in ("A", "C", "D"):
     print("Tipo inválido!")
     tipo_ETM = input("Qual o tipo da estação meteorológica?\n")
 

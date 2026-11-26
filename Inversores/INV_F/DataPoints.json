@@ -859,7 +859,7 @@
       "multiplier":0.01,
       "offset":3049,
       "registerCount":1,
-      "settableOverride":true,
+      "settableOverride":false,
       "slaveId":1,
       "slaveMonitor":false,
       "socketMonitor":false
@@ -906,7 +906,7 @@
       "multiplier":0.01,
       "offset":3052,
       "registerCount":1,
-      "settableOverride":true,
+      "settableOverride":false,
       "slaveId":1,
       "slaveMonitor":false,
       "socketMonitor":false
@@ -4577,7 +4577,7 @@
    "discardExtremeValues":false,
    "discardHighLimit":1.7976931348623157E308,
    "discardLowLimit":-1.7976931348623157E308,
-   "enabled":true,
+   "enabled":false,
    "eventTextRenderer":{
       "type":"EVENT_NONE"
    },

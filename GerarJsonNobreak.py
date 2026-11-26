@@ -10,7 +10,7 @@ prefix_usina = sys.argv[3]
 IP = sys.argv[4]
 
 
-while(tipo_equipamento != 'A' and tipo_equipamento != 'D'):
+while tipo_equipamento not in ("A", "D", "E"):
     print("Tipo inválido!")
     tipo_equipamento = input("Qual o tipo do Nobreak?\n")
 

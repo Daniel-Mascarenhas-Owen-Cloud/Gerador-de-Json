@@ -43,7 +43,7 @@
             "multiplier":1.0,
             "offset":0,
             "registerCount":0,
-            "settableOverride":true,
+            "settableOverride":false,
             "slaveId":1,
             "slaveMonitor":true,
             "socketMonitor":false
@@ -972,7 +972,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":true,
+         "enabled":false,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -1028,7 +1028,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":true,
+         "enabled":false,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },
@@ -1084,7 +1084,7 @@
          "discardExtremeValues":false,
          "discardHighLimit":1.7976931348623157E308,
          "discardLowLimit":-1.7976931348623157E308,
-         "enabled":true,
+         "enabled":false,
          "eventTextRenderer":{
             "type":"EVENT_NONE"
          },

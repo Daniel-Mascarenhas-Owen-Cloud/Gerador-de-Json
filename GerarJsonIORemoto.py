@@ -393,7 +393,7 @@ tipo_io_remoto = (
     else input("Qual o tipo do IO remoto? ").upper()
 )
 
-while tipo_io_remoto != "D":
+while tipo_io_remoto not in ("D", "E"):
     print("Tipo inválido!")
     tipo_io_remoto = input("Qual o tipo do IO remoto? ").upper()
 
@@ -406,6 +406,29 @@ quantidade_io_remoto = int(
     if len(sys.argv) > 4
     else perguntar_inteiro("Quantos IOs Remotos existem? ")
 )
+
+if tipo_io_remoto == "E":
+    # Modelo fixo de 16 entradas; não utiliza módulos ou comandos do tipo D.
+    with open("IO Remoto/IO_REMOTO_TIPO_E.json", "r", encoding="utf-8") as arquivo:
+        template = arquivo.read()
+
+    for numero_io in range(1, quantidade_io_remoto + 1):
+        print(f"\n--- IO Remoto {numero_io} ---")
+        ip = input("IP do IO Remoto: ")
+        slave_id = int(perguntar_inteiro("Slave ID do IO Remoto: "))
+        conteudo = (
+            template
+            .replace("USN", prefix_usina)
+            .replace("Nome Usina", usina)
+            .replace("000.000.000.000", ip)
+            .replace("Remota1", f"Remota{numero_io}")
+            .replace("IO1_", f"IO{numero_io}_")
+            .replace('"slaveId":1,', f'"slaveId":{slave_id},')
+        )
+        with open(f"saida/IORemoto{numero_io}.json", "w", encoding="utf-8") as arquivo:
+            arquivo.write(conteudo)
+        print(f"Arquivo Json gerado em saida/IORemoto{numero_io}.json!")
+    sys.exit()
 
 prefixo_template = f"IO_REMOTO_TIPO_{tipo_io_remoto}"
 diretorio_template = "IO Remoto"

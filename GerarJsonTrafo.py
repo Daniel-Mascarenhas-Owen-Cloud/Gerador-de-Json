@@ -15,9 +15,9 @@ skid = sys.argv[6]
 numero_trafo = sys.argv[7]
 numeroDoGerador = int(sys.argv[8])
 
-while tipo_trafo not in ("A", "B", "D", "F"):
+while tipo_trafo not in ("A", "B", "D", "F", "G"):
     print("Tipo inválido!")
-    tipo_trafo = input("Qual o tipo do trafo (A, B, D ou F)? ").strip().upper()
+    tipo_trafo = input("Qual o tipo do trafo (A, B, D, F ou G)? ").strip().upper()
 
 tipo = "Trafo_" + tipo_trafo
 
